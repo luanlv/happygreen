@@ -579,7 +579,7 @@ var _ref = _jsx('div', {
   className: 'link'
 }, void 0, ' ', _jsx('i', {
   className: 'icons-2 fa fa-clock-o'
-}), _jsx('span', {}, void 0, '07:30 s\xE1ng - 11:00 chi\u1EC1u')))), _jsx('ul', {
+}), _jsx('span', {}, void 0, '06:00 - 22:00 ')))), _jsx('ul', {
   className: 'topbar-right list-unstyled list-inline style-2'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
   href: '#',
@@ -602,7 +602,7 @@ var _ref3 = _jsx('div', {
   href: '/',
   className: 'logo'
 }, void 0, _jsx('img', {
-  src: 'assets/images/logo/logo.png',
+  src: '/assets/images/logo/logo.png',
   alt: true
 })));
 
@@ -718,12 +718,12 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
 }, void 0, _jsx('div', {
   className: 'col-2'
 }, void 0, _jsx('div', {
-  className: 'col-md-3 col-xs-6'
+  className: 'col-md-6 col-xs-12'
 }, void 0, _jsx('div', {
   className: 'gamba-info widget'
 }, void 0, _jsx('div', {
   className: 'title'
-}, void 0, 'Contact us'), _jsx('div', {
+}, void 0, 'Li\xEAn h\u1EC7'), _jsx('div', {
   className: 'content-widget'
 }, void 0, _jsx('ul', {
   className: 'list-unstyled info-list'
@@ -732,74 +732,20 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
 }), _jsx('a', {
   href: '#',
   className: 'link'
-}, void 0, '416 Ridge Road, Pratt, KS 67124')), _jsx('li', {}, void 0, _jsx('i', {
+}, void 0, 'Block B1.00.11 Khu \u0111\xF4 th\u1ECB Sala, Nguy\u1EC5n C\u01A1 Th\u1EA1ch, An L\u1EE3i \u0110\xF4ng, Qu\u1EADn 2 Ho Chi Minh City, Vietnam')), _jsx('li', {}, void 0, _jsx('i', {
   className: 'icons fa fa-phone'
 }), _jsx('a', {
   href: '#',
   className: 'link link-2'
-}, void 0, '(+1) 090-016-679 ', _jsx('br', {}), ' (+1) 092-552-179')), _jsx('li', {}, void 0, _jsx('i', {
+}, void 0, '0199 999 9910')), _jsx('li', {}, void 0, _jsx('i', {
   className: 'icons fa fa-envelope-o'
 }), _jsx('a', {
   href: '#',
   className: 'link'
-}, void 0, 'hello@gamba.com')))))), _jsx('div', {
-  className: 'col-md-3 col-xs-6'
-}, void 0, _jsx('div', {
-  className: 'gamba-service widget'
-}, void 0, _jsx('div', {
-  className: 'title'
-}, void 0, 'our service'), _jsx('div', {
-  className: 'content-widget'
-}, void 0, _jsx('ul', {
-  className: 'list-unstyled'
-}, void 0, _jsx('li', {}, void 0, ' ', _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'Social media monitoring')), _jsx('li', {}, void 0, ' ', _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'Web & App solution')), _jsx('li', {}, void 0, ' ', _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'Creative process')), _jsx('li', {}, void 0, ' ', _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'Sofware Development'))))))), _jsx('div', {
+}, void 0, 'phuongnguyen@happygreenmarket.com.vn'))))))), _jsx('div', {
   className: 'col-2'
 }, void 0, _jsx('div', {
-  className: 'col-md-3 col-xs-6'
-}, void 0, _jsx('div', {
-  className: 'gamba-twitter widget'
-}, void 0, _jsx('div', {
-  className: 'title'
-}, void 0, 'twitter widget'), _jsx('div', {
-  className: 'content-widget'
-}, void 0, _jsx('div', {
-  className: 'twitter-wrapper'
-}, void 0, _jsx('div', {
-  className: 'text'
-}, void 0, 'Looking for awesome PSD template?'), _jsx('div', {
-  className: 'link'
-}, void 0, 'Find it here: ', _jsx('a', {
-  href: '#'
-}, void 0, 'http://tf.net/gamba')), _jsx('div', {
-  className: 'time-post'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}), _jsx('span', {}, void 0, ' 01 day ago'))), _jsx('div', {
-  className: 'twitter-wrapper'
-}, void 0, _jsx('div', {
-  className: 'text'
-}, void 0, 'You need an image stock'), _jsx('div', {
-  className: 'link'
-}, void 0, 'Find it here: ', _jsx('a', {
-  href: '#'
-}, void 0, 'http://tf.net/gamba')), _jsx('div', {
-  className: 'time-post'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}), _jsx('span', {}, void 0, ' 01 day ago')))))), _jsx('div', {
-  className: 'col-md-3 col-xs-6'
+  className: 'col-md-6 col-xs-12'
 }, void 0, _jsx('div', {
   className: 'gamba-gallery widget'
 }, void 0, _jsx('div', {
@@ -13465,17 +13411,7 @@ var _ref = _jsx('section', {
   className: 'morepage-banner'
 }, void 0, _jsx('h2', {
   className: 'title'
-}, void 0, 'contact'), _jsx('ol', {
-  className: 'breadcrumb'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: 'index.html',
-  className: 'link'
-}, void 0, 'Home')), _jsx('li', {
-  className: 'active'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'contact'))))));
+}, void 0, 'Li\xEAn h\u1EC7'))));
 
 var _ref2 = _jsx('div', {
   className: 'page-main padding-top-100 padding-bottom-100'
@@ -13495,9 +13431,9 @@ var _ref2 = _jsx('div', {
   className: 'fa fa-map-marker'
 }), _jsx('p', {
   className: 'sub'
-}, void 0, 'COME TO'), _jsx('div', {
+}, void 0, '\u0110\u1ECBa \u0111i\u1EC3m'), _jsx('div', {
   className: 'detail'
-}, void 0, _jsx('p', {}, void 0, '99 Barnard St - Suite 111'), _jsx('p', {}, void 0, 'United Kingdom')))), _jsx('div', {
+}, void 0, _jsx('p', {}, void 0, 'Block B1.00.11 Khu \u0111\xF4 th\u1ECB Sala, Nguy\u1EC5n C\u01A1 Th\u1EA1ch, An L\u1EE3i \u0110\xF4ng, Qu\u1EADn 2'), _jsx('p', {}, void 0, 'Ho Chi Minh City, Vietnam')))), _jsx('div', {
   className: 'col-sm-4 col-xs-12'
 }, void 0, _jsx('div', {
   className: 'method-item'
@@ -13505,9 +13441,9 @@ var _ref2 = _jsx('div', {
   className: 'fa fa-phone'
 }), _jsx('p', {
   className: 'sub'
-}, void 0, 'CALL TO'), _jsx('div', {
+}, void 0, '\u0110i\u1EC7n tho\u1EA1i'), _jsx('div', {
   className: 'detail'
-}, void 0, _jsx('p', {}, void 0, 'Local: 1-800-123-hello'), _jsx('p', {}, void 0, 'Mobile: 1-800-123-hello')))), _jsx('div', {
+}, void 0, _jsx('p', {}, void 0, '0199 999 9910')))), _jsx('div', {
   className: 'col-sm-4 col-xs-12'
 }, void 0, _jsx('div', {
   className: 'method-item'
@@ -13515,9 +13451,9 @@ var _ref2 = _jsx('div', {
   className: 'fa fa-envelope'
 }), _jsx('p', {
   className: 'sub'
-}, void 0, 'CONNECT TO'), _jsx('div', {
+}, void 0, 'Email/Website'), _jsx('div', {
   className: 'detail'
-}, void 0, _jsx('p', {}, void 0, 'hello@edugate.com'), _jsx('p', {}, void 0, 'www.edugate.com'))))), _jsx('form', {
+}, void 0, _jsx('p', {}, void 0, 'phuongnguyen@happygreenmarket.com.vn'), _jsx('p', {}, void 0, 'http://happygreenmarket.com.vn'))))), _jsx('form', {
   id: 'contactForm',
   noValidate: 'novalidate',
   className: 'contact-form'
@@ -14034,7 +13970,7 @@ var _ref = _jsx('section', {
   className: 'title'
 }, void 0, 'Happy Green'), _jsx('h2', {
   className: 'subtitle'
-}, void 0, 'T\u1ED1t cho m\xF4i tr\u01B0\u1EDDng, t\u1ED1t cho s\u1EE9c kh\u1ECFe c\u1EE7a b\u1EA1n!')))))));
+}, void 0, 'T\u01B0\u01A1i m\u1ED7i ng\xE0y | Fresh daily')))))));
 
 var _ref2 = _jsx('section', {
   className: 'about-us padding-top-100 padding-bottom-100'
@@ -14631,197 +14567,6 @@ var _ref5 = _jsx('section', {
 }, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))))));
 
 var _ref6 = _jsx('section', {
-  className: 'our-team padding-top-100 padding-bottom-100'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
-  className: 'main-titles'
-}, void 0, _jsx('h1', {
-  className: 'title'
-}, void 0, 'meet the family')), _jsx('div', {
-  className: 'main-content'
-}, void 0, _jsx('div', {
-  className: 'grid-block-2'
-}, void 0, _jsx('div', {
-  className: 'grid-item grid-1'
-}, void 0, _jsx('div', {
-  className: 'block-3'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/teams/1.jpg',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: '#',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'title'
-}, void 0, 'Kown Jiyong'), _jsx('p', {
-  className: 'subtitle'
-}, void 0, 'CE0-Founder'), _jsx('div', {
-  className: 'description'
-}, void 0, _jsx('p', {
-  className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
-  className: 'list-social'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-})))), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'view profile')))), _jsx('div', {
-  className: 'grid-item grid-2'
-}, void 0, _jsx('div', {
-  className: 'block-3 style-2'
-}, void 0, _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'title'
-}, void 0, 'Kown Jiyong'), _jsx('p', {
-  className: 'subtitle'
-}, void 0, 'CE0-Founder'), _jsx('div', {
-  className: 'description'
-}, void 0, _jsx('p', {
-  className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
-  className: 'list-social'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-})))), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'view profile')), _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/teams/2.jpg',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: '#',
-  className: 'link'
-})))), _jsx('div', {
-  className: 'grid-item grid-2'
-}, void 0, _jsx('div', {
-  className: 'block-3 style-2'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/teams/3.jpg',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: '#',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'title'
-}, void 0, 'Kown Jiyong'), _jsx('p', {
-  className: 'subtitle'
-}, void 0, 'CE0-Founder'), _jsx('div', {
-  className: 'description'
-}, void 0, _jsx('p', {
-  className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
-  className: 'list-social'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-})))), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'view profile'))))))));
-
-var _ref7 = _jsx('section', {
-  className: 'banner banner-2'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
-  className: 'row'
-}, void 0, _jsx('div', {
-  className: 'col-lg-8 col-lg-offset-4'
-}, void 0, _jsx('div', {
-  'data-parallax': '{"y": 150}',
-  className: 'banner-text-wrapper'
-}, void 0, _jsx('h2', {
-  className: 'title'
-}, void 0, 'From The ', _jsx('span', {
-  className: 'main-color'
-}, void 0, 'Best Farm'), ' To Your Table'), _jsx('h5', {
-  className: 'subtitle'
-}, void 0, 'summer sale'), _jsx('p', {
-  className: 'description'
-}, void 0, 'start now'), _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('span', {
-  className: 'text-1'
-}, void 0, '50%'), _jsx('span', {
-  className: 'text-2'
-}, void 0, 'off')), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'show now'))))));
-
-var _ref8 = _jsx('section', {
   className: 'blogs padding-top-100 padding-bottom-100'
 }, void 0, _jsx('div', {
   className: 'container'
@@ -15035,7 +14780,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return _jsx('div', {}, void 0, _jsx('div', {
       className: 'main-contents'
-    }, void 0, _ref, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8));
+    }, void 0, _ref, _ref2, _ref3, _ref4, _ref5, _ref6));
   }
 }
 
@@ -17943,41 +17688,7 @@ var _ref12 = _jsx('div', {
   className: 'btn btn-maincolor'
 }, void 0, 'ADD TO WISHLISH'));
 
-var _ref13 = _jsx('ul', {
-  role: 'tablist',
-  className: 'nav nav-tabs'
-}, void 0, _jsx('li', {
-  role: 'presentation',
-  className: 'active'
-}, void 0, _jsx('a', {
-  href: '#tab-1',
-  'aria-controls': 'tab-1',
-  role: 'tab',
-  'data-toggle': 'tab'
-}, void 0, 'Discription')), _jsx('li', {
-  role: 'presentation'
-}, void 0, _jsx('a', {
-  href: '#tab-2',
-  'aria-controls': 'tab-2',
-  role: 'tab',
-  'data-toggle': 'tab'
-}, void 0, 'Review', _jsx('div', {
-  className: 'number-review'
-}, void 0, '2'))));
-
-var _ref14 = _jsx('div', {
-  className: 'tab-content'
-}, void 0, _jsx('div', {
-  id: 'tab-1',
-  role: 'tabpanel',
-  className: 'tab-pane fade in active'
-}, void 0, _jsx('p', {}, void 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'), _jsx('p', {}, void 0, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.')), _jsx('div', {
-  id: 'tab-2',
-  role: 'tabpanel',
-  className: 'tab-pane fade'
-}, void 0, _jsx('p', {}, void 0, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'), _jsx('p', {}, void 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')));
-
-var _ref15 = _jsx('div', {
+var _ref13 = _jsx('div', {
   className: 'row padding-top-100'
 }, void 0, _jsx('div', {
   className: 'col-xs-12'
@@ -18273,11 +17984,7 @@ function NewsDetail(props) {
     className: 'shopping-cart'
   }, void 0, _jsx('div', {
     className: 'quantity'
-  }, void 0, _ref8, _ref9, _ref10)), _ref11, _ref12))), _jsx('div', {
-    className: 'row padding-top-100'
-  }, void 0, _jsx('div', {
-    className: 'information-tab col-xs-12'
-  }, void 0, _ref13, _ref14)), _ref15))));
+  }, void 0, _ref8, _ref9, _ref10)), _ref11, _ref12))), _ref13))));
 }
 
 function findCategoryBySlug(slug, categories) {

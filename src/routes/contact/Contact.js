@@ -14,11 +14,7 @@ class Contact extends React.Component {
           <section className="banner contact">
             <div className="container">
               <div className="morepage-banner">
-                <h2 className="title">contact</h2>
-                <ol className="breadcrumb">
-                  <li><a href="index.html" className="link">Home</a></li>
-                  <li className="active"><a href="#" className="link">contact</a></li>
-                </ol>
+                <h2 className="title">Liên hệ</h2>
               </div>
             </div>
           </section>
@@ -29,28 +25,28 @@ class Contact extends React.Component {
                   <div className="row contact-method padding-bottom-100">
                     <div className="col-sm-4 col-xs-12">
                       <div className="method-item"><i className="fa fa-map-marker" />
-                        <p className="sub">COME TO</p>
+                        <p className="sub">Địa điểm</p>
                         <div className="detail">
-                          <p>99 Barnard St - Suite 111</p>
-                          <p>United Kingdom</p>
+                          <p>Block B1.00.11 Khu đô thị Sala, Nguyễn Cơ Thạch, An Lợi Đông, Quận 2
+                            </p>
+                          <p>Ho Chi Minh City, Vietnam</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-sm-4 col-xs-12">
                       <div className="method-item"><i className="fa fa-phone" />
-                        <p className="sub">CALL TO</p>
+                        <p className="sub">Điện thoại</p>
                         <div className="detail">
-                          <p>Local: 1-800-123-hello</p>
-                          <p>Mobile: 1-800-123-hello</p>
+                          <p>0199 999 9910</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-sm-4 col-xs-12">
                       <div className="method-item"><i className="fa fa-envelope" />
-                        <p className="sub">CONNECT TO</p>
+                        <p className="sub">Email/Website</p>
                         <div className="detail">
-                          <p>hello@edugate.com</p>
-                          <p>www.edugate.com</p>
+                          <p>phuongnguyen@happygreenmarket.com.vn</p>
+                          <p>http://happygreenmarket.com.vn</p>
                         </div>
                       </div>
                     </div>

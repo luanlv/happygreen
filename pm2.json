@@ -7,7 +7,7 @@
       "exec_mode": "fork",
       "env": {
         "NODE_ENV": "production",
-        "WEBSITE_HOSTNAME": "colombus.vn",
+        "WEBSITE_HOSTNAME": "happygreenmarket.vn",
         "PORT": 3457
       },
     }

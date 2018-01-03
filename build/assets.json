@@ -3,10 +3,10 @@
     "js": "/assets/admin.d2eb83b7.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.1c5c24e8.chunk.js"
+    "js": "/assets/contact.43deddaf.chunk.js"
   },
   "sanPham": {
-    "js": "/assets/sanPham.77773cb7.chunk.js"
+    "js": "/assets/sanPham.c7ea6b80.chunk.js"
   },
   "newsDetail": {
     "js": "/assets/newsDetail.aba7cf3f.chunk.js"
@@ -18,9 +18,9 @@
     "js": "/assets/news.c077d400.chunk.js"
   },
   "client": {
-    "js": "/assets/client.451700d6.js"
+    "js": "/assets/client.5655ea87.js"
   },
   "vendor": {
-    "js": "/assets/vendor.b101a818.js"
+    "js": "/assets/vendor.1af013a2.js"
   }
 }

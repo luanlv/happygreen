@@ -30,7 +30,7 @@ class Home extends React.Component {
                   <div className="homepage-banner-content">
                     <div className="group-title fadeInDown">
                       <h1 className="title">Happy Green</h1>
-                      <h2 className="subtitle">Tốt cho môi trường, tốt cho sức khỏe của bạn!</h2>
+                      <h2 className="subtitle">Tươi mỗi ngày | Fresh daily</h2>
                     </div>
                   </div>
                 </div>
@@ -376,86 +376,7 @@ class Home extends React.Component {
               </div>
             </div>
           </section>
-          {/* our team*/}
-          <section className="our-team padding-top-100 padding-bottom-100">
-            <div className="container">
-              <div className="main-titles">
-                <h1 className="title">meet the family</h1></div>
-              <div className="main-content">
-                <div className="grid-block-2">
-                  <div className="grid-item grid-1">
-                    <div className="block-3">
-                      <div className="block-image"><img src="/assets/images/teams/1.jpg" alt className="img-full" />
-                        <a href="#" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">Kown Jiyong</a>
-                        <p className="subtitle">CE0-Founder</p>
-                        <div className="description">
-                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
-                        </div>
-                        <ul className="list-social">
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
-                    </div>
-                  </div>
-                  <div className="grid-item grid-2">
-                    <div className="block-3 style-2">
-                      <div className="block-content"><a href="blog-detail.html" className="title">Kown Jiyong</a>
-                        <p className="subtitle">CE0-Founder</p>
-                        <div className="description">
-                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
-                        </div>
-                        <ul className="list-social">
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
-                      <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
-                        <a href="#" className="link" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item grid-2">
-                    <div className="block-3 style-2">
-                      <div className="block-image"><img src="/assets/images/teams/3.jpg" alt className="img-full" />
-                        <a href="#" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">Kown Jiyong</a>
-                        <p className="subtitle">CE0-Founder</p>
-                        <div className="description">
-                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
-                        </div>
-                        <ul className="list-social">
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* Banner 2*/}
-          <section className="banner banner-2">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 col-lg-offset-4">
-                  <div data-parallax="{&quot;y&quot;: 150}" className="banner-text-wrapper">
-                    <h2 className="title">From The <span className="main-color">Best Farm</span> To Your Table</h2>
-                    <h5 className="subtitle">summer sale</h5>
-                    <p className="description">start now</p>
-                    <div className="prices"><span className="text-1">50%</span><span className="text-2">off</span></div><a href="#" className="btn btn-maincolor">show now</a></div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* Blogs*/}
+
           <section className="blogs padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">

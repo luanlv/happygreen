@@ -30,7 +30,7 @@ class Layout extends React.Component {
                     <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" /><span>Giờ mở cửa</span></a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)" className="link"> <i className="icons-2 fa fa-clock-o" /><span>07:30 sáng - 11:00 chiều</span></a>
+                    <a href="javascript:void(0)" className="link"> <i className="icons-2 fa fa-clock-o" /><span>06:00 - 22:00 </span></a>
                   </li>
                 </ul>
                 <ul className="topbar-right list-unstyled list-inline style-2">
@@ -45,7 +45,7 @@ class Layout extends React.Component {
                 <div className="header-main-wrapper">
                   <div className="hamburger-menu-mobile"><i className="icons fa fa-bars" /></div>
                   <div className="logo-wrapper">
-                    <a href="/" className="logo"><img src="assets/images/logo/logo.png" alt /></a>
+                    <a href="/" className="logo"><img src="/assets/images/logo/logo.png" alt /></a>
                   </div>
                   <nav className="navigation">
                     <ul className="nav-links nav navbar-nav">
@@ -100,51 +100,22 @@ class Layout extends React.Component {
                   <div className="footer-main-wrapper">
                     <div className="row">
                       <div className="col-2">
-                        <div className="col-md-3 col-xs-6">
+                        <div className="col-md-6 col-xs-12">
                           <div className="gamba-info widget">
-                            <div className="title">Contact us</div>
+                            <div className="title">Liên hệ</div>
                             <div className="content-widget">
                               <ul className="list-unstyled info-list">
-                                <li><i className="icons fa fa-map-marker" /><a href="#" className="link">416 Ridge Road, Pratt, KS 67124</a></li>
-                                <li><i className="icons fa fa-phone" /><a href="#" className="link link-2">(+1) 090-016-679 <br /> (+1) 092-552-179</a></li>
-                                <li><i className="icons fa fa-envelope-o" /><a href="#" className="link">hello@gamba.com</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-3 col-xs-6">
-                          <div className="gamba-service widget">
-                            <div className="title">our service</div>
-                            <div className="content-widget">
-                              <ul className="list-unstyled">
-                                <li> <a href="#" className="link">Social media monitoring</a></li>
-                                <li> <a href="#" className="link">Web &amp; App solution</a></li>
-                                <li> <a href="#" className="link">Creative process</a></li>
-                                <li> <a href="#" className="link">Sofware Development</a></li>
+                                <li><i className="icons fa fa-map-marker" /><a href="#" className="link">Block B1.00.11 Khu đô thị Sala, Nguyễn Cơ Thạch, An Lợi Đông, Quận 2
+                                  Ho Chi Minh City, Vietnam</a></li>
+                                <li><i className="icons fa fa-phone" /><a href="#" className="link link-2">0199 999 9910</a></li>
+                                <li><i className="icons fa fa-envelope-o" /><a href="#" className="link">phuongnguyen@happygreenmarket.com.vn</a></li>
                               </ul>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div className="col-2">
-                        <div className="col-md-3 col-xs-6">
-                          <div className="gamba-twitter widget">
-                            <div className="title">twitter widget</div>
-                            <div className="content-widget">
-                              <div className="twitter-wrapper">
-                                <div className="text">Looking for awesome PSD template?</div>
-                                <div className="link">Find it here: <a href="#">http://tf.net/gamba</a></div>
-                                <div className="time-post"><i className="fa fa-twitter" /><span> 01 day ago</span></div>
-                              </div>
-                              <div className="twitter-wrapper">
-                                <div className="text">You need an image stock</div>
-                                <div className="link">Find it here: <a href="#">http://tf.net/gamba</a></div>
-                                <div className="time-post"><i className="fa fa-twitter" /><span> 01 day ago</span></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-3 col-xs-6">
+                        <div className="col-md-6 col-xs-12">
                           <div className="gamba-gallery widget">
                             <div className="title">gallery</div>
                             <div className="content-widget">
