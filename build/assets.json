@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "js": "/assets/admin.d2eb83b7.chunk.js"
+  },
+  "contact": {
+    "js": "/assets/contact.1c5c24e8.chunk.js"
+  },
+  "sanPham": {
+    "js": "/assets/sanPham.77773cb7.chunk.js"
+  },
+  "newsDetail": {
+    "js": "/assets/newsDetail.aba7cf3f.chunk.js"
+  },
+  "about": {
+    "js": "/assets/about.4db40bd2.chunk.js"
+  },
+  "news": {
+    "js": "/assets/news.c077d400.chunk.js"
+  },
+  "client": {
+    "js": "/assets/client.451700d6.js"
+  },
+  "vendor": {
+    "js": "/assets/vendor.b101a818.js"
+  }
+}

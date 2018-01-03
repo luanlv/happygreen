@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "colombus",
+      "script": "build/server.js",
+      "exec_interpreter": "node",
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "production",
+        "WEBSITE_HOSTNAME": "colombus.vn",
+        "PORT": 3456
+      },
+    }
+  ]
+}
