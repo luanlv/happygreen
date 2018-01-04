@@ -149,7 +149,7 @@ class Layout extends React.Component {
               </div>
               <div className="hyperlink">
                 <div className="container">
-                  <div className="name-company pull-left">© Designed by GAMBA.</div>
+                  <div className="name-company pull-left">© Designed by <a href="http://thunderduck.com.vn">Thunder Duck</a></div>
                   <div className="social-footer pull-right">
                     <ul className="list-inline list-unstyled">
                       <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>

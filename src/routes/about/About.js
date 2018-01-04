@@ -23,7 +23,7 @@ class About extends React.Component {
           <section className="history padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">our history</h1></div>
+                <h1 className="title">Lịch sử hình thành</h1></div>
               <div className="main-content">
                 <div className="tab-vertical">
                   <div className="tab-list-wrapper">

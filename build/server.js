@@ -808,7 +808,9 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   className: 'container'
 }, void 0, _jsx('div', {
   className: 'name-company pull-left'
-}, void 0, '\xA9 Designed by GAMBA.'), _jsx('div', {
+}, void 0, '\xA9 Designed by ', _jsx('a', {
+  href: 'http://thunderduck.com.vn'
+}, void 0, 'Thunder Duck')), _jsx('div', {
   className: 'social-footer pull-right'
 }, void 0, _jsx('ul', {
   className: 'list-inline list-unstyled'
@@ -5003,7 +5005,7 @@ var _ref2 = _jsx('section', {
   className: 'main-titles'
 }, void 0, _jsx('h1', {
   className: 'title'
-}, void 0, 'our history')), _jsx('div', {
+}, void 0, 'L\u1ECBch s\u1EED h\xECnh th\xE0nh')), _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'tab-vertical'
@@ -14164,7 +14166,7 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
-  src: '/assets/images/products/image-1.png',
+  src: '/assets/images/products/rau1.png',
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
@@ -14175,13 +14177,13 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: '#',
   className: 'title'
-}, void 0, 'Green Cabbage'), _jsx('div', {
+}, void 0, 'C\u1EA3i r\u1ED5'), _jsx('div', {
   className: 'prices-wrapper'
 }, void 0, _jsx('div', {
   className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
+}, void 0, _jsx('span', {
   className: 'number'
-}, void 0, '20.00')), _jsx('span', {
+}, void 0, '45.000'), _jsx('sup', {}, void 0, '\u0111')), _jsx('span', {
   className: 'unit'
 }, void 0, '/kg')), _jsx('ul', {
   className: 'list-icons'
@@ -14207,7 +14209,7 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
-  src: '/assets/images/products/image-2.png',
+  src: '/assets/images/products/rau2.png',
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
@@ -14218,13 +14220,13 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: '#',
   className: 'title'
-}, void 0, 'Spinach'), _jsx('div', {
+}, void 0, 'B\xF4ng c\u1EA3i xanh'), _jsx('div', {
   className: 'prices-wrapper'
 }, void 0, _jsx('div', {
   className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
+}, void 0, _jsx('span', {
   className: 'number'
-}, void 0, '20.00')), _jsx('span', {
+}, void 0, '65.000'), _jsx('sup', {}, void 0, '\u0111')), _jsx('span', {
   className: 'unit'
 }, void 0, '/kg')), _jsx('ul', {
   className: 'list-icons'
@@ -14250,7 +14252,7 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
-  src: '/assets/images/products/image-3.png',
+  src: '/assets/images/products/rau3.png',
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
@@ -14261,13 +14263,13 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: '#',
   className: 'title'
-}, void 0, 'corn'), _jsx('div', {
+}, void 0, 'Rau m\xE1'), _jsx('div', {
   className: 'prices-wrapper'
 }, void 0, _jsx('div', {
   className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
+}, void 0, _jsx('span', {
   className: 'number'
-}, void 0, '35.00')), _jsx('span', {
+}, void 0, '55.000'), _jsx('sup', {}, void 0, '\u0111')), _jsx('span', {
   className: 'unit'
 }, void 0, '/kg')), _jsx('ul', {
   className: 'list-icons'
@@ -14293,7 +14295,7 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
-  src: '/assets/images/products/image-4.png',
+  src: '/assets/images/products/rau4.png',
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
@@ -14304,13 +14306,13 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: '#',
   className: 'title'
-}, void 0, 'Carrots'), _jsx('div', {
+}, void 0, 'M\u1ED3ng t\u01A1i'), _jsx('div', {
   className: 'prices-wrapper'
 }, void 0, _jsx('div', {
   className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
+}, void 0, _jsx('span', {
   className: 'number'
-}, void 0, '34.00')), _jsx('span', {
+}, void 0, '37.000'), _jsx('sup', {}, void 0, '\u0111')), _jsx('span', {
   className: 'unit'
 }, void 0, '/kg')), _jsx('ul', {
   className: 'list-icons'
@@ -14336,7 +14338,7 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
-  src: '/assets/images/products/image-5.png',
+  src: '/assets/images/products/rau5.png',
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
@@ -14347,13 +14349,13 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: '#',
   className: 'title'
-}, void 0, 'pumpkin'), _jsx('div', {
+}, void 0, 'B\xF4ng thi\xEAn l\xFD'), _jsx('div', {
   className: 'prices-wrapper'
 }, void 0, _jsx('div', {
   className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
+}, void 0, _jsx('span', {
   className: 'number'
-}, void 0, '27.00')), _jsx('span', {
+}, void 0, '35.000'), _jsx('sup', {}, void 0, '\u0111')), _jsx('span', {
   className: 'unit'
 }, void 0, '/kg')), _jsx('ul', {
   className: 'list-icons'
@@ -14379,7 +14381,7 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
-  src: '/assets/images/products/image-6.png',
+  src: '/assets/images/products/traicay1.png',
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
@@ -14390,13 +14392,13 @@ var _ref4 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: '#',
   className: 'title'
-}, void 0, 'kohlrabi'), _jsx('div', {
+}, void 0, 'B\u01A1 Booth 7'), _jsx('div', {
   className: 'prices-wrapper'
 }, void 0, _jsx('div', {
   className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
+}, void 0, _jsx('span', {
   className: 'number'
-}, void 0, '31.00')), _jsx('span', {
+}, void 0, '80.000'), _jsx('sup', {}, void 0, '\u0111')), _jsx('span', {
   className: 'unit'
 }, void 0, '/kg')), _jsx('ul', {
   className: 'list-icons'
@@ -14567,6 +14569,191 @@ var _ref5 = _jsx('section', {
 }, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))))));
 
 var _ref6 = _jsx('section', {
+  className: 'our-team padding-top-100 padding-bottom-100'
+}, void 0, _jsx('div', {
+  className: 'container'
+}, void 0, _jsx('div', {
+  className: 'main-titles'
+}, void 0, _jsx('h1', {
+  className: 'title'
+}, void 0, 'meet the family')), _jsx('div', {
+  className: 'main-content'
+}, void 0, _jsx('div', {
+  className: 'grid-block-2'
+}, void 0, _jsx('div', {
+  className: 'grid-item grid-1'
+}, void 0, _jsx('div', {
+  className: 'block-3'
+}, void 0, _jsx('div', {
+  className: 'block-image'
+}, void 0, _jsx('img', {
+  src: '/assets/images/teams/1.jpg',
+  alt: true,
+  className: 'img-full'
+}), _jsx('a', {
+  href: '#',
+  className: 'link'
+})), _jsx('div', {
+  className: 'block-content'
+}, void 0, _jsx('a', {
+  href: 'blog-detail.html',
+  className: 'title'
+}, void 0, 'Nguy\u1EC5n Th\u1ECB B\u1EA3o Ph\u01B0\u01A1ng'), _jsx('div', {
+  className: 'description'
+}, void 0, _jsx('p', {
+  className: 'text'
+}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
+  className: 'list-social'
+}, void 0, _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link facebook'
+}, void 0, _jsx('i', {
+  className: 'fa fa-facebook'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link twitter'
+}, void 0, _jsx('i', {
+  className: 'fa fa-twitter'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link google'
+}, void 0, _jsx('i', {
+  className: 'fa fa-google'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link instagram'
+}, void 0, _jsx('i', {
+  className: 'fa fa-linkedin'
+})))), _jsx('a', {
+  href: '#',
+  className: 'btn btn-maincolor'
+}, void 0, 'view profile')))), _jsx('div', {
+  className: 'grid-item grid-2'
+}, void 0, _jsx('div', {
+  className: 'block-3 style-2'
+}, void 0, _jsx('div', {
+  className: 'block-content'
+}, void 0, _jsx('a', {
+  href: 'blog-detail.html',
+  className: 'title'
+}, void 0, 'Nguy\u1EC5n Th\u1ECB B\u1EA3o Ph\u01B0\u01A1ng'), _jsx('div', {
+  className: 'description'
+}, void 0, _jsx('p', {
+  className: 'text'
+}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
+  className: 'list-social'
+}, void 0, _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link facebook'
+}, void 0, _jsx('i', {
+  className: 'fa fa-facebook'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link twitter'
+}, void 0, _jsx('i', {
+  className: 'fa fa-twitter'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link google'
+}, void 0, _jsx('i', {
+  className: 'fa fa-google'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link instagram'
+}, void 0, _jsx('i', {
+  className: 'fa fa-linkedin'
+})))), _jsx('a', {
+  href: '#',
+  className: 'btn btn-maincolor'
+}, void 0, 'view profile')), _jsx('div', {
+  className: 'block-image'
+}, void 0, _jsx('img', {
+  src: '/assets/images/teams/2.jpg',
+  alt: true,
+  className: 'img-full'
+}), _jsx('a', {
+  href: '#',
+  className: 'link'
+})))), _jsx('div', {
+  className: 'grid-item grid-2'
+}, void 0, _jsx('div', {
+  className: 'block-3 style-2'
+}, void 0, _jsx('div', {
+  className: 'block-image'
+}, void 0, _jsx('img', {
+  src: '/assets/images/teams/3.jpg',
+  alt: true,
+  className: 'img-full'
+}), _jsx('a', {
+  href: '#',
+  className: 'link'
+})), _jsx('div', {
+  className: 'block-content'
+}, void 0, _jsx('a', {
+  href: 'blog-detail.html',
+  className: 'title'
+}, void 0, 'Nguy\u1EC5n Th\u1ECB B\u1EA3o Ph\u01B0\u01A1ng'), _jsx('div', {
+  className: 'description'
+}, void 0, _jsx('p', {
+  className: 'text'
+}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
+  className: 'list-social'
+}, void 0, _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link facebook'
+}, void 0, _jsx('i', {
+  className: 'fa fa-facebook'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link twitter'
+}, void 0, _jsx('i', {
+  className: 'fa fa-twitter'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link google'
+}, void 0, _jsx('i', {
+  className: 'fa fa-google'
+}))), _jsx('li', {}, void 0, _jsx('a', {
+  href: '#',
+  className: 'link instagram'
+}, void 0, _jsx('i', {
+  className: 'fa fa-linkedin'
+})))), _jsx('a', {
+  href: '#',
+  className: 'btn btn-maincolor'
+}, void 0, 'view profile'))))))));
+
+var _ref7 = _jsx('section', {
+  className: 'banner banner-2'
+}, void 0, _jsx('div', {
+  className: 'container'
+}, void 0, _jsx('div', {
+  className: 'row'
+}, void 0, _jsx('div', {
+  className: 'col-lg-8 col-lg-offset-4'
+}, void 0, _jsx('div', {
+  'data-parallax': '{"y": 150}',
+  className: 'banner-text-wrapper'
+}, void 0, _jsx('h2', {
+  className: 'title'
+}, void 0, 'From The ', _jsx('span', {
+  className: 'main-color'
+}, void 0, 'Best Farm'), ' To Your Table'), _jsx('h5', {
+  className: 'subtitle'
+}, void 0, 'summer sale'), _jsx('p', {
+  className: 'description'
+}, void 0, 'start now'), _jsx('div', {
+  className: 'prices'
+}, void 0, _jsx('span', {
+  className: 'text-1'
+}, void 0, '50%'), _jsx('span', {
+  className: 'text-2'
+}, void 0, 'off')), _jsx('a', {
+  href: '#',
+  className: 'btn btn-maincolor'
+}, void 0, 'show now'))))));
+
+var _ref8 = _jsx('section', {
   className: 'blogs padding-top-100 padding-bottom-100'
 }, void 0, _jsx('div', {
   className: 'container'
@@ -14780,7 +14967,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return _jsx('div', {}, void 0, _jsx('div', {
       className: 'main-contents'
-    }, void 0, _ref, _ref2, _ref3, _ref4, _ref5, _ref6));
+    }, void 0, _ref, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8));
   }
 }
 

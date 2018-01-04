@@ -141,12 +141,12 @@ class Home extends React.Component {
                 <div className="gallery-grid">
                   <div className="grid-item tab-2">
                     <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/image-1.png" alt className="img-full" />
+                      <div className="block-image"><img src="/assets/images/products/rau1.png" alt className="img-full" />
                         <a href="blog-detail.html" className="link" />
                       </div>
-                      <div className="block-content"><a href="#" className="title">Green Cabbage</a>
+                      <div className="block-content"><a href="#" className="title">Cải rổ</a>
                         <div className="prices-wrapper">
-                          <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
+                          <div className="prices"><span className="number">45.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                         <ul className="list-icons">
                           <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
                           <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
@@ -157,12 +157,12 @@ class Home extends React.Component {
                   </div>
                   <div className="grid-item tab-2 tab-3 tab-1">
                     <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/image-2.png" alt className="img-full" />
+                      <div className="block-image"><img src="/assets/images/products/rau2.png" alt className="img-full" />
                         <a href="blog-detail.html" className="link" />
                       </div>
-                      <div className="block-content"><a href="#" className="title">Spinach</a>
+                      <div className="block-content"><a href="#" className="title">Bông cải xanh</a>
                         <div className="prices-wrapper">
-                          <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
+                          <div className="prices"><span className="number">65.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                         <ul className="list-icons">
                           <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
                           <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
@@ -173,12 +173,12 @@ class Home extends React.Component {
                   </div>
                   <div className="grid-item tab-2 tab-3">
                     <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/image-3.png" alt className="img-full" />
+                      <div className="block-image"><img src="/assets/images/products/rau3.png" alt className="img-full" />
                         <a href="blog-detail.html" className="link" />
                       </div>
-                      <div className="block-content"><a href="#" className="title">corn</a>
+                      <div className="block-content"><a href="#" className="title">Rau má</a>
                         <div className="prices-wrapper">
-                          <div className="prices"><sup>$</sup><span className="number">35.00</span></div><span className="unit">/kg</span></div>
+                          <div className="prices"><span className="number">55.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                         <ul className="list-icons">
                           <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
                           <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
@@ -189,12 +189,12 @@ class Home extends React.Component {
                   </div>
                   <div className="grid-item tab-1 tab-3 tab-2">
                     <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/image-4.png" alt className="img-full" />
+                      <div className="block-image"><img src="/assets/images/products/rau4.png" alt className="img-full" />
                         <a href="blog-detail.html" className="link" />
                       </div>
-                      <div className="block-content"><a href="#" className="title">Carrots</a>
+                      <div className="block-content"><a href="#" className="title">Mồng tơi</a>
                         <div className="prices-wrapper">
-                          <div className="prices"><sup>$</sup><span className="number">34.00</span></div><span className="unit">/kg</span></div>
+                          <div className="prices"><span className="number">37.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                         <ul className="list-icons">
                           <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
                           <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
@@ -205,12 +205,12 @@ class Home extends React.Component {
                   </div>
                   <div className="grid-item tab-1 tab-2">
                     <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/image-5.png" alt className="img-full" />
+                      <div className="block-image"><img src="/assets/images/products/rau5.png" alt className="img-full" />
                         <a href="blog-detail.html" className="link" />
                       </div>
-                      <div className="block-content"><a href="#" className="title">pumpkin</a>
+                      <div className="block-content"><a href="#" className="title">Bông thiên lý</a>
                         <div className="prices-wrapper">
-                          <div className="prices"><sup>$</sup><span className="number">27.00</span></div><span className="unit">/kg</span></div>
+                          <div className="prices"><span className="number">35.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                         <ul className="list-icons">
                           <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
                           <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
@@ -221,12 +221,12 @@ class Home extends React.Component {
                   </div>
                   <div className="grid-item tab-1 tab-3">
                     <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/image-6.png" alt className="img-full" />
+                      <div className="block-image"><img src="/assets/images/products/traicay1.png" alt className="img-full" />
                         <a href="blog-detail.html" className="link" />
                       </div>
-                      <div className="block-content"><a href="#" className="title">kohlrabi</a>
+                      <div className="block-content"><a href="#" className="title">Bơ Booth 7</a>
                         <div className="prices-wrapper">
-                          <div className="prices"><sup>$</sup><span className="number">31.00</span></div><span className="unit">/kg</span></div>
+                          <div className="prices"><span className="number">80.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                         <ul className="list-icons">
                           <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
                           <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
@@ -376,7 +376,83 @@ class Home extends React.Component {
               </div>
             </div>
           </section>
-
+          {/* our team*/}
+          <section className="our-team padding-top-100 padding-bottom-100">
+            <div className="container">
+              <div className="main-titles">
+                <h1 className="title">meet the family</h1></div>
+              <div className="main-content">
+                <div className="grid-block-2">
+                  <div className="grid-item grid-1">
+                    <div className="block-3">
+                      <div className="block-image"><img src="/assets/images/teams/1.jpg" alt className="img-full" />
+                        <a href="#" className="link" />
+                      </div>
+                      <div className="block-content"><a href="blog-detail.html" className="title">Nguyễn Thị Bảo Phương</a>
+                        <div className="description">
+                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
+                        </div>
+                        <ul className="list-social">
+                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
+                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
+                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
+                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
+                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
+                    </div>
+                  </div>
+                  <div className="grid-item grid-2">
+                    <div className="block-3 style-2">
+                      <div className="block-content"><a href="blog-detail.html" className="title">Nguyễn Thị Bảo Phương</a>
+                        <div className="description">
+                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
+                        </div>
+                        <ul className="list-social">
+                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
+                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
+                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
+                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
+                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
+                      <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
+                        <a href="#" className="link" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid-item grid-2">
+                    <div className="block-3 style-2">
+                      <div className="block-image"><img src="/assets/images/teams/3.jpg" alt className="img-full" />
+                        <a href="#" className="link" />
+                      </div>
+                      <div className="block-content"><a href="blog-detail.html" className="title">Nguyễn Thị Bảo Phương</a>
+                        <div className="description">
+                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
+                        </div>
+                        <ul className="list-social">
+                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
+                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
+                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
+                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
+                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* Banner 2*/}
+          <section className="banner banner-2">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-8 col-lg-offset-4">
+                  <div data-parallax="{&quot;y&quot;: 150}" className="banner-text-wrapper">
+                    <h2 className="title">From The <span className="main-color">Best Farm</span> To Your Table</h2>
+                    <h5 className="subtitle">summer sale</h5>
+                    <p className="description">start now</p>
+                    <div className="prices"><span className="text-1">50%</span><span className="text-2">off</span></div><a href="#" className="btn btn-maincolor">show now</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* Blogs*/}
           <section className="blogs padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
