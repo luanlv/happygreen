@@ -392,8 +392,6 @@ class Home extends React.Component {
                           <a href="blog-detail.html" className="link" />
                         </div>
                         <div className="block-content"><a href={`/p/${firstNews.slug}`} className="title">{firstNews.title}</a>
-                          <div className="author">
-                            <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
                           <div className="description">
                             <p className="text">
                               {firstNews.description}

@@ -15682,44 +15682,35 @@ var _ref13 = _jsx('a', {
   className: 'link'
 });
 
-var _ref14 = _jsx('div', {
-  className: 'author'
-}, void 0, _jsx('p', {
-  className: 'text'
-}, void 0, 'posted by'), _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'Sandara Park'));
-
-var _ref15 = _jsx('span', {
+var _ref14 = _jsx('span', {
   className: 'text'
 }, void 0, 'Chi ti\u1EBFt');
 
-var _ref16 = _jsx('i', {
+var _ref15 = _jsx('i', {
   className: 'icons fa fa-long-arrow-right'
 }, void 0, ' ');
 
-var _ref17 = _jsx('i', {
+var _ref16 = _jsx('i', {
   className: 'icons fa fa-calendar-o'
 }, void 0, ' ');
 
-var _ref18 = _jsx('div', {
+var _ref17 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref19 = _jsx('span', {
+var _ref18 = _jsx('span', {
   className: 'text'
 }, void 0, 'Chi ti\u1EBFt');
 
-var _ref20 = _jsx('i', {
+var _ref19 = _jsx('i', {
   className: 'icons fa fa-long-arrow-right'
 });
 
-var _ref21 = _jsx('div', {
+var _ref20 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref22 = _jsx('div', {
+var _ref21 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -15797,20 +15788,20 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }, void 0, _jsx('a', {
       href: `/p/${firstNews.slug}`,
       className: 'title'
-    }, void 0, firstNews.title), _ref14, _jsx('div', {
+    }, void 0, firstNews.title), _jsx('div', {
       className: 'description'
     }, void 0, _jsx('p', {
       className: 'text'
     }, void 0, firstNews.description)), _jsx('a', {
       href: `/p/${firstNews.slug}`,
       className: 'readmore'
-    }, void 0, _ref15, _ref16), _jsx('div', {
+    }, void 0, _ref14, _ref15), _jsx('div', {
       className: 'block-info'
     }, void 0, _jsx('div', {
       className: 'info-left'
     }, void 0, _jsx('div', {
       className: 'block'
-    }, void 0, _ref17, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref18))))), _jsx('div', {
+    }, void 0, _ref16, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref17))))), _jsx('div', {
       className: 'block-right'
     }, void 0, restNews.map(tintuc => {
       return _jsx('div', {
@@ -15838,8 +15829,8 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, tintuc.description)), _jsx('a', {
         href: `/p/${tintuc.slug}`,
         className: 'readmore'
-      }, void 0, _ref19, _ref20))));
-    })), _ref21), _ref22)))));
+      }, void 0, _ref18, _ref19))));
+    })), _ref20), _ref21)))));
   }
 }
 
@@ -17094,112 +17085,11 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('section', {
-  className: 'banner blog-detail'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
-  className: 'morepage-banner'
-}, void 0, _jsx('h2', {
-  className: 'title'
-}, void 0, 'Many people limit themselves what they think they can do.'))));
+var _ref = _jsx('i', {
+  className: 'icons fa fa-calendar-o'
+}, void 0, ' ');
 
 var _ref2 = _jsx('div', {
-  className: 'page-main padding-top-100 padding-bottom-100'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
-  className: 'row'
-}, void 0, _jsx('div', {
-  className: 'col-md-8 col-xs-12 main-left'
-}, void 0, _jsx('div', {
-  className: 'blog-detail-wrapper'
-}, void 0, _jsx('div', {
-  className: 'content-wrapper'
-}, void 0, _jsx('div', {
-  className: 'title'
-}, void 0, 'Many people limit themselves what they think they can do.'), _jsx('div', {
-  className: 'block-info'
-}, void 0, _jsx('div', {
-  className: 'block'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-calendar-o'
-}, void 0, ' '), _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, 'Aug 18, 2015'))), _jsx('div', {
-  className: 'description'
-}, void 0, _jsx('p', {
-  className: 'text'
-}, void 0, 'Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida .'), _jsx('p', {
-  className: 'text'
-}, void 0, 'Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur.Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta at eget metus. Vestibulum id ligula porta felis euismod semper sed posuere consectetur est at lobortis.'), _jsx('blockquote', {}, void 0, _jsx('div', {
-  className: 'blockquote-title'
-}, void 0, 'Video courses to build new skills from start to finish.'), _jsx('div', {
-  className: 'blockquote-des'
-}, void 0, 'Lorem ipsum dolor sit amet, feugiat delicata liberavisse id cum, no quo maiorum intellegebat, liber regione eu sit. Mea cu case ludus integre. ')), _jsx('p', {
-  className: 'text'
-}, void 0, 'Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed tur.Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue consectetur purus sit amet fermentum aenean lacinia bibendum nulla sed tur.'), _jsx('div', {
-  className: 'block-video'
-}, void 0, _jsx('div', {
-  className: 'video-button-play'
-}, void 0, ' ', _jsx('i', {
-  className: 'icons fa fa-play'
-})), _jsx('div', {
-  className: 'video-button-close'
-}), _jsx('img', {
-  src: '/assets/images/news/video.jpg',
-  alt: true,
-  className: 'img-full'
-}), _jsx('iframe', {
-  src: 'https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0',
-  allowFullScreen: 'allowfullscreen',
-  className: 'video-embed'
-})), _jsx('p', {
-  className: 'text'
-}, void 0, 'Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed tur.Cras mattis consectetur purus sit amet fermentum. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed tur.Cras mattis consectetur purus sit amet fermentum. '), _jsx('ul', {
-  className: 'blog-detail-list'
-}, void 0, _jsx('li', {}, void 0, 'Phasellus tincidunt, quam ac hendrerit molestie.'), _jsx('li', {}, void 0, 'Etiam nulla lectus, dictum ut lobortis a, blandit sed nisi.'), _jsx('li', {}, void 0, 'Integer in purus et lectus accumsan tempor ac nec nulla.'), _jsx('li', {}, void 0, 'Vivamus varius erat justo, in vestibulum ipsum rutrum tristique.')), _jsx('div', {
-  className: 'tags margin-top-50'
-}, void 0, _jsx('div', {
-  className: 'title-tag'
-}, void 0, 'tags :'), _jsx('ul', {
-  className: 'list-tag'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'tag'
-}, void 0, 'Cappucino')), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'tag'
-}, void 0, 'Coffee')), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'tag'
-}, void 0, 'Frappucino')), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'tag'
-}, void 0, 'Hot Chocolate')))))), _jsx('div', {
-  className: 'blog-author media margin-top-50'
-}, void 0, _jsx('div', {
-  className: 'media-left'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'media-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/more-image/avatar-4.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'media-right'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'author'
-}, void 0, 'Valeria'), _jsx('div', {
-  className: 'position'
-}, void 0, 'Author'), _jsx('p', {
-  className: 'des'
-}, void 0, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida tesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. '))))), _jsx('div', {
-  className: 'col-md-4 col-xs-12 sidebar'
-}, void 0, _jsx('div', {
   className: 'col-1'
 }, void 0, _jsx('div', {
   className: 'search-widget widget'
@@ -17216,199 +17106,19 @@ var _ref2 = _jsx('div', {
   className: 'btn submit-btn'
 }, void 0, _jsx('span', {
   className: 'fa fa-search'
-}))))))), _jsx('div', {
+})))))));
+
+var _ref3 = _jsx('div', {
+  className: 'title-widget'
+}, void 0, 'B\xE0i vi\u1EBFt m\u1EDBi');
+
+var _ref4 = _jsx('div', {
+  className: 'title-widget'
+}, void 0, 'Danh m\u1EE5c');
+
+var _ref5 = _jsx('div', {
   className: 'col-2'
 }, void 0, _jsx('div', {
-  className: 'recent-post-widget widget'
-}, void 0, _jsx('div', {
-  className: 'title-widget'
-}, void 0, 'recent post'), _jsx('div', {
-  className: 'content-widget'
-}, void 0, _jsx('div', {
-  className: 'recent-post-list'
-}, void 0, _jsx('div', {
-  className: 'single-recent-post-widget'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'thumb img-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/thumbnail-1.jpg',
-  alt: true
-})), _jsx('div', {
-  className: 'post-info'
-}, void 0, _jsx('div', {
-  className: 'meta-info'
-}, void 0, _jsx('span', {}, void 0, 'Aug 18, 2016'), _jsx('span', {
-  className: 'sep'
-}, void 0, '|'), _jsx('span', {
-  className: 'fa-custom view-count'
-}, void 0, '56'), _jsx('span', {
-  className: 'fa-custom comment-count'
-}, void 0, '239')), _jsx('div', {
-  className: 'description'
-}, void 0, 'Donec ullamcorper nulla non metus nisi auctor fringilla they can do.'))), _jsx('div', {
-  className: 'single-recent-post-widget'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'thumb img-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/thumbnail-2.jpg',
-  alt: true
-})), _jsx('div', {
-  className: 'post-info'
-}, void 0, _jsx('div', {
-  className: 'meta-info'
-}, void 0, _jsx('span', {}, void 0, 'Aug 18, 2016'), _jsx('span', {
-  className: 'sep'
-}, void 0, '|'), _jsx('span', {
-  className: 'fa-custom view-count'
-}, void 0, '56'), _jsx('span', {
-  className: 'fa-custom comment-count'
-}, void 0, '239')), _jsx('div', {
-  className: 'description'
-}, void 0, 'Donec ullamcorper nulla non metus nisi auctor fringilla they can do.'))), _jsx('div', {
-  className: 'single-recent-post-widget'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'thumb img-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/thumbnail-3.jpg',
-  alt: true
-})), _jsx('div', {
-  className: 'post-info'
-}, void 0, _jsx('div', {
-  className: 'meta-info'
-}, void 0, _jsx('span', {}, void 0, 'Aug 18, 2016'), _jsx('span', {
-  className: 'sep'
-}, void 0, '|'), _jsx('span', {
-  className: 'fa-custom view-count'
-}, void 0, '56'), _jsx('span', {
-  className: 'fa-custom comment-count'
-}, void 0, '239')), _jsx('div', {
-  className: 'description'
-}, void 0, 'Donec ullamcorper nulla non metus nisi auctor fringilla they can do.'))), _jsx('div', {
-  className: 'single-recent-post-widget'
-}, void 0, _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'thumb img-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/thumbnail-4.jpg',
-  alt: true
-})), _jsx('div', {
-  className: 'post-info'
-}, void 0, _jsx('div', {
-  className: 'meta-info'
-}, void 0, _jsx('span', {}, void 0, 'Aug 18, 2016'), _jsx('span', {
-  className: 'sep'
-}, void 0, '|'), _jsx('span', {
-  className: 'fa-custom view-count'
-}, void 0, '56'), _jsx('span', {
-  className: 'fa-custom comment-count'
-}, void 0, '239')), _jsx('div', {
-  className: 'description'
-}, void 0, 'Donec ullamcorper nulla non metus nisi auctor fringilla they can do.')))))), _jsx('div', {
-  className: 'categories-widget widget'
-}, void 0, _jsx('div', {
-  className: 'title-widget'
-}, void 0, 'categories'), _jsx('div', {
-  className: 'content-widget'
-}, void 0, _jsx('ul', {
-  className: 'widget-list'
-}, void 0, _jsx('li', {
-  className: 'single-widget-item'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('span', {
-  className: 'fa-custom category'
-}, void 0, 'all'), _jsx('span', {
-  className: 'count'
-}, void 0, '27'))), _jsx('li', {
-  className: 'single-widget-item'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('span', {
-  className: 'fa-custom category'
-}, void 0, 'Vagetables'), _jsx('span', {
-  className: 'count'
-}, void 0, '75'))), _jsx('li', {
-  className: 'single-widget-item'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('span', {
-  className: 'fa-custom category'
-}, void 0, 'Juices'), _jsx('span', {
-  className: 'count'
-}, void 0, '35'))), _jsx('li', {
-  className: 'single-widget-item'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('span', {
-  className: 'fa-custom category'
-}, void 0, 'Dried Products'), _jsx('span', {
-  className: 'count'
-}, void 0, '34'))), _jsx('li', {
-  className: 'single-widget-item'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('span', {
-  className: 'fa-custom category'
-}, void 0, 'Other'), _jsx('span', {
-  className: 'count'
-}, void 0, '65'))))))), _jsx('div', {
-  className: 'col-2'
-}, void 0, _jsx('div', {
-  className: 'tags-widget widget'
-}, void 0, _jsx('div', {
-  className: 'title-widget'
-}, void 0, 'tags'), _jsx('div', {
-  className: 'content-widget'
-}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'products'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'vegetable'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'tomato'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'radish'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'explore'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'sprouted soya'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'pumpkin'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'polygonum'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'sargasso'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'potato'), _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'tag'
-}, void 0, 'shallot'))), _jsx('div', {
-  className: 'archives-widget widget'
-}, void 0, _jsx('div', {
-  className: 'title-widget'
-}, void 0, 'archives'), _jsx('div', {
-  className: 'content-widget'
-}, void 0, _jsx('div', {
-  className: 'archive-datepicker'
-}))), _jsx('div', {
   className: 'gallery-widget widget'
 }, void 0, _jsx('div', {
   className: 'title-widget'
@@ -17417,7 +17127,7 @@ var _ref2 = _jsx('div', {
 }, void 0, _jsx('ul', {
   className: 'list-unstyled list-inline'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-5.jpg',
+  href: '/assets/images/news/image-5.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17425,7 +17135,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 1',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-2.jpg',
+  href: '/assets/images/news/image-2.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17433,7 +17143,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 2',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-7.jpg',
+  href: '/assets/images/news/image-7.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17441,7 +17151,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 3',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-8.jpg',
+  href: '/assets/images/news/image-8.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17449,7 +17159,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 4',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-6.jpg',
+  href: '/assets/images/news/image-6.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17457,7 +17167,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 5',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-9.jpg',
+  href: '/assets/images/news/image-9.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17465,7 +17175,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 6',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-4.jpg',
+  href: '/assets/images/news/image-4.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17473,7 +17183,7 @@ var _ref2 = _jsx('div', {
   alt: 'gallery image 7',
   className: 'img-responsive'
 }))), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'assets/images/news/image-11.jpg',
+  href: '/assets/images/news/image-11.jpg',
   'data-fancybox-group': 'gallery',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
@@ -17489,27 +17199,9 @@ var _ref2 = _jsx('div', {
 }, void 0, _jsx('ul', {
   className: 'list-unstyled list-inline'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
+  href: 'https://fb.com/happygreen.vn',
   className: 'social-icon fa fa-facebook'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-twitter'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-pinterest-p'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-google'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-rss'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-linkedin'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-dribbble'
-}))))))))));
+}))))));
 
 function NewsDetail(props) {
 
@@ -17519,7 +17211,82 @@ function NewsDetail(props) {
 
   return _jsx('div', {}, void 0, _jsx('div', {
     className: 'main-contents'
-  }, void 0, _ref, _ref2));
+  }, void 0, _jsx('section', {
+    className: 'banner blog-detail'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _jsx('div', {
+    className: 'morepage-banner'
+  }, void 0, _jsx('h2', {
+    className: 'title'
+  }, void 0, news.title)))), _jsx('div', {
+    className: 'page-main padding-top-100 padding-bottom-100'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _jsx('div', {
+    className: 'row'
+  }, void 0, _jsx('div', {
+    className: 'col-md-8 col-xs-12 main-left'
+  }, void 0, _jsx('div', {
+    className: 'blog-detail-wrapper'
+  }, void 0, _jsx('div', {
+    className: 'content-wrapper'
+  }, void 0, _jsx('div', {
+    className: 'title'
+  }, void 0, news.title), _jsx('div', {
+    className: 'block-info'
+  }, void 0, _jsx('div', {
+    className: 'block'
+  }, void 0, _ref, _jsx('a', {
+    href: '#',
+    className: 'link'
+  }, void 0, __WEBPACK_IMPORTED_MODULE_3_moment___default()(news.created_at).format('DD/MM/YYYY')))), _jsx('div', {
+    className: 'description',
+    dangerouslySetInnerHTML: { __html: news.body }
+  }, void 0)))), _jsx('div', {
+    className: 'col-md-4 col-xs-12 sidebar'
+  }, void 0, _ref2, _jsx('div', {
+    className: 'col-2'
+  }, void 0, _jsx('div', {
+    className: 'recent-post-widget widget'
+  }, void 0, _ref3, _jsx('div', {
+    className: 'content-widget'
+  }, void 0, _jsx('div', {
+    className: 'recent-post-list'
+  }, void 0, recentNews.map(tintuc => {
+    return _jsx('div', {
+      className: 'single-recent-post-widget'
+    }, void 0, _jsx('a', {
+      href: `/p/${tintuc.slug}`,
+      className: 'thumb img-wrapper'
+    }, void 0, _jsx('img', {
+      src: tintuc.coverUrl,
+      alt: ''
+    })), _jsx('div', {
+      className: 'post-info'
+    }, void 0, _jsx('div', {
+      className: 'meta-info'
+    }, void 0, _jsx('span', {}, void 0, __WEBPACK_IMPORTED_MODULE_3_moment___default()(tintuc.created_at).format('DD/MM/YYYY'))), _jsx('a', {
+      href: `/p/${tintuc.slug}`
+    }, void 0, _jsx('div', {
+      className: 'description'
+    }, void 0, tintuc.title))));
+  })))), _jsx('div', {
+    className: 'categories-widget widget'
+  }, void 0, _ref4, _jsx('div', {
+    className: 'content-widget'
+  }, void 0, _jsx('ul', {
+    className: 'widget-list'
+  }, void 0, categories.map(danhmuc => {
+    return _jsx('li', {
+      className: 'single-widget-item'
+    }, void 0, _jsx('a', {
+      href: `/danh-muc/${danhmuc.slug}`,
+      className: 'link'
+    }, void 0, _jsx('span', {
+      className: 'fa-custom category'
+    }, void 0, danhmuc.title)));
+  }))))), _ref5))))));
 }
 
 function findCategoryBySlug(slug, categories) {
@@ -17641,14 +17408,14 @@ const title = 'Chi tiết tin tức';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
       // let information = 'information{id, services, common}'
-      // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
-      // let categories = 'categories:getCategories{title, slug, created_at}'
-      // let news = 'news:getOnePost(slug: "'+ params.slug +'"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}'
+      let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}';
+      let categories = 'categories:getCategories{title, slug, created_at}';
+      let news = 'news:getOnePost(slug: "' + params.slug + '"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}';
 
       let seo = {};
       const resp = yield fetch('/graphql', {
         body: JSON.stringify({
-          query: '{' + seoGraphql + '}'
+          query: '{' + seoGraphql + recentNews + news + categories + '}'
         })
       });
       const { data } = yield resp.json();

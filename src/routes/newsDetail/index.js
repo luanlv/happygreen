@@ -22,14 +22,14 @@ export default {
     store.dispatch(showLoading())
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
     // let information = 'information{id, services, common}'
-    // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
-    // let categories = 'categories:getCategories{title, slug, created_at}'
-    // let news = 'news:getOnePost(slug: "'+ params.slug +'"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}'
+    let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
+    let categories = 'categories:getCategories{title, slug, created_at}'
+    let news = 'news:getOnePost(slug: "'+ params.slug +'"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}'
 
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + '}',
+        query: '{' + seoGraphql + recentNews + news + categories + '}',
       }),
     });
     const { data } = await resp.json();

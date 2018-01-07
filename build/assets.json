@@ -12,7 +12,7 @@
     "js": "/assets/sanPham.b26092d0.chunk.js"
   },
   "newsDetail": {
-    "js": "/assets/newsDetail.5e07bb60.chunk.js"
+    "js": "/assets/newsDetail.64c6a23d.chunk.js"
   },
   "about": {
     "js": "/assets/about.8a6d2941.chunk.js"
@@ -21,9 +21,9 @@
     "js": "/assets/news.732ce4cd.chunk.js"
   },
   "client": {
-    "js": "/assets/client.eb4289ed.js"
+    "js": "/assets/client.6c577f73.js"
   },
   "vendor": {
-    "js": "/assets/vendor.a50e8326.js"
+    "js": "/assets/vendor.cc8a8405.js"
   }
 }

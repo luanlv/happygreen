@@ -96,6 +96,7 @@ class News extends React.Component {
                       </div>
                     </div>
                   </div>
+
                   <div className="categories-widget widget">
                     <div className="title-widget">Danh mục</div>
                     <div className="content-widget">
@@ -108,6 +109,7 @@ class News extends React.Component {
                       </ul>
                     </div>
                   </div>
+
                 </div>
                 <div className="col-2">
 
