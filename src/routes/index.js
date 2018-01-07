@@ -18,6 +18,7 @@ export default {
   children: [
     require('./home').default,
     require('./shop').default,
+    require('./shopCategory').default,
     // require('./allService').default,
     // require('./service').default,
     // require('./tracking').default,

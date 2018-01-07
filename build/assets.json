@@ -1,29 +1,29 @@
 {
   "admin": {
-    "js": "/assets/admin.245716df.chunk.js"
-  },
-  "contact": {
-    "js": "/assets/contact.b3898def.chunk.js"
+    "js": "/assets/admin.8afed7ed.chunk.js"
   },
   "shop": {
-    "js": "/assets/shop.ec4118fe.chunk.js"
+    "js": "/assets/shop.b41ff084.chunk.js"
+  },
+  "contact": {
+    "js": "/assets/contact.1b4a6a34.chunk.js"
   },
   "sanpham": {
-    "js": "/assets/sanpham.042e1209.chunk.js"
+    "js": "/assets/sanpham.79a260f0.chunk.js"
   },
   "newsDetail": {
-    "js": "/assets/newsDetail.64c6a23d.chunk.js"
+    "js": "/assets/newsDetail.b3376707.chunk.js"
   },
   "about": {
-    "js": "/assets/about.8a6d2941.chunk.js"
+    "js": "/assets/about.ab72b922.chunk.js"
   },
   "news": {
-    "js": "/assets/news.732ce4cd.chunk.js"
+    "js": "/assets/news.de9a2b13.chunk.js"
   },
   "client": {
-    "js": "/assets/client.7431141e.js"
+    "js": "/assets/client.cd88ab06.js"
   },
   "vendor": {
-    "js": "/assets/vendor.a9723f9e.js"
+    "js": "/assets/vendor.d6db4f6e.js"
   }
 }

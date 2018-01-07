@@ -8,6 +8,14 @@ class About extends React.Component {
   render() {
     let recentNews = this.props.data.recentNews.value
     let allProducts = this.props.data.allProducts.value
+    let productCategories = this.props.data.productCategories.value
+
+    let category = undefined
+
+    if(this.props.slug){
+      category = productCategories.find(p => p.slug === this.props.slug)
+    }
+
     return (
       <div>
         <div className="main-contents">
@@ -15,7 +23,8 @@ class About extends React.Component {
           <section className="banner shop">
             <div className="container">
               <div className="morepage-banner">
-                <h2 className="title">Happy Green Market</h2>
+                {!this.props.slug && <h2 className="title">Happy Green Market</h2>}
+                {this.props.slug && <h2 className="title">{category.title}</h2>}
               </div>
             </div>
           </section>
@@ -56,24 +65,22 @@ class About extends React.Component {
                 </div>
                 <div className="col-md-4 col-xs-12 sidebar">
                   <div className="col-1">
-                    <div className="search-widget widget">
-                      <form>
-                        <div className="input-group search-wrapper"><input type="text" placeholder="Search..." className="search-input form-control" /><span className="input-group-btn"><button type="submit" className="btn submit-btn"><span className="fa fa-search" /></button>
-                  </span>
-                        </div>
-                      </form>
-                    </div>
                   </div>
                   <div className="col-2">
                     <div className="categories-widget widget">
-                      <div className="title-widget">categories</div>
+                      <div className="title-widget">Danh mục</div>
                       <div className="content-widget">
                         <ul className="widget-list">
-                          <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">all</span><span className="count">27</span></a></li>
-                          <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Vagetables</span><span className="count">75</span></a></li>
-                          <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Juices</span><span className="count">35</span></a></li>
-                          <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Dried Products</span><span className="count">34</span></a></li>
-                          <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Other</span><span className="count">65</span></a></li>
+                          <li className="single-widget-item" >
+                            <a href="/cua-hang" className="link"><span className="fa-custom category">Tất cả sản phẩm</span></a>
+                          </li>
+                          {productCategories.map((c, idx) => {
+                            return (
+                              <li className="single-widget-item" key={idx} >
+                                <a href={`/cua-hang/${c.slug}`} className="link"><span className="fa-custom category">{c.title}</span></a>
+                              </li>
+                            )
+                          })}
                         </ul>
                       </div>
                     </div>
