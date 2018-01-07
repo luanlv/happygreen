@@ -29,7 +29,7 @@ const { seo, allSeo } = seoQueries;
 const { getPosts, getOnePost, getAllPosts, getPostRelative, get5RecentPost, getAllPostsByCategory} = postQueries;
 const { getCategories, getOneCategory } = categoryQueries;
 const { information } = informationQueries;
-const { getOneProduct, getProducts, getAllProduct, get5RecentProduct} = productQueries;
+const { getOneProduct, getProducts, getAllProduct, get5RecentProduct, getProductRelative} = productQueries;
 const { getOneProductCategory, getProductCategories } = productCategoryQueries;
 
 const schema = new Schema({
@@ -55,7 +55,8 @@ const schema = new Schema({
       getAllProduct,
       getOneProductCategory,
       getProductCategories,
-      get5RecentProduct
+      get5RecentProduct,
+      getProductRelative
     },
   }),
 });

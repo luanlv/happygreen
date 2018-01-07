@@ -24,12 +24,15 @@ export default {
 
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
     let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
+
+    let productCategories = 'productCategories:getProductCategories{title, slug, created_at}'
+    let products = 'allProducts:getAllProduct{ coverUrl, category, slug, title, body, price, view, created_at}'
     // let information = 'information{id, about, services, common}'
 
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + recentNews + '}',
+        query: '{' + seoGraphql + recentNews + products + productCategories + '}',
       }),
     });
     const { data } = await resp.json();

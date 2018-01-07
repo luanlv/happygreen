@@ -151,7 +151,7 @@ module.exports.newPost = (root, {category, slug, title, coverUrl, description, b
 
 };
 
-module.exports.getPostRelative = (root, {}) => {
+module.exports.getProductRelative = (root, {}) => {
   return new Promise((resolve, reject) => {
     model.aggregate([
       { "$sample" : {

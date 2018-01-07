@@ -14,9 +14,21 @@ export default function data(state = {}, action) {
           ...state.news,
           value: data.news || state.news.value
         },
+        product: {
+          ...state.product,
+          value: data.product || state.product.value
+        },
         allNews: {
           ...state.allNews,
           value: data.allNews || state.allNews.value
+        },
+        allProducts: {
+          ...state.allProducts,
+          value: data.allProducts || state.allProducts.value
+        },
+        productRelative: {
+          ...state.productRelative,
+          value: data.productRelative || state.productRelative.value
         },
         allNewsByCategory: {
           ...state.allNewsByCategory,

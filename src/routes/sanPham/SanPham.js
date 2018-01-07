@@ -5,8 +5,9 @@ import {Title, BreadCrumb} from './components'
 class NewsDetail extends React.Component {
   render() {
 
-    const news = this.props.data.news.value
-    const recentNews = this.props.data.recentNews.value
+    const product = this.props.data.product.value
+    // const recentNews = this.props.data.recentNews.value
+    const productRelative = this.props.data.productRelative.value
     const categories = this.props.data.categories.value
 
     return (
@@ -16,7 +17,7 @@ class NewsDetail extends React.Component {
           <section className="banner shop-detail">
             <div className="container">
               <div className="morepage-banner">
-                <h2 className="title">Shop detail</h2>
+                <h2 className="title">{product.title}</h2>
               </div>
             </div>
           </section>
@@ -27,73 +28,21 @@ class NewsDetail extends React.Component {
                   <div className="shop-img-wrapper">
                     <div className="slider-for">
                       <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-01.jpg" alt className="img-responsive" /></div>
+                        <div className="image-wrapper"><img src={product.coverUrl} alt className="img-responsive" /></div>
                       </div>
                     </div>
-                    <div className="slider-nav">
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-nav-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-nav-02.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-nav-03.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-nav-04.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-nav-01.jpg" alt className="img-responsive" /></div>
-                      </div>
-                      <div className="item">
-                        <div className="image-wrapper"><img src="/assets/images/products/shopdetail-nav-02.jpg" alt className="img-responsive" /></div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
                 <div className="col-md-6 col-xs-12">
                   <div className="info-detail">
                     <div className="title">
-                      <h1>Broccoli</h1></div>
-                    <fieldset className="rating"><input id="star5" type="radio" name="rating" defaultValue={5} /><label htmlFor="star5" title="5 stars" className="full" /><input id="star4half" type="radio" name="rating" defaultValue="4 and a half" /><label htmlFor="star4half" title="4.5 stars" className="half" /><input id="star4" type="radio" name="rating" defaultValue={4} /><label htmlFor="star4" title="4 stars" className="full" /><input id="star3half" type="radio" name="rating" defaultValue="3 and a half" defaultChecked="checked" />
-                      <label htmlFor="star3half" title="3.5 stars" className="half" /><input id="star3" type="radio" name="rating" defaultValue={3} /><label htmlFor="star3" title="3 stars" className="full" /><input id="star2half" type="radio" name="rating" defaultValue="2 and a half" /><label htmlFor="star2half" title="2.5 stars" className="half" /><input id="star2" type="radio" name="rating" defaultValue={2} /><label htmlFor="star2" title="2 stars" className="full" /><input id="star1half" type="radio" name="rating" defaultValue="1 and a half" />
-                      <label htmlFor="star1half" title="1.5 stars" className="half" /><input id="star1" type="radio" name="rating" defaultValue={1} /><label htmlFor="star1" title="1 star" className="full" /><input id="starhalf" type="radio" name="rating" defaultValue="half" /><label htmlFor="starhalf" title="0.5 stars" className="half" /></fieldset>
+                      <h1>{product.title}</h1></div>
                     <div className="prices-wrapper">
-                      <div className="prices prices-discount"><sup>$</sup><span className="number">70</span></div>
-                      <div className="prices"><sup>$</sup><span className="number">46</span></div><span className="unit">/kg</span></div>
-                    <div className="discription">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ultricies eli metus. Donec ac ex porta libero venenatis sodales. Sed varius ultricies eli metus. Donec ac ex porta libero venenatis sodales
-                        lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <ul className="list-info">
-                      <li>Categories:<span className="categories">Vegetable</span></li>
-                      <li>Tag:<span className="tag"><a href="#">Vegetable</a><a href="#">Organic</a><a href="#">Healthy</a></span></li>
-                      <li>Expire Date:<span className="expire-day">20-07-2017</span></li>
-                      <li className="list-social">Share:
-                        <ul>
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                      <div className="prices"><span className="number">{product.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
+                    <div className="discription"
+                      dangerouslySetInnerHTML={{__html: product.body }}
+                    />
                     <div className="shopping-cart">
                       <div className="quantity">
                         {/*input.minus.button.is-form(type='button', value='-')*/}
@@ -102,8 +51,7 @@ class NewsDetail extends React.Component {
                         {/*input.plus.button.is-form(type='button', value='+')*/}
                       </div>
                     </div>
-                    <div className="btn-addtocart"><button type="submit" className="btn btn-maincolor">ADD TO CART</button></div>
-                    <div className="btn-addtocwishlish"><button type="submit" className="btn btn-maincolor">ADD TO WISHLISH</button></div>
+                    <div className="btn-addtocart"><button type="submit" className="btn btn-maincolor">Thêm vào rỏ hàng</button></div>
                   </div>
                 </div>
               </div>
@@ -111,105 +59,27 @@ class NewsDetail extends React.Component {
                 <div className="col-xs-12">
                   <div className="our-product">
                     <div className="main-titles">
-                      <h1 className="title">You may also like</h1></div>
+                      <h1 className="title">Các sản phẩm khác</h1></div>
                     <div className="main-content">
                       <div className="our-product-list">
-                        <div className="item">
-                          <div className="block-4">
-                            <div className="block-image"><img src="/assets/images/products/image-1.png" alt className="img-full" />
-                              <a href="blog-detail.html" className="link" />
+                        {productRelative.map((p, idx) => {
+                          return (
+                            <div className="item" key={idx}>
+                              <div className="block-4">
+                                <div className="block-image"><img src={p.coverUrl} alt className="img-full" />
+                                  <a href={`/sp/${p.slug}`} className="link" />
+                                </div>
+                                <div className="block-content"><a href={`/sp/${p.slug}`}  className="title">{p.title}</a>
+                                  <div className="prices-wrapper">
+                                    <div className="prices"><span className="number">{p.price.toLocaleString()}</span><sup>$</sup></div><span className="unit">/kg</span></div>
+                                  <ul className="list-icons">
+                                    <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
-                            <div className="block-content"><a href="#" className="title">Green Cabbage</a>
-                              <div className="prices-wrapper">
-                                <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
-                              <ul className="list-icons">
-                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="item">
-                          <div className="block-4">
-                            <div className="block-image"><img src="/assets/images/products/image-2.png" alt className="img-full" />
-                              <a href="blog-detail.html" className="link" />
-                            </div>
-                            <div className="block-content"><a href="#" className="title">Spinach</a>
-                              <div className="prices-wrapper">
-                                <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
-                              <ul className="list-icons">
-                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="item">
-                          <div className="block-4">
-                            <div className="block-image"><img src="/assets/images/products/image-3.png" alt className="img-full" />
-                              <a href="blog-detail.html" className="link" />
-                            </div>
-                            <div className="block-content"><a href="#" className="title">corn</a>
-                              <div className="prices-wrapper">
-                                <div className="prices"><sup>$</sup><span className="number">35.00</span></div><span className="unit">/kg</span></div>
-                              <ul className="list-icons">
-                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="item">
-                          <div className="block-4">
-                            <div className="block-image"><img src="/assets/images/products/image-13.png" alt className="img-full" />
-                              <a href="blog-detail.html" className="link" />
-                            </div>
-                            <div className="block-content"><a href="#" className="title">tomato</a>
-                              <div className="prices-wrapper">
-                                <div className="prices"><sup>$</sup><span className="number">34.00</span></div><span className="unit">/kg</span></div>
-                              <ul className="list-icons">
-                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="item">
-                          <div className="block-4">
-                            <div className="block-image"><img src="/assets/images/products/image-4.png" alt className="img-full" />
-                              <a href="blog-detail.html" className="link" />
-                            </div>
-                            <div className="block-content"><a href="#" className="title">Carrots</a>
-                              <div className="prices-wrapper">
-                                <div className="prices"><sup>$</sup><span className="number">34.00</span></div><span className="unit">/kg</span></div>
-                              <ul className="list-icons">
-                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-share-alt"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="item">
-                          <div className="block-4">
-                            <div className="block-image"><img src="/assets/images/products/image-5.png" alt className="img-full" />
-                              <a href="blog-detail.html" className="link" />
-                            </div>
-                            <div className="block-content"><a href="#" className="title">pumpkin</a>
-                              <div className="prices-wrapper">
-                                <div className="prices"><sup>$</sup><span className="number">27.00</span></div><span className="unit">/kg</span></div>
-                              <ul className="list-icons">
-                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                                <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                          )
+                        })}
                       </div>
                     </div>
                   </div>

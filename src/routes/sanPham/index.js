@@ -24,12 +24,13 @@ export default {
     // let information = 'information{id, services, common}'
     // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
     // let categories = 'categories:getCategories{title, slug, created_at}'
-    // let news = 'news:getOnePost(slug: "'+ params.slug +'"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}'
+    let product = 'product:getOneProduct(slug: "'+ params.slug +'"){ coverUrl, category, slug, title, body, price, view, created_at}'
+    let productRelative = 'productRelative:getProductRelative{ coverUrl, category, slug, title, body, price, view, created_at}'
 
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + '}',
+        query: '{' + seoGraphql + product + productRelative + '}',
       }),
     });
     const { data } = await resp.json();
@@ -37,7 +38,7 @@ export default {
     if (!data ) throw new Error('Failed to load data.');
     store.dispatch(setData(data))
     store.dispatch(hideLoading())
-    return require.ensure([], require => require('./SanPham').default, 'sanPham')
+    return require.ensure([], require => require('./SanPham').default, 'sanpham')
       .then(NewsDetail => ({
         title,
         chunk: 'sanpham',

@@ -158,7 +158,19 @@ app.get('*', async (req, res, next) => {
           needUpdate: true,
           value: {}
         },
+        product: {
+          needUpdate: true,
+          value: {}
+        },
         allNews: {
+          needUpdate: true,
+          value: []
+        },
+        allProducts: {
+          needUpdate: true,
+          value: []
+        },
+        productRelative: {
           needUpdate: true,
           value: []
         },

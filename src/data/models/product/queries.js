@@ -69,8 +69,8 @@ export default {
     resolve: model.get5RecentProduct
   },
 
-  getPostRelative: {
+  getProductRelative: {
     type: new GraphQLList(type),
-    resolve: model.getPostRelative,
+    resolve: model.getProductRelative,
   }
 };

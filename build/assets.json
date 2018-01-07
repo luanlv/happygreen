@@ -6,10 +6,10 @@
     "js": "/assets/contact.b3898def.chunk.js"
   },
   "shop": {
-    "js": "/assets/shop.d6612208.chunk.js"
+    "js": "/assets/shop.ec4118fe.chunk.js"
   },
-  "sanPham": {
-    "js": "/assets/sanPham.b26092d0.chunk.js"
+  "sanpham": {
+    "js": "/assets/sanpham.042e1209.chunk.js"
   },
   "newsDetail": {
     "js": "/assets/newsDetail.64c6a23d.chunk.js"
@@ -21,9 +21,9 @@
     "js": "/assets/news.732ce4cd.chunk.js"
   },
   "client": {
-    "js": "/assets/client.40b093d9.js"
+    "js": "/assets/client.96999c79.js"
   },
   "vendor": {
-    "js": "/assets/vendor.8b656b7a.js"
+    "js": "/assets/vendor.a0e499be.js"
   }
 }

@@ -768,7 +768,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   'data-fancybox-group': 'gallery2',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
-  src: 'assets/images/products/thumbnail-1.jpg',
+  src: '/assets/images/products/thumbnail-1.jpg',
   alt: 'gallery image 1',
   className: 'img-full'
 }))), _jsx('li', {}, void 0, _jsx('a', {
@@ -776,7 +776,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   'data-fancybox-group': 'gallery2',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
-  src: 'assets/images/products/thumbnail-2.jpg',
+  src: '/assets/images/products/thumbnail-2.jpg',
   alt: 'gallery image 2',
   className: 'img-full'
 }))), _jsx('li', {}, void 0, _jsx('a', {
@@ -784,7 +784,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   'data-fancybox-group': 'gallery2',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
-  src: 'assets/images/products/thumbnail-3.jpg',
+  src: '/assets/images/products/thumbnail-3.jpg',
   alt: 'gallery image 3',
   className: 'img-full'
 }))), _jsx('li', {}, void 0, _jsx('a', {
@@ -792,7 +792,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   'data-fancybox-group': 'gallery2',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
-  src: 'assets/images/news/image-2.jpg',
+  src: '/assets/images/news/image-2.jpg',
   alt: 'gallery image 4',
   className: 'img-full'
 }))), _jsx('li', {}, void 0, _jsx('a', {
@@ -800,7 +800,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   'data-fancybox-group': 'gallery2',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
-  src: 'assets/images/news/image-3.jpg',
+  src: '/assets/images/news/image-3.jpg',
   alt: 'gallery image 5',
   className: 'img-full'
 }))), _jsx('li', {}, void 0, _jsx('a', {
@@ -808,7 +808,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   'data-fancybox-group': 'gallery2',
   className: 'thumb fancybox'
 }, void 0, _jsx('img', {
-  src: 'assets/images/news/image-4.jpg',
+  src: '/assets/images/news/image-4.jpg',
   alt: 'gallery image 6',
   className: 'img-full'
 })))))))))))), _jsx('div', {
@@ -2070,7 +2070,19 @@ app.get('*', (() => {
             needUpdate: true,
             value: {}
           },
+          product: {
+            needUpdate: true,
+            value: {}
+          },
           allNews: {
+            needUpdate: true,
+            value: []
+          },
+          allProducts: {
+            needUpdate: true,
+            value: []
+          },
+          productRelative: {
             needUpdate: true,
             value: []
           },
@@ -4385,9 +4397,9 @@ module.exports.getPostRelative = (root, {}) => {
     resolve: __WEBPACK_IMPORTED_MODULE_3__schema___default.a.get5RecentProduct
   },
 
-  getPostRelative: {
+  getProductRelative: {
     type: new __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLList"](__WEBPACK_IMPORTED_MODULE_2__type__["a" /* default */]),
-    resolve: __WEBPACK_IMPORTED_MODULE_3__schema___default.a.getPostRelative
+    resolve: __WEBPACK_IMPORTED_MODULE_3__schema___default.a.getProductRelative
   }
 });
 
@@ -4536,7 +4548,7 @@ module.exports.newPost = (root, { category, slug, title, coverUrl, description, 
   });
 };
 
-module.exports.getPostRelative = (root, {}) => {
+module.exports.getProductRelative = (root, {}) => {
   return new Promise((resolve, reject) => {
     model.aggregate([{ "$sample": {
         size: 6
@@ -5099,7 +5111,7 @@ const { seo, allSeo } = __WEBPACK_IMPORTED_MODULE_3__models_seo_queries__["a" /*
 const { getPosts, getOnePost, getAllPosts, getPostRelative, get5RecentPost, getAllPostsByCategory } = __WEBPACK_IMPORTED_MODULE_4__models_post_queries__["a" /* default */];
 const { getCategories, getOneCategory } = __WEBPACK_IMPORTED_MODULE_5__models_category_queries__["a" /* default */];
 const { information } = __WEBPACK_IMPORTED_MODULE_7__models_information_queries__["a" /* default */];
-const { getOneProduct, getProducts, getAllProduct, get5RecentProduct } = __WEBPACK_IMPORTED_MODULE_8__models_product_queries__["a" /* default */];
+const { getOneProduct, getProducts, getAllProduct, get5RecentProduct, getProductRelative } = __WEBPACK_IMPORTED_MODULE_8__models_product_queries__["a" /* default */];
 const { getOneProductCategory, getProductCategories } = __WEBPACK_IMPORTED_MODULE_9__models_productCategory_queries__["a" /* default */];
 
 const schema = new __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLSchema"]({
@@ -5125,7 +5137,8 @@ const schema = new __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLSchema"]({
       getAllProduct,
       getOneProductCategory,
       getProductCategories,
-      get5RecentProduct
+      get5RecentProduct,
+      getProductRelative
     }
   })
 });
@@ -5284,8 +5297,17 @@ function data(state = {}, action) {
         news: _extends({}, state.news, {
           value: data.news || state.news.value
         }),
+        product: _extends({}, state.product, {
+          value: data.product || state.product.value
+        }),
         allNews: _extends({}, state.allNews, {
           value: data.allNews || state.allNews.value
+        }),
+        allProducts: _extends({}, state.allProducts, {
+          value: data.allProducts || state.allProducts.value
+        }),
+        productRelative: _extends({}, state.productRelative, {
+          value: data.productRelative || state.productRelative.value
         }),
         allNewsByCategory: _extends({}, state.allNewsByCategory, {
           value: data.allNewsByCategory || state.allNewsByCategory.value
@@ -17467,284 +17489,19 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('section', {
-  className: 'banner shop-detail'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
-  className: 'morepage-banner'
-}, void 0, _jsx('h2', {
-  className: 'title'
-}, void 0, 'Shop detail'))));
+var _ref = _jsx('sup', {}, void 0, '\u0111');
 
-var _ref2 = _jsx('div', {
-  className: 'col-md-6 col-xs-12'
-}, void 0, _jsx('div', {
-  className: 'shop-img-wrapper'
-}, void 0, _jsx('div', {
-  className: 'slider-for'
-}, void 0, _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-})))), _jsx('div', {
-  className: 'slider-nav'
-}, void 0, _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-nav-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-nav-02.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-nav-03.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-nav-04.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-nav-01.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'image-wrapper'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/shopdetail-nav-02.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))))));
+var _ref2 = _jsx('span', {
+  className: 'unit'
+}, void 0, '/kg');
 
 var _ref3 = _jsx('div', {
-  className: 'title'
-}, void 0, _jsx('h1', {}, void 0, 'Broccoli'));
-
-var _ref4 = _jsx('fieldset', {
-  className: 'rating'
-}, void 0, _jsx('input', {
-  id: 'star5',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: 5
-}), _jsx('label', {
-  htmlFor: 'star5',
-  title: '5 stars',
-  className: 'full'
-}), _jsx('input', {
-  id: 'star4half',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: '4 and a half'
-}), _jsx('label', {
-  htmlFor: 'star4half',
-  title: '4.5 stars',
-  className: 'half'
-}), _jsx('input', {
-  id: 'star4',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: 4
-}), _jsx('label', {
-  htmlFor: 'star4',
-  title: '4 stars',
-  className: 'full'
-}), _jsx('input', {
-  id: 'star3half',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: '3 and a half',
-  defaultChecked: 'checked'
-}), _jsx('label', {
-  htmlFor: 'star3half',
-  title: '3.5 stars',
-  className: 'half'
-}), _jsx('input', {
-  id: 'star3',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: 3
-}), _jsx('label', {
-  htmlFor: 'star3',
-  title: '3 stars',
-  className: 'full'
-}), _jsx('input', {
-  id: 'star2half',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: '2 and a half'
-}), _jsx('label', {
-  htmlFor: 'star2half',
-  title: '2.5 stars',
-  className: 'half'
-}), _jsx('input', {
-  id: 'star2',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: 2
-}), _jsx('label', {
-  htmlFor: 'star2',
-  title: '2 stars',
-  className: 'full'
-}), _jsx('input', {
-  id: 'star1half',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: '1 and a half'
-}), _jsx('label', {
-  htmlFor: 'star1half',
-  title: '1.5 stars',
-  className: 'half'
-}), _jsx('input', {
-  id: 'star1',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: 1
-}), _jsx('label', {
-  htmlFor: 'star1',
-  title: '1 star',
-  className: 'full'
-}), _jsx('input', {
-  id: 'starhalf',
-  type: 'radio',
-  name: 'rating',
-  defaultValue: 'half'
-}), _jsx('label', {
-  htmlFor: 'starhalf',
-  title: '0.5 stars',
-  className: 'half'
-}));
-
-var _ref5 = _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices prices-discount'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '70')), _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '46')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg'));
-
-var _ref6 = _jsx('div', {
-  className: 'discription'
-}, void 0, _jsx('p', {}, void 0, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ultricies eli metus. Donec ac ex porta libero venenatis sodales. Sed varius ultricies eli metus. Donec ac ex porta libero venenatis sodales lorem ipsum dolor sit amet.'));
-
-var _ref7 = _jsx('ul', {
-  className: 'list-info'
-}, void 0, _jsx('li', {}, void 0, 'Categories:', _jsx('span', {
-  className: 'categories'
-}, void 0, 'Vegetable')), _jsx('li', {}, void 0, 'Tag:', _jsx('span', {
-  className: 'tag'
-}, void 0, _jsx('a', {
-  href: '#'
-}, void 0, 'Vegetable'), _jsx('a', {
-  href: '#'
-}, void 0, 'Organic'), _jsx('a', {
-  href: '#'
-}, void 0, 'Healthy'))), _jsx('li', {}, void 0, 'Expire Date:', _jsx('span', {
-  className: 'expire-day'
-}, void 0, '20-07-2017')), _jsx('li', {
-  className: 'list-social'
-}, void 0, 'Share:', _jsx('ul', {}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-}))))));
-
-var _ref8 = _jsx('div', {
   className: 'quantity-button quantity-down'
 }, void 0, _jsx('i', {
   className: 'glyphicon glyphicon-minus'
 }));
 
-var _ref9 = _jsx('input', {
+var _ref4 = _jsx('input', {
   type: 'number',
   step: 1,
   min: 0,
@@ -17753,323 +17510,133 @@ var _ref9 = _jsx('input', {
   className: 'input-text qty text'
 });
 
-var _ref10 = _jsx('div', {
+var _ref5 = _jsx('div', {
   className: 'quantity-button quantity-up'
 }, void 0, _jsx('i', {
   className: 'glyphicon glyphicon-plus'
 }));
 
-var _ref11 = _jsx('div', {
+var _ref6 = _jsx('div', {
   className: 'btn-addtocart'
 }, void 0, _jsx('button', {
   type: 'submit',
   className: 'btn btn-maincolor'
-}, void 0, 'ADD TO CART'));
+}, void 0, 'Th\xEAm v\xE0o r\u1ECF h\xE0ng'));
 
-var _ref12 = _jsx('div', {
-  className: 'btn-addtocwishlish'
-}, void 0, _jsx('button', {
-  type: 'submit',
-  className: 'btn btn-maincolor'
-}, void 0, 'ADD TO WISHLISH'));
-
-var _ref13 = _jsx('div', {
-  className: 'row padding-top-100'
-}, void 0, _jsx('div', {
-  className: 'col-xs-12'
-}, void 0, _jsx('div', {
-  className: 'our-product'
-}, void 0, _jsx('div', {
+var _ref7 = _jsx('div', {
   className: 'main-titles'
 }, void 0, _jsx('h1', {
   className: 'title'
-}, void 0, 'You may also like')), _jsx('div', {
-  className: 'main-content'
-}, void 0, _jsx('div', {
-  className: 'our-product-list'
-}, void 0, _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/image-1.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Green Cabbage'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '20.00')), _jsx('span', {
+}, void 0, 'C\xE1c s\u1EA3n ph\u1EA9m kh\xE1c'));
+
+var _ref8 = _jsx('sup', {}, void 0, '$');
+
+var _ref9 = _jsx('span', {
   className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
+}, void 0, '/kg');
+
+var _ref10 = _jsx('ul', {
   className: 'list-icons'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
   href: '#',
   className: 'link'
 }, void 0, _jsx('i', {
   className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/image-2.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Spinach'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '20.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/image-3.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'corn'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '35.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/image-13.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'tomato'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '34.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/image-4.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Carrots'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '34.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/products/image-5.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'pumpkin'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '27.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))))))));
+}))));
 
 function NewsDetail(props) {
 
-  const news = props.data.news.value;
-  const recentNews = props.data.recentNews.value;
+  const product = props.data.product.value;
+  // const recentNews = this.props.data.recentNews.value
+  const productRelative = props.data.productRelative.value;
   const categories = props.data.categories.value;
 
   return _jsx('div', {}, void 0, _jsx('div', {
     className: 'main-contents'
-  }, void 0, _ref, _jsx('div', {
+  }, void 0, _jsx('section', {
+    className: 'banner shop-detail'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _jsx('div', {
+    className: 'morepage-banner'
+  }, void 0, _jsx('h2', {
+    className: 'title'
+  }, void 0, product.title)))), _jsx('div', {
     className: 'page-shop-detail padding-top-100 padding-bottom-100'
   }, void 0, _jsx('div', {
     className: 'container'
   }, void 0, _jsx('div', {
     className: 'row'
-  }, void 0, _ref2, _jsx('div', {
+  }, void 0, _jsx('div', {
+    className: 'col-md-6 col-xs-12'
+  }, void 0, _jsx('div', {
+    className: 'shop-img-wrapper'
+  }, void 0, _jsx('div', {
+    className: 'slider-for'
+  }, void 0, _jsx('div', {
+    className: 'item'
+  }, void 0, _jsx('div', {
+    className: 'image-wrapper'
+  }, void 0, _jsx('img', {
+    src: product.coverUrl,
+    alt: true,
+    className: 'img-responsive'
+  })))))), _jsx('div', {
     className: 'col-md-6 col-xs-12'
   }, void 0, _jsx('div', {
     className: 'info-detail'
-  }, void 0, _ref3, _ref4, _ref5, _ref6, _ref7, _jsx('div', {
+  }, void 0, _jsx('div', {
+    className: 'title'
+  }, void 0, _jsx('h1', {}, void 0, product.title)), _jsx('div', {
+    className: 'prices-wrapper'
+  }, void 0, _jsx('div', {
+    className: 'prices'
+  }, void 0, _jsx('span', {
+    className: 'number'
+  }, void 0, product.price.toLocaleString()), _ref), _ref2), _jsx('div', {
+    className: 'discription',
+    dangerouslySetInnerHTML: { __html: product.body }
+  }), _jsx('div', {
     className: 'shopping-cart'
   }, void 0, _jsx('div', {
     className: 'quantity'
-  }, void 0, _ref8, _ref9, _ref10)), _ref11, _ref12))), _ref13))));
+  }, void 0, _ref3, _ref4, _ref5)), _ref6))), _jsx('div', {
+    className: 'row padding-top-100'
+  }, void 0, _jsx('div', {
+    className: 'col-xs-12'
+  }, void 0, _jsx('div', {
+    className: 'our-product'
+  }, void 0, _ref7, _jsx('div', {
+    className: 'main-content'
+  }, void 0, _jsx('div', {
+    className: 'our-product-list'
+  }, void 0, productRelative.map((p, idx) => {
+    return _jsx('div', {
+      className: 'item'
+    }, idx, _jsx('div', {
+      className: 'block-4'
+    }, void 0, _jsx('div', {
+      className: 'block-image'
+    }, void 0, _jsx('img', {
+      src: p.coverUrl,
+      alt: true,
+      className: 'img-full'
+    }), _jsx('a', {
+      href: `/sp/${p.slug}`,
+      className: 'link'
+    })), _jsx('div', {
+      className: 'block-content'
+    }, void 0, _jsx('a', {
+      href: `/sp/${p.slug}`,
+      className: 'title'
+    }, void 0, p.title), _jsx('div', {
+      className: 'prices-wrapper'
+    }, void 0, _jsx('div', {
+      className: 'prices'
+    }, void 0, _jsx('span', {
+      className: 'number'
+    }, void 0, p.price.toLocaleString()), _ref8), _ref9), _ref10)));
+  }))))))))));
 }
 
 function findCategoryBySlug(slug, categories) {
@@ -18193,12 +17760,13 @@ const title = 'Chi tiết tin tức';
       // let information = 'information{id, services, common}'
       // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
       // let categories = 'categories:getCategories{title, slug, created_at}'
-      // let news = 'news:getOnePost(slug: "'+ params.slug +'"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}'
+      let product = 'product:getOneProduct(slug: "' + params.slug + '"){ coverUrl, category, slug, title, body, price, view, created_at}';
+      let productRelative = 'productRelative:getProductRelative{ coverUrl, category, slug, title, body, price, view, created_at}';
 
       let seo = {};
       const resp = yield fetch('/graphql', {
         body: JSON.stringify({
-          query: '{' + seoGraphql + '}'
+          query: '{' + seoGraphql + product + productRelative + '}'
         })
       });
       const { data } = yield resp.json();
@@ -18252,355 +17820,22 @@ var _ref = _jsx('section', {
   className: 'title'
 }, void 0, 'Happy Green Market'))));
 
-var _ref2 = _jsx('div', {
-  className: 'col-md-8 col-xs-12 main-left'
-}, void 0, _jsx('div', {
-  className: 'list-block column-2'
-}, void 0, _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-2.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Spinach'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '20.00')), _jsx('span', {
+var _ref2 = _jsx('sup', {}, void 0, '\u0111');
+
+var _ref3 = _jsx('span', {
   className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
+}, void 0, '/kg');
+
+var _ref4 = _jsx('ul', {
   className: 'list-icons'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
   href: '#',
   className: 'link'
 }, void 0, _jsx('i', {
   className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-1.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Green Cabbage'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '20.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-4.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Carrots'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '34.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-5.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'pumpkin'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '27.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-3.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'corn'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '35.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-12.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'Radish'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '20.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}, void 0, ' '))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-13.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'tomato'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '34.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-}))))))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'block-4'
-}, void 0, _jsx('div', {
-  className: 'block-image'
-}, void 0, _jsx('img', {
-  src: 'assets/images/products/image-14.png',
-  alt: true,
-  className: 'img-full'
-}), _jsx('a', {
-  href: 'blog-detail.html',
-  className: 'link'
-})), _jsx('div', {
-  className: 'block-content'
-}, void 0, _jsx('a', {
-  href: '#',
-  className: 'title'
-}, void 0, 'potato'), _jsx('div', {
-  className: 'prices-wrapper'
-}, void 0, _jsx('div', {
-  className: 'prices'
-}, void 0, _jsx('sup', {}, void 0, '$'), _jsx('span', {
-  className: 'number'
-}, void 0, '27.00')), _jsx('span', {
-  className: 'unit'
-}, void 0, '/kg')), _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-cart-plus'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-heart'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-share-alt'
-})))))))), _jsx('nav', {
+}))));
+
+var _ref5 = _jsx('nav', {
   className: 'pagination-list margin-top-70'
 }, void 0, _jsx('ul', {
   className: 'pagination'
@@ -18630,9 +17865,9 @@ var _ref2 = _jsx('div', {
 }, void 0, _jsx('span', {
   'aria-hidden': 'true',
   className: 'fa fa-angle-right'
-}))))));
+})))));
 
-var _ref3 = _jsx('div', {
+var _ref6 = _jsx('div', {
   className: 'col-1'
 }, void 0, _jsx('div', {
   className: 'search-widget widget'
@@ -18651,7 +17886,7 @@ var _ref3 = _jsx('div', {
   className: 'fa fa-search'
 })))))));
 
-var _ref4 = _jsx('div', {
+var _ref7 = _jsx('div', {
   className: 'categories-widget widget'
 }, void 0, _jsx('div', {
   className: 'title-widget'
@@ -18706,11 +17941,11 @@ var _ref4 = _jsx('div', {
   className: 'count'
 }, void 0, '65'))))));
 
-var _ref5 = _jsx('div', {
+var _ref8 = _jsx('div', {
   className: 'title-widget'
 }, void 0, 'B\xE0i vi\u1EBFt');
 
-var _ref6 = _jsx('div', {
+var _ref9 = _jsx('div', {
   className: 'col-2'
 }, void 0, _jsx('div', {
   className: 'social-widget widget'
@@ -18728,6 +17963,7 @@ var _ref6 = _jsx('div', {
 
 function About(props) {
   let recentNews = props.data.recentNews.value;
+  let allProducts = props.data.allProducts.value;
   return _jsx('div', {}, void 0, _jsx('div', {
     className: 'main-contents'
   }, void 0, _ref, _jsx('section', {
@@ -18736,13 +17972,43 @@ function About(props) {
     className: 'container'
   }, void 0, _jsx('div', {
     className: 'row'
-  }, void 0, _ref2, _jsx('div', {
+  }, void 0, _jsx('div', {
+    className: 'col-md-8 col-xs-12 main-left'
+  }, void 0, _jsx('div', {
+    className: 'list-block column-2'
+  }, void 0, allProducts.map((p, idx) => {
+    return _jsx('div', {
+      className: 'item'
+    }, idx, _jsx('div', {
+      className: 'block-4'
+    }, void 0, _jsx('div', {
+      className: 'block-image'
+    }, void 0, _jsx('img', {
+      src: p.coverUrl,
+      alt: true,
+      className: 'img-full'
+    }), _jsx('a', {
+      href: `/sp/${p.slug}`,
+      className: 'link'
+    })), _jsx('div', {
+      className: 'block-content'
+    }, void 0, _jsx('a', {
+      href: '#',
+      className: 'title'
+    }, void 0, p.title), _jsx('div', {
+      className: 'prices-wrapper'
+    }, void 0, _jsx('div', {
+      className: 'prices'
+    }, void 0, _jsx('span', {
+      className: 'number'
+    }, void 0, p.price.toLocaleString()), _ref2), _ref3), _ref4)));
+  })), _ref5), _jsx('div', {
     className: 'col-md-4 col-xs-12 sidebar'
-  }, void 0, _ref3, _jsx('div', {
+  }, void 0, _ref6, _jsx('div', {
     className: 'col-2'
-  }, void 0, _ref4, _jsx('div', {
+  }, void 0, _ref7, _jsx('div', {
     className: 'recent-post-widget widget'
-  }, void 0, _ref5, _jsx('div', {
+  }, void 0, _ref8, _jsx('div', {
     className: 'content-widget'
   }, void 0, _jsx('div', {
     className: 'recent-post-list'
@@ -18762,7 +18028,7 @@ function About(props) {
     }, void 0, _jsx('span', {}, void 0, __WEBPACK_IMPORTED_MODULE_2_moment___default()(el.created_at).format('DD/MM/YYYY'))), _jsx('div', {
       className: 'description'
     }, void 0, el.title)));
-  }))))), _ref6))))));
+  }))))), _ref9))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
@@ -18877,12 +18143,15 @@ const title = 'Happy green | Gian hàng';
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
       let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}';
+
+      let productCategories = 'productCategories:getProductCategories{title, slug, created_at}';
+      let products = 'allProducts:getAllProduct{ coverUrl, category, slug, title, body, price, view, created_at}';
       // let information = 'information{id, about, services, common}'
 
       let seo = {};
       const resp = yield fetch('/graphql', {
         body: JSON.stringify({
-          query: '{' + seoGraphql + recentNews + '}'
+          query: '{' + seoGraphql + recentNews + products + productCategories + '}'
         })
       });
       const { data } = yield resp.json();

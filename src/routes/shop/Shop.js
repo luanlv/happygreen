@@ -7,6 +7,7 @@ class About extends React.Component {
 
   render() {
     let recentNews = this.props.data.recentNews.value
+    let allProducts = this.props.data.allProducts.value
     return (
       <div>
         <div className="main-contents">
@@ -23,134 +24,24 @@ class About extends React.Component {
               <div className="row">
                 <div className="col-md-8 col-xs-12 main-left">
                   <div className="list-block column-2">
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-2.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
+                    {allProducts.map((p, idx) => {
+                      return (
+                        <div className="item" key={idx}>
+                          <div className="block-4">
+                            <div className="block-image"><img src={p.coverUrl} alt className="img-full" />
+                              <a href={`/sp/${p.slug}`} className="link" />
+                            </div>
+                            <div className="block-content"><a href="#" className="title">{p.title}</a>
+                              <div className="prices-wrapper">
+                                <div className="prices"><span className="number">{p.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
+                              <ul className="list-icons">
+                                <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                        <div className="block-content"><a href="#" className="title">Spinach</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-1.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">Green Cabbage</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-4.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">Carrots</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">34.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-5.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">pumpkin</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">27.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-3.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">corn</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">35.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-12.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">Radish</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">20.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt"> </i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-13.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">tomato</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">34.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="block-4">
-                        <div className="block-image"><img src="assets/images/products/image-14.png" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="#" className="title">potato</a>
-                          <div className="prices-wrapper">
-                            <div className="prices"><sup>$</sup><span className="number">27.00</span></div><span className="unit">/kg</span></div>
-                          <ul className="list-icons">
-                            <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                            <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                      )
+                    })}
                   </div>
                   <nav className="pagination-list margin-top-70">
                     <ul className="pagination">
