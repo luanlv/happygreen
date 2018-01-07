@@ -23,7 +23,7 @@ class Admin extends React.Component {
     return (
         <div>
           <Row className="padding-5">
-            Dashboard !!
+            {/*Dashboard !!*/}
           </Row>
         </div>
     );

@@ -6124,39 +6124,7 @@ var _ref8 = _jsx(SubMenu, {
   to: '/admin/product?v=add'
 }, void 0, 'Th\xEAm m\u1EDBi s\u1EA3n ph\u1EA9m')));
 
-var _ref9 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'trangchu', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
-  to: '/admin/trangchu'
-}, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
-  type: 'tool'
-}), _jsx('span', {
-  className: 'nav-text'
-}, void 0, 'Trang Ch\u1EE7'))));
-
-var _ref10 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'gioithieu', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
-  to: '/admin/gioithieu'
-}, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
-  type: 'tool'
-}), _jsx('span', {
-  className: 'nav-text'
-}, void 0, 'Trang Gi\u1EDBi Thi\u1EC7u'))));
-
-var _ref11 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'dichvu', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
-  to: '/admin/cacdichvu'
-}, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
-  type: 'tool'
-}), _jsx('span', {
-  className: 'nav-text'
-}, void 0, 'Trang li\xEAn h\u1EC7'))));
-
-var _ref12 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'common', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
-  to: '/admin/common'
-}, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
-  type: 'tool'
-}), _jsx('span', {
-  className: 'nav-text'
-}, void 0, 'Th\xF4ng tin chung'))));
-
-var _ref13 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Library', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
+var _ref9 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Library', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
   to: '/admin/library'
 }, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
   type: 'appstore-o'
@@ -6164,7 +6132,7 @@ var _ref13 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Library'
   className: 'nav-text'
 }, void 0, 'Th\u01B0 vi\u1EC7n \u1EA3nh'))));
 
-var _ref14 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Setting', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
+var _ref10 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Setting', _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */], {
   to: '/admin/setting'
 }, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
   type: 'tool'
@@ -6172,7 +6140,7 @@ var _ref14 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Setting'
   className: 'nav-text'
 }, void 0, 'C\xE0i \u0111\u1EB7t'))));
 
-var _ref15 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Logout', _jsx('a', {
+var _ref11 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Logout', _jsx('a', {
   href: '/auth/logout'
 }, void 0, _jsx('span', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], {
   type: 'tool'
@@ -6180,7 +6148,11 @@ var _ref15 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item, {}, 'Logout',
   className: 'nav-text'
 }, void 0, '\u0110\u0103ng xu\u1EA5t'))));
 
-var _ref16 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Breadcrumb"].Item, {}, void 0, 'Admin');
+var _ref12 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Breadcrumb"].Item, {}, void 0, 'Admin');
+
+var _ref13 = _jsx('a', {
+  href: 'http://thunderduck.com.vn'
+}, void 0, 'Thunder Duck');
 
 class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   constructor(props) {
@@ -6221,17 +6193,17 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       mode: this.state.mode,
       selectedKeys: [this.props.name],
       defaultOpenKeys: []
-    }, void 0, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9, _ref10, _ref11, _ref12, _ref13, _ref14, _ref15)), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Layout"], {}, void 0, _jsx(Header, {
+    }, void 0, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9, _ref10, _ref11)), _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Layout"], {}, void 0, _jsx(Header, {
       style: { height: 47, background: 'white', padding: 0 }
     }, void 0), _jsx(Content, {
       style: { margin: '0 5px' }
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Breadcrumb"], {
       style: { margin: '12px 0' }
-    }, void 0, _ref16, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Breadcrumb"].Item, {}, void 0, this.state.name)), _jsx('div', {
+    }, void 0, _ref12, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Breadcrumb"].Item, {}, void 0, this.state.name)), _jsx('div', {
       style: { background: '#fff', minHeight: 500 }
     }, void 0, this.props.children)), _jsx(Footer, {
       style: { textAlign: 'center' }
-    }, void 0, 'Admin Page \xA9201 Created by L\u01B0u V\u0103n Lu\u1EADn'))));
+    }, void 0, 'Admin Page \xA9 Created by ', _ref13))));
   }
 }
 
@@ -8175,10 +8147,6 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
-  className: 'padding-5'
-}, void 0, 'Dashboard !!'));
-
 class Admin extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   constructor(props) {
     super(props);
@@ -8188,11 +8156,13 @@ class Admin extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   render() {
-    return _ref;
+    return _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0));
   }
 }
 
-var _ref2 = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {}, void 0, 'G\u1ECDi \u0111i\u1EC7n');
+var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {}, void 0, 'G\u1ECDi \u0111i\u1EC7n');
 
 const columns = [{
   title: 'Thời gian đặt hàng',
@@ -8212,7 +8182,7 @@ const columns = [{
   key: 'phone',
   render: text => _jsx('span', {}, void 0, _jsx('a', {
     href: "tel:" + text
-  }, void 0, _ref2), ' ', text)
+  }, void 0, _ref), ' ', text)
 }, {
   title: 'Số lượng (kg)',
   dataIndex: 'quantity',

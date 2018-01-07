@@ -117,41 +117,41 @@ class App extends React.Component {
                 </Menu.Item>
               </SubMenu>
 
-              <Menu.Item key="trangchu">
-                <Link to="/admin/trangchu">
-                  <span>
-                    <Icon type="tool" />
-                    <span className="nav-text">Trang Chủ</span>
-                  </span>
-                </Link>
-              </Menu.Item>
+              {/*<Menu.Item key="trangchu">*/}
+                {/*<Link to="/admin/trangchu">*/}
+                  {/*<span>*/}
+                    {/*<Icon type="tool" />*/}
+                    {/*<span className="nav-text">Trang Chủ</span>*/}
+                  {/*</span>*/}
+                {/*</Link>*/}
+              {/*</Menu.Item>*/}
 
-              <Menu.Item key="gioithieu">
-                <Link to="/admin/gioithieu">
-                  <span>
-                    <Icon type="tool" />
-                    <span className="nav-text">Trang Giới Thiệu</span>
-                  </span>
-                </Link>
-              </Menu.Item>
+              {/*<Menu.Item key="gioithieu">*/}
+                {/*<Link to="/admin/gioithieu">*/}
+                  {/*<span>*/}
+                    {/*<Icon type="tool" />*/}
+                    {/*<span className="nav-text">Trang Giới Thiệu</span>*/}
+                  {/*</span>*/}
+                {/*</Link>*/}
+              {/*</Menu.Item>*/}
 
-              <Menu.Item key="dichvu">
-                <Link to="/admin/cacdichvu">
-                  <span>
-                    <Icon type="tool" />
-                    <span className="nav-text">Trang liên hệ</span>
-                  </span>
-                </Link>
-              </Menu.Item>
+              {/*<Menu.Item key="dichvu">*/}
+                {/*<Link to="/admin/cacdichvu">*/}
+                  {/*<span>*/}
+                    {/*<Icon type="tool" />*/}
+                    {/*<span className="nav-text">Trang liên hệ</span>*/}
+                  {/*</span>*/}
+                {/*</Link>*/}
+              {/*</Menu.Item>*/}
 
-              <Menu.Item key="common">
-                <Link to="/admin/common">
-                  <span>
-                    <Icon type="tool" />
-                    <span className="nav-text">Thông tin chung</span>
-                  </span>
-                </Link>
-              </Menu.Item>
+              {/*<Menu.Item key="common">*/}
+                {/*<Link to="/admin/common">*/}
+                  {/*<span>*/}
+                    {/*<Icon type="tool" />*/}
+                    {/*<span className="nav-text">Thông tin chung</span>*/}
+                  {/*</span>*/}
+                {/*</Link>*/}
+              {/*</Menu.Item>*/}
 
               <Menu.Item key="Library">
                 <Link to="/admin/library">
@@ -195,7 +195,7 @@ class App extends React.Component {
               </div>
             </Content>
             <Footer style={{ textAlign: 'center'}}>
-              Admin Page ©201 Created by Lưu Văn Luận
+              Admin Page © Created by <a href="http://thunderduck.com.vn">Thunder Duck</a>
             </Footer>
           </Layout>
         </Layout>
