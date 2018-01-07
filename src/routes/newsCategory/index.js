@@ -12,29 +12,24 @@ import Layout from '../../components/Layout';
 import { setData } from '../../actions/data';
 import { showLoading, hideLoading } from 'react-redux-loading-bar'
 
-const title = 'Happy green | Gian hàng'
+const title = 'Happy green | Tin tức'
 
 export default {
 
-  path: '/cua-hang/:slug',
+  path: '/tin-tuc/:slug',
 
   async action({store, fetch, path, params}) {
-
     store.dispatch(showLoading())
-
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
+    // let information = 'information{id, contact, services, common}'
+    let allNews = 'allNews:getAllPostsByCategory(slug: "' + params.slug + '"){title, coverUrl, slug, public, description, view, category, created_at}'
     let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
-
-    let productCategories = 'productCategories:getProductCategories{title, slug, created_at}'
-
-    let products = 'allProducts:getAllProductsByCategory(slug: "' + params.slug + '"){ coverUrl, category, slug, title, body, price, view, created_at}'
-    // let information = 'information{id, about, services, common}'
+    let categories = 'categories:getCategories{title, slug, created_at}'
 
     let seo = {}
-
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + recentNews + products + productCategories + '}',
+        query: '{' + seoGraphql + allNews + recentNews + categories + '}',
       }),
     });
     const { data } = await resp.json();
@@ -42,12 +37,13 @@ export default {
     if (!data ) throw new Error('Failed to load data.');
     store.dispatch(setData(data))
     store.dispatch(hideLoading())
-
-    return require.ensure([], require => require('../shop/Shop').default, 'shop')
-      .then(About => ({
+    return require.ensure([], require => require('../news/News').default, 'news')
+      .then(News => ({
         title,
-        chunk: 'shop',
-        component: <Layout data={store.getState().data} ><About data={store.getState().data} slug={params.slug} /></Layout>,
+        description: seo.description || '',
+        seo: seo,
+        chunk: 'news',
+        component: <Layout data={store.getState().data}><News data={store.getState().data} slug={params.slug} /></Layout>,
       }));
   },
 

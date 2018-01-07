@@ -34,6 +34,9 @@ export default new GraphQLObjectType({
     price: {
       type: new GraphQLNonNull(GraphQLInt)
     },
+    donvi: {
+      type: new GraphQLNonNull(GraphQLString)
+    },
     coverUrl: {
       type: new GraphQLNonNull(GraphQLString)
     },

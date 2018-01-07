@@ -6,6 +6,7 @@ var schema = new mongoose.Schema({
   slug: { type:String, required:true, unique: true, index: true},
   title: {type: String, default: ''},
   price: {type: Number, default: 0},
+  donvi: {type: String, default: 'KG'},
   coverUrl: {type: String, default: '/assets/images/placeholders/848x480.png'},
   body: {type: String, default: ''},
   view: {type: Number, default: 0},

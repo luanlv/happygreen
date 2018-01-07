@@ -108,22 +108,28 @@ class Layout extends React.Component {
                             <div className="content-widget">
                               <ul className="list-unstyled list-inline">
                                 <li>
-                                  <a href="/assets/images/products/thumbnail-1.jpg" data-fancybox-group="gallery2" className="thumb fancybox"><img src="/assets/images/products/thumbnail-1.jpg" alt="gallery image 1" className="img-full" /></a>
+                                  <a href="/assets/images/gallery/caidun.png" data-fancybox-group="gallery2" className="thumb fancybox">
+                                    <img src="/assets/images/gallery/caidun.png" alt="gallery image 1" className="img-full" /></a>
                                 </li>
                                 <li>
-                                  <a href="/assets/images/products/thumbnail-2.jpg" data-fancybox-group="gallery2" className="thumb fancybox"><img src="/assets/images/products/thumbnail-2.jpg" alt="gallery image 2" className="img-full" /></a>
+                                  <a href="/assets/images/gallery/cairo.png" data-fancybox-group="gallery2" className="thumb fancybox">
+                                    <img src="/assets/images/gallery/cairo.png" alt="gallery image 2" className="img-full" /></a>
                                 </li>
                                 <li>
-                                  <a href="/assets/images/products/thumbnail-3.jpg" data-fancybox-group="gallery2" className="thumb fancybox"><img src="/assets/images/products/thumbnail-3.jpg" alt="gallery image 3" className="img-full" /></a>
+                                  <a href="/assets/images/gallery/rau1.png" data-fancybox-group="gallery2" className="thumb fancybox">
+                                    <img src="/assets/images/gallery/rau1.png" alt="gallery image 3" className="img-full" /></a>
                                 </li>
                                 <li>
-                                  <a href="/assets/images/news/image-2.jpg" data-fancybox-group="gallery2" className="thumb fancybox"><img src="/assets/images/news/image-2.jpg" alt="gallery image 4" className="img-full" /></a>
+                                  <a href="/assets/images/gallery/rau2.png" data-fancybox-group="gallery2" className="thumb fancybox">
+                                    <img src="/assets/images/gallery/rau2.png" alt="gallery image 4" className="img-full" /></a>
                                 </li>
                                 <li>
-                                  <a href="/assets/images/news/image-3.jpg" data-fancybox-group="gallery2" className="thumb fancybox"><img src="/assets/images/news/image-3.jpg" alt="gallery image 5" className="img-full" /></a>
+                                  <a href="/assets/images/gallery/traicay1.png" data-fancybox-group="gallery2" className="thumb fancybox">
+                                    <img src="/assets/images/gallery/traicay1.png" alt="gallery image 5" className="img-full" /></a>
                                 </li>
                                 <li>
-                                  <a href="/assets/images/news/image-4.jpg" data-fancybox-group="gallery2" className="thumb fancybox"><img src="/assets/images/news/image-4.jpg" alt="gallery image 6" className="img-full" /></a>
+                                  <a href="/assets/images/gallery/traicay2.png" data-fancybox-group="gallery2" className="thumb fancybox">
+                                    <img src="/assets/images/gallery/traicay2.png" alt="gallery image 6" className="img-full" /></a>
                                 </li>
                               </ul>
                             </div>

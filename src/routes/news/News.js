@@ -8,14 +8,20 @@ class News extends React.Component {
     let news = this.props.data.allNews.value
     let recentNews = this.props.data.recentNews.value
     let categories = this.props.data.categories.value
+
+    let category = undefined
+
+    if(this.props.slug){
+      category = categories.find(p => p.slug === this.props.slug)
+    }
+
     return (
       <div className="main-contents">
         <section className="banner blog">
           <div className="container">
             <div className="morepage-banner">
-              <h2 className="title">Trang tin tức</h2>
-              <ol className="breadcrumb">
-              </ol>
+              {!this.props.slug && <h2 className="title">Trang tin tức</h2>}
+              {this.props.slug && <h2 className="title">{category.title}</h2>}
             </div>
           </div>
         </section>
@@ -62,15 +68,6 @@ class News extends React.Component {
                 </nav>
               </div>
               <div className="col-md-4 col-xs-12 sidebar">
-                <div className="col-1">
-                  <div className="search-widget widget">
-                    <form>
-                      <div className="input-group search-wrapper"><input type="text" placeholder="Search..." className="search-input form-control" /><span className="input-group-btn"><button type="submit" className="btn submit-btn"><span className="fa fa-search" /></button>
-                  </span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
                 <div className="col-2">
                   <div className="recent-post-widget widget">
                     <div className="title-widget">Bài viết mới</div>
@@ -101,9 +98,10 @@ class News extends React.Component {
                     <div className="title-widget">Danh mục</div>
                     <div className="content-widget">
                       <ul className="widget-list">
+                        <li className="single-widget-item"><a href={`/tin-tuc`} className="link"><span className="fa-custom category">Tổng hợp</span></a></li>
                         {categories.map(danhmuc => {
                           return (
-                            <li className="single-widget-item"><a href={`/danh-muc/${danhmuc.slug}`} className="link"><span className="fa-custom category">{danhmuc.title}</span></a></li>
+                            <li className="single-widget-item"><a href={`/tin-tuc/${danhmuc.slug}`} className="link"><span className="fa-custom category">{danhmuc.title}</span></a></li>
                           )
                         })}
                       </ul>
