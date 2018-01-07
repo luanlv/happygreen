@@ -17370,11 +17370,13 @@ const title = 'Chi tiết tin tức';
       if (!data) throw new Error('Failed to load data.');
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__actions_data__["a" /* setData */])(data));
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
+
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
         return __webpack_require__(165).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (NewsDetail) {
         return {
-          title,
+          title: store.getState().data.news.value.title,
+          description: store.getState().data.news.value.description,
           chunk: 'newsDetail',
           component: _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */], {
             data: store.getState().data

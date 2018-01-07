@@ -37,9 +37,12 @@ export default {
     if (!data ) throw new Error('Failed to load data.');
     store.dispatch(setData(data))
     store.dispatch(hideLoading())
+
+
     return require.ensure([], require => require('./NewsDetail').default, 'newsDetail')
       .then(NewsDetail => ({
-        title,
+        title: store.getState().data.news.value.title,
+        description: store.getState().data.news.value.description,
         chunk: 'newsDetail',
         component: <Layout data={store.getState().data}><NewsDetail data={store.getState().data} /></Layout>,
       }));
