@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 const mongoose = require('mongoose')
 const Post = mongoose.model('Post')
+const Product = mongoose.model('Product')
+const ProductCategory = mongoose.model('ProductCategory')
 const Setting = mongoose.model('Setting')
 const Information = mongoose.model('Information')
 const Category = mongoose.model('Category')
@@ -13,6 +15,49 @@ let axios = require('axios')
 //
 // FB.options({version: 'v2.9'});
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
+
+
+router.post('/productcategory/new', bodyParser.json() ,(req, res) => {
+  ProductCategory.create(req.body, (err, resData) => {
+    if(err) res.sendStatus(400)
+    res.send(resData)
+  })
+})
+
+router.post('/productcategory/delete', bodyParser.json() ,(req, res) => {
+  ProductCategory.remove({slug: req.body.slug}, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+router.post('/productcategory/update', bodyParser.json() ,(req, res) => {
+  ProductCategory.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+router.post('/product/new', bodyParser.json() ,(req, res) => {
+  Product.create(req.body, (err, resData) => {
+    if(err) res.sendStatus(400)
+    res.send(resData)
+  })
+})
+
+router.post('/product/delete', bodyParser.json() ,(req, res) => {
+  Product.remove({slug: req.body.slug}, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+router.post('/product/update', bodyParser.json() ,(req, res) => {
+  Product.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
 
 router.post('/post/new', bodyParser.json() ,(req, res) => {
   Post.create(req.body, (err, resData) => {

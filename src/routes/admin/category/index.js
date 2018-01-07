@@ -9,7 +9,7 @@
 
 import React from 'react';
 
-const title = 'Danh muc';
+const title = 'Danh muc bài viết';
 
 export default {
 

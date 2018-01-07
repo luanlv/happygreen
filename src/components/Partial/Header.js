@@ -14,11 +14,7 @@ class Header extends React.Component {
           <div className="mb-social-wrapper">
             <div className="mb-socials">
               <ul className="list-unstyled list-inline">
-                <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                {/*<li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>*/}
-                {/*<li><a href="#" className="link pinterest"><i className="fa fa-pinterest-p" /></a></li>*/}
-                {/*<li><a href="#" className="link google"><i className="fa fa-google" /></a></li>*/}
-                {/*<li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>*/}
+                <li><a href="https://www.facebook.com/HappyGreen.vn/" className="link facebook"><i className="fa fa-facebook" /></a></li>
               </ul>
             </div>
             <div className="mb-button-close"><i className="icons fa fa-times" /></div>

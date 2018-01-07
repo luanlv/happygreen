@@ -15,8 +15,14 @@ const Admin = {
   ListNews: require('./news/ListNews').default,
   EditNews: require('./news/EditNews').default,
 
+  ListProduct: require('./product/List').default,
+  EditProduct: require('./product/Edit').default,
+
   EditCategory: require('./category/EditCategory').default,
   ListCategories: require('./category/ListCategories').default,
+
+  EditProductCategory: require('./productCategory/Edit').default,
+  ListProductCategories: require('./productCategory/List').default,
 
   Seo: require('./seo/View.js').default
 }

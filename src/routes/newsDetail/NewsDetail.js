@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '../../components/Link'
 import {Title, BreadCrumb} from './components'
+import moment from 'moment'
 
 class NewsDetail extends React.Component {
   render() {
@@ -16,12 +17,7 @@ class NewsDetail extends React.Component {
           <section className="banner blog-detail">
             <div className="container">
               <div className="morepage-banner">
-                <h2 className="title">Blog Single</h2>
-                <ol className="breadcrumb">
-                  <li><a href="index.html" className="link">Home</a></li>
-                  <li><a href="blog.html" className="link">blog</a></li>
-                  <li className="active"><a href="#" className="link">Blog Single</a></li>
-                </ol>
+                <h2 className="title">Many people limit themselves what they think they can do.</h2>
               </div>
             </div>
           </section>
@@ -30,14 +26,10 @@ class NewsDetail extends React.Component {
               <div className="row">
                 <div className="col-md-8 col-xs-12 main-left">
                   <div className="blog-detail-wrapper">
-                    <div className="image-wrapper"><img src="/assets/images/news/news.jpg" alt className="images img-responsive" /></div>
                     <div className="content-wrapper">
                       <div className="title">Many people limit themselves what they think they can do.</div>
                       <div className="block-info">
-                        <div className="block"><span className="title">posted by:</span><a href="#" className="link">john smith</a></div>
                         <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">Aug 18, 2015</a></div>
-                        <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                        <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
                       </div>
                       <div className="description">
                         <p className="text">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec
@@ -81,88 +73,6 @@ class NewsDetail extends React.Component {
                         <div className="position">Author</div>
                         <p className="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida tesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. </p>
                       </div>
-                    </div>
-                    <div className="blog-comment margin-top-70">
-                      <div className="main-titles-2">
-                        <h1 className="title">26 comments</h1></div>
-                      <ul className="comment-list list-unstyled">
-                        <li className="parent">
-                          <div className="comment-item">
-                            <div className="comment-left">
-                              <a href="#" className="media-image"><img src="/assets/images/more-image/avatar-1.jpg" alt className="img-responsive" /></a>
-                            </div>
-                            <div className="comment-right">
-                              <div className="pull-left">
-                                <div className="author">Donna J. Walsh</div>
-                              </div>
-                              <div className="pull-right time"><i className="fa fa-clock-o"> </i><span>2 hours ago</span></div>
-                              <div className="des">Donec faucibus iaculis nulla a consectetur. Nam sit amet tempor sapien, eu pellentesque justo. Morbi mattis masa sed est eleifend, a laoreet nisl sollicitudin.</div><a href="javascript:void(0)" className="btn-crystal btn reply-1"><i className="fa fa-reply"> </i>Reply</a>
-                              <div className="clearfix" />
-                            </div>
-                          </div>
-                          <ul className="comment-list-children list-unstyled">
-                            <li className="child">
-                              <div className="comment-item">
-                                <div className="comment-left">
-                                  <a href="#" className="media-image"><img src="/assets/images/more-image/avatar-2.jpg" alt className="img-responsive" /></a>
-                                </div>
-                                <div className="comment-right">
-                                  <div className="pull-left">
-                                    <div className="author">Keiko J. McCool</div>
-                                  </div>
-                                  <div className="pull-right time"><i className="fa fa-clock-o"> </i><span>40 minutes ago</span></div>
-                                  <div className="des">Donec faucibus iaculis nulla a consectetur. Nam sit amet tempor sapien, eu pellentesque justo. Morbi mattis massa sed est eleifend, a laoreet.</div>
-                                  <a href="javascript:void(0)" className="btn-crystal btn reply-1"><i className="fa fa-reply"> </i>Reply</a>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                          <div className="comment-box media merge-1">
-                            <div className="list-item">
-                              <div className="media-body">
-                                <form action="#" className="bg-w-form comment-form">
-                                  <div className="form-group"><textarea placeholder="Your comment here..." className="form-control form-input" defaultValue={""} /></div>
-                                </form>
-                                <div className="media-submit"><button type="submit" className="btn btn-submit"><span>Submit</span></button></div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="parent">
-                          <div className="comment-item">
-                            <div className="comment-left">
-                              <a href="#" className="media-image"><img src="/assets/images/more-image/avatar-3.jpg" alt className="img-responsive" /></a>
-                            </div>
-                            <div className="comment-right">
-                              <div className="pull-left">
-                                <div className="author">Harold K. Horton</div>
-                              </div>
-                              <div className="pull-right time"><i className="fa fa-clock-o"> </i><span>3 hours ago</span></div>
-                              <div className="des">Donec faucibus iaculis nulla a consectetur. Nam sit amet tempor sapien, eu pellentesque justo. Morbi mattam et tempor sapien, eu pellentesque justo orbi mattis masa sed est eleifend.</div>
-                              <a href="javascript:void(0)" className="btn-crystal btn reply-2"><i className="fa fa-reply"> </i>Reply</a>
-                              <div className="clearfix" />
-                            </div>
-                          </div>
-                          <div className="comment-box media merge-2">
-                            <div className="list-item">
-                              <div className="media-body">
-                                <form action="#" className="bg-w-form comment-form">
-                                  <div className="form-group"><textarea placeholder="Your comment here..." className="form-control form-input" defaultValue={""} /></div>
-                                </form>
-                                <div className="media-submit"><button type="submit" className="btn btn-submit"><span>Submit</span></button></div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="leave-comment margin-top-50">
-                      <div className="main-titles-2">
-                        <h1 className="title">Leave A Comment</h1></div>
-                      <form id="comment-form" className="comment-form"><input type="text" placeholder="Your Name" className="form-control" /><input type="email" placeholder="Your Email" className="form-control" /><textarea placeholder="Your Message" className="form-control form-textarea" defaultValue={""} />
-                        <button type="submit" data-hover="SEND NOW" className="btn btn-maincolor">Send Comment</button>
-                      </form>
                     </div>
                   </div>
                 </div>

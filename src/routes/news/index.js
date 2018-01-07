@@ -12,7 +12,7 @@ import Layout from '../../components/Layout';
 import { setData } from '../../actions/data';
 import { showLoading, hideLoading } from 'react-redux-loading-bar'
 
-const title = 'Trang tin tức'
+const title = 'Happy green | Tin tức'
 
 export default {
 
@@ -22,14 +22,14 @@ export default {
     store.dispatch(showLoading())
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
     // let information = 'information{id, contact, services, common}'
-    // let allNews = 'allNews:getAllPosts{title, coverUrl, slug, public, description, view, category, created_at}'
-    // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
-    // let categories = 'categories:getCategories{title, slug, created_at}'
+    let allNews = 'allNews:getAllPosts{title, coverUrl, slug, public, description, view, category, created_at}'
+    let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
+    let categories = 'categories:getCategories{title, slug, created_at}'
 
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + '}',
+        query: '{' + seoGraphql + allNews + recentNews + categories + '}',
       }),
     });
     const { data } = await resp.json();

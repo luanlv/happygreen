@@ -315,8 +315,11 @@ a:focus {
 
 .header-01 .header-main.header-fixed .logo {
     line-height: 50px;
-
     text-align: left;
+}
+
+.header-fixed .logo-wrapper img {
+  max-width: 60px !important;
 }
 
 .header-01 .header-main.header-fixed .navigation {

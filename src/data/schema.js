@@ -19,6 +19,8 @@ import postQueries from './models/post/queries';
 import categoryQueries from './models/category/queries';
 import userQueries from './models/user/queries';
 import informationQueries from './models/information/queries';
+import productQueries from './models/product/queries';
+import productCategoryQueries from './models/productCategory/queries';
 
 const { listImage } = imageQueries;
 const { users } = userQueries;
@@ -27,6 +29,8 @@ const { seo, allSeo } = seoQueries;
 const { getPosts, getOnePost, getAllPosts, getPostRelative, get5RecentPost, getAllPostsByCategory} = postQueries;
 const { getCategories, getOneCategory } = categoryQueries;
 const { information } = informationQueries;
+const { getOneProduct, getProducts, getAllProduct, get5RecentProduct} = productQueries;
+const { getOneProductCategory, getProductCategories } = productCategoryQueries;
 
 const schema = new Schema({
   query: new ObjectType({
@@ -45,7 +49,13 @@ const schema = new Schema({
       getCategories,
       getOneCategory,
       users,
-      information
+      information,
+      getOneProduct,
+      getProducts,
+      getAllProduct,
+      getOneProductCategory,
+      getProductCategories,
+      get5RecentProduct
     },
   }),
 });

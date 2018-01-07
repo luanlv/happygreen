@@ -90,6 +90,33 @@ class App extends React.Component {
                 </Menu.Item>
               </SubMenu>
 
+
+              <SubMenu
+                key="danhmucsp"
+                title={<span><Icon type="idcard" /><span className="nav-text">Danh mục sp</span></span>}
+              >
+                <Menu.Item key="danhmucsp1">
+                  <Link to="/admin/productcategory?v=list" >Các danh mục sp</Link>
+                </Menu.Item>
+                <Menu.Item key="danhmucsp2">
+                  <Link to="/admin/productcategory?v=add" >Thêm mới danh mục sp</Link>
+                </Menu.Item>
+              </SubMenu>
+
+
+
+              <SubMenu
+                key="sanpham"
+                title={<span><Icon type="idcard" /><span className="nav-text">Sản phẩm</span></span>}
+              >
+                <Menu.Item key="sanpham1">
+                  <Link to="/admin/product?v=list" >Danh sách sản phẩm</Link>
+                </Menu.Item>
+                <Menu.Item key="sanpham2">
+                  <Link to="/admin/product?v=add" >Thêm mới sản phẩm</Link>
+                </Menu.Item>
+              </SubMenu>
+
               <Menu.Item key="trangchu">
                 <Link to="/admin/trangchu">
                   <span>

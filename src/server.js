@@ -134,6 +134,18 @@ app.get('*', async (req, res, next) => {
     const initialState = {
       user: req.user || null,
       data: {
+        recentProduct: {
+          needUpdate: true,
+          value: []
+        },
+        productByCategory: {
+          needUpdate: true,
+          value: []
+        },
+        productCategories: {
+          needUpdate: true,
+          value: []
+        },
         categories: {
           needUpdate: true,
           value: []

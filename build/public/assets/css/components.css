@@ -593,7 +593,7 @@
 
     margin-bottom: 0;
 
-    background-color: #000000;
+    background-color: transparent;
 }
 
 .block-1 .block-image:before {
@@ -945,7 +945,7 @@
 
     vertical-align: top;
 
-    background-color: #000000;
+    background-color: transparent;
 }
 
 .block-2 .block-image:before {

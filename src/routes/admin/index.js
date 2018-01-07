@@ -30,6 +30,8 @@ export default {
     require('./login').default,
     require('./news').default,
     require('./seo').default,
+    require('./product').default,
+    require('./productCategory').default,
   ],
   async action({store, next, url}) {
     let user = store.getState().user

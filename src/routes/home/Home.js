@@ -11,6 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Header, Footer} from '../../components/Partial'
 import * as C from './components/index'
+import moment from 'moment'
 
 class Home extends React.Component {
 
@@ -19,6 +20,9 @@ class Home extends React.Component {
   }
 
   render() {
+    let [firstNews, ...restNews] = this.props.data.recentNews.value;
+    let productCategories = this.props.data.productCategories.value;
+    let recentProduct = this.props.data.recentProduct.value;
     return (
       <div>
         <div className="main-contents">
@@ -122,119 +126,39 @@ class Home extends React.Component {
               <div className="main-titles">
                 <h1 className="title">our product</h1></div>
               <div className="main-content">
-                <div className="gallery-nav">
-                  <ul className="tab-filter tab-menu">
-                    <li data-filter="*" data-category="all" className="tab active">
-                      <div className="link">all</div>
-                    </li>
-                    <li data-filter=".tab-1" data-category="tab-1" className="tab">
-                      <div className="link">Vegetables</div>
-                    </li>
-                    <li data-filter=".tab-2" data-category="tab-2" className="tab">
-                      <div className="link">Juices</div>
-                    </li>
-                    <li data-filter=".tab-3" data-category="tab-3" className="tab">
-                      <div className="link">Dried Products</div>
-                    </li>
-                  </ul>
-                </div>
+
+                {/*<div className="gallery-nav">*/}
+                  {/*<ul className="tab-filter tab-menu">*/}
+                    {/*{productCategories.map(el => {*/}
+                      {/*return (*/}
+                        {/*<li data-filter={`.${el.slug}`} data-category={el.slug} className="tab active">*/}
+                          {/*<div className="link">{el.title}</div>*/}
+                        {/*</li>*/}
+                      {/*)*/}
+                    {/*})}*/}
+
+                  {/*</ul>*/}
+                {/*</div>*/}
+
                 <div className="gallery-grid">
-                  <div className="grid-item tab-2">
-                    <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/rau1.png" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
+                  {recentProduct.map(el => {
+                    return (
+                      <div className="grid-item">
+                        <div className="block-4">
+                          <div className="block-image"><img src={el.coverUrl} alt className="img-full" />
+                            <a href={`/sp/${el.slug}`} className="link" />
+                          </div>
+                          <div className="block-content"><a href="#" className="title">{el.title}</a>
+                            <div className="prices-wrapper">
+                              <div className="prices"><span className="number">{el.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
+                            <ul className="list-icons">
+                              <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                      <div className="block-content"><a href="#" className="title">Cải rổ</a>
-                        <div className="prices-wrapper">
-                          <div className="prices"><span className="number">45.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                        <ul className="list-icons">
-                          <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item tab-2 tab-3 tab-1">
-                    <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/rau2.png" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="#" className="title">Bông cải xanh</a>
-                        <div className="prices-wrapper">
-                          <div className="prices"><span className="number">65.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                        <ul className="list-icons">
-                          <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item tab-2 tab-3">
-                    <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/rau3.png" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="#" className="title">Rau má</a>
-                        <div className="prices-wrapper">
-                          <div className="prices"><span className="number">55.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                        <ul className="list-icons">
-                          <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item tab-1 tab-3 tab-2">
-                    <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/rau4.png" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="#" className="title">Mồng tơi</a>
-                        <div className="prices-wrapper">
-                          <div className="prices"><span className="number">37.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                        <ul className="list-icons">
-                          <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-share-alt"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item tab-1 tab-2">
-                    <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/rau5.png" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="#" className="title">Bông thiên lý</a>
-                        <div className="prices-wrapper">
-                          <div className="prices"><span className="number">35.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                        <ul className="list-icons">
-                          <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-share-alt" /></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item tab-1 tab-3">
-                    <div className="block-4">
-                      <div className="block-image"><img src="/assets/images/products/traicay1.png" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="#" className="title">Bơ Booth 7</a>
-                        <div className="prices-wrapper">
-                          <div className="prices"><span className="number">80.000</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                        <ul className="list-icons">
-                          <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-heart" /></a></li>
-                          <li><a href="#" className="link"><i className="icons fa fa-share-alt"> </i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                    )
+                  })}
                 </div>
                 <div className="wrapper-btn margin-top-70"><a href="#" className="btn">Xem thêm</a></div>
               </div>
@@ -459,78 +383,57 @@ class Home extends React.Component {
                 <h1 className="title">our blog</h1></div>
               <div className="main-content">
                 <div className="grid-block-1">
+
                   <div className="block-left">
                     <div className="grid-item">
-                      <div className="block-1">
-                        <div className="block-image"><img src="/assets/images/news/image-1.jpg" alt className="img-full" />
+
+                      {firstNews && <div className="block-1">
+                        <div className="block-image"><img src={firstNews.coverUrl} alt className="img-full" />
                           <a href="blog-detail.html" className="link" />
                         </div>
-                        <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
+                        <div className="block-content"><a href={`/p/${firstNews.slug}`} className="title">{firstNews.title}</a>
                           <div className="author">
                             <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
                           <div className="description">
-                            <p className="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                          </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
+                            <p className="text">
+                              {firstNews.description}
+                            </p>
+                          </div><a href={`/p/${firstNews.slug}`} className="readmore"><span className="text">Chi tiết</span><i className="icons fa fa-long-arrow-right"> </i></a>
                           <div className="block-info">
                             <div className="info-left">
-                              <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
-                            </div>
-                            <div className="info-right">
-                              <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                              <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                              <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
+                              <div className="block"><i className="icons fa fa-calendar-o"> </i>{moment(firstNews.created_at).format('DD/MM/YYYY')}</div>
                             </div>
                             <div className="clearfix" />
                           </div>
                         </div>
-                      </div>
+                      </div>}
+
                     </div>
                   </div>
+
                   <div className="block-right">
-                    <div className="grid-item">
-                      <div className="block-2">
-                        <div className="block-image"><img src="/assets/images/news/image-3.jpg" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
+                    {restNews.map(tintuc => {
+                      return (
+                        <div className="grid-item">
+                          <div className="block-2">
+                            <div className="block-image"><img src={tintuc.coverUrl} alt className="img-full" />
+                              <a href={`/p/${tintuc.slug}`} className="link" />
+                            </div>
+                            <div className="block-content"><a href="blog-detail.html" className="title">{tintuc.title}</a>
+                              <div className="description">
+                                <p className="text">
+                                  {tintuc.description}
+                                </p>
+                              </div><a href={`/p/${tintuc.slug}`} className="readmore"><span className="text">Chi tiết</span><i className="icons fa fa-long-arrow-right" /></a></div>
+                          </div>
                         </div>
-                        <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                          <div className="author">
-                            <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                          <div className="description">
-                            <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back.</p>
-                          </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right" /></a></div>
-                      </div>
-                    </div>
-                    <div className="grid-item">
-                      <div className="block-2">
-                        <div className="block-image"><img src="/assets/images/news/image-4.jpg" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                          <div className="author">
-                            <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                          <div className="description">
-                            <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back.</p>
-                          </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right" /></a></div>
-                      </div>
-                    </div>
-                    <div className="grid-item">
-                      <div className="block-2">
-                        <div className="block-image"><img src="/assets/images/news/image-2.jpg" alt className="img-full" />
-                          <a href="blog-detail.html" className="link" />
-                        </div>
-                        <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                          <div className="author">
-                            <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                          <div className="description">
-                            <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back.</p>
-                          </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right" /></a></div>
-                      </div>
-                    </div>
+                      )
+                    })}
                   </div>
                   <div className="clearfix" />
                 </div>
-                <div className="wrapper-btn margin-top-70"><a href="#" className="btn">Xem thêm</a></div>
+                <div className="wrapper-btn margin-top-70"><a href="/tin-tuc" className="btn">Xem thêm</a></div>
+
               </div>
             </div>
           </section>

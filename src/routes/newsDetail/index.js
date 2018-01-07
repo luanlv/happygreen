@@ -16,7 +16,7 @@ import { showLoading, hideLoading } from 'react-redux-loading-bar'
 
 export default {
 
-  path: '/tin-tuc/:slug',
+  path: '/p/:slug',
 
   async action({store, fetch, path, params}) {
     store.dispatch(showLoading())

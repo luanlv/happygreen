@@ -30,6 +30,18 @@ export default function data(state = {}, action) {
           ...state.categories,
           value: data.categories || state.categories.value
         },
+        productCategories: {
+          ...state.productCategories,
+          value: data.productCategories || state.productCategories.value
+        },
+        productByCategory: {
+          ...state.productByCategory,
+          value: data.productByCategory || state.productByCategory.value
+        },
+        recentProduct: {
+          ...state.recentProduct,
+          value: data.recentProduct || state.recentProduct.value
+        },
         category: {
           ...state.category,
           value: data.category || state.category.value

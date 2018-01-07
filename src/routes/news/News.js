@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from '../../components/Link'
-
+import moment from 'moment'
 // import {Title, BreadCrumb} from './components'
 
 class News extends React.Component {
-
   render() {
+    let news = this.props.data.allNews.value
+    let recentNews = this.props.data.recentNews.value
+    let categories = this.props.data.categories.value
     return (
       <div className="main-contents">
         <section className="banner blog">
@@ -22,150 +24,31 @@ class News extends React.Component {
             <div className="row">
               <div className="col-md-8 col-xs-12 main-left">
                 <div className="blog-masonry">
-                  <div className="item">
-                    <div className="block-1">
-                      <div className="block-image"><img src="assets/images/news/image-5.jpg" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                        <div className="author">
-                          <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                        <div className="description">
-                          <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back. An ice cream sundae would </p>
-                        </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
-                        <div className="block-info">
-                          <div className="info-left">
-                            <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
+                  {news.map(tintuc => {
+                    return (
+                      <div className="item">
+                        <div className="block-1">
+                          <div className="block-image">
+                            <img src={tintuc.coverUrl} alt className="img-full" />
+                            <a href={'/p/' + tintuc.slug} className="link" />
                           </div>
-                          <div className="info-right">
-                            <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                            <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                            <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="block-1">
-                      <div className="block-image"><img src="assets/images/news/image-5.jpg" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                        <div className="author">
-                          <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                        <div className="description">
-                          <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back. An ice cream sundae would </p>
-                        </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
-                        <div className="block-info">
-                          <div className="info-left">
-                            <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
-                          </div>
-                          <div className="info-right">
-                            <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                            <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                            <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
+                          <div className="block-content"><a href={'/p/' + tintuc.slug} className="title">{tintuc.title}</a>
+
+                            <div className="description">
+                              <p className="text">
+                                {tintuc.description}
+                              </p>
+                            </div><a href={'/p/' + tintuc.slug} className="readmore"><span className="text">Đọc thêm</span><i className="icons fa fa-long-arrow-right"> </i></a>
+                            <div className="block-info">
+                              <div className="info-left">
+                                <div className="block"><i className="icons fa fa-calendar-o"> </i>{moment(tintuc.created_at).format('DD/MM/YYYY')}</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="block-1">
-                      <div className="block-image"><img src="assets/images/news/image-5.jpg" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                        <div className="author">
-                          <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                        <div className="description">
-                          <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back. An ice cream sundae would </p>
-                        </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
-                        <div className="block-info">
-                          <div className="info-left">
-                            <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
-                          </div>
-                          <div className="info-right">
-                            <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                            <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                            <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="block-1">
-                      <div className="block-image"><img src="assets/images/news/image-5.jpg" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                        <div className="author">
-                          <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                        <div className="description">
-                          <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back. An ice cream sundae would </p>
-                        </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
-                        <div className="block-info">
-                          <div className="info-left">
-                            <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
-                          </div>
-                          <div className="info-right">
-                            <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                            <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                            <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="block-1">
-                      <div className="block-image"><img src="assets/images/news/image-5.jpg" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                        <div className="author">
-                          <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                        <div className="description">
-                          <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back. An ice cream sundae would </p>
-                        </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
-                        <div className="block-info">
-                          <div className="info-left">
-                            <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
-                          </div>
-                          <div className="info-right">
-                            <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                            <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                            <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="block-1">
-                      <div className="block-image"><img src="assets/images/news/image-5.jpg" alt className="img-full" />
-                        <a href="blog-detail.html" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">50 Foods That Are Super Healthy</a>
-                        <div className="author">
-                          <p className="text">posted by</p><a href="#" className="link">Sandara Park</a></div>
-                        <div className="description">
-                          <p className="text">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back. An ice cream sundae would </p>
-                        </div><a href="#" className="readmore"><span className="text">read more</span><i className="icons fa fa-long-arrow-right"> </i></a>
-                        <div className="block-info">
-                          <div className="info-left">
-                            <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">25.07.2016</a></div>
-                          </div>
-                          <div className="info-right">
-                            <div className="block"><i className="icons fa fa-comment"> </i><a href="#" className="link">26</a></div>
-                            <div className="block"><i className="icons fa fa-share-alt" /><a href="#" className="link">17</a></div>
-                            <div className="block"><i className="icons fa fa-heart" /><a href="#" className="link">70</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    )
+                  })}
                 </div>
                 <nav className="pagination-list margin-top-70">
                   <ul className="pagination">
@@ -193,34 +76,23 @@ class News extends React.Component {
                     <div className="title-widget">Bài viết mới</div>
                     <div className="content-widget">
                       <div className="recent-post-list">
-                        <div className="single-recent-post-widget">
-                          <a href="blog-detail.html" className="thumb img-wrapper"><img src="assets/images/products/thumbnail-1.jpg" alt /></a>
-                          <div className="post-info">
-                            <div className="meta-info"><span>Aug 18, 2016</span><span className="sep">|</span><span className="fa-custom view-count">56</span><span className="fa-custom comment-count">239</span></div>
-                            <div className="description">Donec ullamcorper nulla non metus nisi auctor fringilla they can do.</div>
-                          </div>
-                        </div>
-                        <div className="single-recent-post-widget">
-                          <a href="blog-detail.html" className="thumb img-wrapper"><img src="assets/images/products/thumbnail-2.jpg" alt /></a>
-                          <div className="post-info">
-                            <div className="meta-info"><span>Aug 18, 2016</span><span className="sep">|</span><span className="fa-custom view-count">56</span><span className="fa-custom comment-count">239</span></div>
-                            <div className="description">Donec ullamcorper nulla non metus nisi auctor fringilla they can do.</div>
-                          </div>
-                        </div>
-                        <div className="single-recent-post-widget">
-                          <a href="blog-detail.html" className="thumb img-wrapper"><img src="assets/images/products/thumbnail-3.jpg" alt /></a>
-                          <div className="post-info">
-                            <div className="meta-info"><span>Aug 18, 2016</span><span className="sep">|</span><span className="fa-custom view-count">56</span><span className="fa-custom comment-count">239</span></div>
-                            <div className="description">Donec ullamcorper nulla non metus nisi auctor fringilla they can do.</div>
-                          </div>
-                        </div>
-                        <div className="single-recent-post-widget">
-                          <a href="blog-detail.html" className="thumb img-wrapper"><img src="assets/images/products/thumbnail-4.jpg" alt /></a>
-                          <div className="post-info">
-                            <div className="meta-info"><span>Aug 18, 2016</span><span className="sep">|</span><span className="fa-custom view-count">56</span><span className="fa-custom comment-count">239</span></div>
-                            <div className="description">Donec ullamcorper nulla non metus nisi auctor fringilla they can do.</div>
-                          </div>
-                        </div>
+                        {recentNews.map(tintuc => {
+                          return (
+                            <div className="single-recent-post-widget">
+                              <a href={`/p/${tintuc.slug}`} className="thumb img-wrapper"><img src={tintuc.coverUrl} alt="" /></a>
+                              <div className="post-info">
+                                <div className="meta-info"><span>{moment(tintuc.created_at).format('DD/MM/YYYY')}</span></div>
+                                <a href={`/p/${tintuc.slug}`}>
+                                <div className="description">
+
+                                     {tintuc.title}
+
+                                </div>
+                                </a>
+                              </div>
+                            </div>
+                          )
+                        })}
                       </div>
                     </div>
                   </div>
@@ -228,11 +100,11 @@ class News extends React.Component {
                     <div className="title-widget">Danh mục</div>
                     <div className="content-widget">
                       <ul className="widget-list">
-                        <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">all</span><span className="count">27</span></a></li>
-                        <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Vagetables</span><span className="count">75</span></a></li>
-                        <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Juices</span><span className="count">35</span></a></li>
-                        <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Dried Products</span><span className="count">34</span></a></li>
-                        <li className="single-widget-item"><a href="#" className="link"><span className="fa-custom category">Other</span><span className="count">65</span></a></li>
+                        {categories.map(danhmuc => {
+                          return (
+                            <li className="single-widget-item"><a href={`/danh-muc/${danhmuc.slug}`} className="link"><span className="fa-custom category">{danhmuc.title}</span></a></li>
+                          )
+                        })}
                       </ul>
                     </div>
                   </div>

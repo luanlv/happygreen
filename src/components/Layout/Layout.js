@@ -80,20 +80,6 @@ class Layout extends React.Component {
 
         <footer>
           <div className="footer">
-            <div className="subscribe-email">
-              <div className="subscribe-email-wrapper">
-                <div className="subscribe-email-left">
-                  <p className="subscribe-email-title"><strong>Subscribe</strong> to our special offers</p>
-                  <p className="subscribe-email-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui fficia runt sedwsa.</p>
-                </div>
-                <div className="subscribe-email-right">
-                  <form>
-                    <div className="input-group form-subscribe-email"><input type="text" placeholder="Type Your Email" className="form-control" /><span className="input-group-btn"><button type="submit" className="btn-email" /></span></div>
-                  </form>
-                </div>
-                <div className="clearfix" />
-              </div>
-            </div>
             <div className="footer-wrapper">
               <div className="footer-main">
                 <div className="container">
@@ -152,11 +138,7 @@ class Layout extends React.Component {
                   <div className="name-company pull-left">© Designed by <a href="http://thunderduck.com.vn">Thunder Duck</a></div>
                   <div className="social-footer pull-right">
                     <ul className="list-inline list-unstyled">
-                      <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                      <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                      <li><a href="#" className="link pinterest"><i className="fa fa-pinterest-p" /></a></li>
-                      <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                      <li><a href="#" className="link instagram"><i className="fa fa-instagram" /></a></li>
+                      <li><a href="https://www.facebook.com/HappyGreen.vn/" className="link facebook"><i className="fa fa-facebook" /></a></li>
                     </ul>
                   </div>
                 </div>
