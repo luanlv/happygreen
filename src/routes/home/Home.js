@@ -124,7 +124,7 @@ class Home extends React.Component {
           <section className="our-product padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">our product</h1></div>
+                <h2 className="title">Sản phẩm</h2></div>
               <div className="main-content">
 
                 {/*<div className="gallery-nav">*/}
@@ -160,7 +160,7 @@ class Home extends React.Component {
                     )
                   })}
                 </div>
-                <div className="wrapper-btn margin-top-70"><a href="#" className="btn">Xem thêm</a></div>
+                <div className="wrapper-btn margin-top-70"><a href="/cua-hang" className="btn">Xem thêm</a></div>
               </div>
             </div>
           </section>
@@ -205,7 +205,7 @@ class Home extends React.Component {
           <section className="banner customer-review padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles white">
-                <h1 className="title">happy customer</h1></div>
+                <h1 className="title">Khách hàng tiêu biểu</h1></div>
               <div className="list-customer-review">
                 <div className="item">
                   <div className="customer">
@@ -304,7 +304,7 @@ class Home extends React.Component {
           <section className="our-team padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">meet the family</h1></div>
+                <h1 className="title">Thành viên</h1></div>
               <div className="main-content">
                 <div className="grid-block-2">
                   <div className="grid-item grid-1">
@@ -380,7 +380,7 @@ class Home extends React.Component {
           <section className="blogs padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">our blog</h1></div>
+                <h1 className="title">Bài viết</h1></div>
               <div className="main-content">
                 <div className="grid-block-1">
 

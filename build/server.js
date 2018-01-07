@@ -15316,9 +15316,9 @@ var _ref3 = _jsx('section', {
 
 var _ref4 = _jsx('div', {
   className: 'main-titles'
-}, void 0, _jsx('h1', {
+}, void 0, _jsx('h2', {
   className: 'title'
-}, void 0, 'our product'));
+}, void 0, 'S\u1EA3n ph\u1EA9m'));
 
 var _ref5 = _jsx('sup', {}, void 0, '\u0111');
 
@@ -15338,7 +15338,7 @@ var _ref7 = _jsx('ul', {
 var _ref8 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
-  href: '#',
+  href: '/cua-hang',
   className: 'btn'
 }, void 0, 'Xem th\xEAm'));
 
@@ -15350,7 +15350,7 @@ var _ref9 = _jsx('section', {
   className: 'main-titles white'
 }, void 0, _jsx('h1', {
   className: 'title'
-}, void 0, 'happy customer')), _jsx('div', {
+}, void 0, 'Kh\xE1ch h\xE0ng ti\xEAu bi\u1EC3u')), _jsx('div', {
   className: 'list-customer-review'
 }, void 0, _jsx('div', {
   className: 'item'
@@ -15494,7 +15494,7 @@ var _ref10 = _jsx('section', {
   className: 'main-titles'
 }, void 0, _jsx('h1', {
   className: 'title'
-}, void 0, 'meet the family')), _jsx('div', {
+}, void 0, 'Th\xE0nh vi\xEAn')), _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'grid-block-2'
@@ -15675,7 +15675,7 @@ var _ref12 = _jsx('div', {
   className: 'main-titles'
 }, void 0, _jsx('h1', {
   className: 'title'
-}, void 0, 'our blog'));
+}, void 0, 'B\xE0i vi\u1EBFt'));
 
 var _ref13 = _jsx('a', {
   href: 'blog-detail.html',
