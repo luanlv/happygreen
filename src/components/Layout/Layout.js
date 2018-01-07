@@ -91,9 +91,10 @@ class Layout extends React.Component {
                             <div className="title">Liên hệ</div>
                             <div className="content-widget">
                               <ul className="list-unstyled info-list">
-                                <li><i className="icons fa fa-map-marker" /><a href="#" className="link">Block B1.00.11 Khu đô thị Sala, Nguyễn Cơ Thạch, An Lợi Đông, Quận 2
-                                  Ho Chi Minh City, Vietnam</a></li>
-                                <li><i className="icons fa fa-phone" /><a href="#" className="link link-2">0199 999 9910</a></li>
+                                <li><i className="icons fa fa-map-marker" /><a href="#" className="link">
+                                  B1.00.11 Khu chung cứ phức hợp M2, số 72, Đường Nguyễn Cơ Thạch, Phường An Lợi Đông, Quận 2, Thành phố Hồ Chí Minh, Việt Nam
+                                </a></li>
+                                <li><i className="icons fa fa-phone" /><a href="#" className="link link-2">0199.999.9910</a></li>
                                 <li><i className="icons fa fa-envelope-o" /><a href="#" className="link">phuongnguyen@happygreenmarket.com.vn</a></li>
                               </ul>
                             </div>

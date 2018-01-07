@@ -27,9 +27,10 @@ class Contact extends React.Component {
                       <div className="method-item"><i className="fa fa-map-marker" />
                         <p className="sub">Địa điểm</p>
                         <div className="detail">
-                          <p>Block B1.00.11 Khu đô thị Sala, Nguyễn Cơ Thạch, An Lợi Đông, Quận 2
-                            </p>
-                          <p>Ho Chi Minh City, Vietnam</p>
+                          <p>
+                            B1.00.11 Khu chung cứ phức hợp M2, số 72, Đường Nguyễn Cơ Thạch, Phường An Lợi Đông, Quận 2,
+                          </p>
+                          <p>Thành phố Hồ Chí Minh, Việt Nam</p>
                         </div>
                       </div>
                     </div>

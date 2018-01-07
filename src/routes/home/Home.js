@@ -312,30 +312,20 @@ class Home extends React.Component {
                       <div className="block-image"><img src="/assets/images/teams/1.jpg" alt className="img-full" />
                         <a href="#" className="link" />
                       </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">Nguyễn Thị Bảo Phương</a>
+                      <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
                         <div className="description">
                           <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
                         </div>
-                        <ul className="list-social">
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
+                      </div>
                     </div>
                   </div>
                   <div className="grid-item grid-2">
                     <div className="block-3 style-2">
-                      <div className="block-content"><a href="blog-detail.html" className="title">Nguyễn Thị Bảo Phương</a>
+                      <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
                         <div className="description">
                           <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
                         </div>
-                        <ul className="list-social">
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
+                      </div>
                       <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
                         <a href="#" className="link" />
                       </div>
@@ -346,16 +336,11 @@ class Home extends React.Component {
                       <div className="block-image"><img src="/assets/images/teams/3.jpg" alt className="img-full" />
                         <a href="#" className="link" />
                       </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">Nguyễn Thị Bảo Phương</a>
+                      <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
                         <div className="description">
                           <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
                         </div>
-                        <ul className="list-social">
-                          <li><a href="#" className="link facebook"><i className="fa fa-facebook" /></a></li>
-                          <li><a href="#" className="link twitter"><i className="fa fa-twitter" /></a></li>
-                          <li><a href="#" className="link google"><i className="fa fa-google" /></a></li>
-                          <li><a href="#" className="link instagram"><i className="fa fa-linkedin" /></a></li>
-                        </ul><a href="#" className="btn btn-maincolor">view profile</a></div>
+                      </div>
                     </div>
                   </div>
                 </div>

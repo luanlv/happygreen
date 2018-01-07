@@ -741,12 +741,12 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
 }), _jsx('a', {
   href: '#',
   className: 'link'
-}, void 0, 'Block B1.00.11 Khu \u0111\xF4 th\u1ECB Sala, Nguy\u1EC5n C\u01A1 Th\u1EA1ch, An L\u1EE3i \u0110\xF4ng, Qu\u1EADn 2 Ho Chi Minh City, Vietnam')), _jsx('li', {}, void 0, _jsx('i', {
+}, void 0, 'B1.00.11 Khu chung c\u1EE9 ph\u1EE9c h\u1EE3p M2, s\u1ED1 72, \u0110\u01B0\u1EDDng Nguy\u1EC5n C\u01A1 Th\u1EA1ch, Ph\u01B0\u1EDDng An L\u1EE3i \u0110\xF4ng, Qu\u1EADn 2, Th\xE0nh ph\u1ED1 H\u1ED3 Ch\xED Minh, Vi\u1EC7t Nam')), _jsx('li', {}, void 0, _jsx('i', {
   className: 'icons fa fa-phone'
 }), _jsx('a', {
   href: '#',
   className: 'link link-2'
-}, void 0, '0199 999 9910')), _jsx('li', {}, void 0, _jsx('i', {
+}, void 0, '0199.999.9910')), _jsx('li', {}, void 0, _jsx('i', {
   className: 'icons fa fa-envelope-o'
 }), _jsx('a', {
   href: '#',
@@ -14627,7 +14627,7 @@ var _ref2 = _jsx('div', {
   className: 'sub'
 }, void 0, '\u0110\u1ECBa \u0111i\u1EC3m'), _jsx('div', {
   className: 'detail'
-}, void 0, _jsx('p', {}, void 0, 'Block B1.00.11 Khu \u0111\xF4 th\u1ECB Sala, Nguy\u1EC5n C\u01A1 Th\u1EA1ch, An L\u1EE3i \u0110\xF4ng, Qu\u1EADn 2'), _jsx('p', {}, void 0, 'Ho Chi Minh City, Vietnam')))), _jsx('div', {
+}, void 0, _jsx('p', {}, void 0, 'B1.00.11 Khu chung c\u1EE9 ph\u1EE9c h\u1EE3p M2, s\u1ED1 72, \u0110\u01B0\u1EDDng Nguy\u1EC5n C\u01A1 Th\u1EA1ch, Ph\u01B0\u1EDDng An L\u1EE3i \u0110\xF4ng, Qu\u1EADn 2,'), _jsx('p', {}, void 0, 'Th\xE0nh ph\u1ED1 H\u1ED3 Ch\xED Minh, Vi\u1EC7t Nam')))), _jsx('div', {
   className: 'col-sm-4 col-xs-12'
 }, void 0, _jsx('div', {
   className: 'method-item'
@@ -15516,36 +15516,11 @@ var _ref10 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: 'blog-detail.html',
   className: 'title'
-}, void 0, 'Nguy\u1EC5n Th\u1ECB B\u1EA3o Ph\u01B0\u01A1ng'), _jsx('div', {
+}, void 0, 'NGUY\u1EC4N TH\u1ECA HO\xC0NG PH\u01AF\u01A0NG'), _jsx('div', {
   className: 'description'
 }, void 0, _jsx('p', {
   className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
-  className: 'list-social'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-})))), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'view profile')))), _jsx('div', {
+}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food'))))), _jsx('div', {
   className: 'grid-item grid-2'
 }, void 0, _jsx('div', {
   className: 'block-3 style-2'
@@ -15554,36 +15529,11 @@ var _ref10 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: 'blog-detail.html',
   className: 'title'
-}, void 0, 'Nguy\u1EC5n Th\u1ECB B\u1EA3o Ph\u01B0\u01A1ng'), _jsx('div', {
+}, void 0, 'NGUY\u1EC4N TH\u1ECA HO\xC0NG PH\u01AF\u01A0NG'), _jsx('div', {
   className: 'description'
 }, void 0, _jsx('p', {
   className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
-  className: 'list-social'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-})))), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'view profile')), _jsx('div', {
+}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food'))), _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
   src: '/assets/images/teams/2.jpg',
@@ -15610,36 +15560,11 @@ var _ref10 = _jsx('section', {
 }, void 0, _jsx('a', {
   href: 'blog-detail.html',
   className: 'title'
-}, void 0, 'Nguy\u1EC5n Th\u1ECB B\u1EA3o Ph\u01B0\u01A1ng'), _jsx('div', {
+}, void 0, 'NGUY\u1EC4N TH\u1ECA HO\xC0NG PH\u01AF\u01A0NG'), _jsx('div', {
   className: 'description'
 }, void 0, _jsx('p', {
   className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')), _jsx('ul', {
-  className: 'list-social'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link facebook'
-}, void 0, _jsx('i', {
-  className: 'fa fa-facebook'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link twitter'
-}, void 0, _jsx('i', {
-  className: 'fa fa-twitter'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link google'
-}, void 0, _jsx('i', {
-  className: 'fa fa-google'
-}))), _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link instagram'
-}, void 0, _jsx('i', {
-  className: 'fa fa-linkedin'
-})))), _jsx('a', {
-  href: '#',
-  className: 'btn btn-maincolor'
-}, void 0, 'view profile'))))))));
+}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food')))))))));
 
 var _ref11 = _jsx('section', {
   className: 'banner banner-2'
