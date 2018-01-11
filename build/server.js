@@ -489,23 +489,42 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('div', {
-  className: 'header-topbar'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('ul', {
-  className: 'topbar-left list-unstyled pull-left'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
+var _ref = _jsx('a', {
   href: 'javascript:void(0)',
   className: 'link'
 }, void 0, ' ', _jsx('i', {
   className: 'icons fa fa-circle'
-}), _jsx('span', {}, void 0, 'Gi\u1EDD m\u1EDF c\u1EEDa'))), _jsx('li', {}, void 0, _jsx('a', {
+}), _jsx('span', {}, void 0, 'Gi\u1EDD m\u1EDF c\u1EEDa'));
+
+var _ref2 = _jsx('a', {
+  href: 'javascript:void(0)',
+  className: 'link'
+}, void 0, ' ', _jsx('i', {
+  className: 'icons fa fa-circle'
+}), _jsx('span', {}, void 0, 'Opening hours'));
+
+var _ref3 = _jsx('li', {}, void 0, _jsx('a', {
   href: 'javascript:void(0)',
   className: 'link'
 }, void 0, ' ', _jsx('i', {
   className: 'icons-2 fa fa-clock-o'
-}), _jsx('span', {}, void 0, '06:00 - 22:00 ')))), _jsx('ul', {
+}), _jsx('span', {}, void 0, '06:00 - 22:00 ')));
+
+var _ref4 = _jsx('a', {
+  href: '?lang=en'
+}, void 0, _jsx('img', {
+  src: '/flag_en.jpg',
+  alt: ''
+}));
+
+var _ref5 = _jsx('a', {
+  href: '?lang=vi'
+}, void 0, _jsx('img', {
+  src: '/flag_vn.jpg',
+  alt: ''
+}));
+
+var _ref6 = _jsx('ul', {
   className: 'topbar-right list-unstyled list-inline style-2'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
   href: '#',
@@ -514,15 +533,15 @@ var _ref = _jsx('div', {
   className: 'icons-2 fa fa-cart-plus'
 }), _jsx('span', {
   className: 'cart-counter'
-}, void 0, '0'))))));
+}, void 0, '0'))));
 
-var _ref2 = _jsx('div', {
+var _ref7 = _jsx('div', {
   className: 'hamburger-menu-mobile'
 }, void 0, _jsx('i', {
   className: 'icons fa fa-bars'
 }));
 
-var _ref3 = _jsx('div', {
+var _ref8 = _jsx('div', {
   className: 'logo-wrapper'
 }, void 0, _jsx('a', {
   href: '/',
@@ -532,14 +551,25 @@ var _ref3 = _jsx('div', {
   alt: true
 })));
 
-var _ref4 = _jsx('a', {
+var _ref9 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
   href: '/',
   className: 'main-menu'
 }, void 0, _jsx('span', {
   className: 'text'
-}, void 0, 'Trang ch\u1EE7'));
+}, void 0, 'Trang ch\u1EE7')));
 
-var _ref5 = _jsx('li', {
+var _ref10 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
+  href: '/',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'Home')));
+
+var _ref11 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/gioi-thieu',
@@ -548,16 +578,43 @@ var _ref5 = _jsx('li', {
   className: 'text'
 }, void 0, 'Gi\u1EDBi thi\u1EC7u')));
 
-var _ref6 = _jsx('li', {
+var _ref12 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
+  href: '/gioi-thieu',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'About')));
+
+var _ref13 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/cua-hang',
   className: 'main-menu'
 }, void 0, _jsx('span', {
   className: 'text'
-}, void 0, 'C\u1EEDa h\xE0ng')));
+}, void 0, 'S\u1EA3n ph\u1EA9m')));
 
-var _ref7 = _jsx('li', {
+var _ref14 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
+  href: '/cua-hang',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'Product')));
+
+var _ref15 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
+  href: '#',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'Hot Deal')));
+
+var _ref16 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -566,7 +623,16 @@ var _ref7 = _jsx('li', {
   className: 'text'
 }, void 0, 'Tin t\u1EE9c')));
 
-var _ref8 = _jsx('li', {
+var _ref17 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
+  href: '/tin-tuc',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'News')));
+
+var _ref18 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/lien-he',
@@ -575,36 +641,20 @@ var _ref8 = _jsx('li', {
   className: 'text'
 }, void 0, 'Li\xEAn h\u1EC7')));
 
-var _ref9 = _jsx('div', {
-  className: 'button-search'
-}, void 0, _jsx('p', {
-  className: 'main-menu '
-}, void 0, _jsx('i', {
-  className: 'fa fa-search'
-})));
+var _ref19 = _jsx('li', {
+  className: 'dropdown active'
+}, void 0, _jsx('a', {
+  href: '/lien-he',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'Contact')));
 
-var _ref10 = _jsx('div', {
-  className: 'nav-search hide'
-}, void 0, _jsx('form', {}, void 0, _jsx('input', {
-  type: 'text',
-  placeholder: 'Search',
-  className: 'searchbox'
-}), _jsx('button', {
-  type: 'submit',
-  className: 'searchbutton fa fa-search'
-})));
-
-var _ref11 = _jsx('div', {
-  className: 'button-search-mobile'
-}, void 0, _jsx('i', {
-  className: 'icons fa fa-search'
-}));
-
-var _ref12 = _jsx('div', {
+var _ref20 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
+var _ref21 = _jsx('footer', {}, void 0, _jsx('div', {
   className: 'footer'
 }, void 0, _jsx('div', {
   className: 'footer-wrapper'
@@ -722,7 +772,7 @@ var _ref13 = _jsx('footer', {}, void 0, _jsx('div', {
   className: 'fa fa-facebook'
 }))))))))));
 
-var _ref14 = _jsx('div', {
+var _ref22 = _jsx('div', {
   id: 'back-top'
 }, void 0, _jsx('a', {
   href: '#top',
@@ -740,6 +790,8 @@ var _ref14 = _jsx('div', {
 })));
 
 function Layout(props) {
+
+  let en = props.data.lang === 'en';
   return _jsx('div', {
     className: 'body-wrapper'
   }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar___default.a, {
@@ -753,19 +805,26 @@ function Layout(props) {
     className: 'wrapper-content'
   }, void 0, _jsx('header', {}, void 0, _jsx('div', {
     className: 'bg-transparent'
-  }, void 0, _ref, _jsx('div', {
+  }, void 0, _jsx('div', {
+    className: 'header-topbar'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _jsx('ul', {
+    className: 'topbar-left list-unstyled pull-left'
+  }, void 0, _jsx('li', {}, void 0, !en && _ref, en && _ref2), _ref3), _jsx('ul', {
+    className: 'topbar-right list-unstyled style-2',
+    style: { marginLeft: 20 }
+  }, void 0, !en && _ref4, en && _ref5), _ref6)), _jsx('div', {
     className: 'header-main'
   }, void 0, _jsx('div', {
     className: 'container'
   }, void 0, _jsx('div', {
     className: 'header-main-wrapper'
-  }, void 0, _ref2, _ref3, _jsx('nav', {
+  }, void 0, _ref7, _ref8, _jsx('nav', {
     className: 'navigation'
   }, void 0, _jsx('ul', {
     className: 'nav-links nav navbar-nav'
-  }, void 0, _jsx('li', {
-    className: 'dropdown active'
-  }, void 0, _ref4), _ref5, _ref6, _ref7, _ref8), _ref9, _ref10), _ref11, _ref12))))), props.children, _ref13, _ref14));
+  }, void 0, !en && _ref9, en && _ref10, !en && _ref11, en && _ref12, !en && _ref13, en && _ref14, _ref15, !en && _ref16, en && _ref17, !en && _ref18, en && _ref19)), _ref20))))), props.children, _ref21, _ref22));
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (Layout);
@@ -2546,6 +2605,19 @@ app.get('*', (() => {
         cookie: req.headers.cookie
       });
 
+      let lang = 'vi';
+      if (req.cookies && req.cookies.lang) lang = req.cookies.lang;
+      if (req.query && req.query.lang === 'en') {
+        res.cookie('lang', 'en');
+        lang = 'en';
+      }
+
+      if (req.query && req.query.lang === 'vi') {
+        res.cookie('lang', 'vi');
+        lang = 'vi';
+      }
+
+      // console.log(lang)
       const initialState = {
         user: req.user || null,
         data: {
@@ -2600,8 +2672,8 @@ app.get('*', (() => {
           information: {
             needUpdate: true,
             value: {}
-          }
-
+          },
+          lang: lang
         }
       };
 
@@ -2672,6 +2744,7 @@ app.get('*', (() => {
         res.send(`<!doctype html>${html}`);
       } else {
         const html = __WEBPACK_IMPORTED_MODULE_8_react_dom_server___default.a.renderToStaticMarkup(__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__components_Html__["a" /* default */], _extends({ v: version }, data, { isAdmin: isAdmin, scriptTop: setting ? setting.scriptTop || '' : '', scriptBottom: setting ? setting.scriptBottom || '' : '', css: setting ? setting.css || '' : '' })));
+
         res.status(route.status || 200);
         res.send(`<!doctype html>${html}`);
       }
@@ -3444,7 +3517,14 @@ var _ref = _jsx('div', {}, void 0, _jsx('div', {
   className: 'main-menu'
 }, void 0, _jsx('span', {
   className: 'text'
-}, void 0, 'C\u1EEDa h\xE0ng'))), _jsx('li', {
+}, void 0, 'S\u1EA3n ph\u1EA9m'))), _jsx('li', {
+  className: 'dropdown'
+}, void 0, _jsx('a', {
+  href: '/hotdeal',
+  className: 'main-menu'
+}, void 0, _jsx('span', {
+  className: 'text'
+}, void 0, 'Hot Deal'))), _jsx('li', {
   className: 'dropdown'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -3466,19 +3546,7 @@ var _ref = _jsx('div', {}, void 0, _jsx('div', {
   className: 'icons fa fa-times'
 })), _jsx('div', {
   className: 'clearfix'
-})), _jsx('div', {
-  className: 'mb-search'
-}, void 0, _jsx('form', {}, void 0, _jsx('input', {
-  type: 'text',
-  placeholder: 'Search',
-  onfocus: 'this.placeholder = \'\'',
-  className: 'searchbox'
-}), _jsx('div', {
-  className: 'line-boder'
-}), _jsx('button', {
-  type: 'submit',
-  className: 'searchbutton fa fa-search'
-})))));
+}))));
 
 function Header(props) {
   // const services = this.props.data.information.value.services

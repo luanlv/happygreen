@@ -25,8 +25,9 @@ class Header extends React.Component {
             <li className="dropdown"><a href="/" className="main-menu"><span className="text">Trang chủ</span></a>
             </li>
             <li><a href="/about" className="main-menu"><span className="text">Giới thiệu</span></a></li>
-            <li className="dropdown"><a href="/shop" className="main-menu"><span className="text">Cửa hàng</span></a>
+            <li className="dropdown"><a href="/shop" className="main-menu"><span className="text">Sản phẩm</span></a>
             </li>
+            <li className="dropdown"><a href="/hotdeal" className="main-menu"><span className="text">Hot Deal</span></a></li>
             <li className="dropdown"><a href="/tin-tuc" className="main-menu"><span className="text">Tin tức</span></a></li>
             <li><a href="/lien-he" className="main-menu"><span className="text">Liên hệ</span></a></li>
           </ul>
@@ -35,10 +36,6 @@ class Header extends React.Component {
           <div className="mb-social-wrapper">
             <div className="mb-button-close"><i className="icons fa fa-times" /></div>
             <div className="clearfix" />
-          </div>
-          <div className="mb-search">
-            <form><input type="text" placeholder="Search" onfocus="this.placeholder = ''" className="searchbox" />
-              <div className="line-boder" /><button type="submit" className="searchbutton fa fa-search" /></form>
           </div>
         </div>
 

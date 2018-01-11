@@ -15,6 +15,8 @@ import LoadingBar from 'react-redux-loading-bar';
 class Layout extends React.Component {
 
   render() {
+
+    let en = this.props.data.lang === 'en'
     return (<div className="body-wrapper">
       <LoadingBar showFastActions  maxProgress={80} progressIncrease={40} style={{ backgroundColor: 'red', zIndex: 1000, height: '2px' }} />
 
@@ -27,17 +29,25 @@ class Layout extends React.Component {
               <div className="container">
                 <ul className="topbar-left list-unstyled pull-left">
                   <li>
-                    <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" /><span>Giờ mở cửa</span></a>
+                    {!en && <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" /><span>Giờ mở cửa</span></a>}
+                    {en && <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" /><span>Opening hours</span></a>}
                   </li>
                   <li>
                     <a href="javascript:void(0)" className="link"> <i className="icons-2 fa fa-clock-o" /><span>06:00 - 22:00 </span></a>
                   </li>
                 </ul>
+
+                <ul className="topbar-right list-unstyled style-2" style={{marginLeft: 20}}>
+                  {!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}
+                  {en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}
+                </ul>
+
                 <ul className="topbar-right list-unstyled list-inline style-2">
                   <li>
                     <a href="#" className="link"> <i className="icons-2 fa fa-cart-plus" /><span className="cart-counter">0</span></a>
                   </li>
                 </ul>
+
               </div>
             </div>
             <div className="header-main">
@@ -49,27 +59,27 @@ class Layout extends React.Component {
                   </div>
                   <nav className="navigation">
                     <ul className="nav-links nav navbar-nav">
-                      <li className="dropdown active"><a href="/" className="main-menu"><span className="text">Trang chủ</span></a>
-                        {/*<ul className="menu-dropdown">*/}
-                          {/*<li><a href="index.html" className="sub-menu"><span className="text">Homepage 01</span></a></li>*/}
-                          {/*<li><a href="homepage-2.html" className="sub-menu"><span className="text">Homepage 02</span></a></li>*/}
-                          {/*<li><a href="homepage-3.html" className="sub-menu"><span className="text">Homepage 03</span></a></li>*/}
-                        {/*</ul>*/}
-                      </li>
-                      <li className="dropdown active"><a href="/gioi-thieu" className="main-menu"><span className="text">Giới thiệu</span></a></li>
-                      <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Cửa hàng</span></a>
-                      </li>
-                      <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">Tin tức</span></a></li>
-                      <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Liên hệ</span></a></li>
+                      {!en && <li className="dropdown active"><a href="/" className="main-menu"><span className="text">Trang chủ</span></a></li>}
+                      {en && <li className="dropdown active"><a href="/" className="main-menu"><span className="text">Home</span></a></li>}
+
+                      {!en && <li className="dropdown active"><a href="/gioi-thieu" className="main-menu"><span className="text">Giới thiệu</span></a></li>}
+                      {en && <li className="dropdown active"><a href="/gioi-thieu" className="main-menu"><span className="text">About</span></a></li>}
+
+                      {!en && <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Sản phẩm</span></a></li>}
+                      {en && <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Product</span></a></li>}
+
+                      <li className="dropdown active"><a href="#" className="main-menu"><span className="text">Hot Deal</span></a></li>
+
+                      {!en && <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">Tin tức</span></a></li>}
+                      {en && <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">News</span></a></li>}
+
+                      {!en && <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Liên hệ</span></a></li>}
+                      {en && <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Contact</span></a></li>}
                     </ul>
-                    <div className="button-search">
-                      <p className="main-menu "><i className="fa fa-search" /></p>
-                    </div>
-                    <div className="nav-search hide">
-                      <form><input type="text" placeholder="Search" className="searchbox" /><button type="submit" className="searchbutton fa fa-search" /></form>
-                    </div>
+
                   </nav>
-                  <div className="button-search-mobile"><i className="icons fa fa-search" /></div>
+
+
                   <div className="clearfix" />
                 </div>
               </div>

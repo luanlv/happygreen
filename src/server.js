@@ -131,6 +131,19 @@ app.get('*', async (req, res, next) => {
       cookie: req.headers.cookie,
     });
 
+    let lang = 'vi'
+    if(req.cookies && req.cookies.lang) lang = req.cookies.lang
+    if(req.query && req.query.lang === 'en'){
+      res.cookie('lang', 'en')
+      lang = 'en'
+    }
+
+    if(req.query && req.query.lang === 'vi'){
+      res.cookie('lang', 'vi')
+      lang = 'vi'
+    }
+
+    // console.log(lang)
     const initialState = {
       user: req.user || null,
       data: {
@@ -186,7 +199,7 @@ app.get('*', async (req, res, next) => {
           needUpdate: true,
           value: {}
         },
-
+        lang: lang,
       }
     };
 
@@ -263,6 +276,7 @@ app.get('*', async (req, res, next) => {
       res.send(`<!doctype html>${html}`);
     } else {
       const html = ReactDOM.renderToStaticMarkup(<Html v={version} {...data} isAdmin={isAdmin}  scriptTop={setting ? setting.scriptTop || '' : ''} scriptBottom={setting ? setting.scriptBottom || '' : ''} css={setting ? setting.css || '' : ''} />);
+
       res.status(route.status || 200);
       res.send(`<!doctype html>${html}`);
     }
