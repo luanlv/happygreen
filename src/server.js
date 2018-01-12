@@ -275,7 +275,7 @@ app.get('*', async (req, res, next) => {
       res.status(route.status || 200);
       res.send(`<!doctype html>${html}`);
     } else {
-      const html = ReactDOM.renderToStaticMarkup(<Html v={version} {...data} isAdmin={isAdmin}  scriptTop={setting ? setting.scriptTop || '' : ''} scriptBottom={setting ? setting.scriptBottom || '' : ''} css={setting ? setting.css || '' : ''} />);
+      const html = ReactDOM.renderToStaticMarkup(<Html v={version} {...data} lang={lang} isAdmin={isAdmin}  scriptTop={setting ? setting.scriptTop || '' : ''} scriptBottom={setting ? setting.scriptBottom || '' : ''} css={setting ? setting.css || '' : ''} />);
 
       res.status(route.status || 200);
       res.send(`<!doctype html>${html}`);

@@ -35,7 +35,7 @@ class Html extends React.Component {
   render() {
     const { title, description, styles, scripts, app, children, v, seo, scriptTop, css  } = this.props;
     return (
-      <html className="no-js" lang="en">
+      <html className="no-js" lang={this.props.lang}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -66,7 +66,6 @@ class Html extends React.Component {
           <link rel="stylesheet" type="text/css"  href={"/css/app.css?v=" +v }/>
           <style dangerouslySetInnerHTML={{ __html: css }} />
           <script dangerouslySetInnerHTML={{ __html: scriptTop }} />
-
         </head>
         <body>
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />

@@ -22,7 +22,8 @@ class Home extends React.Component {
   render() {
     let [firstNews, ...restNews] = this.props.data.recentNews.value;
     let productCategories = this.props.data.productCategories.value;
-    let recentProduct = this.props.data.recentProduct.value;
+    let recentProduct = this.props.data.recentProduct.value
+    let isEn = this.props.data.lang === 'en'
     return (
       <div>
         <div className="main-contents">
@@ -34,7 +35,8 @@ class Home extends React.Component {
                   <div className="homepage-banner-content">
                     <div className="group-title fadeInDown">
                       <h1 className="title">Happy Green</h1>
-                      <h2 className="subtitle">Tươi mỗi ngày | Fresh daily</h2>
+                      {!isEn  && <h2 className="subtitle">Tươi mỗi ngày</h2>}
+                      {isEn  && <h2 className="subtitle">Fresh daily</h2>}
                     </div>
                   </div>
                 </div>
@@ -45,7 +47,9 @@ class Home extends React.Component {
           <section className="about-us padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">Chào mừng đến với Happy Green</h1></div>
+                {!isEn && <h2 className="title">Chào mừng đến với Happy Green</h2>}
+                {isEn && <h2 className="title">Welcome to Happy Green</h2>}
+              </div>
               <div className="main-content">
                 <div className="about-us-wrapper">
                   <div className="about-left">
@@ -124,7 +128,9 @@ class Home extends React.Component {
           <section className="our-product padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h2 className="title">Sản phẩm</h2></div>
+                {!isEn && <h2 className="title">Sản phẩm</h2>}
+                {isEn && <h2 className="title">Products</h2>}
+              </div>
               <div className="main-content">
 
                 {/*<div className="gallery-nav">*/}
@@ -205,7 +211,9 @@ class Home extends React.Component {
           <section className="banner customer-review padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles white">
-                <h1 className="title">Khách hàng tiêu biểu</h1></div>
+                {!isEn && <h1 className="title">Khách hàng tiêu biểu</h1>}
+                {isEn && <h1 className="title">Happy customers</h1>}
+              </div>
               <div className="list-customer-review">
                 <div className="item">
                   <div className="customer">
@@ -304,7 +312,9 @@ class Home extends React.Component {
           <section className="our-team padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">Thành viên</h1></div>
+                {!isEn && <h1 className="title">Thành viên</h1>}
+                {isEn && <h1 className="title">My Teams</h1>}
+              </div>
               <div className="main-content">
                 <div className="grid-block-2">
                   <div className="grid-item grid-1">
@@ -365,7 +375,9 @@ class Home extends React.Component {
           <section className="blogs padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">Bài viết</h1></div>
+                {!isEn && <h2 className="title">Bài viết</h2>}
+                {isEn && <h2 className="title">Post</h2>}
+              </div>
               <div className="main-content">
                 <div className="grid-block-1">
 

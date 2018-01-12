@@ -17,6 +17,7 @@ class Layout extends React.Component {
   render() {
 
     let en = this.props.data.lang === 'en'
+
     return (<div className="body-wrapper">
       <LoadingBar showFastActions  maxProgress={80} progressIncrease={40} style={{ backgroundColor: 'red', zIndex: 1000, height: '2px' }} />
 
@@ -98,7 +99,8 @@ class Layout extends React.Component {
                       <div className="col-2">
                         <div className="col-md-6 col-xs-12">
                           <div className="gamba-info widget">
-                            <div className="title">Liên hệ</div>
+                            {!en && <div className="title">Liên hệ</div>}
+                            {en && <div className="title">Contact</div>}
                             <div className="content-widget">
                               <ul className="list-unstyled info-list">
                                 <li><i className="icons fa fa-map-marker" /><a href="#" className="link">
@@ -114,7 +116,7 @@ class Layout extends React.Component {
                       <div className="col-2">
                         <div className="col-md-6 col-xs-12">
                           <div className="gamba-gallery widget">
-                            <div className="title">gallery</div>
+                            <div className="title">Gallery</div>
                             <div className="content-widget">
                               <ul className="list-unstyled list-inline">
                                 <li>
