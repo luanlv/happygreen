@@ -23,7 +23,7 @@ class Home extends React.Component {
     let [firstNews, ...restNews] = this.props.data.recentNews.value;
     let productCategories = this.props.data.productCategories.value;
     let recentProduct = this.props.data.recentProduct.value
-    let isEn = this.props.data.lang === 'en'
+    let isEn = this.props.data && this.props.data.lang === 'en'
     return (
       <div>
         <div className="main-contents">

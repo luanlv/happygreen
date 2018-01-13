@@ -629,7 +629,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
   render() {
 
-    let en = this.props.data.lang === 'en';
+    const en = this.props.data && this.props.data.lang === 'en';
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
@@ -1828,6 +1828,101 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               },
               __self: this
             })
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { id: 'myModal', className: 'modal fade', role: 'dialog', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 174
+          },
+          __self: this
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'modal-dialog', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 175
+            },
+            __self: this
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'modal-content', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 176
+              },
+              __self: this
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'modal-header', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 177
+                },
+                __self: this
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'button',
+                { type: 'button', className: 'close', 'data-dismiss': 'modal', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 178
+                  },
+                  __self: this
+                },
+                '\xD7'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'h4',
+                { className: 'modal-title', style: { color: 'red', fontWeight: 'red', fontStyle: 'italic', textAlign: 'center' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 179
+                  },
+                  __self: this
+                },
+                'HOT DEAL M\u1ED6I NG\xC0Y'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'modal-body', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 181
+                },
+                __self: this
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'p',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 182
+                  },
+                  __self: this
+                },
+                'Some text in the modal.'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'modal-footer', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 184
+                },
+                __self: this
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'button',
+                { type: 'button', className: 'btn btn-default', 'data-dismiss': 'modal', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 185
+                  },
+                  __self: this
+                },
+                'Close'
+              )
+            )
           )
         )
       )
@@ -29416,7 +29511,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     let [firstNews, ...restNews] = this.props.data.recentNews.value;
     let productCategories = this.props.data.productCategories.value;
     let recentProduct = this.props.data.recentProduct.value;
-    let isEn = this.props.data.lang === 'en';
+    let isEn = this.props.data && this.props.data.lang === 'en';
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       {
