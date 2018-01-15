@@ -6,6 +6,8 @@ class Header extends React.Component {
   render () {
     // const services = this.props.data.information.value.services
     // const common = this.props.data.information.value.common
+    const en = this.props.data && this.props.data.lang === 'en'
+
     return (
       <div>
 
@@ -22,20 +24,28 @@ class Header extends React.Component {
           </div>
 
           <ul className="nav navbar-nav mb-nav">
-            <li className="dropdown"><a href="/" className="main-menu"><span className="text">Trang chủ</span></a>
-            </li>
-            <li><a href="/about" className="main-menu"><span className="text">Giới thiệu</span></a></li>
-            <li className="dropdown"><a href="/shop" className="main-menu"><span className="text">Sản phẩm</span></a>
-            </li>
-            <li className="dropdown"><a href="/hotdeal" className="main-menu"><span className="text">Hot Deal</span></a></li>
-            <li className="dropdown"><a href="/tin-tuc" className="main-menu"><span className="text">Tin tức</span></a></li>
-            <li><a href="/lien-he" className="main-menu"><span className="text">Liên hệ</span></a></li>
+            {!en && <li className="dropdown active"><a href="/" className="main-menu"><span className="text">Trang chủ</span></a></li>}
+            {en && <li className="dropdown active"><a href="/" className="main-menu"><span className="text">Home</span></a></li>}
+
+            {!en && <li className="dropdown active"><a href="/gioi-thieu" className="main-menu"><span className="text">Giới thiệu</span></a></li>}
+            {en && <li className="dropdown active"><a href="/gioi-thieu" className="main-menu"><span className="text">About</span></a></li>}
+
+            {!en && <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Sản phẩm</span></a></li>}
+            {en && <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Product</span></a></li>}
+
+            <li className="dropdown active"><a href="#" className="main-menu"><span className="text">Hot Deal</span></a></li>
+
+            {!en && <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">Tin tức</span></a></li>}
+            {en && <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">News</span></a></li>}
+
+            {!en && <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Liên hệ</span></a></li>}
+            {en && <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Contact</span></a></li>}
           </ul>
-        </div>
-        <div className="wrapper-search-mobile">
-          <div className="mb-social-wrapper">
-            <div className="mb-button-close"><i className="icons fa fa-times" /></div>
-            <div className="clearfix" />
+          <div>
+            <ul className="list-unstyled list-inline" style={{marginLeft: 35}}>
+              {!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}
+              {en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}
+            </ul>
           </div>
         </div>
 

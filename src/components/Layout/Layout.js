@@ -169,7 +169,7 @@ class Layout extends React.Component {
 
       </div>
 
-      {/*<button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>*/}
+      <button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
       <div id="myModal" className="modal fade" role="dialog">
         <div className="modal-dialog">
