@@ -15889,9 +15889,9 @@ var _ref7 = _jsx('div', {
   className: 'table-cell'
 }, void 0, _jsx('h4', {
   className: 'title'
-}, void 0, '100% Natural'), _jsx('p', {
+}, void 0, '100% T\u1EF1 nhi\xEAn'), _jsx('p', {
   className: 'description'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes delicious. '))), _jsx('div', {
+}, void 0, 'Happy Green mang \u0111\u1EBFn nh\u1EEFng th\u1EE9c rau c\u1EE7 qu\u1EA3 kh\xF4ng s\u1EED d\u1EE5ng b\u1EA5t c\u1EE9 h\xE0m l\u01B0\u1EE3ng thu\u1ED1c b\u1EA3o qu\u1EA3n th\u1EF1c v\u1EADt n\xE0o. \u0110\u1EA3m b\u1EA3o \u0111\u1ED9 t\u1EF1 nhi\xEAn t\u1ED1i \u0111a cho th\u1EF1c ph\u1EA9m ng\u01B0\u1EDDi d\xF9ng'))), _jsx('div', {
   'data-wow-delay': '1.3s',
   className: 'block-icon-1 wow fadeInLeft'
 }, void 0, _jsx('div', {
@@ -15912,9 +15912,9 @@ var _ref7 = _jsx('div', {
   className: 'table-cell'
 }, void 0, _jsx('h4', {
   className: 'title'
-}, void 0, 'Always Fresh'), _jsx('p', {
+}, void 0, 'Lu\xF4n t\u01B0\u01A1i'), _jsx('p', {
   className: 'description'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes delicious.')))), _jsx('div', {
+}, void 0, 'Happy Green cam k\u1EBFt mang \u0111\u1EBFn cho kh\xE1ch h\xE0ng nh\u1EEFng th\u1EE9c d\xF9ng lu\xF4n t\u01B0\u01A1i v\xE0 xanh. Nh\u1EEFng th\u1EF1c ph\u1EA9m \u0111\u01B0\u1EE3c ch\u1ECDn l\u1EF1a m\u1ED7i ng\xE0y t\u1EEB nhi\u1EC1u ngu\u1ED3n cung c\u1EA5p uy t\xEDn \u0111\u1EA3m b\u1EA3o t\u01B0\u01A1i m\u1EDBi, xanh m\u01A1n \u0111\xFAng ch\u1EA5t')))), _jsx('div', {
   'data-wow-delay': '0.3s',
   className: 'about-center wow zoomIn'
 }, void 0, _jsx('img', {
@@ -15944,9 +15944,9 @@ var _ref7 = _jsx('div', {
   className: 'table-cell'
 }, void 0, _jsx('h4', {
   className: 'title'
-}, void 0, 'Organic Products'), _jsx('p', {
+}, void 0, 'Quy chu\u1EA9n h\u1EEFu c\u01A1'), _jsx('p', {
   className: 'description'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes delicious.'))), _jsx('div', {
+}, void 0, 'Happy Green cung c\u1EA5p nh\u1EEFng s\u1EA3n ph\u1EA9m \u0111\u1EA3m b\u1EA3o quy chu\u1EA9n h\u1EEFu c\u01A1 nghi\xEAm ng\u1EB7t. \xC1p d\u1EE5ng nh\u1EEFng quy \u01B0\u1EDBc v\u1EC1 h\u1EEFu c\u01A1 nh\u1EB1m h\u01B0\u1EDBng \u0111\u1EBFn \u0111\u1EA3m b\u1EA3o an to\xE0n cho ng\u01B0\u1EDDi ti\xEAu d\xF9ng v\xE0 m\xF4i sinh'))), _jsx('div', {
   'data-wow-delay': '1.3s',
   className: 'block-icon-1 wow fadeInRight'
 }, void 0, _jsx('div', {
@@ -15967,9 +15967,9 @@ var _ref7 = _jsx('div', {
   className: 'table-cell'
 }, void 0, _jsx('h4', {
   className: 'title'
-}, void 0, 'Best Quality'), _jsx('p', {
+}, void 0, 'Ch\u1EA5t l\u01B0\u1EE3ng t\u1ED1t nh\u1EA5t'), _jsx('p', {
   className: 'description'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes delicious.')))), _jsx('div', {
+}, void 0, 'Happy Green n\xF3i kh\xF4ng v\u1EDBi c\xE1c m\u1EB7t h\xE0ng th\u1EE9 c\u1EA5p. Nh\u1EEFng th\u1EF1c ph\u1EA9m b\xE0y b\xE1n \u0111\xE3 \u0111\u01B0\u1EE3c ch\u1ECDn l\u1ECDc k\u1EF9 l\u01B0\u1EE1ng t\u1EEB nh\u1EEFng nh\xE0 cung c\u1EA5p uy t\xEDn. Nh\u1EEFng ti\xEAu chu\u1EA9n v\u1EC1 t\u01B0\u01A1i ngon v\xE0 t\u1ED1t nh\u1EA5t cho s\u1EE9c kh\u1ECFe \u0111\u01B0\u1EE3c ch\xFAng t\xF4i \u0111\u1EB7t l\xEAn h\xE0ng \u0111\u1EA7u')))), _jsx('div', {
   className: 'clearfix'
 })));
 
@@ -15990,14 +15990,14 @@ var _ref8 = _jsx('section', {
   className: 'banner-1-wrapper'
 }, void 0, _jsx('h3', {
   className: 'subtitle'
-}, void 0, 'eat better'), _jsx('h2', {
+}, void 0, 'Ch\u1ECDn ch\u1EA5t l\u01B0\u1EE3ng'), _jsx('h2', {
   className: 'title'
-}, void 0, 'feel better'), _jsx('p', {
+}, void 0, 'Ch\u1ECDn Happy Green'), _jsx('p', {
   className: 'description'
-}, void 0, 'We produce food in a way which is honest, natural & transparent.'), _jsx('a', {
-  href: '#',
+}, void 0, 'Ch\xFAng t\xF4i cam k\u1EBFt \u0111em \u0111\u1EBFn nh\u1EEFng s\u1EA3n ph\u1EA9m t\u1EF1 nhi\xEAn, t\u01B0\u01A1i, xanh v\u1EDBi ti\xEAu chu\u1EA9n ch\u1ECDn l\u1EF1a nghi\xEAm ng\u1EB7t'), _jsx('a', {
+  href: '/cua-hang',
   className: 'btn btn-maincolor'
-}, void 0, 'shop now'))));
+}, void 0, 'Mua s\u1EAFm ngay!'))));
 
 var _ref9 = _jsx('h2', {
   className: 'title'
@@ -16059,9 +16059,9 @@ var _ref17 = _jsx('div', {
   className: 'icons'
 }, void 0, '"'), _jsx('div', {
   className: 'name'
-}, void 0, 'phien phien'), _jsx('div', {
+}, void 0, 'B\xEDch Ng\u1ECDc'), _jsx('div', {
   className: 'description'
-}, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))), _jsx('div', {
+}, void 0, 'Perfect')))), _jsx('div', {
   className: 'item'
 }, void 0, _jsx('div', {
   className: 'customer'
@@ -16081,9 +16081,9 @@ var _ref17 = _jsx('div', {
   className: 'icons'
 }, void 0, '"'), _jsx('div', {
   className: 'name'
-}, void 0, 'bao bao'), _jsx('div', {
+}, void 0, 'V\xF5 C\u01B0\u1EDDng'), _jsx('div', {
   className: 'description'
-}, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))), _jsx('div', {
+}, void 0, '\u0110\u1ED3 t\u01B0\u01A1i ngon ch\u1EA5t l\u01B0\u1EE3ng')))), _jsx('div', {
   className: 'item'
 }, void 0, _jsx('div', {
   className: 'customer'
@@ -16103,9 +16103,9 @@ var _ref17 = _jsx('div', {
   className: 'icons'
 }, void 0, '"'), _jsx('div', {
   className: 'name'
-}, void 0, 'Kwon Ji Yong'), _jsx('div', {
+}, void 0, 'Jorma Koponen'), _jsx('div', {
   className: 'description'
-}, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))), _jsx('div', {
+}, void 0, '5 sao cho ch\u1EA5t l\u01B0\u1EE3ng')))), _jsx('div', {
   className: 'item'
 }, void 0, _jsx('div', {
   className: 'customer'
@@ -16125,9 +16125,9 @@ var _ref17 = _jsx('div', {
   className: 'icons'
 }, void 0, '"'), _jsx('div', {
   className: 'name'
-}, void 0, 'Sandara Park '), _jsx('div', {
+}, void 0, 'Kate Do'), _jsx('div', {
   className: 'description'
-}, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))), _jsx('div', {
+}, void 0, '5 sao cho ch\u1EA5t l\u01B0\u1EE3ng')))), _jsx('div', {
   className: 'item'
 }, void 0, _jsx('div', {
   className: 'customer'
@@ -16147,31 +16147,9 @@ var _ref17 = _jsx('div', {
   className: 'icons'
 }, void 0, '"'), _jsx('div', {
   className: 'name'
-}, void 0, 'bao tuan'), _jsx('div', {
+}, void 0, 'Ho\xE0i Duy'), _jsx('div', {
   className: 'description'
-}, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))), _jsx('div', {
-  className: 'item'
-}, void 0, _jsx('div', {
-  className: 'customer'
-}, void 0, _jsx('div', {
-  className: 'gamba-circles-2'
-}, void 0, _jsx('div', {
-  className: 'circle'
-}), _jsx('div', {
-  className: 'circle'
-}), _jsx('div', {
-  className: 'circle'
-}), _jsx('div', {
-  className: 'circle'
-})), _jsx('div', {
-  className: 'customer-info'
-}, void 0, _jsx('div', {
-  className: 'icons'
-}, void 0, '"'), _jsx('div', {
-  className: 'name'
-}, void 0, 'tuan duy'), _jsx('div', {
-  className: 'description'
-}, void 0, 'An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.')))));
+}, void 0, 'M\u1EA1i dz\xF4 m\u1EA1i dz\xF4....h\xE0ng t\u1ED1t gi\xE1 t\u1ED1t....')))));
 
 var _ref18 = _jsx('h1', {
   className: 'title'

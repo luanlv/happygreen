@@ -62,8 +62,14 @@ class Home extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-broccoli" /></div>
                       <div className="table-cell">
-                        <h4 className="title">100% Natural</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious. </p>
+                        <h4 className="title">100% Tự nhiên</h4>
+                        <p className="description">Happy Green mang đến
+                          những thức rau củ quả
+                          không sử dụng bất cứ
+                          hàm lượng thuốc bảo
+                          quản thực vật nào. Đảm
+                          bảo độ tự nhiên tối đa cho
+                          thực phẩm người dùng</p>
                       </div>
                     </div>
                     <div data-wow-delay="1.3s" className="block-icon-1 wow fadeInLeft">
@@ -75,8 +81,15 @@ class Home extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-lemon" /></div>
                       <div className="table-cell">
-                        <h4 className="title">Always Fresh</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        <h4 className="title">Luôn tươi</h4>
+                        <p className="description">Happy Green cam kết
+                          mang đến cho khách hàng
+                          những thức dùng luôn
+                          tươi và xanh. Những thực
+                          phẩm được chọn lựa mỗi
+                          ngày từ nhiều nguồn cung
+                          cấp uy tín đảm bảo tươi
+                          mới, xanh mơn đúng chất</p>
                       </div>
                     </div>
                   </div>
@@ -91,8 +104,15 @@ class Home extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-groceries" /></div>
                       <div className="table-cell">
-                        <h4 className="title">Organic Products</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        <h4 className="title">Quy chuẩn hữu cơ</h4>
+                        <p className="description">Happy Green cung cấp
+                          những sản phẩm đảm bảo
+                          quy chuẩn hữu cơ nghiêm
+                          ngặt. Áp dụng những quy
+                          ước về hữu cơ nhằm
+                          hướng đến đảm bảo an
+                          toàn cho người tiêu dùng
+                          và môi sinh</p>
                       </div>
                     </div>
                     <div data-wow-delay="1.3s" className="block-icon-1 wow fadeInRight">
@@ -104,8 +124,16 @@ class Home extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-flour" /></div>
                       <div className="table-cell">
-                        <h4 className="title">Best Quality</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        <h4 className="title">Chất lượng tốt nhất</h4>
+                        <p className="description">Happy Green nói không
+                          với các mặt hàng thứ cấp.
+                          Những thực phẩm bày
+                          bán đã được chọn lọc kỹ
+                          lưỡng từ những nhà cung
+                          cấp uy tín. Những tiêu
+                          chuẩn về tươi ngon và tốt
+                          nhất cho sức khỏe được
+                          chúng tôi đặt lên hàng đầu</p>
                       </div>
                     </div>
                   </div>
@@ -119,9 +147,13 @@ class Home extends React.Component {
           <section className="banner-1"><img src="/assets/images/background-full/banner-1.jpg" alt className="img-bg-1" /><img src="/assets/images/background-full/banner-1-2.png" alt className="img-bg-2" />
             <div className="container">
               <div data-parallax="{&quot;y&quot;: 150}" className="banner-1-wrapper">
-                <h3 className="subtitle">eat better</h3>
-                <h2 className="title">feel better</h2>
-                <p className="description">We produce food in a way which is honest, natural &amp; transparent.</p><a href="#" className="btn btn-maincolor">shop now</a></div>
+                <h3 className="subtitle">Chọn chất lượng</h3>
+                <h2 className="title">Chọn Happy Green</h2>
+                <p className="description">Chúng tôi cam kết đem
+                  đến những sản phẩm tự
+                  nhiên, tươi, xanh với tiêu
+                  chuẩn chọn lựa nghiêm
+                  ngặt</p><a href="/cua-hang" className="btn btn-maincolor">Mua sắm ngay!</a></div>
             </div>
           </section>
           {/* Products*/}
@@ -225,8 +257,8 @@ class Home extends React.Component {
                     </div>
                     <div className="customer-info">
                       <div className="icons">"</div>
-                      <div className="name">phien phien</div>
-                      <div className="description">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.</div>
+                      <div className="name">Bích Ngọc</div>
+                      <div className="description">Perfect</div>
                     </div>
                   </div>
                 </div>
@@ -240,8 +272,8 @@ class Home extends React.Component {
                     </div>
                     <div className="customer-info">
                       <div className="icons">"</div>
-                      <div className="name">bao bao</div>
-                      <div className="description">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.</div>
+                      <div className="name">Võ Cường</div>
+                      <div className="description">Đồ tươi ngon chất lượng</div>
                     </div>
                   </div>
                 </div>
@@ -255,8 +287,8 @@ class Home extends React.Component {
                     </div>
                     <div className="customer-info">
                       <div className="icons">"</div>
-                      <div className="name">Kwon Ji Yong</div>
-                      <div className="description">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.</div>
+                      <div className="name">Jorma Koponen</div>
+                      <div className="description">5 sao cho chất lượng</div>
                     </div>
                   </div>
                 </div>
@@ -270,8 +302,8 @@ class Home extends React.Component {
                     </div>
                     <div className="customer-info">
                       <div className="icons">"</div>
-                      <div className="name">Sandara Park </div>
-                      <div className="description">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.</div>
+                      <div className="name">Kate Do</div>
+                      <div className="description">5 sao cho chất lượng</div>
                     </div>
                   </div>
                 </div>
@@ -285,23 +317,9 @@ class Home extends React.Component {
                     </div>
                     <div className="customer-info">
                       <div className="icons">"</div>
-                      <div className="name">bao tuan</div>
-                      <div className="description">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="customer">
-                    <div className="gamba-circles-2">
-                      <div className="circle" />
-                      <div className="circle" />
-                      <div className="circle" />
-                      <div className="circle" />
-                    </div>
-                    <div className="customer-info">
-                      <div className="icons">"</div>
-                      <div className="name">tuan duy</div>
-                      <div className="description">An ice cream sundae would never be seen topless. And a bowl of oatmeal would an bore you back seen never be oatmeal would seen.</div>
+                      <div className="name">Hoài Duy</div>
+                      <div className="description">Mại dzô mại dzô....hàng tốt
+                        giá tốt....</div>
                     </div>
                   </div>
                 </div>
