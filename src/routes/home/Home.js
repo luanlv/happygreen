@@ -379,10 +379,11 @@ class Home extends React.Component {
               <div className="row">
                 <div className="col-lg-8 col-lg-offset-4">
                   <div data-parallax="{&quot;y&quot;: 150}" className="banner-text-wrapper">
-                    <h2 className="title">From The <span className="main-color">Best Farm</span> To Your Table</h2>
-                    <h5 className="subtitle">summer sale</h5>
-                    <p className="description">start now</p>
-                    <div className="prices"><span className="text-1">50%</span><span className="text-2">off</span></div><a href="#" className="btn btn-maincolor">show now</a></div>
+                    <h2 className="title">From The Best Farm To Your <span style={{color: 'red'}}>Tết</span></h2>
+                    <h5 className="subtitle">Tết deal</h5>
+                    <p className="description">Cho mùa tết trọn vẹn</p>
+                    <div className="prices"><span className="text-1">5%</span><span className="text-2">off</span></div>
+                    <a href="/cua-hang" className="btn btn-maincolor">Mua sắm ngay</a></div>
                 </div>
               </div>
             </div>

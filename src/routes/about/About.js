@@ -85,7 +85,7 @@ class About extends React.Component {
           <section className="about-us padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">best service for you </h1></div>
+                <h1 className="title">Giá trị Happy Green</h1></div>
               <div className="main-content">
                 <div className="about-us-wrapper">
                   <div className="about-left">
@@ -98,8 +98,14 @@ class About extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-broccoli" /></div>
                       <div className="table-cell">
-                        <h4 className="title">100% Natural</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious. </p>
+                        <h4 className="title">100% Tự nhiên</h4>
+                        <p className="description">Happy Green mang đến
+                          những thức rau củ quả
+                          không sử dụng bất cứ
+                          hàm lượng thuốc bảo
+                          quản thực vật nào. Đảm
+                          bảo độ tự nhiên tối đa cho
+                          thực phẩm người dùng</p>
                       </div>
                     </div>
                     <div data-wow-delay="1.3s" className="block-icon-1 wow fadeInLeft">
@@ -111,8 +117,15 @@ class About extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-lemon" /></div>
                       <div className="table-cell">
-                        <h4 className="title">Always Fresh</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        <h4 className="title">Luôn tươi</h4>
+                        <p className="description">Happy Green cam kết
+                          mang đến cho khách hàng
+                          những thức dùng luôn
+                          tươi và xanh. Những thực
+                          phẩm được chọn lựa mỗi
+                          ngày từ nhiều nguồn cung
+                          cấp uy tín đảm bảo tươi
+                          mới, xanh mơn đúng chất</p>
                       </div>
                     </div>
                   </div>
