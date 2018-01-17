@@ -29,7 +29,8 @@ class Home extends React.Component {
         <div className="main-contents">
           {/* Slider*/}
           <section className="background-slide">
-            <div className="slide-item"><img src="/assets/images/background-full/homepage-1.jpg" alt data-parallax="{&quot;y&quot;: 200}" className="img-responsive img-background" />
+            <div className="slide-item">
+              <img src="/assets/images/background-full/homepage-1.jpg" alt="" data-parallax="{&quot;y&quot;: 200}" className="img-responsive img-background" />
               <div className="container">
                 <div className="homepage-banner-warpper">
                   <div className="homepage-banner-content">
@@ -179,9 +180,9 @@ class Home extends React.Component {
                 {/*</div>*/}
 
                 <div className="gallery-grid">
-                  {recentProduct.map(el => {
+                  {recentProduct.map((el, idx) => {
                     return (
-                      <div className="grid-item">
+                      <div className="grid-item" key={idx}>
                         <div className="block-4">
                           <div className="block-image"><img src={el.coverUrl} alt className="img-full" />
                             <a href={`/sp/${el.slug}`} className="link" />
@@ -189,9 +190,6 @@ class Home extends React.Component {
                           <div className="block-content"><a href="#" className="title">{el.title}</a>
                             <div className="prices-wrapper">
                               <div className="prices"><span className="number">{el.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
-                            <ul className="list-icons">
-                              <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
-                            </ul>
                           </div>
                         </div>
                       </div>
@@ -425,9 +423,9 @@ class Home extends React.Component {
                   </div>
 
                   <div className="block-right">
-                    {restNews.map(tintuc => {
+                    {restNews.map((tintuc, idx) => {
                       return (
-                        <div className="grid-item">
+                        <div className="grid-item" key={idx}>
                           <div className="block-2">
                             <div className="block-image"><img src={tintuc.coverUrl} alt className="img-full" />
                               <a href={`/p/${tintuc.slug}`} className="link" />

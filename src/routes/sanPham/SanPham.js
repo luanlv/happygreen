@@ -3,13 +3,23 @@ import Link from '../../components/Link'
 import {Title, BreadCrumb} from './components'
 
 class NewsDetail extends React.Component {
-  render() {
 
+  constructor(props) {
+
+    super(props)
+
+    this.state = {
+      number: 1,
+      product: props.data.product.value
+    }
+
+  }
+
+  render() {
     const product = this.props.data.product.value
     // const recentNews = this.props.data.recentNews.value
     const productRelative = this.props.data.productRelative.value
     const categories = this.props.data.categories.value
-
     return (
       <div>
         <div className="main-contents">
@@ -45,13 +55,64 @@ class NewsDetail extends React.Component {
                     />
                     <div className="shopping-cart">
                       <div className="quantity">
-                        {/*input.minus.button.is-form(type='button', value='-')*/}
-                        <div className="quantity-button quantity-down"><i className="glyphicon glyphicon-minus" /></div><input type="number" step={1} min={0} max={999} defaultValue={1} className="input-text qty text" />
-                        <div className="quantity-button quantity-up"><i className="glyphicon glyphicon-plus" /></div>
+                        <div className="quantity-button quantity-down"
+                             onClick={() => {
+                               this.setState(prev => {
+                                 return {
+                                   ...prev,
+                                   number: (prev.number - 1) > 0 ? prev.number : 1
+                                 }
+                               })
+                             }}
+                        >
+                          <i className="glyphicon glyphicon-minus" /></div>
+                        <input type="number" step={1} min={0} max={999} value={this.state.number} className="input-text qty text"
+                               onChange={(e) => {
+                                 let value = parseInt(e.target.value)
+                                   this.setState({number: value})
+                               }}
+                        />
+                        <div className="quantity-button quantity-up"
+                          onClick={() => {
+                            this.setState(prev => {
+                              return {
+                                ...prev,
+                                number: prev.number + 1
+                              }
+                            })
+                          }}
+                        ><i className="glyphicon glyphicon-plus" /></div>
                         {/*input.plus.button.is-form(type='button', value='+')*/}
                       </div>
                     </div>
-                    <div className="btn-addtocart"><button type="submit" className="btn btn-maincolor">Thêm vào rỏ hàng</button></div>
+                    <div className="btn-addtocart">
+                      <button type="submit" className="btn btn-maincolor"
+                       onClick={() => {
+                         let that = this
+                         if(process.env.BROWSER) {
+                           let sessionStorage = (window && window.sessionStorage) ? window.sessionStorage : {}
+                           let cart = JSON.parse(sessionStorage.getItem("cart") || '[]')
+                           let index = cart.findIndex(el => {
+                             return el.slug === that.state.product.slug
+                           })
+                           if (index >= 0) {
+                             cart[index].number = parseInt(cart[index].number) + parseInt(that.state.number)
+                             sessionStorage.setItem('cart', JSON.stringify(cart))
+                             $(".cart-counter").text(cart.length)
+                           } else {
+                             cart.push({
+                               slug: that.state.product.slug,
+                               number: that.state.number,
+                               product: that.state.product
+                             })
+                             sessionStorage.setItem('cart', JSON.stringify(cart))
+                             $(".cart-counter").text(cart.length)
+                           }
+                           // $(".cart-counter").text(cart.length)
+                           document.location.href = '/gio-hang'
+                         }
+                       }}
+                    >Thêm vào rỏ hàng</button></div>
                   </div>
                 </div>
               </div>

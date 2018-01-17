@@ -54,9 +54,9 @@ class NewsDetail extends React.Component {
                       <div className="title-widget">Bài viết mới</div>
                       <div className="content-widget">
                         <div className="recent-post-list">
-                          {recentNews.map(tintuc => {
+                          {recentNews.map((tintuc, idx) => {
                             return (
-                              <div className="single-recent-post-widget">
+                              <div className="single-recent-post-widget" key={idx}>
                                 <a href={`/p/${tintuc.slug}`} className="thumb img-wrapper"><img src={tintuc.coverUrl} alt="" /></a>
                                 <div className="post-info">
                                   <div className="meta-info"><span>{moment(tintuc.created_at).format('DD/MM/YYYY')}</span></div>

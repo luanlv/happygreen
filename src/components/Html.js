@@ -85,12 +85,11 @@ class Html extends React.Component {
           <script src="/assets/libs/fancybox/js/jquery.fancybox.min.js"/>
           <script src="/assets/libs/fancybox/js/jquery.fancybox-buttons.min.js"/>
           <script src="/assets/libs/fancybox/js/jquery.fancybox-thumbs.min.js"/>
-
-          <script src="/assets/js/main.js" />
+          <script src="/assets/libs/selectbox/js/jquery.selectbox-0.2.min.js"/>
           <script src="/assets/libs/parallax/jquery.parallax-scroll.min.js" />
-
+          {/*<script src="/assets/js/main.js" />*/}
           <script  src={scripts[0] + "?v=" + v } />
-          <sciprt  src={scripts[1] + "?v=" + v } />
+          <script  src={scripts[1] + "?v=" + v } />
 
           <script dangerouslySetInnerHTML={{ __html: this.props.scriptBottom }} />
 

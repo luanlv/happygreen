@@ -1,29 +1,32 @@
 {
   "admin": {
-    "js": "/assets/admin.6afc7a4a.chunk.js"
+    "js": "/assets/admin.e5cec0cb.chunk.js"
   },
   "shop": {
-    "js": "/assets/shop.7628f48e.chunk.js"
+    "js": "/assets/shop.6547b4e4.chunk.js"
   },
   "news": {
     "js": "/assets/news.8b469487.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.4b80f5dc.chunk.js"
+    "js": "/assets/contact.24153942.chunk.js"
+  },
+  "cart": {
+    "js": "/assets/cart.a3ddb91c.chunk.js"
   },
   "sanpham": {
-    "js": "/assets/sanpham.dec7d7b2.chunk.js"
+    "js": "/assets/sanpham.b419f352.chunk.js"
   },
   "newsDetail": {
-    "js": "/assets/newsDetail.3e09b578.chunk.js"
+    "js": "/assets/newsDetail.2001473a.chunk.js"
   },
   "about": {
-    "js": "/assets/about.08311fe2.chunk.js"
+    "js": "/assets/about.c027b957.chunk.js"
   },
   "client": {
-    "js": "/assets/client.3e18154d.js"
+    "js": "/assets/client.fe9c2e12.js"
   },
   "vendor": {
-    "js": "/assets/vendor.75313551.js"
+    "js": "/assets/vendor.6ecb85e2.js"
   }
 }

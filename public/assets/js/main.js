@@ -1,3 +1,4 @@
+
 jQuery(function($) {
     "use strict";
 
@@ -45,7 +46,7 @@ jQuery(function($) {
             lastScroll = st;
         });
 
-        
+
         // Show - hide box search on menu
         $('.button-search').on('click', function () {
             $('.nav-search').toggleClass('hide');
@@ -125,7 +126,7 @@ jQuery(function($) {
                     }
                 }
             });
-        
+
             if( $(window).width() > 600 ) {
                 $.fancybox.helpers.thumbs.onUpdate = function( opts, obj ){
                     if (this.list) {
@@ -399,10 +400,10 @@ jQuery(function($) {
             if ($(".tab-vertical").length) {
                 // set height 0 to counter table-cell calculate height
                 $(".tab-vertical .tab-list").height(0);
-                
+
                 var contentHeight = $(".tab-vertical .tab-content").height();
                 $(".tab-vertical .tab-list").height(contentHeight);
-                
+
             }
         }
 
@@ -415,7 +416,7 @@ jQuery(function($) {
                 max = parseFloat(input.attr('max'));
 
             btnUp.click(function() {
-                
+
                 var oldValue = parseFloat(input.val());
                 if (oldValue >= max) {
                   var newVal = oldValue;
@@ -427,7 +428,7 @@ jQuery(function($) {
             });
 
             btnDown.click(function() {
-                
+
                 var oldValue = parseFloat(input.val());
                 if (oldValue <= min) {
                   var newVal = oldValue;
@@ -490,7 +491,7 @@ jQuery(function($) {
     };
 
     gamba.home_slider = function() {
-        
+
         // slide homepage 2 - background slide
         $('.background-slide').slick({
             dots: true,
@@ -536,8 +537,8 @@ jQuery(function($) {
         });
 
         // js for time
-        $('.times-open').timepicker({ 
-            'scrollDefault': 'now' 
+        $('.times-open').timepicker({
+            'scrollDefault': 'now'
         });
     };
 

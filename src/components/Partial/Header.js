@@ -33,7 +33,7 @@ class Header extends React.Component {
             {!en && <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Sản phẩm</span></a></li>}
             {en && <li className="dropdown active"><a href="/cua-hang" className="main-menu"><span className="text">Product</span></a></li>}
 
-            <li className="dropdown active"><a href="#" className="main-menu"><span className="text">Hot Deal</span></a></li>
+            {/*<li className="dropdown active"><a href="#" className="main-menu"><span className="text">Hot Deal</span></a></li>*/}
 
             {!en && <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">Tin tức</span></a></li>}
             {en && <li className="dropdown active"><a href="/tin-tuc" className="main-menu"><span className="text">News</span></a></li>}
