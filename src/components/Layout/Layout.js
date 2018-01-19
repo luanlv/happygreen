@@ -48,10 +48,14 @@ class Layout extends React.Component {
                   </li>
                 </ul>
 
-                {/*<ul className="topbar-right list-unstyled style-2" style={{marginLeft: 20}}>*/}
+                <ul className="topbar-right list-unstyled style-2" style={{marginLeft: 20}}>
                   {/*{!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}*/}
                   {/*{en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}*/}
-                {/*</ul>*/}
+                </ul>
+
+
+
+
 
                 <ul className="topbar-right list-unstyled list-inline style-2">
                   <li>
@@ -165,6 +169,11 @@ class Layout extends React.Component {
               <div className="hyperlink">
                 <div className="container">
                   <div className="name-company pull-left">© Designed by <a href="http://thunderduck.com.vn">Thunder Duck</a></div>
+                  <div className="name-company pull-right">
+                    <div id="google_translate_element" />
+                    <script type="text/javascript" dangerouslySetInnerHTML={{__html: `function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'en,ja,ko,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element'); }`}}/>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" />
+                  </div>
                   <div className="social-footer pull-right">
                     <ul className="list-inline list-unstyled">
                       <li><a href="https://www.facebook.com/HappyGreen.vn/" className="link facebook"><i className="fa fa-facebook" /></a></li>

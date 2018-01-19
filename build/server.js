@@ -460,14 +460,21 @@ var _ref25 = _jsx('div', {
 }, void 0, 'HappyGreen.vn')))))));
 
 var _ref26 = _jsx('div', {
-  className: 'hyperlink'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
   className: 'name-company pull-left'
 }, void 0, '\xA9 Designed by ', _jsx('a', {
   href: 'http://thunderduck.com.vn'
-}, void 0, 'Thunder Duck')), _jsx('div', {
+}, void 0, 'Thunder Duck'));
+
+var _ref27 = _jsx('div', {
+  id: 'google_translate_element'
+});
+
+var _ref28 = _jsx('script', {
+  type: 'text/javascript',
+  src: '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+});
+
+var _ref29 = _jsx('div', {
   className: 'social-footer pull-right'
 }, void 0, _jsx('ul', {
   className: 'list-inline list-unstyled'
@@ -476,9 +483,9 @@ var _ref26 = _jsx('div', {
   className: 'link facebook'
 }, void 0, _jsx('i', {
   className: 'fa fa-facebook'
-})))))));
+})))));
 
-var _ref27 = _jsx('div', {
+var _ref30 = _jsx('div', {
   id: 'back-top'
 }, void 0, _jsx('a', {
   href: '#top',
@@ -495,17 +502,17 @@ var _ref27 = _jsx('div', {
   className: 'fa fa-angle-double-up'
 })));
 
-var _ref28 = _jsx('button', {
+var _ref31 = _jsx('button', {
   type: 'button',
   className: 'close',
   'data-dismiss': 'modal'
 }, void 0, '\xD7');
 
-var _ref29 = _jsx('div', {
+var _ref32 = _jsx('div', {
   className: 'modal-body'
 }, void 0, _jsx('p', {}, void 0, 'Some text in the modal.'));
 
-var _ref30 = _jsx('div', {
+var _ref33 = _jsx('div', {
   className: 'modal-footer'
 }, void 0, _jsx('button', {
   type: 'button',
@@ -547,7 +554,10 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'container'
     }, void 0, _jsx('ul', {
       className: 'topbar-left list-unstyled pull-left'
-    }, void 0, _jsx('li', {}, void 0, !en && _ref, en && _ref2), _ref3), _ref4)), _jsx('div', {
+    }, void 0, _jsx('li', {}, void 0, !en && _ref, en && _ref2), _ref3), _jsx('ul', {
+      className: 'topbar-right list-unstyled style-2',
+      style: { marginLeft: 20 }
+    }, void 0), _ref4)), _jsx('div', {
       className: 'header-main'
     }, void 0, _jsx('div', {
       className: 'container'
@@ -602,7 +612,16 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       style: { borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white' }
     }, void 0, _ref23), _jsx('li', {
       style: { borderBottom: '1px dashed #ddd', marginBottom: 20 }
-    }, void 0, _ref24)))))), _ref25)))), _ref26))), _ref27), _jsx('div', {
+    }, void 0, _ref24)))))), _ref25)))), _jsx('div', {
+      className: 'hyperlink'
+    }, void 0, _jsx('div', {
+      className: 'container'
+    }, void 0, _ref26, _jsx('div', {
+      className: 'name-company pull-right'
+    }, void 0, _ref27, _jsx('script', {
+      type: 'text/javascript',
+      dangerouslySetInnerHTML: { __html: `function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'en,ja,ko,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element'); }` }
+    }), _ref28), _ref29))))), _ref30), _jsx('div', {
       id: 'myModal',
       className: 'modal fade',
       role: 'dialog'
@@ -612,10 +631,10 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'modal-content'
     }, void 0, _jsx('div', {
       className: 'modal-header'
-    }, void 0, _ref28, _jsx('h4', {
+    }, void 0, _ref31, _jsx('h4', {
       className: 'modal-title',
       style: { color: 'red', fontWeight: 'red', fontStyle: 'italic', textAlign: 'center' }
-    }, void 0, 'HOT DEAL M\u1ED6I NG\xC0Y')), _ref29, _ref30))));
+    }, void 0, 'HOT DEAL M\u1ED6I NG\xC0Y')), _ref32, _ref33))));
   }
 }
 
