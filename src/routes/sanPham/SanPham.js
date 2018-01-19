@@ -131,7 +131,7 @@ class NewsDetail extends React.Component {
                                   <a href={`/sp/${p.slug}`} className="link" />
                                 </div>
                                 <div className="block-content"><a href={`/sp/${p.slug}`}  className="title">{p.title}</a>
-                                  <div className="prices-wrapper">
+                                  <div cla¡ssName="prices-wrapper">
                                     <div className="prices"><span className="number">{p.price.toLocaleString()}</span><sup>$</sup></div><span className="unit">/kg</span></div>
                                   <ul className="list-icons">
                                     <li><a href="javascript:void(0)" className="link"

@@ -344,7 +344,7 @@ class Home extends React.Component {
                         <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
                       </div>
                     </div>
-                    <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
+                    <div className="block-image"><img src="/assets/images/teams/1.jpg" alt className="img-full" />
                       <a href="javascript:void(0)" className="link" />
                     </div>
                   </div>
