@@ -9,7 +9,7 @@
     "js": "/assets/news.af1b5885.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.ece6e2c5.chunk.js"
+    "js": "/assets/contact.8bcf1350.chunk.js"
   },
   "checkout": {
     "js": "/assets/checkout.5c72f7e3.chunk.js"
@@ -30,6 +30,6 @@
     "js": "/assets/client.ed815745.js"
   },
   "vendor": {
-    "js": "/assets/vendor.bae3b68d.js"
+    "js": "/assets/vendor.a5bf4e5b.js"
   }
 }

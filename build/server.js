@@ -17079,6 +17079,7 @@ var _ref2 = _jsx('div', {
   className: 'detail'
 }, void 0, _jsx('a', {
   target: '_blank',
+  className: 'link',
   href: 'https://fb.com/happygreen.vn'
 }, void 0, 'Happy Green Market'))))), _jsx('form', {
   id: 'contactForm',
