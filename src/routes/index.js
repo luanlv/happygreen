@@ -30,6 +30,7 @@ export default {
     require('./sanPham').default,
     require('./contact').default,
     require('./cart').default,
+    require('./checkout').default,
     require('./admin').default,
 
     // Wildcard routes, e.g. { path: '*', ... } (must go last)

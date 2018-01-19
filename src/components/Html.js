@@ -68,9 +68,12 @@ class Html extends React.Component {
           <script dangerouslySetInnerHTML={{ __html: scriptTop }} />
         </head>
         <body>
+
+        <div id="fb-root" />
+        <script dangerouslySetInnerHTML={{__html: `(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11&appId=1773112352977230'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));`}} />
+
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
           <script dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }} />
-
 
           <script src="/assets/libs/bootstrap/js/bootstrap.min.js"/>
           <script src="/assets/libs/bootstrap-timepicker/jquery.timepicker.min.js"/>

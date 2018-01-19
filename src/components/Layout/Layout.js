@@ -48,10 +48,10 @@ class Layout extends React.Component {
                   </li>
                 </ul>
 
-                <ul className="topbar-right list-unstyled style-2" style={{marginLeft: 20}}>
-                  {!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}
-                  {en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}
-                </ul>
+                {/*<ul className="topbar-right list-unstyled style-2" style={{marginLeft: 20}}>*/}
+                  {/*{!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}*/}
+                  {/*{en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}*/}
+                {/*</ul>*/}
 
                 <ul className="topbar-right list-unstyled list-inline style-2">
                   <li>
@@ -100,18 +100,19 @@ class Layout extends React.Component {
         {this.props.children}
 
         <footer>
-          <div className="footer">
-            <div className="footer-wrapper">
+          <div className="footer" style={{maxHeight: '500px !important'}}>
+            <div className="footer-wrapper" style={{maxHeight: '500px !important'}}>
               <div className="footer-main">
                 <div className="container">
                   <div className="footer-main-wrapper">
                     <div className="row">
                       <div className="col-2">
-                        <div className="col-md-6 col-xs-12">
+                        <div className="col-md-4 col-xs-12">
                           <div className="gamba-info widget">
                             {!en && <div className="title">Liên hệ</div>}
                             {en && <div className="title">Contact</div>}
                             <div className="content-widget">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.7672699553693!2d106.72399701793903!3d10.770310710263834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317525f5e38288c7%3A0xe59686534f6af2ee!2zU2FyaW1pIENvbmRvLCBCMS1CMiBUb3dlcnMsIDcyIE5ndXnhu4VuIEPGoSBUaOG6oWNoLCBBbiBM4bujaSDEkMO0bmcsIFF14bqtbiAyLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1516331511161" width={300} height={225} frameBorder={0} style={{border: 0}} allowFullScreen />
                               <ul className="list-unstyled info-list">
                                 <li><i className="icons fa fa-map-marker" /><a href="#" className="link">
                                   B1.00.11 Khu chung cứ phức hợp M2, số 72, Đường Nguyễn Cơ Thạch, Phường An Lợi Đông, Quận 2, Thành phố Hồ Chí Minh, Việt Nam
@@ -124,36 +125,35 @@ class Layout extends React.Component {
                         </div>
                       </div>
                       <div className="col-2">
-                        <div className="col-md-6 col-xs-12">
-                          <div className="gamba-gallery widget">
-                            <div className="title">Gallery</div>
+                        <div className="col-md-4 col-xs-12">
+                          <div className="gamba-info widget">
+                            <div className="title">Liên kết</div>
                             <div className="content-widget">
-                              <ul className="list-unstyled list-inline">
-                                <li>
-                                  <a href="/assets/images/gallery/caidun.png" data-fancybox-group="gallery2" className="thumb fancybox">
-                                    <img src="/assets/images/gallery/caidun.png" alt="gallery image 1" className="img-full" /></a>
+                              <ul className="list-unstyled info-list">
+                                <li style={{borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white'}}>
+                                  <a href="#menu" className="link">
+                                    Menu
+                                  </a>
                                 </li>
-                                <li>
-                                  <a href="/assets/images/gallery/cairo.png" data-fancybox-group="gallery2" className="thumb fancybox">
-                                    <img src="/assets/images/gallery/cairo.png" alt="gallery image 2" className="img-full" /></a>
+                                <li style={{borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white'}}>
+                                  <a href="/gioi-thieu" className="link">
+                                    Về chúng tôi
+                                  </a>
                                 </li>
-                                <li>
-                                  <a href="/assets/images/gallery/rau1.png" data-fancybox-group="gallery2" className="thumb fancybox">
-                                    <img src="/assets/images/gallery/rau1.png" alt="gallery image 3" className="img-full" /></a>
-                                </li>
-                                <li>
-                                  <a href="/assets/images/gallery/rau2.png" data-fancybox-group="gallery2" className="thumb fancybox">
-                                    <img src="/assets/images/gallery/rau2.png" alt="gallery image 4" className="img-full" /></a>
-                                </li>
-                                <li>
-                                  <a href="/assets/images/gallery/traicay1.png" data-fancybox-group="gallery2" className="thumb fancybox">
-                                    <img src="/assets/images/gallery/traicay1.png" alt="gallery image 5" className="img-full" /></a>
-                                </li>
-                                <li>
-                                  <a href="/assets/images/gallery/traicay2.png" data-fancybox-group="gallery2" className="thumb fancybox">
-                                    <img src="/assets/images/gallery/traicay2.png" alt="gallery image 6" className="img-full" /></a>
+                                <li style={{borderBottom: '1px dashed #ddd', marginBottom: 20,}}>
+                                  <a href="/cua-hang" className="link" >Sản phẩm</a>
                                 </li>
                               </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-2">
+                        <div className="col-md-4 col-xs-12">
+                          <div className="gamba-info widget">
+                            <div className="title">Facebook Fanpage</div>
+                            <div className="content-widget">
+                              <div className="fb-page" data-href="https://www.facebook.com/happygreen.vn" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/happygreen.vn" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/happygreen.vn">HappyGreen.vn</a></blockquote></div>
                             </div>
                           </div>
                         </div>

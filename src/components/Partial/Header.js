@@ -41,12 +41,12 @@ class Header extends React.Component {
             {!en && <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Liên hệ</span></a></li>}
             {en && <li className="dropdown active"><a href="/lien-he" className="main-menu"><span className="text">Contact</span></a></li>}
           </ul>
-          <div>
-            <ul className="list-unstyled list-inline" style={{marginLeft: 35}}>
-              {!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}
-              {en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}
-            </ul>
-          </div>
+          {/*<div>*/}
+            {/*<ul className="list-unstyled list-inline" style={{marginLeft: 35}}>*/}
+              {/*{!en && <a href="?lang=en"><img src="/flag_en.jpg" alt=""/></a>}*/}
+              {/*{en && <a href="?lang=vi"><img src="/flag_vn.jpg" alt=""/></a>}*/}
+            {/*</ul>*/}
+          {/*</div>*/}
         </div>
 
 

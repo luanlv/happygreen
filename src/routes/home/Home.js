@@ -147,14 +147,19 @@ class Home extends React.Component {
 
           <section className="banner-1"><img src="/assets/images/background-full/banner-1.jpg" alt className="img-bg-1" /><img src="/assets/images/background-full/banner-1-2.png" alt className="img-bg-2" />
             <div className="container">
-              <div data-parallax="{&quot;y&quot;: 150}" className="banner-1-wrapper">
+              <a href="/cua-hang">
+
+                <div data-parallax="{&quot;y&quot;: 150}" className="banner-1-wrapper">
                 <h3 className="subtitle">Chọn chất lượng</h3>
                 <h2 className="title">Chọn Happy Green</h2>
                 <p className="description">Chúng tôi cam kết đem
                   đến những sản phẩm tự
                   nhiên, tươi, xanh với tiêu
                   chuẩn chọn lựa nghiêm
-                  ngặt</p><a href="/cua-hang" className="btn btn-maincolor">Mua sắm ngay!</a></div>
+                  ngặt</p>
+                  {/*<a href="/cuar-hang" className="btn btn-maincolor">Mua sắm ngay!</a>*/}
+                </div>
+              </a>
             </div>
           </section>
           {/* Products*/}
@@ -332,41 +337,15 @@ class Home extends React.Component {
                 {isEn && <h1 className="title">My Teams</h1>}
               </div>
               <div className="main-content">
-                <div className="grid-block-2">
-                  <div className="grid-item grid-1">
-                    <div className="block-3">
-                      <div className="block-image"><img src="/assets/images/teams/1.jpg" alt className="img-full" />
-                        <a href="#" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
-                        <div className="description">
-                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
-                        </div>
+                <div className="grid-item grid-2">
+                  <div className="block-3 style-2">
+                    <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
+                      <div className="description">
+                        <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
                       </div>
                     </div>
-                  </div>
-                  <div className="grid-item grid-2">
-                    <div className="block-3 style-2">
-                      <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
-                        <div className="description">
-                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
-                        </div>
-                      </div>
-                      <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
-                        <a href="#" className="link" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-item grid-2">
-                    <div className="block-3 style-2">
-                      <div className="block-image"><img src="/assets/images/teams/3.jpg" alt className="img-full" />
-                        <a href="#" className="link" />
-                      </div>
-                      <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
-                        <div className="description">
-                          <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
-                        </div>
-                      </div>
+                    <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
+                      <a href="#" className="link" />
                     </div>
                   </div>
                 </div>

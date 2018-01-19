@@ -23,7 +23,7 @@ class About extends React.Component {
           <section className="history padding-top-100 padding-bottom-100">
             <div className="container">
               <div className="main-titles">
-                <h1 className="title">Lịch sử hình thành</h1></div>
+                <h1 className="title">Câu chuyện Happy Green</h1></div>
               <div className="main-content">
                 <div className="tab-vertical">
                   <div className="tab-list-wrapper">
@@ -36,15 +36,7 @@ class About extends React.Component {
                   <div className="tab-content">
                     <div id="tab-1" role="tabpanel" className="tab-pane fade in active">
                       <div className="text-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sitong out voluptatem accusantium doloremque
-                          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
-                        <ul>
-                          <li>Duis aute irure dolor in reprehenderit in</li>
-                          <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-                          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
-                          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
-                        </ul>
+                        <p>Đang cập nhập ...</p>
                       </div>
                       <div className="text-image"><img src="/assets/images/news/image-2.jpg" alt className="img-responsive" /></div>
                     </div>
@@ -140,8 +132,10 @@ class About extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-groceries" /></div>
                       <div className="table-cell">
-                        <h4 className="title">Organic Products</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        <h4 className="title">Quy Chuẩn Hữu Cơ</h4>
+                        <p className="description">Happy Green cung cấp những sản phẩm đảm bảo quy chuẩn hữu cơ nghiêm ngặt. Áp dụng những quy ước về hữu cơ nhằm hướng đến đảm bảo an toàn cho người tiêu dùng và môi sinh
+
+                        </p>
                       </div>
                     </div>
                     <div data-wow-delay="1.3s" className="block-icon-1 wow fadeInRight">
@@ -153,8 +147,8 @@ class About extends React.Component {
                           <div className="circle" />
                         </div><i className="icons flaticon-flour" /></div>
                       <div className="table-cell">
-                        <h4 className="title">Best Quality</h4>
-                        <p className="description">We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        <h4 className="title">Chất Lượng Tốt Nhất</h4>
+                        <p className="description">Happy Green nói không với các mặt hàng thứ cấp. Những thực phẩm bày bán đã được chọn lọc kỹ lưỡng từ những nhà cung cấp uy tín. Những tiêu chuẩn về tươi ngon và tốt nhất cho sức khỏe được chúng tôi đặt lên hàng đầu</p>
                       </div>
                     </div>
                   </div>

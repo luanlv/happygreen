@@ -177,6 +177,9 @@ class Cart extends React.Component {
                           <a href="/cua-hang">
                             <div type="submit" className="btn btn-maincolor">Tiếp tục mua hang</div>
                           </a>
+                          <a href="/thanh-toan">
+                            <div type="submit" className="btn btn-maincolor">Thanh toán</div>
+                          </a>
                         </div>
                         <div className="col-md-5 col-xs-12 text-center">
                           <div className="subtotal">Tổng tiền:<span className="woocommerce-Price">{sum.toLocaleString()}<span className="woocommerce-Price-currencySymbol">đ</span></span>

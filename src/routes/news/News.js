@@ -56,16 +56,16 @@ class News extends React.Component {
                     )
                   })}
                 </div>
-                <nav className="pagination-list margin-top-70">
-                  <ul className="pagination">
-                    <li><a href="#" aria-label="Previous" className="btn-pagination previous"><span aria-hidden="true" className="fa fa-angle-left" /></a></li>
-                    <li><a href="#" className="btn-pagination active">01</a></li>
-                    <li><a href="#" className="btn-pagination">02</a></li>
-                    <li><a href="#" className="btn-pagination">...</a></li>
-                    <li><a href="#" className="btn-pagination">09</a></li>
-                    <li><a href="#" aria-label="Next" className="btn-pagination next"><span aria-hidden="true" className="fa fa-angle-right" /></a></li>
-                  </ul>
-                </nav>
+                {/*<nav className="pagination-list margin-top-70">*/}
+                  {/*<ul className="pagination">*/}
+                    {/*<li><a href="#" aria-label="Previous" className="btn-pagination previous"><span aria-hidden="true" className="fa fa-angle-left" /></a></li>*/}
+                    {/*<li><a href="#" className="btn-pagination active">01</a></li>*/}
+                    {/*<li><a href="#" className="btn-pagination">02</a></li>*/}
+                    {/*<li><a href="#" className="btn-pagination">...</a></li>*/}
+                    {/*<li><a href="#" className="btn-pagination">09</a></li>*/}
+                    {/*<li><a href="#" aria-label="Next" className="btn-pagination next"><span aria-hidden="true" className="fa fa-angle-right" /></a></li>*/}
+                  {/*</ul>*/}
+                {/*</nav>*/}
               </div>
               <div className="col-md-4 col-xs-12 sidebar">
                 <div className="col-2">
