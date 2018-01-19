@@ -58,12 +58,12 @@ class News extends React.Component {
                 </div>
                 {/*<nav className="pagination-list margin-top-70">*/}
                   {/*<ul className="pagination">*/}
-                    {/*<li><a href="#" aria-label="Previous" className="btn-pagination previous"><span aria-hidden="true" className="fa fa-angle-left" /></a></li>*/}
-                    {/*<li><a href="#" className="btn-pagination active">01</a></li>*/}
-                    {/*<li><a href="#" className="btn-pagination">02</a></li>*/}
-                    {/*<li><a href="#" className="btn-pagination">...</a></li>*/}
-                    {/*<li><a href="#" className="btn-pagination">09</a></li>*/}
-                    {/*<li><a href="#" aria-label="Next" className="btn-pagination next"><span aria-hidden="true" className="fa fa-angle-right" /></a></li>*/}
+                    {/*<li><a href="javascript:void(0)" aria-label="Previous" className="btn-pagination previous"><span aria-hidden="true" className="fa fa-angle-left" /></a></li>*/}
+                    {/*<li><a href="javascript:void(0)" className="btn-pagination active">01</a></li>*/}
+                    {/*<li><a href="javascript:void(0)" className="btn-pagination">02</a></li>*/}
+                    {/*<li><a href="javascript:void(0)" className="btn-pagination">...</a></li>*/}
+                    {/*<li><a href="javascript:void(0)" className="btn-pagination">09</a></li>*/}
+                    {/*<li><a href="javascript:void(0)" aria-label="Next" className="btn-pagination next"><span aria-hidden="true" className="fa fa-angle-right" /></a></li>*/}
                   {/*</ul>*/}
                 {/*</nav>*/}
               </div>

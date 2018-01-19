@@ -29,7 +29,7 @@ class NewsDetail extends React.Component {
                     <div className="content-wrapper">
                       <div className="title">{news.title}</div>
                       <div className="block-info">
-                        <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="#" className="link">{moment(news.created_at).format('DD/MM/YYYY')}</a></div>
+                        <div className="block"><i className="icons fa fa-calendar-o"> </i><a href="javascript:void(0)" className="link">{moment(news.created_at).format('DD/MM/YYYY')}</a></div>
                       </div>
                       <div className="description"
                            dangerouslySetInnerHTML={{__html: news.body}}

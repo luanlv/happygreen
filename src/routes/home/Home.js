@@ -192,7 +192,7 @@ class Home extends React.Component {
                           <div className="block-image"><img src={el.coverUrl} alt className="img-full" />
                             <a href={`/sp/${el.slug}`} className="link" />
                           </div>
-                          <div className="block-content"><a href="#" className="title">{el.title}</a>
+                          <div className="block-content"><a href="javascript:void(0)" className="title">{el.title}</a>
                             <div className="prices-wrapper">
                               <div className="prices"><span className="number">{el.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                           </div>
@@ -223,7 +223,7 @@ class Home extends React.Component {
                       {/*<li>Over a spinach salad</li>*/}
                       {/*<li>Mixed into muffin or pancake batter</li>*/}
                       {/*<li>As a complement to salty nuts in homemade</li>*/}
-                    {/*</ul><a href="#" className="btn btn-maincolor">add to cart</a></div>*/}
+                    {/*</ul><a href="javascript:void(0)" className="btn btn-maincolor">add to cart</a></div>*/}
                 {/*</div>*/}
                 {/*<div className="list-images margin-top-70">*/}
                   {/*<div className="item">*/}
@@ -345,7 +345,7 @@ class Home extends React.Component {
                       </div>
                     </div>
                     <div className="block-image"><img src="/assets/images/teams/2.jpg" alt className="img-full" />
-                      <a href="#" className="link" />
+                      <a href="javascript:void(0)" className="link" />
                     </div>
                   </div>
                 </div>

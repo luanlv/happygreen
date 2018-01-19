@@ -2889,7 +2889,7 @@ function About(props) {
     })), _jsx('div', {
       className: 'block-content'
     }, void 0, _jsx('a', {
-      href: '#',
+      href: 'javascript:void(0)',
       className: 'title'
     }, void 0, p.title), _jsx('div', {
       className: 'prices-wrapper'
@@ -2899,9 +2899,9 @@ function About(props) {
       className: 'number'
     }, void 0, p.price.toLocaleString()), _ref3), _ref4), _jsx('ul', {
       className: 'list-icons'
-    }, void 0, _jsx('li', {}, void 0, _jsx('a', {
-      href: '#',
+    }, void 0, _jsx('li', {}, void 0, _jsx('span', {
       className: 'link',
+      style: { cursor: 'pointer' },
       onClick: () => {
         let that = this;
         if (false) {
@@ -2913,7 +2913,8 @@ function About(props) {
           if (index >= 0) {
             cart[index].number = cart[index].number + 1;
             sessionStorage.setItem('cart', JSON.stringify(cart));
-            $(".cart-counter").text(cart.length);
+            console.log(cart);
+            // $(".cart-counter").text(cart.length)
           } else {
             cart.push({
               slug: p.slug,
@@ -2921,7 +2922,7 @@ function About(props) {
               product: p
             });
             sessionStorage.setItem('cart', JSON.stringify(cart));
-            $(".cart-counter").text(cart.length);
+            // $(".cart-counter").text(cart.length)
           }
           // $(".cart-counter").text(cart.length)
           document.location.href = '/gio-hang';
@@ -6708,21 +6709,21 @@ var _ref2 = _jsx('section', {
   role: 'presentation',
   className: 'active'
 }, void 0, _jsx('a', {
-  href: '#tab-1',
+  href: 'javascript:void(0)tab-1',
   role: 'tab',
   'data-toggle': 'tab',
   className: 'link'
 }, void 0, 'Exclusive Knowledge')), _jsx('li', {
   role: 'presentation'
 }, void 0, _jsx('a', {
-  href: '#tab-2',
+  href: 'javascript:void(0)tab-2',
   role: 'tab',
   'data-toggle': 'tab',
   className: 'link'
 }, void 0, 'Passionate Service')), _jsx('li', {
   role: 'presentation'
 }, void 0, _jsx('a', {
-  href: '#tab-3',
+  href: 'javascript:void(0)tab-3',
   role: 'tab',
   'data-toggle': 'tab',
   className: 'link'
@@ -15931,7 +15932,7 @@ class Cart extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, _jsx('div', {
         className: 'wrapper-thumbnail'
       }, void 0, _jsx('a', {
-        href: '#'
+        href: 'javascript:void(0)'
       }, void 0, _jsx('img', {
         src: el.product.coverUrl,
         alt: true,
@@ -15939,7 +15940,7 @@ class Cart extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       })))), _jsx('td', {
         className: 'product-name'
       }, void 0, _jsx('a', {
-        href: '#',
+        href: 'javascript:void(0)',
         className: 'woocommerce-name'
       }, void 0, el.product.title)), _jsx('td', {
         className: 'product-price'
@@ -16033,7 +16034,7 @@ class Cart extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, (el.product.price * el.number).toLocaleString(), _ref7)), _jsx('td', {
         className: 'product-remove'
       }, void 0, _jsx('a', {
-        href: '#',
+        href: 'javascript:void(0)',
         title: 'Remove this item',
         className: 'remove'
       }, void 0, _jsx('span', {
@@ -17913,7 +17914,7 @@ var _ref23 = _jsx('div', {
   alt: true,
   className: 'img-full'
 }), _jsx('a', {
-  href: '#',
+  href: 'javascript:void(0)',
   className: 'link'
 })))));
 
@@ -18053,7 +18054,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       })), _jsx('div', {
         className: 'block-content'
       }, void 0, _jsx('a', {
-        href: '#',
+        href: 'javascript:void(0)',
         className: 'title'
       }, void 0, el.title), _jsx('div', {
         className: 'prices-wrapper'
@@ -19346,7 +19347,7 @@ function NewsDetail(props) {
   }, void 0, _jsx('div', {
     className: 'block'
   }, void 0, _ref, _jsx('a', {
-    href: '#',
+    href: 'javascript:void(0)',
     className: 'link'
   }, void 0, __WEBPACK_IMPORTED_MODULE_3_moment___default()(news.created_at).format('DD/MM/YYYY')))), _jsx('div', {
     className: 'description',
@@ -19680,14 +19681,9 @@ var _ref7 = _jsx('span', {
   className: 'unit'
 }, void 0, '/kg');
 
-var _ref8 = _jsx('ul', {
-  className: 'list-icons'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '#',
-  className: 'link'
-}, void 0, _jsx('i', {
+var _ref8 = _jsx('i', {
   className: 'icons fa fa-cart-plus'
-}))));
+});
 
 class NewsDetail extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
@@ -19849,7 +19845,38 @@ class NewsDetail extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
         className: 'prices'
       }, void 0, _jsx('span', {
         className: 'number'
-      }, void 0, p.price.toLocaleString()), _ref6), _ref7), _ref8)));
+      }, void 0, p.price.toLocaleString()), _ref6), _ref7), _jsx('ul', {
+        className: 'list-icons'
+      }, void 0, _jsx('li', {}, void 0, _jsx('a', {
+        href: 'javascript:void(0)',
+        className: 'link',
+        onClick: () => {
+          let that = this;
+          if (false) {
+            let sessionStorage = window && window.sessionStorage ? window.sessionStorage : {};
+            let cart = JSON.parse(sessionStorage.getItem("cart") || '[]');
+            let index = cart.findIndex(el => {
+              return el.slug === p.slug;
+            });
+            if (index >= 0) {
+              cart[index].number = cart[index].number + 1;
+              sessionStorage.setItem('cart', JSON.stringify(cart));
+              console.log(cart);
+              // $(".cart-counter").text(cart.length)
+            } else {
+              cart.push({
+                slug: p.slug,
+                number: 1,
+                product: p
+              });
+              sessionStorage.setItem('cart', JSON.stringify(cart));
+              // $(".cart-counter").text(cart.length)
+            }
+            // $(".cart-counter").text(cart.length)
+            document.location.href = '/gio-hang';
+          }
+        }
+      }, void 0, _ref8))))));
     }))))))))));
   }
 }

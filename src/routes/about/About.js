@@ -28,9 +28,9 @@ class About extends React.Component {
                 <div className="tab-vertical">
                   <div className="tab-list-wrapper">
                     <ul role="tablist" className="tab-list">
-                ..............      <li role="presentation" className="active"><a href="#tab-1" role="tab" data-toggle="tab" className="link">Exclusive Knowledge</a></li>
-                      <li role="presentation"><a href="#tab-2" role="tab" data-toggle="tab" className="link">Passionate Service</a></li>
-                      <li role="presentation"><a href="#tab-3" role="tab" data-toggle="tab" className="link">Benefits For Partners</a></li>
+                ..............      <li role="presentation" className="active"><a href="javascript:void(0)tab-1" role="tab" data-toggle="tab" className="link">Exclusive Knowledge</a></li>
+                      <li role="presentation"><a href="javascript:void(0)tab-2" role="tab" data-toggle="tab" className="link">Passionate Service</a></li>
+                      <li role="presentation"><a href="javascript:void(0)tab-3" role="tab" data-toggle="tab" className="link">Benefits For Partners</a></li>
                     </ul>
                   </div>
                   <div className="tab-content">

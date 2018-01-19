@@ -46,11 +46,11 @@ class About extends React.Component {
                             <div className="block-image"><img src={p.coverUrl} alt className="img-full" />
                               <a href={`/sp/${p.slug}`} className="link" />
                             </div>
-                            <div className="block-content"><a href="#" className="title">{p.title}</a>
+                            <div className="block-content"><a href="javascript:void(0)" className="title">{p.title}</a>
                               <div className="prices-wrapper">
                                 <div className="prices"><span className="number">{p.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
                               <ul className="list-icons">
-                                <li><a href="#" className="link"
+                                <li><span  className="link" style={{cursor: 'pointer'}}
                                        onClick={() => {
                                          let that = this
                                          if(process.env.BROWSER) {
@@ -62,7 +62,8 @@ class About extends React.Component {
                                            if (index >= 0) {
                                              cart[index].number = cart[index].number + 1
                                              sessionStorage.setItem('cart', JSON.stringify(cart))
-                                             $(".cart-counter").text(cart.length)
+                                             console.log(cart)
+                                             // $(".cart-counter").text(cart.length)
                                            } else {
                                              cart.push({
                                                slug: p.slug,
@@ -70,13 +71,13 @@ class About extends React.Component {
                                                product: p
                                              })
                                              sessionStorage.setItem('cart', JSON.stringify(cart))
-                                             $(".cart-counter").text(cart.length)
+                                             // $(".cart-counter").text(cart.length)
                                            }
                                            // $(".cart-counter").text(cart.length)
                                            document.location.href = '/gio-hang'
                                          }
                                        }}
-                                ><i className="icons fa fa-cart-plus" /></a></li>
+                                ><i className="icons fa fa-cart-plus" /></span></li>
                               </ul>
                             </div>
                           </div>
@@ -86,12 +87,12 @@ class About extends React.Component {
                   </div>
                   {/*<nav className="pagination-list margin-top-70">*/}
                     {/*<ul className="pagination">*/}
-                      {/*<li><a href="#" aria-label="Previous" className="btn-pagination previous"><span aria-hidden="true" className="fa fa-angle-left" /></a></li>*/}
-                      {/*<li><a href="#" className="btn-pagination active">01</a></li>*/}
-                      {/*<li><a href="#" className="btn-pagination">02</a></li>*/}
-                      {/*<li><a href="#" className="btn-pagination">...</a></li>*/}
-                      {/*<li><a href="#" className="btn-pagination">09</a></li>*/}
-                      {/*<li><a href="#" aria-label="Next" className="btn-pagination next"><span aria-hidden="true" className="fa fa-angle-right" /></a></li>*/}
+                      {/*<li><a href="javascript:void(0)" aria-label="Previous" className="btn-pagination previous"><span aria-hidden="true" className="fa fa-angle-left" /></a></li>*/}
+                      {/*<li><a href="javascript:void(0)" className="btn-pagination active">01</a></li>*/}
+                      {/*<li><a href="javascript:void(0)" className="btn-pagination">02</a></li>*/}
+                      {/*<li><a href="javascript:void(0)" className="btn-pagination">...</a></li>*/}
+                      {/*<li><a href="javascript:void(0)" className="btn-pagination">09</a></li>*/}
+                      {/*<li><a href="javascript:void(0)" aria-label="Next" className="btn-pagination next"><span aria-hidden="true" className="fa fa-angle-right" /></a></li>*/}
                     {/*</ul>*/}
                   {/*</nav>*/}
                 </div>

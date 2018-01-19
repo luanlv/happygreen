@@ -61,10 +61,10 @@ class Cart extends React.Component {
                           <tr className="cart-item" key={idx}>
                             <td className="product-thumbnail">
                               <div className="wrapper-thumbnail">
-                                <a href="#"><img src={el.product.coverUrl} alt className="img-product" /></a>
+                                <a href="javascript:void(0)"><img src={el.product.coverUrl} alt className="img-product" /></a>
                               </div>
                             </td>
-                            <td className="product-name"><a href="#" className="woocommerce-name">{el.product.title}</a></td>
+                            <td className="product-name"><a href="javascript:void(0)" className="woocommerce-name">{el.product.title}</a></td>
                             <td className="product-price"><span className="woocommerce-Price">{el.product.price.toLocaleString()}<span className="woocommerce-Price-currencySymbol">đ</span><span className="woocommerce-Price-unit">/KG</span></span>
                             </td>
                             <td className="product-quantity">
@@ -146,7 +146,7 @@ class Cart extends React.Component {
                             </td>
                             <td className="product-subtotal"><span className="woocommerce-Price amount">{(el.product.price * el.number).toLocaleString()}<span className="woocommerce-Price-currencySymbol">đ</span></span>
                             </td>
-                            <td className="product-remove"><a href="#" title="Remove this item" className="remove"
+                            <td className="product-remove"><a href="javascript:void(0)" title="Remove this item" className="remove"
 
                             ><span
                               onClick={() => {

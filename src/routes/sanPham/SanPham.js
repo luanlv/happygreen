@@ -134,7 +134,34 @@ class NewsDetail extends React.Component {
                                   <div className="prices-wrapper">
                                     <div className="prices"><span className="number">{p.price.toLocaleString()}</span><sup>$</sup></div><span className="unit">/kg</span></div>
                                   <ul className="list-icons">
-                                    <li><a href="#" className="link"><i className="icons fa fa-cart-plus" /></a></li>
+                                    <li><a href="javascript:void(0)" className="link"
+                                           onClick={() => {
+                                             let that = this
+                                             if(process.env.BROWSER) {
+                                               let sessionStorage = (window && window.sessionStorage) ? window.sessionStorage : {}
+                                               let cart = JSON.parse(sessionStorage.getItem("cart") || '[]')
+                                               let index = cart.findIndex(el => {
+                                                 return el.slug === p.slug
+                                               })
+                                               if (index >= 0) {
+                                                 cart[index].number = cart[index].number + 1
+                                                 sessionStorage.setItem('cart', JSON.stringify(cart))
+                                                 console.log(cart)
+                                                 // $(".cart-counter").text(cart.length)
+                                               } else {
+                                                 cart.push({
+                                                   slug: p.slug,
+                                                   number: 1,
+                                                   product: p
+                                                 })
+                                                 sessionStorage.setItem('cart', JSON.stringify(cart))
+                                                 // $(".cart-counter").text(cart.length)
+                                               }
+                                               // $(".cart-counter").text(cart.length)
+                                               document.location.href = '/gio-hang'
+                                             }
+                                           }}
+                                    ><i className="icons fa fa-cart-plus" /></a></li>
                                   </ul>
                                 </div>
                               </div>
