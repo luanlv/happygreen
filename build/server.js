@@ -250,45 +250,17 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'link'
-}, void 0, ' ', _jsx('i', {
-  className: 'icons fa fa-circle'
-}), _jsx('span', {}, void 0, 'Gi\u1EDD m\u1EDF c\u1EEDa'));
-
-var _ref2 = _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'link'
-}, void 0, ' ', _jsx('i', {
-  className: 'icons fa fa-circle'
-}), _jsx('span', {}, void 0, 'Opening hours'));
-
-var _ref3 = _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'link'
-}, void 0, ' ', _jsx('i', {
-  className: 'icons-2 fa fa-clock-o'
-}), _jsx('span', {}, void 0, '06:00 - 22:00 ')));
-
-var _ref4 = _jsx('ul', {
-  className: 'topbar-right list-unstyled list-inline style-2'
-}, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: '/gio-hang',
-  className: 'link'
-}, void 0, ' ', _jsx('i', {
-  className: 'icons-2 fa fa-cart-plus'
-}), _jsx('span', {
+var _ref = _jsx('span', {
   className: 'cart-counter'
-}, void 0, '0'))));
+}, void 0, '0');
 
-var _ref5 = _jsx('div', {
+var _ref2 = _jsx('div', {
   className: 'hamburger-menu-mobile'
 }, void 0, _jsx('i', {
   className: 'icons fa fa-bars'
 }));
 
-var _ref6 = _jsx('div', {
+var _ref3 = _jsx('div', {
   className: 'logo-wrapper'
 }, void 0, _jsx('a', {
   href: '/',
@@ -298,7 +270,7 @@ var _ref6 = _jsx('div', {
   alt: true
 })));
 
-var _ref7 = _jsx('li', {
+var _ref4 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/',
@@ -307,7 +279,7 @@ var _ref7 = _jsx('li', {
   className: 'text'
 }, void 0, 'Trang ch\u1EE7')));
 
-var _ref8 = _jsx('li', {
+var _ref5 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/',
@@ -316,7 +288,7 @@ var _ref8 = _jsx('li', {
   className: 'text'
 }, void 0, 'Home')));
 
-var _ref9 = _jsx('li', {
+var _ref6 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/gioi-thieu',
@@ -325,7 +297,7 @@ var _ref9 = _jsx('li', {
   className: 'text'
 }, void 0, 'Gi\u1EDBi thi\u1EC7u')));
 
-var _ref10 = _jsx('li', {
+var _ref7 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/gioi-thieu',
@@ -334,7 +306,7 @@ var _ref10 = _jsx('li', {
   className: 'text'
 }, void 0, 'About')));
 
-var _ref11 = _jsx('li', {
+var _ref8 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/cua-hang',
@@ -343,7 +315,7 @@ var _ref11 = _jsx('li', {
   className: 'text'
 }, void 0, 'S\u1EA3n ph\u1EA9m')));
 
-var _ref12 = _jsx('li', {
+var _ref9 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/cua-hang',
@@ -352,7 +324,7 @@ var _ref12 = _jsx('li', {
   className: 'text'
 }, void 0, 'Product')));
 
-var _ref13 = _jsx('li', {
+var _ref10 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -361,7 +333,7 @@ var _ref13 = _jsx('li', {
   className: 'text'
 }, void 0, 'Tin t\u1EE9c')));
 
-var _ref14 = _jsx('li', {
+var _ref11 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -370,7 +342,7 @@ var _ref14 = _jsx('li', {
   className: 'text'
 }, void 0, 'News')));
 
-var _ref15 = _jsx('li', {
+var _ref12 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/lien-he',
@@ -379,7 +351,7 @@ var _ref15 = _jsx('li', {
   className: 'text'
 }, void 0, 'Li\xEAn h\u1EC7')));
 
-var _ref16 = _jsx('li', {
+var _ref13 = _jsx('li', {
   className: 'dropdown active'
 }, void 0, _jsx('a', {
   href: '/lien-he',
@@ -388,19 +360,19 @@ var _ref16 = _jsx('li', {
   className: 'text'
 }, void 0, 'Contact')));
 
-var _ref17 = _jsx('div', {
+var _ref14 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref18 = _jsx('div', {
+var _ref15 = _jsx('div', {
   className: 'title'
 }, void 0, 'Li\xEAn h\u1EC7');
 
-var _ref19 = _jsx('div', {
+var _ref16 = _jsx('div', {
   className: 'title'
 }, void 0, 'Contact');
 
-var _ref20 = _jsx('ul', {
+var _ref17 = _jsx('ul', {
   className: 'list-unstyled info-list'
 }, void 0, _jsx('li', {}, void 0, _jsx('i', {
   className: 'icons fa fa-map-marker'
@@ -419,45 +391,45 @@ var _ref20 = _jsx('ul', {
   className: 'link'
 }, void 0, 'phuongnguyen@happygreenmarket.com.vn')));
 
-var _ref21 = _jsx('div', {
+var _ref18 = _jsx('div', {
   className: 'title'
 }, void 0, 'Li\xEAn k\u1EBFt');
 
-var _ref22 = _jsx('a', {
+var _ref19 = _jsx('a', {
   href: '/',
   className: 'link'
 }, void 0, 'Hot Deal');
 
-var _ref23 = _jsx('a', {
+var _ref20 = _jsx('a', {
   href: '/gioi-thieu',
   className: 'link'
 }, void 0, 'V\u1EC1 ch\xFAng t\xF4i');
 
-var _ref24 = _jsx('a', {
+var _ref21 = _jsx('a', {
   href: '/cua-hang',
   className: 'link'
 }, void 0, 'S\u1EA3n ph\u1EA9m');
 
-var _ref25 = _jsx('div', {
+var _ref22 = _jsx('div', {
   className: 'title'
 }, void 0, 'Facebook Fanpage');
 
-var _ref26 = _jsx('div', {
+var _ref23 = _jsx('div', {
   className: 'name-company pull-left'
 }, void 0, '\xA9 Designed by ', _jsx('a', {
   href: 'http://thunderduck.com.vn'
 }, void 0, 'Thunder Duck'));
 
-var _ref27 = _jsx('div', {
+var _ref24 = _jsx('div', {
   id: 'google_translate_element'
 });
 
-var _ref28 = _jsx('script', {
+var _ref25 = _jsx('script', {
   type: 'text/javascript',
   src: '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
 });
 
-var _ref29 = _jsx('div', {
+var _ref26 = _jsx('div', {
   className: 'social-footer pull-right'
 }, void 0, _jsx('ul', {
   className: 'list-inline list-unstyled'
@@ -468,7 +440,7 @@ var _ref29 = _jsx('div', {
   className: 'fa fa-facebook'
 })))));
 
-var _ref30 = _jsx('div', {
+var _ref27 = _jsx('div', {
   id: 'back-top'
 }, void 0, _jsx('a', {
   href: '#top',
@@ -485,17 +457,17 @@ var _ref30 = _jsx('div', {
   className: 'fa fa-angle-double-up'
 })));
 
-var _ref31 = _jsx('button', {
+var _ref28 = _jsx('button', {
   type: 'button',
   className: 'close',
   'data-dismiss': 'modal'
 }, void 0, '\xD7');
 
-var _ref32 = _jsx('div', {
+var _ref29 = _jsx('div', {
   className: 'modal-body'
 }, void 0, _jsx('p', {}, void 0, 'Some text in the modal.'));
 
-var _ref33 = _jsx('div', {
+var _ref30 = _jsx('div', {
   className: 'modal-footer'
 }, void 0, _jsx('button', {
   type: 'button',
@@ -529,7 +501,9 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       data: this.props.data
     }), _jsx('div', {
       className: 'wrapper-content'
-    }, void 0, _jsx('header', {}, void 0, _jsx('div', {
+    }, void 0, _jsx('header', {
+      style: { marginBottom: 50 }
+    }, void 0, _jsx('div', {
       className: 'bg-transparent'
     }, void 0, _jsx('div', {
       className: 'header-topbar'
@@ -537,20 +511,52 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'container'
     }, void 0, _jsx('ul', {
       className: 'topbar-left list-unstyled pull-left'
-    }, void 0, _jsx('li', {}, void 0, !en && _ref, en && _ref2), _ref3), _jsx('ul', {
+    }, void 0, _jsx('li', {}, void 0, !en && _jsx('a', {
+      href: 'javascript:void(0)',
+      className: 'link'
+    }, void 0, ' ', _jsx('i', {
+      className: 'icons fa fa-circle',
+      style: { color: '#666 !important' }
+    }), _jsx('span', {
+      style: { color: '#666 !important' }
+    }, void 0, 'Gi\u1EDD m\u1EDF c\u1EEDa')), en && _jsx('a', {
+      href: 'javascript:void(0)',
+      className: 'link'
+    }, void 0, ' ', _jsx('i', {
+      className: 'icons fa fa-circle',
+      style: { color: '#666 !important' }
+    }), _jsx('span', {
+      style: { color: '#666 !important' }
+    }, void 0, 'Opening hours'))), _jsx('li', {}, void 0, _jsx('a', {
+      href: 'javascript:void(0)',
+      className: 'link'
+    }, void 0, ' ', _jsx('i', {
+      className: 'icons-2 fa fa-clock-o',
+      style: { color: '#666 !important' }
+    }), _jsx('span', {
+      style: { color: '#666 !important' }
+    }, void 0, '06:00 - 22:00 ')))), _jsx('ul', {
       className: 'topbar-right list-unstyled style-2',
       style: { marginLeft: 20 }
-    }, void 0), _ref4)), _jsx('div', {
+    }, void 0), _jsx('ul', {
+      className: 'topbar-right list-unstyled list-inline style-2'
+    }, void 0, _jsx('li', {}, void 0, _jsx('a', {
+      href: '/gio-hang',
+      className: 'link'
+    }, void 0, ' ', _jsx('i', {
+      className: 'icons-2 fa fa-cart-plus',
+      style: { color: '#666 !important' }
+    }), _ref))))), _jsx('div', {
       className: 'header-main'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'header-main-wrapper'
-    }, void 0, _ref5, _ref6, _jsx('nav', {
+    }, void 0, _ref2, _ref3, _jsx('nav', {
       className: 'navigation'
     }, void 0, _jsx('ul', {
       className: 'nav-links nav navbar-nav'
-    }, void 0, !en && _ref7, en && _ref8, !en && _ref9, en && _ref10, !en && _ref11, en && _ref12, !en && _ref13, en && _ref14, !en && _ref15, en && _ref16)), _ref17))))), this.props.children, _jsx('footer', {}, void 0, _jsx('div', {
+    }, void 0, !en && _ref4, en && _ref5, !en && _ref6, en && _ref7, !en && _ref8, en && _ref9, !en && _ref10, en && _ref11, !en && _ref12, en && _ref13)), _ref14))))), this.props.children, _jsx('footer', {}, void 0, _jsx('div', {
       className: 'footer',
       style: { maxHeight: '500px !important' }
     }, void 0, _jsx('div', {
@@ -570,7 +576,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'col-md-4 col-xs-12'
     }, void 0, _jsx('div', {
       className: 'gamba-info widget'
-    }, void 0, !en && _ref18, en && _ref19, _jsx('div', {
+    }, void 0, !en && _ref15, en && _ref16, _jsx('div', {
       className: 'content-widget'
     }, void 0, _jsx('iframe', {
       src: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.533065670631!2d106.7227598!3d10.770424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf80bb00557353ba0!2sHappy+Green+Market!5e0!3m2!1sen!2s!4v1516723215174',
@@ -579,29 +585,29 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       frameBorder: 0,
       style: { border: 0 },
       allowFullscreen: true
-    }), _ref20)))), _jsx('div', {
+    }), _ref17)))), _jsx('div', {
       className: 'col-2'
     }, void 0, _jsx('div', {
       className: 'col-md-4 col-xs-12'
     }, void 0, _jsx('div', {
       className: 'gamba-info widget'
-    }, void 0, _ref21, _jsx('div', {
+    }, void 0, _ref18, _jsx('div', {
       className: 'content-widget'
     }, void 0, _jsx('ul', {
       className: 'list-unstyled info-list'
     }, void 0, _jsx('li', {
       style: { borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white' }
-    }, void 0, _ref22), _jsx('li', {
+    }, void 0, _ref19), _jsx('li', {
       style: { borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white' }
-    }, void 0, _ref23), _jsx('li', {
+    }, void 0, _ref20), _jsx('li', {
       style: { borderBottom: '1px dashed #ddd', marginBottom: 20 }
-    }, void 0, _ref24)))))), _jsx('div', {
+    }, void 0, _ref21)))))), _jsx('div', {
       className: 'col-2'
     }, void 0, _jsx('div', {
       className: 'col-md-4 col-xs-12'
     }, void 0, _jsx('div', {
       className: 'gamba-info widget'
-    }, void 0, _ref25, _jsx('div', {
+    }, void 0, _ref22, _jsx('div', {
       className: 'content-widget'
     }, void 0, _jsx('iframe', {
       src: 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhappygreenmarket&tabs=timeline&width=340&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1773112352977230',
@@ -615,12 +621,12 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'hyperlink'
     }, void 0, _jsx('div', {
       className: 'container'
-    }, void 0, _ref26, _jsx('div', {
+    }, void 0, _ref23, _jsx('div', {
       className: 'name-company pull-right'
-    }, void 0, _ref27, _jsx('script', {
+    }, void 0, _ref24, _jsx('script', {
       type: 'text/javascript',
       dangerouslySetInnerHTML: { __html: `function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'en,ja,ko,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element'); }` }
-    }), _ref28), _ref29))))), _ref30), _jsx('div', {
+    }), _ref25), _ref26))))), _ref27), _jsx('div', {
       id: 'myModal',
       className: 'modal fade',
       role: 'dialog'
@@ -630,10 +636,10 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'modal-content'
     }, void 0, _jsx('div', {
       className: 'modal-header'
-    }, void 0, _ref31, _jsx('h4', {
+    }, void 0, _ref28, _jsx('h4', {
       className: 'modal-title',
       style: { color: 'red', fontWeight: 'red', fontStyle: 'italic', textAlign: 'center' }
-    }, void 0, 'HOT DEAL M\u1ED6I NG\xC0Y')), _ref32, _ref33))));
+    }, void 0, 'HOT DEAL M\u1ED6I NG\xC0Y')), _ref29, _ref30))));
   }
 }
 
@@ -18493,31 +18499,42 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 var _ref = _jsx('img', {
   src: '/assets/images/background-full/homepage-1.jpg',
   alt: '',
-  'data-parallax': '{"y": 200}',
   className: 'img-responsive img-background'
 });
 
-var _ref2 = _jsx('h1', {
+var _ref2 = _jsx('sup', {}, void 0, '\u0111');
+
+var _ref3 = _jsx('div', {
+  className: 'btn btn-left btn-maincolor animated fadeInLeft'
+}, void 0, 'Mua ngay');
+
+var _ref4 = _jsx('img', {
+  src: '/assets/images/background-full/homepage-1.jpg',
+  alt: '',
+  className: 'img-responsive img-background'
+});
+
+var _ref5 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Happy Green');
 
-var _ref3 = _jsx('h2', {
+var _ref6 = _jsx('h2', {
   className: 'subtitle'
 }, void 0, 'T\u01B0\u01A1i m\u1ED7i ng\xE0y');
 
-var _ref4 = _jsx('h2', {
+var _ref7 = _jsx('h2', {
   className: 'subtitle'
 }, void 0, 'Fresh daily');
 
-var _ref5 = _jsx('h2', {
+var _ref8 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi Happy Green');
 
-var _ref6 = _jsx('h2', {
+var _ref9 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Welcome to Happy Green');
 
-var _ref7 = _jsx('div', {
+var _ref10 = _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'about-us-wrapper'
@@ -18628,44 +18645,44 @@ var _ref7 = _jsx('div', {
   className: 'clearfix'
 })));
 
-var _ref8 = _jsx('img', {
+var _ref11 = _jsx('img', {
   src: '/assets/images/background-full/banner-1.jpg',
   alt: true,
   className: 'img-bg-1'
 });
 
-var _ref9 = _jsx('img', {
+var _ref12 = _jsx('img', {
   src: '/assets/images/background-full/banner-1-2.png',
   alt: true,
   className: 'img-bg-2'
 });
 
-var _ref10 = _jsx('h2', {
+var _ref13 = _jsx('h2', {
   className: 'title'
 }, void 0, 'S\u1EA3n ph\u1EA9m');
 
-var _ref11 = _jsx('h2', {
+var _ref14 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Products');
 
-var _ref12 = _jsx('sup', {}, void 0, '\u0111');
+var _ref15 = _jsx('sup', {}, void 0, '\u0111');
 
-var _ref13 = _jsx('div', {
+var _ref16 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/cua-hang',
   className: 'btn'
 }, void 0, 'Xem th\xEAm'));
 
-var _ref14 = _jsx('h1', {
+var _ref17 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Kh\xE1ch h\xE0ng ti\xEAu bi\u1EC3u');
 
-var _ref15 = _jsx('h1', {
+var _ref18 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Happy customers');
 
-var _ref16 = _jsx('div', {
+var _ref19 = _jsx('div', {
   className: 'list-customer-review'
 }, void 0, _jsx('div', {
   className: 'item'
@@ -18779,15 +18796,15 @@ var _ref16 = _jsx('div', {
   className: 'description'
 }, void 0, 'M\u1EA1i dz\xF4 m\u1EA1i dz\xF4....h\xE0ng t\u1ED1t gi\xE1 t\u1ED1t....')))));
 
-var _ref17 = _jsx('h1', {
+var _ref20 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Th\xE0nh vi\xEAn');
 
-var _ref18 = _jsx('h1', {
+var _ref21 = _jsx('h1', {
   className: 'title'
 }, void 0, 'My Teams');
 
-var _ref19 = _jsx('div', {
+var _ref22 = _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'grid-item grid-2'
@@ -18813,48 +18830,48 @@ var _ref19 = _jsx('div', {
   className: 'link'
 })))));
 
-var _ref20 = _jsx('h2', {
+var _ref23 = _jsx('h2', {
   className: 'title'
 }, void 0, 'B\xE0i vi\u1EBFt');
 
-var _ref21 = _jsx('h2', {
+var _ref24 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Post');
 
-var _ref22 = _jsx('a', {
+var _ref25 = _jsx('a', {
   href: 'blog-detail.html',
   className: 'link'
 });
 
-var _ref23 = _jsx('span', {
+var _ref26 = _jsx('span', {
   className: 'text'
 }, void 0, 'Chi ti\u1EBFt');
 
-var _ref24 = _jsx('i', {
+var _ref27 = _jsx('i', {
   className: 'icons fa fa-long-arrow-right'
 }, void 0, ' ');
-
-var _ref25 = _jsx('i', {
-  className: 'icons fa fa-calendar-o'
-}, void 0, ' ');
-
-var _ref26 = _jsx('div', {
-  className: 'clearfix'
-});
-
-var _ref27 = _jsx('span', {
-  className: 'text'
-}, void 0, 'Chi ti\u1EBFt');
 
 var _ref28 = _jsx('i', {
-  className: 'icons fa fa-long-arrow-right'
-});
+  className: 'icons fa fa-calendar-o'
+}, void 0, ' ');
 
 var _ref29 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref30 = _jsx('div', {
+var _ref30 = _jsx('span', {
+  className: 'text'
+}, void 0, 'Chi ti\u1EBFt');
+
+var _ref31 = _jsx('i', {
+  className: 'icons fa fa-long-arrow-right'
+});
+
+var _ref32 = _jsx('div', {
+  className: 'clearfix'
+});
+
+var _ref33 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -18876,22 +18893,31 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     return _jsx('div', {}, void 0, _jsx('div', {
       className: 'main-contents'
     }, void 0, allHotdeals.length > 0 && _jsx('section', {
-      className: 'background-slide',
-      style: { marginTop: 30 }
+      className: 'background-slide'
     }, void 0, allHotdeals.map((el, idx) => {
       return _jsx('a', {
         href: `/sp/${el.slug}`,
         className: 'slide-item'
-      }, void 0, _jsx('img', {
-        style: { margin: 'auto !important', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, maxWidth: '100% !important' },
-        src: el.coverUrl,
-        className: 'img-responsive img-background'
-      }));
+      }, idx, _ref, _jsx('div', {
+        className: 'container'
+      }, void 0, _jsx('div', {
+        className: 'homepage-banner-warpper'
+      }, void 0, _jsx('div', {
+        className: 'homepage-banner-content'
+      }, void 0, _jsx('div', {
+        className: 'group-title fadeInDown'
+      }, void 0, _jsx('h1', {
+        className: 'title'
+      }, void 0, el.title), _jsx('h2', {
+        className: 'subtitle'
+      }, void 0, el.price.toLocaleString(), _ref2, _jsx('span', {
+        className: 'unit'
+      }, void 0, '/', el.donvi)), _ref3)))));
     })), allHotdeals.length === 0 && _jsx('section', {
       className: 'background-slide'
     }, void 0, _jsx('div', {
       className: 'slide-item'
-    }, void 0, _ref, _jsx('div', {
+    }, void 0, _ref4, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'homepage-banner-warpper'
@@ -18899,15 +18925,15 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'homepage-banner-content'
     }, void 0, _jsx('div', {
       className: 'group-title fadeInDown'
-    }, void 0, _ref2, !isEn && _ref3, isEn && _ref4)))))), _jsx('section', {
+    }, void 0, _ref5, !isEn && _ref6, isEn && _ref7)))))), _jsx('section', {
       className: 'about-us padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref5, isEn && _ref6), _ref7)), _jsx('section', {
+    }, void 0, !isEn && _ref8, isEn && _ref9), _ref10)), _jsx('section', {
       className: 'banner-1'
-    }, void 0, _ref8, _ref9, _jsx('div', {
+    }, void 0, _ref11, _ref12, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('a', {
       href: '/cua-hang'
@@ -18917,7 +18943,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref10, isEn && _ref11), _jsx('div', {
+    }, void 0, !isEn && _ref13, isEn && _ref14), _jsx('div', {
       className: 'main-content'
     }, void 0, _jsx('div', {
       className: 'gallery-grid'
@@ -18948,22 +18974,22 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         className: 'prices'
       }, void 0, _jsx('span', {
         className: 'number'
-      }, void 0, el.price.toLocaleString()), _ref12), _jsx('span', {
+      }, void 0, el.price.toLocaleString()), _ref15), _jsx('span', {
         className: 'unit'
       }, void 0, '/', el.donvi)))));
-    })), _ref13))), _jsx('section', {
+    })), _ref16))), _jsx('section', {
       className: 'banner customer-review padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles white'
-    }, void 0, !isEn && _ref14, isEn && _ref15), _ref16)), _jsx('section', {
+    }, void 0, !isEn && _ref17, isEn && _ref18), _ref19)), _jsx('section', {
       className: 'our-team padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref17, isEn && _ref18), _ref19)), _jsx('section', {
+    }, void 0, !isEn && _ref20, isEn && _ref21), _ref22)), _jsx('section', {
       className: 'banner banner-2'
     }, void 0, _jsx('div', {
       className: 'container'
@@ -18980,7 +19006,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref20, isEn && _ref21), _jsx('div', {
+    }, void 0, !isEn && _ref23, isEn && _ref24), _jsx('div', {
       className: 'main-content'
     }, void 0, _jsx('div', {
       className: 'grid-block-1'
@@ -18996,7 +19022,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       src: firstNews.coverUrl,
       alt: true,
       className: 'img-full'
-    }), _ref22), _jsx('div', {
+    }), _ref25), _jsx('div', {
       className: 'block-content'
     }, void 0, _jsx('a', {
       href: `/p/${firstNews.slug}`,
@@ -19008,13 +19034,13 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }, void 0, firstNews.description)), _jsx('a', {
       href: `/p/${firstNews.slug}`,
       className: 'readmore'
-    }, void 0, _ref23, _ref24), _jsx('div', {
+    }, void 0, _ref26, _ref27), _jsx('div', {
       className: 'block-info'
     }, void 0, _jsx('div', {
       className: 'info-left'
     }, void 0, _jsx('div', {
       className: 'block'
-    }, void 0, _ref25, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref26))))), _jsx('div', {
+    }, void 0, _ref28, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref29))))), _jsx('div', {
       className: 'block-right'
     }, void 0, restNews.map((tintuc, idx) => {
       return _jsx('div', {
@@ -19042,8 +19068,8 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, tintuc.description)), _jsx('a', {
         href: `/p/${tintuc.slug}`,
         className: 'readmore'
-      }, void 0, _ref27, _ref28))));
-    })), _ref29), _ref30)))));
+      }, void 0, _ref30, _ref31))));
+    })), _ref32), _ref33)))));
   }
 }
 

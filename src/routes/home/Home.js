@@ -29,22 +29,35 @@ class Home extends React.Component {
       <div>
         <div className="main-contents">
           {/* Slider*/}
-          {allHotdeals.length > 0 && <section className="background-slide" style={{marginTop: 30}}>
+          {allHotdeals.length > 0 &&
+          <section className="background-slide" >
             {allHotdeals.map((el, idx) => {
               return (
-                <a href={`/sp/${el.slug}`} className="slide-item">
-                  <img
-                    style={{margin: 'auto !important', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, maxWidth: '100% !important'}}
-                    src={el.coverUrl} className="img-responsive img-background" />
+                <a href={`/sp/${el.slug}`} className="slide-item" key={idx}>
+                  <img src="/assets/images/background-full/homepage-1.jpg" alt=""  className="img-responsive img-background" />
+                  <div className="container">
+                    <div className="homepage-banner-warpper">
+                      <div className="homepage-banner-content">
+                        <div className="group-title fadeInDown">
+                          <h1 className="title">{el.title}</h1>
+                          <h2 className="subtitle">{el.price.toLocaleString()}<sup>đ</sup><span className="unit">/{el.donvi}</span></h2>
+                          <div className="btn btn-left btn-maincolor animated fadeInLeft">Mua ngay</div>
+                          {/*<div className="group-btn">*/}
+                          {/*</div>*/}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               )
             })}
-          </section>}
+          </section>
+          }
 
           {allHotdeals.length === 0 &&
           <section className="background-slide">
             <div className="slide-item">
-              <img src="/assets/images/background-full/homepage-1.jpg" alt="" data-parallax="{&quot;y&quot;: 200}" className="img-responsive img-background" />
+              <img src="/assets/images/background-full/homepage-1.jpg" alt=""  className="img-responsive img-background" />
               <div className="container">
                 <div className="homepage-banner-warpper">
                   <div className="homepage-banner-content">

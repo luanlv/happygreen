@@ -34,17 +34,17 @@ class Layout extends React.Component {
       <Header data={this.props.data}/>
 
       <div className="wrapper-content">
-        <header>
+        <header style={{marginBottom: 50, }}>
           <div className="bg-transparent">
             <div className="header-topbar">
               <div className="container">
                 <ul className="topbar-left list-unstyled pull-left">
                   <li>
-                    {!en && <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" /><span>Giờ mở cửa</span></a>}
-                    {en && <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" /><span>Opening hours</span></a>}
+                    {!en && <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" style={{color: '#666 !important'}} /><span style={{color: '#666 !important'}}>Giờ mở cửa</span></a>}
+                    {en && <a href="javascript:void(0)" className="link"> <i className="icons fa fa-circle" style={{color: '#666 !important'}} /><span style={{color: '#666 !important'}}>Opening hours</span></a>}
                   </li>
                   <li>
-                    <a href="javascript:void(0)" className="link"> <i className="icons-2 fa fa-clock-o" /><span>06:00 - 22:00 </span></a>
+                    <a href="javascript:void(0)" className="link"> <i className="icons-2 fa fa-clock-o" style={{color: '#666 !important'}}/><span style={{color: '#666 !important'}}>06:00 - 22:00 </span></a>
                   </li>
                 </ul>
 
@@ -59,7 +59,7 @@ class Layout extends React.Component {
 
                 <ul className="topbar-right list-unstyled list-inline style-2">
                   <li>
-                    <a href="/gio-hang" className="link"> <i className="icons-2 fa fa-cart-plus" /><span className="cart-counter">0</span></a>
+                    <a href="/gio-hang" className="link"> <i className="icons-2 fa fa-cart-plus" style={{color: '#666 !important'}} /><span className="cart-counter">0</span></a>
                   </li>
                 </ul>
 
