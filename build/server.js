@@ -18490,15 +18490,34 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 
 
-var _ref = _jsx('h2', {
+var _ref = _jsx('img', {
+  src: '/assets/images/background-full/homepage-1.jpg',
+  alt: '',
+  'data-parallax': '{"y": 200}',
+  className: 'img-responsive img-background'
+});
+
+var _ref2 = _jsx('h1', {
+  className: 'title'
+}, void 0, 'Happy Green');
+
+var _ref3 = _jsx('h2', {
+  className: 'subtitle'
+}, void 0, 'T\u01B0\u01A1i m\u1ED7i ng\xE0y');
+
+var _ref4 = _jsx('h2', {
+  className: 'subtitle'
+}, void 0, 'Fresh daily');
+
+var _ref5 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi Happy Green');
 
-var _ref2 = _jsx('h2', {
+var _ref6 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Welcome to Happy Green');
 
-var _ref3 = _jsx('div', {
+var _ref7 = _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'about-us-wrapper'
@@ -18609,44 +18628,44 @@ var _ref3 = _jsx('div', {
   className: 'clearfix'
 })));
 
-var _ref4 = _jsx('img', {
+var _ref8 = _jsx('img', {
   src: '/assets/images/background-full/banner-1.jpg',
   alt: true,
   className: 'img-bg-1'
 });
 
-var _ref5 = _jsx('img', {
+var _ref9 = _jsx('img', {
   src: '/assets/images/background-full/banner-1-2.png',
   alt: true,
   className: 'img-bg-2'
 });
 
-var _ref6 = _jsx('h2', {
+var _ref10 = _jsx('h2', {
   className: 'title'
 }, void 0, 'S\u1EA3n ph\u1EA9m');
 
-var _ref7 = _jsx('h2', {
+var _ref11 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Products');
 
-var _ref8 = _jsx('sup', {}, void 0, '\u0111');
+var _ref12 = _jsx('sup', {}, void 0, '\u0111');
 
-var _ref9 = _jsx('div', {
+var _ref13 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/cua-hang',
   className: 'btn'
 }, void 0, 'Xem th\xEAm'));
 
-var _ref10 = _jsx('h1', {
+var _ref14 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Kh\xE1ch h\xE0ng ti\xEAu bi\u1EC3u');
 
-var _ref11 = _jsx('h1', {
+var _ref15 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Happy customers');
 
-var _ref12 = _jsx('div', {
+var _ref16 = _jsx('div', {
   className: 'list-customer-review'
 }, void 0, _jsx('div', {
   className: 'item'
@@ -18760,15 +18779,15 @@ var _ref12 = _jsx('div', {
   className: 'description'
 }, void 0, 'M\u1EA1i dz\xF4 m\u1EA1i dz\xF4....h\xE0ng t\u1ED1t gi\xE1 t\u1ED1t....')))));
 
-var _ref13 = _jsx('h1', {
+var _ref17 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Th\xE0nh vi\xEAn');
 
-var _ref14 = _jsx('h1', {
+var _ref18 = _jsx('h1', {
   className: 'title'
 }, void 0, 'My Teams');
 
-var _ref15 = _jsx('div', {
+var _ref19 = _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'grid-item grid-2'
@@ -18794,33 +18813,17 @@ var _ref15 = _jsx('div', {
   className: 'link'
 })))));
 
-var _ref16 = _jsx('h2', {
+var _ref20 = _jsx('h2', {
   className: 'title'
 }, void 0, 'B\xE0i vi\u1EBFt');
 
-var _ref17 = _jsx('h2', {
+var _ref21 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Post');
 
-var _ref18 = _jsx('a', {
+var _ref22 = _jsx('a', {
   href: 'blog-detail.html',
   className: 'link'
-});
-
-var _ref19 = _jsx('span', {
-  className: 'text'
-}, void 0, 'Chi ti\u1EBFt');
-
-var _ref20 = _jsx('i', {
-  className: 'icons fa fa-long-arrow-right'
-}, void 0, ' ');
-
-var _ref21 = _jsx('i', {
-  className: 'icons fa fa-calendar-o'
-}, void 0, ' ');
-
-var _ref22 = _jsx('div', {
-  className: 'clearfix'
 });
 
 var _ref23 = _jsx('span', {
@@ -18829,13 +18832,29 @@ var _ref23 = _jsx('span', {
 
 var _ref24 = _jsx('i', {
   className: 'icons fa fa-long-arrow-right'
-});
+}, void 0, ' ');
 
-var _ref25 = _jsx('div', {
+var _ref25 = _jsx('i', {
+  className: 'icons fa fa-calendar-o'
+}, void 0, ' ');
+
+var _ref26 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref26 = _jsx('div', {
+var _ref27 = _jsx('span', {
+  className: 'text'
+}, void 0, 'Chi ti\u1EBFt');
+
+var _ref28 = _jsx('i', {
+  className: 'icons fa fa-long-arrow-right'
+});
+
+var _ref29 = _jsx('div', {
+  className: 'clearfix'
+});
+
+var _ref30 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -18856,7 +18875,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     let isEn = this.props.data && this.props.data.lang === 'en';
     return _jsx('div', {}, void 0, _jsx('div', {
       className: 'main-contents'
-    }, void 0, _jsx('section', {
+    }, void 0, allHotdeals.length > 0 && _jsx('section', {
       className: 'background-slide'
     }, void 0, allHotdeals.map((el, idx) => {
       return _jsx('a', {
@@ -18867,15 +18886,27 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         src: el.coverUrl,
         className: 'img-responsive img-background'
       }));
-    })), _jsx('section', {
+    })), allHotdeals.length < 0 && _jsx('section', {
+      className: 'background-slide'
+    }, void 0, _jsx('div', {
+      className: 'slide-item'
+    }, void 0, _ref, _jsx('div', {
+      className: 'container'
+    }, void 0, _jsx('div', {
+      className: 'homepage-banner-warpper'
+    }, void 0, _jsx('div', {
+      className: 'homepage-banner-content'
+    }, void 0, _jsx('div', {
+      className: 'group-title fadeInDown'
+    }, void 0, _ref2, !isEn && _ref3, isEn && _ref4)))))), _jsx('section', {
       className: 'about-us padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref, isEn && _ref2), _ref3)), _jsx('section', {
+    }, void 0, !isEn && _ref5, isEn && _ref6), _ref7)), _jsx('section', {
       className: 'banner-1'
-    }, void 0, _ref4, _ref5, _jsx('div', {
+    }, void 0, _ref8, _ref9, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('a', {
       href: '/cua-hang'
@@ -18885,7 +18916,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref6, isEn && _ref7), _jsx('div', {
+    }, void 0, !isEn && _ref10, isEn && _ref11), _jsx('div', {
       className: 'main-content'
     }, void 0, _jsx('div', {
       className: 'gallery-grid'
@@ -18916,22 +18947,22 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         className: 'prices'
       }, void 0, _jsx('span', {
         className: 'number'
-      }, void 0, el.price.toLocaleString()), _ref8), _jsx('span', {
+      }, void 0, el.price.toLocaleString()), _ref12), _jsx('span', {
         className: 'unit'
       }, void 0, '/', el.donvi)))));
-    })), _ref9))), _jsx('section', {
+    })), _ref13))), _jsx('section', {
       className: 'banner customer-review padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles white'
-    }, void 0, !isEn && _ref10, isEn && _ref11), _ref12)), _jsx('section', {
+    }, void 0, !isEn && _ref14, isEn && _ref15), _ref16)), _jsx('section', {
       className: 'our-team padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref13, isEn && _ref14), _ref15)), _jsx('section', {
+    }, void 0, !isEn && _ref17, isEn && _ref18), _ref19)), _jsx('section', {
       className: 'banner banner-2'
     }, void 0, _jsx('div', {
       className: 'container'
@@ -18948,7 +18979,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref16, isEn && _ref17), _jsx('div', {
+    }, void 0, !isEn && _ref20, isEn && _ref21), _jsx('div', {
       className: 'main-content'
     }, void 0, _jsx('div', {
       className: 'grid-block-1'
@@ -18964,7 +18995,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       src: firstNews.coverUrl,
       alt: true,
       className: 'img-full'
-    }), _ref18), _jsx('div', {
+    }), _ref22), _jsx('div', {
       className: 'block-content'
     }, void 0, _jsx('a', {
       href: `/p/${firstNews.slug}`,
@@ -18976,13 +19007,13 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }, void 0, firstNews.description)), _jsx('a', {
       href: `/p/${firstNews.slug}`,
       className: 'readmore'
-    }, void 0, _ref19, _ref20), _jsx('div', {
+    }, void 0, _ref23, _ref24), _jsx('div', {
       className: 'block-info'
     }, void 0, _jsx('div', {
       className: 'info-left'
     }, void 0, _jsx('div', {
       className: 'block'
-    }, void 0, _ref21, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref22))))), _jsx('div', {
+    }, void 0, _ref25, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref26))))), _jsx('div', {
       className: 'block-right'
     }, void 0, restNews.map((tintuc, idx) => {
       return _jsx('div', {
@@ -19010,8 +19041,8 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, tintuc.description)), _jsx('a', {
         href: `/p/${tintuc.slug}`,
         className: 'readmore'
-      }, void 0, _ref23, _ref24))));
-    })), _ref25), _ref26)))));
+      }, void 0, _ref27, _ref28))));
+    })), _ref29), _ref30)))));
   }
 }
 

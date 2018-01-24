@@ -29,7 +29,7 @@ class Home extends React.Component {
       <div>
         <div className="main-contents">
           {/* Slider*/}
-          <section className="background-slide">
+          {allHotdeals.length > 0 && <section className="background-slide">
             {allHotdeals.map((el, idx) => {
               return (
                 <a href={`/sp/${el.slug}`} className="slide-item">
@@ -39,7 +39,26 @@ class Home extends React.Component {
                 </a>
               )
             })}
+          </section>}
+
+          {allHotdeals.length < 0 &&
+          <section className="background-slide">
+            <div className="slide-item">
+              <img src="/assets/images/background-full/homepage-1.jpg" alt="" data-parallax="{&quot;y&quot;: 200}" className="img-responsive img-background" />
+              <div className="container">
+                <div className="homepage-banner-warpper">
+                  <div className="homepage-banner-content">
+                    <div className="group-title fadeInDown">
+                      <h1 className="title">Happy Green</h1>
+                      {!isEn  && <h2 className="subtitle">Tươi mỗi ngày</h2>}
+                      {isEn  && <h2 className="subtitle">Fresh daily</h2>}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
+          }
 
 
           <section className="about-us padding-top-100 padding-bottom-100">
