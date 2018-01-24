@@ -2593,12 +2593,9 @@
 
 .background-slide .slide-item {
     position: relative;
-
     overflow: hidden;
-
-    width: 100%;
-    height: 100vh;
-
+    width: 100vw;
+    height: 40vw;
     background-color: #121212;
 }
 

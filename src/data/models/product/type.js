@@ -35,7 +35,10 @@ export default new GraphQLObjectType({
       type: new GraphQLNonNull(GraphQLInt)
     },
     donvi: {
-      type: new GraphQLNonNull(GraphQLString)
+      type: GraphQLString
+    },
+    hotdeal: {
+      type: GraphQLBoolean
     },
     coverUrl: {
       type: new GraphQLNonNull(GraphQLString)

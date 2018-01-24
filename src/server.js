@@ -183,6 +183,10 @@ app.get('*', async (req, res, next) => {
           needUpdate: true,
           value: []
         },
+        allHotdeals: {
+          needUpdate: true,
+          value: []
+        },
         productRelative: {
           needUpdate: true,
           value: []

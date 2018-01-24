@@ -24,9 +24,8 @@ export default {
     // let information = 'information{id, services, common}'
     // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
     // let categories = 'categories:getCategories{title, slug, created_at}'
-    let product = 'product:getOneProduct(slug: "'+ params.slug +'"){ coverUrl, category, slug, title, body, price, view, created_at}'
-    let productRelative = 'productRelative:getProductRelative{ coverUrl, category, slug, title, body, price, view, created_at}'
-
+    let product = 'product:getOneProduct(slug: "'+ params.slug +'"){ coverUrl, category, slug, title, donvi, body, price, view, created_at}'
+    let productRelative = 'productRelative:getProductRelative{ coverUrl, category, slug, title, body, price, view, donvi, created_at}'
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
@@ -34,6 +33,7 @@ export default {
       }),
     });
     const { data } = await resp.json();
+    console.log(data)
     seo = data.seo || {}
     if (!data ) throw new Error('Failed to load data.');
     store.dispatch(setData(data))

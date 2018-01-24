@@ -18,6 +18,9 @@ const Admin = {
   ListProduct: require('./product/List').default,
   EditProduct: require('./product/Edit').default,
 
+  ListHotdeal: require('./hotdeal/List').default,
+  EditHotdeal: require('./hotdeal/Edit').default,
+
   EditCategory: require('./category/EditCategory').default,
   ListCategories: require('./category/ListCategories').default,
 

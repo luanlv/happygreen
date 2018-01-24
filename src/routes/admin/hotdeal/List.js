@@ -24,7 +24,7 @@ class List extends React.Component {
       totalPage: 1,
       data: []
     }
-    this.getProducts(1)
+    this.getHotdeals(1)
   }
   render() {
     return (
@@ -33,7 +33,7 @@ class List extends React.Component {
         </div>
     );
   }
-  async getProducts(page) {
+  async getHotdeals(page) {
 
     const resp = await fetch('/graphql', {
       method: 'post',
@@ -42,20 +42,20 @@ class List extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: '{getProducts(page:'+ page +' ){page,totalPage,data{coverUrl, slug, title, body, view, price, donvi, hotdeal, created_at}}}',
+        query: '{getHotdeals(page:'+ page +' ){page,totalPage,data{coverUrl, slug, title, body, view, price, hotdeal, donvi, created_at}}}',
       }),
       credentials: 'include',
     });
 
     const {data} = await resp.json();
-    // console.log(data.getProducts)
+    console.log(data.getHotdeals)
     this.setState(prev => {
       return {
         ...prev,
         loading: false,
-        page: data.getProducts.page,
-        totalPage: data.getProducts.totalPage,
-        data: data.getProducts.data
+        page: data.getHotdeals.page,
+        totalPage: data.getHotdeals.totalPage,
+        data: data.getHotdeals.data
       }
     })
   }
@@ -76,7 +76,7 @@ const columns = [{
   render: (text, record) => (
     <span>
 
-      <Link to={"/admin/product?v=edit&slug=" + record.slug }>
+      <Link to={"/admin/hotdeal?v=edit&slug=" + record.slug }>
         <Button type="danger">
         Sửa
         </Button>
@@ -84,7 +84,7 @@ const columns = [{
       <Popconfirm placement="right"
                   onConfirm={() => {
                     let that = this;
-                    axios.post('/api/product/delete', {slug: record.slug})
+                    axios.post('/api/hotdeal/delete', {slug: record.slug})
                       .then(res => {
                         message.success('Xoá thành công')
                         location.reload();

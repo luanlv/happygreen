@@ -18,6 +18,7 @@ import type from './type'
 import model from './schema'
 
 export default {
+
   getProducts: {
     type: new GraphQLObjectType({
         name: 'getProducts',
@@ -41,6 +42,29 @@ export default {
       },
       resolve: model.getProducts
   },
+  getHotdeals: {
+    type: new GraphQLObjectType({
+        name: 'getHotdeals',
+        description: 'getHotdeals object',
+        fields: () => ({
+          page: {
+            type: GraphQLInt
+          },
+          totalPage: {
+            type: GraphQLInt
+          },
+          data: {
+            type: new GraphQLList(type)
+          }
+        })
+      }),
+      args: {
+        page: {
+          type: GraphQLInt
+        }
+      },
+      resolve: model.getHotdeals
+  },
   getOneProduct: {
     type: type,
     args: {
@@ -50,9 +74,22 @@ export default {
     },
     resolve: model.getOneProduct
   },
+  getOneHotdeal: {
+    type: type,
+    args: {
+      slug: {
+        type: GraphQLString
+      }
+    },
+    resolve: model.getOneHotdeal
+  },
   getAllProduct: {
     type: new GraphQLList(type),
     resolve: model.getAllProduct
+  },
+  getAllHotdeal: {
+    type: new GraphQLList(type),
+    resolve: model.getAllHotdeal
   },
   getAllProductsByCategory: {
     type: new GraphQLList(type),

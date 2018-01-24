@@ -47,7 +47,7 @@ class Contact extends React.Component {
                         <i className="fa fa-facebook" />
                         <p className="sub">Fanpage</p>
                         <div className="detail">
-                          <a target="_blank" className="link" href="https://fb.com/happygreen.vn">Happy Green Market</a>
+                          <a style={{color: '#ddd'}} target="_blank" className="link" href="https://fb.com/happygreenmarket">Happy Green Market</a>
                         </div>
                       </div>
                     </div>

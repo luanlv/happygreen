@@ -30,8 +30,9 @@ class EditComponent extends React.Component {
       data: {
         description: '',
         tags: [],
-        hotdeal: false,
-        donvi: 'KG'
+        hotdeal: true,
+        category: ['hotdeal'],
+        donvi: 'Combo'
       },
       // categories: []
     }
@@ -43,7 +44,7 @@ class EditComponent extends React.Component {
 
   async init (slug) {
     let categories = 'getProductCategories{title, slug, created_at}'
-    let productBySlug = 'getOneProduct(slug: "'+ slug +'"){ coverUrl, category, slug, title, body, price, donvi, view, hotdeal, created_at}'
+    let productBySlug = 'getOneProduct:getOneHotdeal(slug: "'+ slug +'"){ coverUrl, category, slug, title, body, price, donvi, view, hotdeal, created_at}'
     const resp = await fetch('/graphql', {
       method: 'post',
       headers: {
@@ -240,7 +241,7 @@ class EditComponent extends React.Component {
                   </div>
 
                   {this.state.categories &&
-                    <div style={{marginBottom: 16}}>
+                  !this.state.data.hotdeal && <div style={{marginBottom: 16}}>
                       <label><b>Danh mục:</b></label>
                       <Select
                         mode="multiple"

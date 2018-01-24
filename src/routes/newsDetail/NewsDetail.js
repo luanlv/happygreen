@@ -127,7 +127,7 @@ class NewsDetail extends React.Component {
                       <div className="content-widget">
                         <ul className="list-unstyled list-inline">
                           <li>
-                            <a href="https://fb.com/happygreen.vn" className="social-icon fa fa-facebook" />
+                            <a href="https://fb.com/happygreenmarket" className="social-icon fa fa-facebook" />
                           </li>
 
                         </ul>

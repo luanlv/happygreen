@@ -26,6 +26,10 @@ export default function data(state = {}, action) {
           ...state.allProducts,
           value: data.allProducts || state.allProducts.value
         },
+        allHotdeals: {
+          ...state.allHotdeals,
+          value: data.allHotdeals || state.allHotdeals.value
+        },
         productRelative: {
           ...state.productRelative,
           value: data.productRelative || state.productRelative.value

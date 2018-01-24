@@ -116,7 +116,7 @@ class Layout extends React.Component {
                             {!en && <div className="title">Liên hệ</div>}
                             {en && <div className="title">Contact</div>}
                             <div className="content-widget">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.7672699553693!2d106.72399701793903!3d10.770310710263834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317525f5e38288c7%3A0xe59686534f6af2ee!2zU2FyaW1pIENvbmRvLCBCMS1CMiBUb3dlcnMsIDcyIE5ndXnhu4VuIEPGoSBUaOG6oWNoLCBBbiBM4bujaSDEkMO0bmcsIFF14bqtbiAyLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1516331511161" width={300} height={225} frameBorder={0} style={{border: 0}} allowFullScreen />
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.533065670631!2d106.7227598!3d10.770424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf80bb00557353ba0!2sHappy+Green+Market!5e0!3m2!1sen!2s!4v1516723215174" width={300} height={225} frameBorder={0} style={{ border:0 }} allowFullscreen />
                               <ul className="list-unstyled info-list">
                                 <li><i className="icons fa fa-map-marker" /><a href="#" className="link">
                                   B1.00.11 Khu chung cứ phức hợp M2, số 72, Đường Nguyễn Cơ Thạch, Phường An Lợi Đông, Quận 2, Thành phố Hồ Chí Minh, Việt Nam
@@ -135,8 +135,8 @@ class Layout extends React.Component {
                             <div className="content-widget">
                               <ul className="list-unstyled info-list">
                                 <li style={{borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white'}}>
-                                  <a href="#menu" className="link">
-                                    Menu
+                                  <a href="/" className="link">
+                                    Hot Deal
                                   </a>
                                 </li>
                                 <li style={{borderBottom: '1px dashed #ddd', marginBottom: 20, color: 'white'}}>
@@ -157,7 +157,7 @@ class Layout extends React.Component {
                           <div className="gamba-info widget">
                             <div className="title">Facebook Fanpage</div>
                             <div className="content-widget">
-                              <div className="fb-page" data-href="https://www.facebook.com/happygreen.vn" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/happygreen.vn" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/happygreen.vn">HappyGreen.vn</a></blockquote></div>
+                              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhappygreenmarket&tabs=timeline&width=340&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1773112352977230" width={340} height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" />
                             </div>
                           </div>
                         </div>
@@ -176,7 +176,7 @@ class Layout extends React.Component {
                   </div>
                   <div className="social-footer pull-right">
                     <ul className="list-inline list-unstyled">
-                      <li><a href="https://www.facebook.com/HappyGreen.vn/" className="link facebook"><i className="fa fa-facebook" /></a></li>
+                      <li><a href="https://www.facebook.com/happygreenmarket/" className="link facebook"><i className="fa fa-facebook" /></a></li>
                     </ul>
                   </div>
                 </div>

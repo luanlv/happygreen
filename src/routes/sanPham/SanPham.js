@@ -127,7 +127,10 @@ class NewsDetail extends React.Component {
                           return (
                             <div className="item" key={idx}>
                               <div className="block-4">
-                                <div className="block-image"><img src={p.coverUrl} alt className="img-full" />
+                                <div className="block-image">
+                                  <div className="square">
+                                    <img src={p.coverUrl} alt className="img-full" />
+                                  </div>
                                   <a href={`/sp/${p.slug}`} className="link" />
                                 </div>
                                 <div className="block-content"><a href={`/sp/${p.slug}`}  className="title">{p.title}</a>

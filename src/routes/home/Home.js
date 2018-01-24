@@ -22,6 +22,7 @@ class Home extends React.Component {
   render() {
     let [firstNews, ...restNews] = this.props.data.recentNews.value;
     let productCategories = this.props.data.productCategories.value;
+    let allHotdeals = this.props.data.allHotdeals.value
     let recentProduct = this.props.data.recentProduct.value
     let isEn = this.props.data && this.props.data.lang === 'en'
     return (
@@ -29,21 +30,17 @@ class Home extends React.Component {
         <div className="main-contents">
           {/* Slider*/}
           <section className="background-slide">
-            <div className="slide-item">
-              <img src="/assets/images/background-full/homepage-1.jpg" alt="" data-parallax="{&quot;y&quot;: 200}" className="img-responsive img-background" />
-              <div className="container">
-                <div className="homepage-banner-warpper">
-                  <div className="homepage-banner-content">
-                    <div className="group-title fadeInDown">
-                      <h1 className="title">Happy Green</h1>
-                      {!isEn  && <h2 className="subtitle">Tươi mỗi ngày</h2>}
-                      {isEn  && <h2 className="subtitle">Fresh daily</h2>}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {allHotdeals.map((el, idx) => {
+              return (
+                <a href={`/sp/${el.slug}`} className="slide-item">
+                  <img
+                    style={{margin: 'auto !important', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, maxWidth: '100% !important'}}
+                    src={el.coverUrl} className="img-responsive img-background" />
+                </a>
+              )
+            })}
           </section>
+
 
           <section className="about-us padding-top-100 padding-bottom-100">
             <div className="container">
@@ -149,16 +146,16 @@ class Home extends React.Component {
             <div className="container">
               <a href="/cua-hang">
 
-                <div data-parallax="{&quot;y&quot;: 150}" className="banner-1-wrapper">
-                <h3 className="subtitle">Chọn chất lượng</h3>
-                <h2 className="title">Chọn Happy Green</h2>
-                <p className="description">Chúng tôi cam kết đem
-                  đến những sản phẩm tự
-                  nhiên, tươi, xanh với tiêu
-                  chuẩn chọn lựa nghiêm
-                  ngặt</p>
+                {/*<div data-parallax="{&quot;y&quot;: 150}" className="banner-1-wrapper">*/}
+                {/*<h3 className="subtitle">Chọn chất lượng</h3>*/}
+                {/*<h2 className="title">Chọn Happy Green</h2>*/}
+                {/*<p className="description">Chúng tôi cam kết đem*/}
+                  {/*đến những sản phẩm tự*/}
+                  {/*nhiên, tươi, xanh với tiêu*/}
+                  {/*chuẩn chọn lựa nghiêm*/}
+                  {/*ngặt</p>*/}
                   {/*<a href="/cuar-hang" className="btn btn-maincolor">Mua sắm ngay!</a>*/}
-                </div>
+                {/*</div>*/}
               </a>
             </div>
           </section>
@@ -189,12 +186,15 @@ class Home extends React.Component {
                     return (
                       <div className="grid-item" key={idx}>
                         <div className="block-4">
-                          <div className="block-image"><img src={el.coverUrl} alt className="img-full" />
+                          <div className="block-image">
+                            <div className="square">
+                              <img src={el.coverUrl} alt className="img-full" />
+                            </div>
                             <a href={`/sp/${el.slug}`} className="link" />
                           </div>
                           <div className="block-content"><a href="javascript:void(0)" className="title">{el.title}</a>
                             <div className="prices-wrapper">
-                              <div className="prices"><span className="number">{el.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/kg</span></div>
+                              <div className="prices"><span className="number">{el.price.toLocaleString()}</span><sup>đ</sup></div><span className="unit">/{el.donvi}</span></div>
                           </div>
                         </div>
                       </div>
@@ -344,7 +344,8 @@ class Home extends React.Component {
                         <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
                       </div>
                     </div>
-                    <div className="block-image"><img src="/assets/images/teams/1.jpg" alt className="img-full" />
+                    <div className="block-image">
+                        <img src="/assets/images/teams/1.jpg" alt className="img-full" />
                       <a href="javascript:void(0)" className="link" />
                     </div>
                   </div>
@@ -358,11 +359,12 @@ class Home extends React.Component {
               <div className="row">
                 <div className="col-lg-8 col-lg-offset-4">
                   <div data-parallax="{&quot;y&quot;: 150}" className="banner-text-wrapper">
-                    <h2 className="title">From The Best Farm To Your <span style={{color: 'red'}}>Tết</span></h2>
-                    <h5 className="subtitle">Tết deal</h5>
-                    <p className="description">Cho mùa tết trọn vẹn</p>
-                    <div className="prices"><span className="text-1">5%</span><span className="text-2">off</span></div>
-                    <a href="/cua-hang" className="btn btn-maincolor">Mua sắm ngay</a></div>
+                    {/*<h2 className="title">From The Best Farm To Your <span style={{color: 'red'}}>Tết</span></h2>*/}
+                    {/*<h5 className="subtitle">Tết deal</h5>*/}
+                    {/*<p className="description">Cho mùa tết trọn vẹn</p>*/}
+                    {/*<div className="prices"><span className="text-1">5%</span><span className="text-2">off</span></div>*/}
+                    {/*<a href="/cua-hang" className="btn btn-maincolor">Mua sắm ngay</a>*/}
+                    </div>
                 </div>
               </div>
             </div>

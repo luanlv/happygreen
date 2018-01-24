@@ -46,7 +46,7 @@ class App extends React.Component {
             <Menu theme="dark"
                   mode={this.state.mode}
                   selectedKeys={[this.props.name]}
-                  defaultOpenKeys={[]}
+                  defaultOpenKeys={["danhmuc", "baiviet", "danhmucsp", "sanpham", "hotdeal"]}
             >
               <Menu.Item key="Dashboard">
                 <Link to="/admin/">
@@ -114,6 +114,18 @@ class App extends React.Component {
                 </Menu.Item>
                 <Menu.Item key="sanpham2">
                   <Link to="/admin/product?v=add" >Thêm mới sản phẩm</Link>
+                </Menu.Item>
+              </SubMenu>
+
+              <SubMenu
+                key="hotdeal"
+                title={<span><Icon type="idcard" /><span className="nav-text">Hotdeal</span></span>}
+              >
+                <Menu.Item key="hotdeal1">
+                  <Link to="/admin/hotdeal?v=list" >Danh sách Hotdeal</Link>
+                </Menu.Item>
+                <Menu.Item key="hotdeal2">
+                  <Link to="/admin/hotdeal?v=add" >Thêm mới Hotdeal</Link>
                 </Menu.Item>
               </SubMenu>
 

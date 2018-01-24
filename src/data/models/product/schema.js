@@ -3,10 +3,11 @@ let mongoose = require('mongoose'),
 
 var schema = new mongoose.Schema({
   category: {type: [], default: []},
-  slug: { type:String, required:true, unique: true, index: true},
+  slug: { type: String, required: true, unique: true, index: true},
   title: {type: String, default: ''},
   price: {type: Number, default: 0},
-  donvi: {type: String, default: 'KG'},
+  donvi: {type: String, default: 'KG', require: true},
+  hotdeal: {type: Boolean, default: false, require: true},
   coverUrl: {type: String, default: '/assets/images/placeholders/848x480.png'},
   body: {type: String, default: ''},
   view: {type: Number, default: 0},
@@ -24,7 +25,24 @@ module.exports.getProducts = (root, {page}) => {
   return new Promise((resolve, reject) => {
     model.count({}).exec((err, count) => {
       if(err) return reject(err)
-      model.find({}).sort({created_at: -1}).skip((page-1)*16).limit(16).exec((err, res) => {
+      model.find({ hotdeal: false }).sort({created_at: -1}).skip((page-1)*16).limit(16).exec((err, res) => {
+        err ? reject(err) : resolve({
+          page: page,
+          totalPage: Math.floor(count/16) + 1,
+          data: res
+        });
+      });
+
+    })
+  });
+};
+
+module.exports.getHotdeals = (root, {page}) => {
+
+  return new Promise((resolve, reject) => {
+    model.count({}).exec((err, count) => {
+      if(err) return reject(err)
+      model.find({ hotdeal: true }).sort({created_at: -1}).skip((page-1)*16).limit(16).exec((err, res) => {
         err ? reject(err) : resolve({
           page: page,
           totalPage: Math.floor(count/16) + 1,
@@ -83,9 +101,26 @@ module.exports.getOneProduct = (root, {slug}) => {
   });
 };
 
+
+module.exports.getOneHotdeal = (root, {slug}) => {
+  return new Promise((resolve, reject) => {
+    model.findOne({slug: slug, hotdeal: true}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};
+
 module.exports.getAllProduct = (root, {}) => {
   return new Promise((resolve, reject) => {
-    model.find({}).sort({created_at: -1}).exec((err, res) => {
+    model.find({hotdeal: false}).sort({created_at: -1}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};
+
+module.exports.getAllHotdeal = (root, {}) => {
+  return new Promise((resolve, reject) => {
+    model.find({hotdeal: true}).sort({created_at: -1}).exec((err, res) => {
       err ? reject(err) : resolve(res);
     });
   });
@@ -93,7 +128,7 @@ module.exports.getAllProduct = (root, {}) => {
 
 module.exports.get5RecentProduct = (root, {}) => {
   return new Promise((resolve, reject) => {
-    model.find({}).sort({created_at: -1}).limit(6).exec((err, res) => {
+    model.find({hotdeal: false}).sort({created_at: -1}).limit(6).exec((err, res) => {
       err ? reject(err) : resolve(res);
     });
   });
