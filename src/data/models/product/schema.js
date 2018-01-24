@@ -2,13 +2,13 @@ let mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 var schema = new mongoose.Schema({
-  category: {type: [], default: []},
+  category: {type: [], default: [], required: true},
   slug: { type: String, required: true, unique: true, index: true},
-  title: {type: String, default: ''},
-  price: {type: Number, default: 0},
+  title: {type: String, default: '', required: true},
+  price: {type: Number, default: 0, required: true},
   donvi: {type: String, default: 'KG', require: true},
   hotdeal: {type: Boolean, default: false, require: true},
-  coverUrl: {type: String, default: '/assets/images/placeholders/848x480.png'},
+  coverUrl: {type: String, default: '/assets/images/placeholders/848x480.png', required: true},
   body: {type: String, default: ''},
   view: {type: Number, default: 0},
   created_at: {type: Date, default: Date.now},

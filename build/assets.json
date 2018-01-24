@@ -1,6 +1,6 @@
 {
   "admin": {
-    "js": "/assets/admin.d63a8f95.chunk.js"
+    "js": "/assets/admin.6c8a2d17.chunk.js"
   },
   "shop": {
     "js": "/assets/shop.5d45a79b.chunk.js"
@@ -27,9 +27,9 @@
     "js": "/assets/about.cfd776eb.chunk.js"
   },
   "client": {
-    "js": "/assets/client.656768bc.js"
+    "js": "/assets/client.d326d38f.js"
   },
   "vendor": {
-    "js": "/assets/vendor.e6c8ffd3.js"
+    "js": "/assets/vendor.8e4f8264.js"
   }
 }

@@ -84,7 +84,7 @@ const columns = [{
       <Popconfirm placement="right"
                   onConfirm={() => {
                     let that = this;
-                    axios.post('/api/hotdeal/delete', {slug: record.slug})
+                    axios.post('/api/product/delete', {slug: record.slug})
                       .then(res => {
                         message.success('Xoá thành công')
                         location.reload();

@@ -5763,13 +5763,13 @@ let mongoose = __webpack_require__(7),
     Schema = mongoose.Schema;
 
 var schema = new mongoose.Schema({
-  category: { type: [], default: [] },
+  category: { type: [], default: [], required: true },
   slug: { type: String, required: true, unique: true, index: true },
-  title: { type: String, default: '' },
-  price: { type: Number, default: 0 },
+  title: { type: String, default: '', required: true },
+  price: { type: Number, default: 0, required: true },
   donvi: { type: String, default: 'KG', require: true },
   hotdeal: { type: Boolean, default: false, require: true },
-  coverUrl: { type: String, default: '/assets/images/placeholders/848x480.png' },
+  coverUrl: { type: String, default: '/assets/images/placeholders/848x480.png', required: true },
   body: { type: String, default: '' },
   view: { type: Number, default: 0 },
   created_at: { type: Date, default: Date.now }
@@ -10044,7 +10044,7 @@ class EditComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
     __WEBPACK_IMPORTED_MODULE_4_axios___default.a.post('/api/product/new', post).then(res => {
       __WEBPACK_IMPORTED_MODULE_3_antd__["message"].success('Thêm mới thành công!');
       __WEBPACK_IMPORTED_MODULE_5__history__["a" /* default */].push({
-        pathname: '/admin/product',
+        pathname: '/admin/hotdeal',
         search: '?v=edit&slug=' + res.data.slug
       });
     }).catch(err => {
@@ -10399,7 +10399,7 @@ const columns = [{
     placement: 'right',
     onConfirm: () => {
       let that = _this2;
-      __WEBPACK_IMPORTED_MODULE_6_axios___default.a.post('/api/hotdeal/delete', { slug: record.slug }).then(res => {
+      __WEBPACK_IMPORTED_MODULE_6_axios___default.a.post('/api/product/delete', { slug: record.slug }).then(res => {
         __WEBPACK_IMPORTED_MODULE_5_antd__["message"].success('Xoá thành công');
         location.reload();
       }).catch(err => {
@@ -18870,13 +18870,14 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     let [firstNews, ...restNews] = this.props.data.recentNews.value;
     let productCategories = this.props.data.productCategories.value;
-    let allHotdeals = this.props.data.allHotdeals.value;
+    let allHotdeals = this.props.data.allHotdeals.value || [];
     let recentProduct = this.props.data.recentProduct.value;
     let isEn = this.props.data && this.props.data.lang === 'en';
     return _jsx('div', {}, void 0, _jsx('div', {
       className: 'main-contents'
     }, void 0, allHotdeals.length > 0 && _jsx('section', {
-      className: 'background-slide'
+      className: 'background-slide',
+      style: { marginTop: 30 }
     }, void 0, allHotdeals.map((el, idx) => {
       return _jsx('a', {
         href: `/sp/${el.slug}`,
@@ -18886,7 +18887,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         src: el.coverUrl,
         className: 'img-responsive img-background'
       }));
-    })), allHotdeals.length < 0 && _jsx('section', {
+    })), allHotdeals.length === 0 && _jsx('section', {
       className: 'background-slide'
     }, void 0, _jsx('div', {
       className: 'slide-item'

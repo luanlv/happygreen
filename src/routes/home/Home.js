@@ -22,14 +22,14 @@ class Home extends React.Component {
   render() {
     let [firstNews, ...restNews] = this.props.data.recentNews.value;
     let productCategories = this.props.data.productCategories.value;
-    let allHotdeals = this.props.data.allHotdeals.value
+    let allHotdeals = this.props.data.allHotdeals.value || []
     let recentProduct = this.props.data.recentProduct.value
     let isEn = this.props.data && this.props.data.lang === 'en'
     return (
       <div>
         <div className="main-contents">
           {/* Slider*/}
-          {allHotdeals.length > 0 && <section className="background-slide">
+          {allHotdeals.length > 0 && <section className="background-slide" style={{marginTop: 30}}>
             {allHotdeals.map((el, idx) => {
               return (
                 <a href={`/sp/${el.slug}`} className="slide-item">
@@ -41,7 +41,7 @@ class Home extends React.Component {
             })}
           </section>}
 
-          {allHotdeals.length < 0 &&
+          {allHotdeals.length === 0 &&
           <section className="background-slide">
             <div className="slide-item">
               <img src="/assets/images/background-full/homepage-1.jpg" alt="" data-parallax="{&quot;y&quot;: 200}" className="img-responsive img-background" />

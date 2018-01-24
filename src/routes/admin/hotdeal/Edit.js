@@ -153,7 +153,7 @@ class EditComponent extends React.Component {
       .then(res => {
         message.success('Thêm mới thành công!')
         history.push({
-          pathname: '/admin/product',
+          pathname: '/admin/hotdeal',
           search: '?v=edit&slug=' + res.data.slug
         })
       })
