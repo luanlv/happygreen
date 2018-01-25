@@ -6873,19 +6873,13 @@ var _ref = _jsx('section', {
   className: 'title'
 }, void 0, 'Happy Green'))));
 
-var _ref2 = _jsx('section', {
-  className: 'history padding-top-100 padding-bottom-100'
-}, void 0, _jsx('div', {
-  className: 'container'
-}, void 0, _jsx('div', {
+var _ref2 = _jsx('div', {
   className: 'main-titles'
 }, void 0, _jsx('h1', {
   className: 'title'
-}, void 0, 'C\xE2u chuy\u1EC7n Happy Green')), _jsx('div', {
-  className: 'main-content'
-}, void 0, _jsx('div', {
-  className: 'tab-vertical'
-}, void 0, _jsx('div', {
+}, void 0, 'C\xE2u chuy\u1EC7n Happy Green'));
+
+var _ref3 = _jsx('div', {
   className: 'tab-list-wrapper'
 }, void 0, _jsx('ul', {
   role: 'tablist',
@@ -6894,65 +6888,59 @@ var _ref2 = _jsx('section', {
   role: 'presentation',
   className: 'active'
 }, void 0, _jsx('a', {
-  href: 'javascript:void(0)tab-1',
+  href: '#tab-1',
   role: 'tab',
   'data-toggle': 'tab',
   className: 'link'
-}, void 0, 'Exclusive Knowledge')), _jsx('li', {
+}, void 0, '2017')), _jsx('li', {
   role: 'presentation'
 }, void 0, _jsx('a', {
-  href: 'javascript:void(0)tab-2',
+  href: '#tab-2',
   role: 'tab',
   'data-toggle': 'tab',
   className: 'link'
-}, void 0, 'Passionate Service')), _jsx('li', {
+}, void 0, 'Cu\u1ED1i 2017 ')), _jsx('li', {
   role: 'presentation'
 }, void 0, _jsx('a', {
-  href: 'javascript:void(0)tab-3',
+  href: '#tab-3',
   role: 'tab',
   'data-toggle': 'tab',
   className: 'link'
-}, void 0, 'Benefits For Partners')))), _jsx('div', {
-  className: 'tab-content'
-}, void 0, _jsx('div', {
-  id: 'tab-1',
-  role: 'tabpanel',
-  className: 'tab-pane fade in active'
-}, void 0, _jsx('div', {
+}, void 0, '2018'))));
+
+var _ref4 = _jsx('div', {
   className: 'text-content'
-}, void 0, _jsx('p', {}, void 0, '\u0110ang c\u1EADp nh\u1EADp ...')), _jsx('div', {
-  className: 'text-image'
-}, void 0, _jsx('img', {
-  src: '/assets/images/news/image-2.jpg',
-  alt: true,
-  className: 'img-responsive'
-}))), _jsx('div', {
+}, void 0, _jsx('h2', {}, void 0, 'C\xF4 ch\u1EE7 nh\u1ECF Ho\xE0ng Ph\u01B0\u01A1ng th\xE0nh l\u1EADp n\xEAn c\u1EEDa h\xE0ng Happy Green \u0111\u1EA7u ti\xEAn t\u1EA1i khu B khu \u0111\xF4 th\u1ECB Sarimi, ch\u1EE7 \u0111\u1EA1o vi\u1EC7c cung c\u1EA5p rau xanh h\u1EEFu c\u01A1 s\u1EA1ch c\xF3 ngu\u1ED3n g\u1ED1c r\xF5 r\xE0ng'));
+
+var _ref5 = _jsx('div', {
   id: 'tab-2',
   role: 'tabpanel',
   className: 'tab-pane fade'
 }, void 0, _jsx('div', {
   className: 'text-content'
-}, void 0, _jsx('p', {}, void 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'), _jsx('p', {}, void 0, 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sitong out voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunting explicabo quae ab illo inventore.'), _jsx('ul', {}, void 0, _jsx('li', {}, void 0, 'Duis aute irure dolor in reprehenderit in'), _jsx('li', {}, void 0, 'Ut enim ad minim veniam, quis nostrud exercitation'), _jsx('li', {}, void 0, 'Duis aute irure dolor in reprehenderit in voluptate velit esse'), _jsx('li', {}, void 0, 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.'))), _jsx('div', {
+}, void 0, _jsx('h2', {}, void 0, 'Happy Green x\xE2y d\u1EF1ng th\xE0nh c\xF4ng chu\u1ED7i cung \u1EE9ng c\xE1c ngu\u1ED3n th\u1EF1c ph\u1EA9m rau c\u1EE7 qu\u1EA3 h\u1EEFu c\u01A1, ngu\u1ED3n th\u1EF1c ph\u1EA9m \u0111\xE1nh b\u1EAFt, ch\u0103n nu\xF4i, l\xE0m th\u1EE7 c\xF4ng t\u1EF1 nhi\xEAn, ngu\u1ED3n s\u1EA3n ph\u1EA9m kh\xF4 h\u1EEFu c\u01A1 \u0111\xF3ng g\xF3i')), _jsx('div', {
   className: 'text-image'
 }, void 0, _jsx('img', {
   src: '/assets/images/news/image-5.jpg',
   alt: true,
   className: 'img-responsive'
-}))), _jsx('div', {
+})));
+
+var _ref6 = _jsx('div', {
   id: 'tab-3',
   role: 'tabpanel',
   className: 'tab-pane fade'
 }, void 0, _jsx('div', {
   className: 'text-content'
-}, void 0, _jsx('p', {}, void 0, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'), _jsx('p', {}, void 0, 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sitong out voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunting explicabo quae ab illo inventore.'), _jsx('ul', {}, void 0, _jsx('li', {}, void 0, 'Duis aute irure dolor in reprehenderit in'), _jsx('li', {}, void 0, 'Ut enim ad minim veniam, quis nostrud exercitation'), _jsx('li', {}, void 0, 'Duis aute irure dolor in reprehenderit in voluptate velit esse'), _jsx('li', {}, void 0, 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.'))), _jsx('div', {
+}, void 0, _jsx('h2', {}, void 0, 'Happy Green x\xE2y d\u1EF1ng chi\u1EBFn l\u01B0\u1EE3c m\u1EDF chu\u1ED7i c\u1EEDa h\xE0ng th\u1EF1c ph\u1EA9m h\u1EEFu c\u01A1 trong khu v\u1EF1c th\xE0nh ph\u1ED1 H\u1ED3 Ch\xED Minh v\u1EDBi t\u1EA7m nh\xECn \u0111em \u0111\u1EBFn cho h\xE0ng ng\xE0n b\xE0 n\u1ED9i tr\u1EE3 v\xE0 gia \u0111\xECnh th\xE0nh ph\u1ED1 nh\u1EEFng b\u1EEFa \u0103n an to\xE0n, ngon v\xE0 s\u1EA1ch v\u1EDBi chi ph\xED h\u1EE3p l\xFD.')), _jsx('div', {
   className: 'text-image'
 }, void 0, _jsx('img', {
   src: '/assets/images/news/image-8.jpg',
   alt: true,
   className: 'img-responsive'
-}))))))));
+})));
 
-var _ref3 = _jsx('section', {
+var _ref7 = _jsx('section', {
   className: 'about-us padding-bottom-100'
 }, void 0, _jsx('div', {
   className: 'container'
@@ -7077,7 +7065,28 @@ function About(props) {
 
   return _jsx('div', {}, void 0, _jsx('div', {
     className: 'main-contents'
-  }, void 0, _ref, _ref2, _ref3));
+  }, void 0, _ref, _jsx('section', {
+    className: 'history padding-top-100 padding-bottom-100'
+  }, void 0, _jsx('div', {
+    className: 'container'
+  }, void 0, _ref2, _jsx('div', {
+    className: 'main-content'
+  }, void 0, _jsx('div', {
+    className: 'tab-vertical'
+  }, void 0, _ref3, _jsx('div', {
+    className: 'tab-content'
+  }, void 0, _jsx('div', {
+    id: 'tab-1',
+    role: 'tabpanel',
+    className: 'tab-pane fade in active'
+  }, void 0, _ref4, _jsx('div', {
+    className: 'text-image'
+  }, void 0, _jsx('img', {
+    src: '/assets/images/news/image-3.jpg',
+    alt: true,
+    className: 'img-responsive',
+    style: { maxHeight: 300, width: 'auto' }
+  }))), _ref5, _ref6))))), _ref7));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
@@ -18645,44 +18654,32 @@ var _ref10 = _jsx('div', {
   className: 'clearfix'
 })));
 
-var _ref11 = _jsx('img', {
-  src: '/assets/images/background-full/banner-1.jpg',
-  alt: true,
-  className: 'img-bg-1'
-});
-
-var _ref12 = _jsx('img', {
-  src: '/assets/images/background-full/banner-1-2.png',
-  alt: true,
-  className: 'img-bg-2'
-});
-
-var _ref13 = _jsx('h2', {
+var _ref11 = _jsx('h2', {
   className: 'title'
 }, void 0, 'S\u1EA3n ph\u1EA9m');
 
-var _ref14 = _jsx('h2', {
+var _ref12 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Products');
 
-var _ref15 = _jsx('sup', {}, void 0, '\u0111');
+var _ref13 = _jsx('sup', {}, void 0, '\u0111');
 
-var _ref16 = _jsx('div', {
+var _ref14 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/cua-hang',
   className: 'btn'
 }, void 0, 'Xem th\xEAm'));
 
-var _ref17 = _jsx('h1', {
+var _ref15 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Kh\xE1ch h\xE0ng ti\xEAu bi\u1EC3u');
 
-var _ref18 = _jsx('h1', {
+var _ref16 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Happy customers');
 
-var _ref19 = _jsx('div', {
+var _ref17 = _jsx('div', {
   className: 'list-customer-review'
 }, void 0, _jsx('div', {
   className: 'item'
@@ -18796,15 +18793,15 @@ var _ref19 = _jsx('div', {
   className: 'description'
 }, void 0, 'M\u1EA1i dz\xF4 m\u1EA1i dz\xF4....h\xE0ng t\u1ED1t gi\xE1 t\u1ED1t....')))));
 
-var _ref20 = _jsx('h1', {
+var _ref18 = _jsx('h1', {
   className: 'title'
 }, void 0, 'Th\xE0nh vi\xEAn');
 
-var _ref21 = _jsx('h1', {
+var _ref19 = _jsx('h1', {
   className: 'title'
 }, void 0, 'My Teams');
 
-var _ref22 = _jsx('div', {
+var _ref20 = _jsx('div', {
   className: 'main-content'
 }, void 0, _jsx('div', {
   className: 'grid-item grid-2'
@@ -18817,9 +18814,7 @@ var _ref22 = _jsx('div', {
   className: 'title'
 }, void 0, 'NGUY\u1EC4N TH\u1ECA HO\xC0NG PH\u01AF\u01A0NG'), _jsx('div', {
   className: 'description'
-}, void 0, _jsx('p', {
-  className: 'text'
-}, void 0, 'We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food'))), _jsx('div', {
+}, void 0, _jsx('p', {}, void 0, 'C\xE2u chuy\u1EC7n c\u1EE7a c\xF4 ch\u1EE7 Ho\xE0ng Ph\u01B0\u01A1ng b\u1EAFt \u0111\u1EA7u t\u1EEB duy\xEAn c\u1EA3m v\u1EDBi v\u01B0\u1EDDn t\u01B0\u1EE3c thu\u1EDF nh\u1ECF. C\u0103n nh\xE0 tu\u1ED5i th\u01A1 c\u1EE7a c\xF4 n\u1EB1m gi\u1EEFa nh\u1EEFng hecta v\u01B0\u1EDDn r\u1ED5ng l\u1EDBn, c\xF2n l\u1ED1i d\u1EABn v\xE0o nh\xE0 l\xE0 con \u0111\u01B0\u1EDDng \u0111\u1EA5t \u0111i qua nh\u1EEFng qu\u1EA3ng tr\u1ED3ng c\u1ECF c\xE2y th\u1EB3ng t\u1EAFp. Tu\u1ED5i th\u01A1 Ph\u01B0\u01A1ng g\u1EAFn li\u1EC1n v\u1EDBi nh\u1EEFng th\u01B0\u01A1ng y\xEAu c\xE2y c\u1ECF, v\u1EDBi nh\u1EEFng th\u01B0\u01A1ng y\xEAu t\u1EEB tr\xF4ng m\u1EA7m xanh ch\u1ED3i non l\u1EDBn l\xEAn t\u1EEBng ng\xE0y.'), _jsx('p', {}, void 0, 'Th\u1EBF r\u1ED3i, c\xF4 l\u1EDBn l\xEAn, \u0111i h\u1ECDc, ho\xE0n th\xE0nh \u0111\u1EA1i h\u1ECDc v\xE0 c\u0169ng t\u1EA5t b\u1EADt trong c\xF4ng vi\u1EC7c t\u1EA1i m\u1ED9t c\xF4ng ty cung c\u1EA5p v\u1EC1 gi\u1EA3i ph\xE1p \u0111i\u1EC7n n\u0103ng. Gi\u1EEFa nh\u1EEFng b\u1ED9n b\u1EC1 c\xF4ng vi\u1EC7c, Ph\u01B0\u01A1ng ch\u1EE3t nh\u1EADn ra ni\u1EC1m y\xEAu th\xEDch, \u0111am m\xEA t\u1EEB thu\u1EDF nh\u1ECF.'), _jsx('p', {}, void 0, 'N\u0103m 2017, c\xF4 r\u1EDDi b\u1ECF c\xF4ng vi\u1EC7c c\xF4ng s\u1EDF khi \u0111ang c\xF3 nhi\u1EC1u nh\u1EEFng th\xE0nh t\u1EF1u trong tay. C\xF4 quy\u1EBFt \u0111\u1ECBnh theo \u0111u\u1ED5i \u01B0\u1EDBc m\u01A1 c\u1EE7a m\xECnh, \u0111i theo nh\u1ECBp th\u1EDF c\u1EE7a m\u1EB9 \u0111\u1EA5t. T\xECnh y\xEAu v\u1EDBi \u0111\u1EA5t \u0111ai v\xE0 c\xE2y c\u1ECF, t\xECnh y\xEAu v\u1EDBi s\u1EE9c kh\u1ECFe v\xE0 b\u1EEFa \u0103n an to\xE0n cho ng\u01B0\u1EDDi th\xE2n v\xE0 b\xE8 b\u1EA1n \u0111\xE3 th\xF4i th\xFAc Ph\u01B0\u01A1ng m\u1EDF ra Happy Green. C\xE2u chuy\u1EC7n v\xE0 h\xE0nh tr\xECnh \u0111\u1EBFn v\u1EDBi s\u1EA3n ph\u1EA9m h\u1EEFu c\u01A1 xanh c\u1EE7a c\xF4 ch\u1EE7 nh\u1ECF Ho\xE0ng Ph\u01B0\u01A1ng b\u1EAFt \u0111\u1EA7u t\u1EEB \u0111\u1EA5y\u201D'))), _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
   src: '/assets/images/teams/1.jpg',
@@ -18830,48 +18825,48 @@ var _ref22 = _jsx('div', {
   className: 'link'
 })))));
 
-var _ref23 = _jsx('h2', {
+var _ref21 = _jsx('h2', {
   className: 'title'
 }, void 0, 'B\xE0i vi\u1EBFt');
 
-var _ref24 = _jsx('h2', {
+var _ref22 = _jsx('h2', {
   className: 'title'
 }, void 0, 'Post');
 
-var _ref25 = _jsx('a', {
+var _ref23 = _jsx('a', {
   href: 'blog-detail.html',
   className: 'link'
 });
 
-var _ref26 = _jsx('span', {
+var _ref24 = _jsx('span', {
   className: 'text'
 }, void 0, 'Chi ti\u1EBFt');
 
-var _ref27 = _jsx('i', {
+var _ref25 = _jsx('i', {
   className: 'icons fa fa-long-arrow-right'
 }, void 0, ' ');
 
-var _ref28 = _jsx('i', {
+var _ref26 = _jsx('i', {
   className: 'icons fa fa-calendar-o'
 }, void 0, ' ');
 
-var _ref29 = _jsx('div', {
+var _ref27 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref30 = _jsx('span', {
+var _ref28 = _jsx('span', {
   className: 'text'
 }, void 0, 'Chi ti\u1EBFt');
 
-var _ref31 = _jsx('i', {
+var _ref29 = _jsx('i', {
   className: 'icons fa fa-long-arrow-right'
 });
 
-var _ref32 = _jsx('div', {
+var _ref30 = _jsx('div', {
   className: 'clearfix'
 });
 
-var _ref33 = _jsx('div', {
+var _ref31 = _jsx('div', {
   className: 'wrapper-btn margin-top-70'
 }, void 0, _jsx('a', {
   href: '/tin-tuc',
@@ -18905,14 +18900,15 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, _jsx('div', {
         className: 'homepage-banner-content'
       }, void 0, _jsx('div', {
-        className: 'group-title fadeInDown'
+        className: 'group-title fadeInDown',
+        style: { border: '2px solid rgba(255, 255, 255, 0.3)', borderRadius: 10, padding: 40 }
       }, void 0, _jsx('h1', {
         className: 'title'
       }, void 0, el.title), _jsx('h2', {
         className: 'subtitle'
-      }, void 0, el.price.toLocaleString(), _ref2, _jsx('span', {
-        className: 'unit'
-      }, void 0, '/', el.donvi)), _ref3)))));
+      }, void 0, el.price.toLocaleString(), _ref2), _jsx('h3', {
+        style: { margin: '0 0 10px 0' }
+      }, void 0, '30% OFF'), _ref3)))));
     })), allHotdeals.length === 0 && _jsx('section', {
       className: 'background-slide'
     }, void 0, _jsx('div', {
@@ -18932,18 +18928,12 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }, void 0, _jsx('div', {
       className: 'main-titles'
     }, void 0, !isEn && _ref8, isEn && _ref9), _ref10)), _jsx('section', {
-      className: 'banner-1'
-    }, void 0, _ref11, _ref12, _jsx('div', {
-      className: 'container'
-    }, void 0, _jsx('a', {
-      href: '/cua-hang'
-    }, void 0))), _jsx('section', {
       className: 'our-product padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref13, isEn && _ref14), _jsx('div', {
+    }, void 0, !isEn && _ref11, isEn && _ref12), _jsx('div', {
       className: 'main-content'
     }, void 0, _jsx('div', {
       className: 'gallery-grid'
@@ -18974,39 +18964,28 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         className: 'prices'
       }, void 0, _jsx('span', {
         className: 'number'
-      }, void 0, el.price.toLocaleString()), _ref15), _jsx('span', {
+      }, void 0, el.price.toLocaleString()), _ref13), _jsx('span', {
         className: 'unit'
       }, void 0, '/', el.donvi)))));
-    })), _ref16))), _jsx('section', {
+    })), _ref14))), _jsx('section', {
       className: 'banner customer-review padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles white'
-    }, void 0, !isEn && _ref17, isEn && _ref18), _ref19)), _jsx('section', {
+    }, void 0, !isEn && _ref15, isEn && _ref16), _ref17)), _jsx('section', {
       className: 'our-team padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref20, isEn && _ref21), _ref22)), _jsx('section', {
-      className: 'banner banner-2'
-    }, void 0, _jsx('div', {
-      className: 'container'
-    }, void 0, _jsx('div', {
-      className: 'row'
-    }, void 0, _jsx('div', {
-      className: 'col-lg-8 col-lg-offset-4'
-    }, void 0, _jsx('div', {
-      'data-parallax': '{"y": 150}',
-      className: 'banner-text-wrapper'
-    }, void 0))))), _jsx('section', {
+    }, void 0, !isEn && _ref18, isEn && _ref19), _ref20)), _jsx('section', {
       className: 'blogs padding-top-100 padding-bottom-100'
     }, void 0, _jsx('div', {
       className: 'container'
     }, void 0, _jsx('div', {
       className: 'main-titles'
-    }, void 0, !isEn && _ref23, isEn && _ref24), _jsx('div', {
+    }, void 0, !isEn && _ref21, isEn && _ref22), _jsx('div', {
       className: 'main-content'
     }, void 0, _jsx('div', {
       className: 'grid-block-1'
@@ -19022,7 +19001,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       src: firstNews.coverUrl,
       alt: true,
       className: 'img-full'
-    }), _ref25), _jsx('div', {
+    }), _ref23), _jsx('div', {
       className: 'block-content'
     }, void 0, _jsx('a', {
       href: `/p/${firstNews.slug}`,
@@ -19034,13 +19013,13 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }, void 0, firstNews.description)), _jsx('a', {
       href: `/p/${firstNews.slug}`,
       className: 'readmore'
-    }, void 0, _ref26, _ref27), _jsx('div', {
+    }, void 0, _ref24, _ref25), _jsx('div', {
       className: 'block-info'
     }, void 0, _jsx('div', {
       className: 'info-left'
     }, void 0, _jsx('div', {
       className: 'block'
-    }, void 0, _ref28, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref29))))), _jsx('div', {
+    }, void 0, _ref26, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref27))))), _jsx('div', {
       className: 'block-right'
     }, void 0, restNews.map((tintuc, idx) => {
       return _jsx('div', {
@@ -19068,8 +19047,8 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       }, void 0, tintuc.description)), _jsx('a', {
         href: `/p/${tintuc.slug}`,
         className: 'readmore'
-      }, void 0, _ref30, _ref31))));
-    })), _ref32), _ref33)))));
+      }, void 0, _ref28, _ref29))));
+    })), _ref30), _ref31)))));
   }
 }
 

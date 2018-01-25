@@ -28,43 +28,55 @@ class About extends React.Component {
                 <div className="tab-vertical">
                   <div className="tab-list-wrapper">
                     <ul role="tablist" className="tab-list">
-                ..............      <li role="presentation" className="active"><a href="javascript:void(0)tab-1" role="tab" data-toggle="tab" className="link">Exclusive Knowledge</a></li>
-                      <li role="presentation"><a href="javascript:void(0)tab-2" role="tab" data-toggle="tab" className="link">Passionate Service</a></li>
-                      <li role="presentation"><a href="javascript:void(0)tab-3" role="tab" data-toggle="tab" className="link">Benefits For Partners</a></li>
+                ..............      <li role="presentation" className="active"><a href="#tab-1" role="tab" data-toggle="tab" className="link">2017</a></li>
+                      <li role="presentation"><a href="#tab-2" role="tab" data-toggle="tab" className="link">Cuối 2017 </a></li>
+                      <li role="presentation"><a href="#tab-3" role="tab" data-toggle="tab" className="link">2018</a></li>
                     </ul>
                   </div>
                   <div className="tab-content">
                     <div id="tab-1" role="tabpanel" className="tab-pane fade in active">
                       <div className="text-content">
-                        <p>Đang cập nhập ...</p>
+                        <h2>Cô chủ nhỏ Hoàng
+                          Phương thành lập nên
+                          cửa hàng Happy Green
+                          đầu tiên tại khu B khu đô
+                          thị Sarimi, chủ đạo việc
+                          cung cấp rau xanh hữu cơ
+                          sạch có nguồn gốc rõ ràng
+                        </h2>
                       </div>
-                      <div className="text-image"><img src="/assets/images/news/image-2.jpg" alt className="img-responsive" /></div>
+                      <div className="text-image"><img src="/assets/images/news/image-3.jpg" alt className="img-responsive"
+
+                        style={{maxHeight: 300, width: 'auto'}}
+                      /></div>
                     </div>
                     <div id="tab-2" role="tabpanel" className="tab-pane fade">
                       <div className="text-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sitong out voluptatem accusantium doloremque
-                          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunting explicabo quae ab illo inventore.</p>
-                        <ul>
-                          <li>Duis aute irure dolor in reprehenderit in</li>
-                          <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-                          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
-                          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
-                        </ul>
+                        <h2>Happy Green xây dựng
+                          thành công chuỗi cung
+                          ứng các nguồn thực phẩm
+                          rau củ quả hữu cơ, nguồn
+                          thực phẩm đánh bắt, chăn
+                          nuôi, làm thủ công tự
+                          nhiên, nguồn sản phẩm
+                          khô hữu cơ đóng gói</h2>
                       </div>
                       <div className="text-image"><img src="/assets/images/news/image-5.jpg" alt className="img-responsive" /></div>
                     </div>
                     <div id="tab-3" role="tabpanel" className="tab-pane fade">
                       <div className="text-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sitong out voluptatem accusantium doloremque
-                          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunting explicabo quae ab illo inventore.</p>
-                        <ul>
-                          <li>Duis aute irure dolor in reprehenderit in</li>
-                          <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-                          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
-                          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
-                        </ul>
+                        <h2>
+                          Happy Green xây dựng
+                          chiến lược mở chuỗi cửa
+                          hàng thực phẩm hữu cơ
+                          trong khu vực thành phố
+                          Hồ Chí Minh với tầm nhìn
+                          đem đến cho hàng ngàn
+                          bà nội trợ và gia đình
+                          thành phố những bữa ăn
+                          an toàn, ngon và sạch với
+                          chi phí hợp lý.
+                        </h2>
                       </div>
                       <div className="text-image"><img src="/assets/images/news/image-8.jpg" alt className="img-responsive" /></div>
                     </div>

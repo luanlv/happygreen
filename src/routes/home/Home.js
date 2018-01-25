@@ -35,12 +35,19 @@ class Home extends React.Component {
               return (
                 <a href={`/sp/${el.slug}`} className="slide-item" key={idx}>
                   <img src="/assets/images/background-full/homepage-1.jpg" alt=""  className="img-responsive img-background" />
-                  <div className="container">
-                    <div className="homepage-banner-warpper">
+                  <div className="container"
+                  >
+                    <div className="homepage-banner-warpper"
+                    >
                       <div className="homepage-banner-content">
-                        <div className="group-title fadeInDown">
+                        <div className="group-title fadeInDown"
+                             style={{border: '2px solid rgba(255, 255, 255, 0.3)', borderRadius: 10, padding: 40}}
+                        >
                           <h1 className="title">{el.title}</h1>
-                          <h2 className="subtitle">{el.price.toLocaleString()}<sup>đ</sup><span className="unit">/{el.donvi}</span></h2>
+                          <h2 className="subtitle">{el.price.toLocaleString()}<sup>đ</sup></h2>
+                          <h3 style={{margin: '0 0 10px 0'}}>
+                            30% OFF
+                          </h3>
                           <div className="btn btn-left btn-maincolor animated fadeInLeft">Mua ngay</div>
                           {/*<div className="group-btn">*/}
                           {/*</div>*/}
@@ -174,9 +181,9 @@ class Home extends React.Component {
           </section>
 
 
-          <section className="banner-1"><img src="/assets/images/background-full/banner-1.jpg" alt className="img-bg-1" /><img src="/assets/images/background-full/banner-1-2.png" alt className="img-bg-2" />
-            <div className="container">
-              <a href="/cua-hang">
+          {/*<section className="banner-1"><img src="/assets/images/background-full/banner-1.jpg" alt className="img-bg-1" /><img src="/assets/images/background-full/banner-1-2.png" alt className="img-bg-2" />*/}
+            {/*<div className="container">*/}
+              {/*<a href="/cua-hang">*/}
 
                 {/*<div data-parallax="{&quot;y&quot;: 150}" className="banner-1-wrapper">*/}
                 {/*<h3 className="subtitle">Chọn chất lượng</h3>*/}
@@ -188,9 +195,9 @@ class Home extends React.Component {
                   {/*ngặt</p>*/}
                   {/*<a href="/cuar-hang" className="btn btn-maincolor">Mua sắm ngay!</a>*/}
                 {/*</div>*/}
-              </a>
-            </div>
-          </section>
+              {/*</a>*/}
+            {/*</div>*/}
+          {/*</section>*/}
           {/* Products*/}
           <section className="our-product padding-top-100 padding-bottom-100">
             <div className="container">
@@ -373,7 +380,54 @@ class Home extends React.Component {
                   <div className="block-3 style-2">
                     <div className="block-content"><a href="blog-detail.html" className="title">NGUYỄN THỊ HOÀNG PHƯƠNG</a>
                       <div className="description">
-                        <p className="text">We care about what you eat. We want to produce food which nourishes your body and tastes isaw delicious food which nourishes food</p>
+                        <p>
+                          Câu chuyện của cô chủ
+                          Hoàng Phương bắt đầu từ
+                          duyên cảm với vườn tược
+                          thuở nhỏ. Căn nhà tuổi
+                          thơ của cô nằm giữa
+                          những hecta vườn rổng
+                          lớn, còn lối dẫn vào nhà là
+                          con đường đất đi qua
+                          những quảng trồng cỏ cây
+                          thẳng tắp. Tuổi thơ
+                          Phương gắn liền với
+                          những thương yêu cây cỏ,
+                          với những thương yêu từ
+                          trông mầm xanh chồi non
+                          lớn lên từng ngày.
+                        </p>
+                        <p>
+                          Thế rồi, cô lớn lên, đi học,
+                          hoàn thành đại học và
+                          cũng tất bật trong công
+                          việc tại một công ty cung
+                          cấp về giải pháp điện
+                          năng. Giữa những bộn bề
+                          công việc, Phương chợt
+                          nhận ra niềm yêu thích,
+                          đam mê từ thuở nhỏ.
+                        </p>
+
+                        <p>
+                          Năm 2017, cô rời bỏ công
+                          việc công sở khi đang có
+                          nhiều những thành tựu
+                          trong tay. Cô quyết định
+                          theo đuổi ước mơ của
+                          mình, đi theo nhịp thở của
+                          mẹ đất. Tình yêu với đất
+                          đai và cây cỏ, tình yêu với
+                          sức khỏe và bữa ăn an
+                          toàn cho người thân và bè
+                          bạn đã thôi thúc Phương
+                          mở ra Happy Green. Câu
+                          chuyện và hành trình đến
+                          với sản phẩm hữu cơ
+                          xanh của cô chủ nhỏ
+                          Hoàng Phương bắt đầu từ
+                          đấy”
+                        </p>
                       </div>
                     </div>
                     <div className="block-image">
@@ -386,21 +440,21 @@ class Home extends React.Component {
             </div>
           </section>
           {/* Banner 2*/}
-          <section className="banner banner-2">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 col-lg-offset-4">
-                  <div data-parallax="{&quot;y&quot;: 150}" className="banner-text-wrapper">
+          {/*<section className="banner banner-2">*/}
+            {/*<div className="container">*/}
+              {/*<div className="row">*/}
+                {/*<div className="col-lg-8 col-lg-offset-4">*/}
+                  {/*<div data-parallax="{&quot;y&quot;: 150}" className="banner-text-wrapper">*/}
                     {/*<h2 className="title">From The Best Farm To Your <span style={{color: 'red'}}>Tết</span></h2>*/}
                     {/*<h5 className="subtitle">Tết deal</h5>*/}
                     {/*<p className="description">Cho mùa tết trọn vẹn</p>*/}
                     {/*<div className="prices"><span className="text-1">5%</span><span className="text-2">off</span></div>*/}
                     {/*<a href="/cua-hang" className="btn btn-maincolor">Mua sắm ngay</a>*/}
-                    </div>
-                </div>
-              </div>
-            </div>
-          </section>
+                    {/*</div>*/}
+                {/*</div>*/}
+              {/*</div>*/}
+            {/*</div>*/}
+          {/*</section>*/}
           {/* Blogs*/}
           <section className="blogs padding-top-100 padding-bottom-100">
             <div className="container">
