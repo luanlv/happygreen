@@ -60,7 +60,8 @@ class Html extends React.Component {
           <link type="text/css" rel="stylesheet" href="/assets/css/components.css" />
           <link type="text/css" rel="stylesheet" href="/assets/css/responsive.css" />
           <link type="text/css" rel="stylesheet" href="#" id="color-skins" />
-
+          {/*<script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.1.1/turbolinks.js"></script>*/}
+          {/*<script src="https://turbo-react.herokuapp.com/dist/turbo-react.min.js"></script>*/}
           <script src="/assets/libs/jquery/jquery-2.2.4.min.js" />
           <script src="/assets/libs/cookie/js.cookie.js" />
           <link rel="stylesheet" type="text/css"  href={"/css/app.css?v=" +v }/>

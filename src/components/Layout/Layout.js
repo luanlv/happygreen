@@ -116,7 +116,7 @@ class Layout extends React.Component {
                             {!en && <div className="title">Liên hệ</div>}
                             {en && <div className="title">Contact</div>}
                             <div className="content-widget">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.533065670631!2d106.7227598!3d10.770424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf80bb00557353ba0!2sHappy+Green+Market!5e0!3m2!1sen!2s!4v1516723215174" width={300} height={225} frameBorder={0} style={{ border:0 }} allowFullscreen />
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.533065670631!2d106.7227598!3d10.770424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf80bb00557353ba0!2sHappy+Green+Market!5e0!3m2!1sen!2s!4v1516723215174" width={300} height={225} frameBorder={0} style={{ border:0 }} allowFullScreen />
                               <ul className="list-unstyled info-list">
                                 <li><i className="icons fa fa-map-marker" /><a href="#" className="link">
                                   B1.00.11 Khu chung cứ phức hợp M2, số 72, Đường Nguyễn Cơ Thạch, Phường An Lợi Đông, Quận 2, Thành phố Hồ Chí Minh, Việt Nam

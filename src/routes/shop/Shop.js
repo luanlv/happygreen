@@ -33,6 +33,9 @@ class About extends React.Component {
               <div className="row">
                 <h2
                   style={{textAlign: 'center', fontSize: 28}}
+                  onClick={() => {
+                    console.log('click click')
+                  }}
                 >
                   Hot deal
                 </h2>

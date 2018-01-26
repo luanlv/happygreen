@@ -44,10 +44,11 @@ passport.use(new LocalStrategy(
 ))
 
 passport.use(new FacebookStrategy({
-    clientID:'123093138237586',
-    clientSecret:'bfddf6c0cb2bc745914a2b3236f57202',
+    clientID:'1503338743115103',
+    clientSecret:'bd840e814cb3ba3e9ce2b835625b9c08',
     // callbackURL:'http://localhost:3000/auth/facebook/callback',
-    callbackURL:'http://chungcu-timescityparkhill.com/auth/facebook/callback',
+    // callbackURL:'http://happygreenmarket.com.vn/auth/facebook/callback',
+    callbackURL:'http://localhost:3000/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'emails', 'name']
   }, function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({username: profile.emails[0].value},

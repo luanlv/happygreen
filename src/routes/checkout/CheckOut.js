@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Title, BreadCrumb, Widget, FormEmail} from './components'
+import axios from 'axios'
 
 class CheckOut extends React.Component {
 
@@ -8,12 +9,10 @@ class CheckOut extends React.Component {
     super(props)
     this.state = {
       cart: [],
-      info: {
-        name: "",
-        phone: "",
-        email: "",
-        address: ""
-      }
+      hoten: "",
+      phone: "",
+      email: "",
+      diachi: "",
     }
   }
 
@@ -55,13 +54,10 @@ class CheckOut extends React.Component {
                       <div className="col-xs-12">
                         <div className="form-group"><label className="form-label">Họ tên <span className="highlight">*</span></label>
                           <input id="last-name" type="text" required="required"  className="form-control"
-                                 defaultValue={this.state.info.name}
+                                 defaultValue={this.state.hoten}
                                  onChange={(e) => {
-                                   this.setState(prev => {
-                                     return {
-
-                                     }
-                                   })
+                                   let value = e.target.value
+                                   this.setState({hoten: value})
                                  }}
                           />
                           <p className="help-block text-danger" />
@@ -70,7 +66,11 @@ class CheckOut extends React.Component {
                       <div className="col-xs-6">
                         <div className="form-group"><label className="form-label">PHONE</label>
                           <input id="phone" type="text" required="required" className="form-control"
-                                 defaultValue={this.state.info.phone}
+                                 defaultValue={this.state.phone}
+                                 onChange={(e) => {
+                                   let value = e.target.value
+                                   this.setState({phone: value})
+                                 }}
                           />
                           <p className="help-block text-danger" />
                         </div>
@@ -78,7 +78,11 @@ class CheckOut extends React.Component {
                       <div className="col-xs-6">
                         <div className="form-group"><label className="form-label">EMAIL <span className="highlight">*</span></label>
                           <input id="email" type="email" required="required" className="form-control"
-                                 defaultValue={this.state.info.email}
+                                 defaultValue={this.state.email}
+                                 onChange={(e) => {
+                                   let value = e.target.value
+                                   this.setState({email: value})
+                                 }}
                           />
                           <p className="help-block text-danger" />
                         </div>
@@ -86,7 +90,11 @@ class CheckOut extends React.Component {
                       <div className="col-xs-12">
                         <div className="form-group"><label className="form-label">Địa chỉ shíp hàng <span className="highlight">*</span></label>
                           <textarea id="message-2" required="required"  className="form-control form-textarea"
-                                    defaultValue={this.state.info.address}
+                                    defaultValue={this.state.diachi}
+                                    onChange={(e) => {
+                                      let value = e.target.value
+                                      this.setState({diachi: value})
+                                    }}
                           />
                           <p className="help-block text-danger" />
                         </div>
@@ -163,12 +171,17 @@ class CheckOut extends React.Component {
                         <div
                           className="btn btn-maincolor"
                           onClick={() => {
-                            if (process.env.BROWSER) {
-                              let sessionStorage = (window && window.sessionStorage) ? window.sessionStorage : {}
-                              sessionStorage.removeItem('cart');
-                              alert("Đơn hàng đã được gửi đi! Chúng tôi sẽ liên lạc với bạn sớm nhất có thể!")
-                              document.location.href = '/'
-                            }
+                            axios.post('/api/cart/new', this.state)
+                              .then(res => {
+                                if (process.env.BROWSER) {
+                                  let sessionStorage = (window && window.sessionStorage) ? window.sessionStorage : {}
+                                  sessionStorage.removeItem('cart');
+                                  alert("Đơn hàng đã được gửi đi! Chúng tôi sẽ liên lạc với bạn sớm nhất có thể!")
+                                  document.location.href = '/'
+                                }
+                              }).catch(err => {
+                                alert('có lỗi')
+                            })
                           }}
                           style={{float: 'right'}}
                         >Xác nhận</div>

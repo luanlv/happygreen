@@ -8,14 +8,45 @@ const Setting = mongoose.model('Setting')
 const Information = mongoose.model('Information')
 const Category = mongoose.model('Category')
 const Seo = mongoose.model('Seo')
+const Cart = mongoose.model('Cart')
 let bodyParser = require('body-parser')
 let Mailer = require('./services/mailgun');
 let axios = require('axios')
+
 // import {FB, FacebookApiException} from 'fb';
 //
 // FB.options({version: 'v2.9'});
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
 
+router.get('/test', async (req, res) => {
+  Mailer.sendNewOrderMail("luanlv2591@gmail.com", "Họ tên", "01666555336", "Địa chỉ")
+  res.send('ok')
+})
+
+router.post('/cart/new', bodyParser.json() ,async (req, res) => {
+  console.log('new cart')
+  let setting = await Setting.findOne({})
+  let adminId = (setting || {}).adminId || 100004231235930
+  let emailAdmin = (setting || {}).emailAdmin || "luanlv2591@gmail.com"
+  Cart.create(req.body, (err, resData) => {
+    if(err) {
+      res.sendStatus(400)
+    } else {
+      Mailer.sendNewOrderMail(emailAdmin, req.body.hoten, req.body.phone, req.body.diachi)
+      // Mailer.sendNewOrderMail('luanlv2591@gmail.com', resData.name, resData.phone)
+      let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw'
+      let thongbao = encodeURI("Có đơn hàng mới")
+      axios.post(`https://graph.facebook.com/${adminId}/notifications?access_token=${token}&href=admin&template=${thongbao}`)
+        .then(res => {
+          console.log(res.data)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+      res.send(resData)
+    }
+  })
+})
 
 router.post('/productcategory/new', bodyParser.json() ,(req, res) => {
   ProductCategory.create(req.body, (err, resData) => {

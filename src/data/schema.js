@@ -21,6 +21,7 @@ import userQueries from './models/user/queries';
 import informationQueries from './models/information/queries';
 import productQueries from './models/product/queries';
 import productCategoryQueries from './models/productCategory/queries';
+import cartQueries from './models/cart/queries';
 
 const { listImage } = imageQueries;
 const { users } = userQueries;
@@ -32,6 +33,7 @@ const { information } = informationQueries;
 const { getOneProduct, getProducts, getAllProduct, get5RecentProduct, getProductRelative
   , getAllProductsByCategory, getOneHotdeal, getHotdeals, getAllHotdeal} = productQueries;
 const { getOneProductCategory, getProductCategories } = productCategoryQueries;
+const { getCart } = cartQueries
 
 const schema = new Schema({
   query: new ObjectType({
@@ -61,7 +63,8 @@ const schema = new Schema({
       getProductRelative,
       getOneHotdeal,
       getHotdeals,
-      getAllHotdeal
+      getAllHotdeal,
+      getCart
     },
   }),
 });
