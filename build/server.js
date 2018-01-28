@@ -21288,7 +21288,24 @@ let axios = __webpack_require__(3);
 
 router.get('/test', (() => {
   var _ref = _asyncToGenerator(function* (req, res) {
-    Mailer.sendNewOrderMail("luanlv2591@gmail.com", "Họ tên", "01666555336", "Địa chỉ");
+    let setting = yield Setting.findOne({});
+    let adminId = (setting || {}).adminId || 100004231235930;
+    let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw';
+    // let thongbao = encodeURI("Có đơn hàng mới")
+    let thongbao = "abc";
+    // Mailer.sendNewOrderMail("luanlv2591@gmail.com", "Họ tên", "01666555336", "Địa chỉ")
+    // axios.post(`https://graph.facebook.com/${adminId}/notifications?access_token=${token}&href=admin&template=${thongbao}`)
+    //   .then(res => {
+    //     console.log(res.data)
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   })
+    axios.post(`https://graph.facebook.com/v2.11/100004231235930/notifications?access_token=1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw&href=/admin&template=abc`).then(function (res) {
+      console.log(res.data);
+    }).catch(function (err) {
+      console.log(err);
+    });
     res.send('ok');
   });
 
@@ -21302,7 +21319,7 @@ router.post('/cart/new', bodyParser.json(), (() => {
     console.log('new cart');
     let setting = yield Setting.findOne({});
     let adminId = (setting || {}).adminId || 100004231235930;
-    let emailAdmin = (setting || {}).emailAdmin || "luanlv2591@gmail.com";
+    let emailAdmin = (setting || {}).emailAdmin || "phuongnguyen@happygreenmarket.com.vn";
     Cart.create(req.body, function (err, resData) {
       if (err) {
         res.sendStatus(400);
@@ -21311,7 +21328,7 @@ router.post('/cart/new', bodyParser.json(), (() => {
         // Mailer.sendNewOrderMail('luanlv2591@gmail.com', resData.name, resData.phone)
         let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw';
         let thongbao = encodeURI("Có đơn hàng mới");
-        axios.post(`https://graph.facebook.com/${adminId}/notifications?access_token=${token}&href=admin&template=${thongbao}`).then(function (res) {
+        axios.post(`https://graph.facebook.com/${adminId}/notifications?access_token=${token}&href=?admin&template=${thongbao}`).then(function (res) {
           console.log(res.data);
         }).catch(function (err) {
           console.log(err);
@@ -21693,14 +21710,14 @@ var api_key = 'key-b27916a12645e658b1de91b9620f85fd';
 var domain = 'mg.vnguy.com';
 var mailgun = __webpack_require__(243)({ apiKey: api_key, domain: domain });
 
-const from = 'Thông báo từ Happy green market';
+const from = 'Thông báo từ Happy green market <phuongnguyen@happygreenmarket.com.vn>';
 
 const NewOrderMail = function (email, name, phone, address) {
   return {
     from: from,
     to: email,
     subject: `Có đơn hàng từ ${name}, SĐT: ${phone}`,
-    text: `Có đơn hàng từ ${name}, SĐT: ${phone}, Địa chỉ: ${address}`
+    text: `Có đơn hàng mới: Họ tên: ${name}, SĐT: ${phone}, Địa chỉ: ${address}`
   };
 };
 

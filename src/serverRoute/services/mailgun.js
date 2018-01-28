@@ -3,14 +3,14 @@ var domain = 'mg.vnguy.com';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 
-const from = 'Thông báo từ Happy green market'
+const from = 'Thông báo từ Happy green market <phuongnguyen@happygreenmarket.com.vn>'
 
 const NewOrderMail = function(email, name, phone, address) {
   return {
     from: from,
     to: email,
     subject: `Có đơn hàng từ ${name}, SĐT: ${phone}`,
-    text: `Có đơn hàng từ ${name}, SĐT: ${phone}, Địa chỉ: ${address}`
+    text: `Có đơn hàng mới: Họ tên: ${name}, SĐT: ${phone}, Địa chỉ: ${address}`
   }
 }
 
