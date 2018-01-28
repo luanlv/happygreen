@@ -501,7 +501,7 @@ class Home extends React.Component {
                             <div className="block-content"><a href={`/p/${tintuc.slug}`} className="title">{tintuc.title}</a>
                               <div className="description">
                                 <p className="text">
-                                  {tintuc.description.slice(0, 150)}
+                                  {tintuc.description.slice(0, 130)} ...
                                 </p>
                               </div><a href={`/p/${tintuc.slug}`} className="readmore"><span className="text">Chi tiết</span><i className="icons fa fa-long-arrow-right" /></a></div>
                           </div>

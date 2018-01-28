@@ -19149,7 +19149,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         className: 'description'
       }, void 0, _jsx('p', {
         className: 'text'
-      }, void 0, tintuc.description.slice(0, 150))), _jsx('a', {
+      }, void 0, tintuc.description.slice(0, 130), ' ...')), _jsx('a', {
         href: `/p/${tintuc.slug}`,
         className: 'readmore'
       }, void 0, _ref28, _ref29))));
