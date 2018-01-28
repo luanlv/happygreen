@@ -18919,7 +18919,7 @@ var _ref20 = _jsx('div', {
   className: 'title'
 }, void 0, 'NGUY\u1EC4N TH\u1ECA HO\xC0NG PH\u01AF\u01A0NG'), _jsx('div', {
   className: 'description'
-}, void 0, _jsx('p', {}, void 0, 'C\xE2u chuy\u1EC7n c\u1EE7a c\xF4 ch\u1EE7 Ho\xE0ng Ph\u01B0\u01A1ng b\u1EAFt \u0111\u1EA7u t\u1EEB duy\xEAn c\u1EA3m v\u1EDBi v\u01B0\u1EDDn t\u01B0\u1EE3c thu\u1EDF nh\u1ECF. C\u0103n nh\xE0 tu\u1ED5i th\u01A1 c\u1EE7a c\xF4 n\u1EB1m gi\u1EEFa nh\u1EEFng hecta v\u01B0\u1EDDn r\u1ED5ng l\u1EDBn, c\xF2n l\u1ED1i d\u1EABn v\xE0o nh\xE0 l\xE0 con \u0111\u01B0\u1EDDng \u0111\u1EA5t \u0111i qua nh\u1EEFng qu\u1EA3ng tr\u1ED3ng c\u1ECF c\xE2y th\u1EB3ng t\u1EAFp. Tu\u1ED5i th\u01A1 Ph\u01B0\u01A1ng g\u1EAFn li\u1EC1n v\u1EDBi nh\u1EEFng th\u01B0\u01A1ng y\xEAu c\xE2y c\u1ECF, v\u1EDBi nh\u1EEFng th\u01B0\u01A1ng y\xEAu t\u1EEB tr\xF4ng m\u1EA7m xanh ch\u1ED3i non l\u1EDBn l\xEAn t\u1EEBng ng\xE0y.'), _jsx('p', {}, void 0, 'Th\u1EBF r\u1ED3i, c\xF4 l\u1EDBn l\xEAn, \u0111i h\u1ECDc, ho\xE0n th\xE0nh \u0111\u1EA1i h\u1ECDc v\xE0 c\u0169ng t\u1EA5t b\u1EADt trong c\xF4ng vi\u1EC7c t\u1EA1i m\u1ED9t c\xF4ng ty cung c\u1EA5p v\u1EC1 gi\u1EA3i ph\xE1p \u0111i\u1EC7n n\u0103ng. Gi\u1EEFa nh\u1EEFng b\u1ED9n b\u1EC1 c\xF4ng vi\u1EC7c, Ph\u01B0\u01A1ng ch\u1EE3t nh\u1EADn ra ni\u1EC1m y\xEAu th\xEDch, \u0111am m\xEA t\u1EEB thu\u1EDF nh\u1ECF.'), _jsx('p', {}, void 0, 'N\u0103m 2017, c\xF4 r\u1EDDi b\u1ECF c\xF4ng vi\u1EC7c c\xF4ng s\u1EDF khi \u0111ang c\xF3 nhi\u1EC1u nh\u1EEFng th\xE0nh t\u1EF1u trong tay. C\xF4 quy\u1EBFt \u0111\u1ECBnh theo \u0111u\u1ED5i \u01B0\u1EDBc m\u01A1 c\u1EE7a m\xECnh, \u0111i theo nh\u1ECBp th\u1EDF c\u1EE7a m\u1EB9 \u0111\u1EA5t. T\xECnh y\xEAu v\u1EDBi \u0111\u1EA5t \u0111ai v\xE0 c\xE2y c\u1ECF, t\xECnh y\xEAu v\u1EDBi s\u1EE9c kh\u1ECFe v\xE0 b\u1EEFa \u0103n an to\xE0n cho ng\u01B0\u1EDDi th\xE2n v\xE0 b\xE8 b\u1EA1n \u0111\xE3 th\xF4i th\xFAc Ph\u01B0\u01A1ng m\u1EDF ra Happy Green. C\xE2u chuy\u1EC7n v\xE0 h\xE0nh tr\xECnh \u0111\u1EBFn v\u1EDBi s\u1EA3n ph\u1EA9m h\u1EEFu c\u01A1 xanh c\u1EE7a c\xF4 ch\u1EE7 nh\u1ECF Ho\xE0ng Ph\u01B0\u01A1ng b\u1EAFt \u0111\u1EA7u t\u1EEB \u0111\u1EA5y\u201D'))), _jsx('div', {
+}, void 0, _jsx('p', {}, void 0, 'C\xE2u chuy\u1EC7n c\u1EE7a c\xF4 ch\u1EE7 Ho\xE0ng Ph\u01B0\u01A1ng b\u1EAFt \u0111\u1EA7u t\u1EEB duy\xEAn c\u1EA3m v\u1EDBi v\u01B0\u1EDDn t\u01B0\u1EE3c thu\u1EDF nh\u1ECF. C\u0103n nh\xE0 tu\u1ED5i th\u01A1 c\u1EE7a c\xF4 n\u1EB1m gi\u1EEFa nh\u1EEFng hecta v\u01B0\u1EDDn r\u1ED9ng l\u1EDBn, c\xF2n l\u1ED1i d\u1EABn v\xE0o nh\xE0 l\xE0 con \u0111\u01B0\u1EDDng \u0111\u1EA5t \u0111i qua nh\u1EEFng qu\u1EA3ng tr\u1ED3ng c\u1ECF c\xE2y th\u1EB3ng t\u1EAFp. Tu\u1ED5i th\u01A1 Ph\u01B0\u01A1ng g\u1EAFn li\u1EC1n v\u1EDBi nh\u1EEFng th\u01B0\u01A1ng y\xEAu c\xE2y c\u1ECF, v\u1EDBi nh\u1EEFng th\u01B0\u01A1ng y\xEAu t\u1EEB tr\xF4ng m\u1EA7m xanh ch\u1ED3i non l\u1EDBn l\xEAn t\u1EEBng ng\xE0y.'), _jsx('p', {}, void 0, 'Th\u1EBF r\u1ED3i, c\xF4 l\u1EDBn l\xEAn, \u0111i h\u1ECDc, ho\xE0n th\xE0nh \u0111\u1EA1i h\u1ECDc v\xE0 c\u0169ng t\u1EA5t b\u1EADt trong c\xF4ng vi\u1EC7c t\u1EA1i m\u1ED9t c\xF4ng ty cung c\u1EA5p v\u1EC1 gi\u1EA3i ph\xE1p \u0111i\u1EC7n n\u0103ng. Gi\u1EEFa nh\u1EEFng b\u1ED9n b\u1EC1 c\xF4ng vi\u1EC7c, Ph\u01B0\u01A1ng ch\u1EE3t nh\u1EADn ra ni\u1EC1m y\xEAu th\xEDch, \u0111am m\xEA t\u1EEB thu\u1EDF nh\u1ECF.'), _jsx('p', {}, void 0, 'N\u0103m 2017, c\xF4 r\u1EDDi b\u1ECF c\xF4ng vi\u1EC7c c\xF4ng s\u1EDF khi \u0111ang c\xF3 nhi\u1EC1u nh\u1EEFng th\xE0nh t\u1EF1u trong tay. C\xF4 quy\u1EBFt \u0111\u1ECBnh theo \u0111u\u1ED5i \u01B0\u1EDBc m\u01A1 c\u1EE7a m\xECnh, \u0111i theo nh\u1ECBp th\u1EDF c\u1EE7a m\u1EB9 \u0111\u1EA5t. T\xECnh y\xEAu v\u1EDBi \u0111\u1EA5t \u0111ai v\xE0 c\xE2y c\u1ECF, t\xECnh y\xEAu v\u1EDBi s\u1EE9c kh\u1ECFe v\xE0 b\u1EEFa \u0103n an to\xE0n cho ng\u01B0\u1EDDi th\xE2n v\xE0 b\xE8 b\u1EA1n \u0111\xE3 th\xF4i th\xFAc Ph\u01B0\u01A1ng m\u1EDF ra Happy Green. C\xE2u chuy\u1EC7n v\xE0 h\xE0nh tr\xECnh \u0111\u1EBFn v\u1EDBi s\u1EA3n ph\u1EA9m h\u1EEFu c\u01A1 xanh c\u1EE7a c\xF4 ch\u1EE7 nh\u1ECF Ho\xE0ng Ph\u01B0\u01A1ng b\u1EAFt \u0111\u1EA7u t\u1EEB \u0111\xE2y\u201D'))), _jsx('div', {
   className: 'block-image'
 }, void 0, _jsx('img', {
   src: '/assets/images/teams/1.jpg',
@@ -19126,7 +19126,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: 'block'
     }, void 0, _ref26, __WEBPACK_IMPORTED_MODULE_4_moment___default()(firstNews.created_at).format('DD/MM/YYYY'))), _ref27))))), _jsx('div', {
       className: 'block-right'
-    }, void 0, restNews.map((tintuc, idx) => {
+    }, void 0, restNews.slice(0, 3).map((tintuc, idx) => {
       return _jsx('div', {
         className: 'grid-item'
       }, idx, _jsx('div', {
@@ -19143,13 +19143,13 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       })), _jsx('div', {
         className: 'block-content'
       }, void 0, _jsx('a', {
-        href: 'blog-detail.html',
+        href: `/p/${tintuc.slug}`,
         className: 'title'
       }, void 0, tintuc.title), _jsx('div', {
         className: 'description'
       }, void 0, _jsx('p', {
         className: 'text'
-      }, void 0, tintuc.description)), _jsx('a', {
+      }, void 0, tintuc.description.slice(0, 150))), _jsx('a', {
         href: `/p/${tintuc.slug}`,
         className: 'readmore'
       }, void 0, _ref28, _ref29))));

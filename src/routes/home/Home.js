@@ -386,7 +386,7 @@ class Home extends React.Component {
                           duyên cảm với vườn tược
                           thuở nhỏ. Căn nhà tuổi
                           thơ của cô nằm giữa
-                          những hecta vườn rổng
+                          những hecta vườn rộng
                           lớn, còn lối dẫn vào nhà là
                           con đường đất đi qua
                           những quảng trồng cỏ cây
@@ -426,7 +426,7 @@ class Home extends React.Component {
                           với sản phẩm hữu cơ
                           xanh của cô chủ nhỏ
                           Hoàng Phương bắt đầu từ
-                          đấy”
+                          đây”
                         </p>
                       </div>
                     </div>
@@ -491,17 +491,17 @@ class Home extends React.Component {
                   </div>
 
                   <div className="block-right">
-                    {restNews.map((tintuc, idx) => {
+                    {restNews.slice(0,3).map((tintuc, idx) => {
                       return (
                         <div className="grid-item" key={idx}>
                           <div className="block-2">
                             <div className="block-image"><img src={tintuc.coverUrl} alt className="img-full" />
                               <a href={`/p/${tintuc.slug}`} className="link" />
                             </div>
-                            <div className="block-content"><a href="blog-detail.html" className="title">{tintuc.title}</a>
+                            <div className="block-content"><a href={`/p/${tintuc.slug}`} className="title">{tintuc.title}</a>
                               <div className="description">
                                 <p className="text">
-                                  {tintuc.description}
+                                  {tintuc.description.slice(0, 150)}
                                 </p>
                               </div><a href={`/p/${tintuc.slug}`} className="readmore"><span className="text">Chi tiết</span><i className="icons fa fa-long-arrow-right" /></a></div>
                           </div>
