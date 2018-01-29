@@ -21376,7 +21376,7 @@ const login = __webpack_require__(235);
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
 
 
-login({ appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8')) }, (err, api) => {
+login({ email: 'luan@colombus.vn', password: 'Ll114122' }, (err, api) => {
   if (err) return console.error(err);
   fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
   router.get('/test', (() => {
