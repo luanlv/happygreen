@@ -175,7 +175,7 @@ class Cart extends React.Component {
                       <div className="row">
                         <div className="col-md-7 col-xs-12">
                           <a href="/cua-hang">
-                            <div type="submit" className="btn btn-maincolor">Tiếp tục mua hang</div>
+                            <div type="submit" className="btn btn-maincolor">Tiếp tục mua hàng</div>
                           </a>
                           <a href="/thanh-toan">
                             <div type="submit" className="btn btn-maincolor">Thanh toán</div>

@@ -16953,7 +16953,7 @@ var _ref9 = _jsx('div', {
 }, void 0, _jsx('div', {
   type: 'submit',
   className: 'btn btn-maincolor'
-}, void 0, 'Ti\u1EBFp t\u1EE5c mua hang')), _jsx('a', {
+}, void 0, 'Ti\u1EBFp t\u1EE5c mua h\xE0ng')), _jsx('a', {
   href: '/thanh-toan'
 }, void 0, _jsx('div', {
   type: 'submit',
@@ -17636,7 +17636,6 @@ class CheckOut extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   render() {
-
     let sum = 0;
     this.state.cart.map(el => {
       sum += el.number * el.product.price;

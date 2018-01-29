@@ -15,7 +15,7 @@
     "js": "/assets/contact.b5cb7d20.chunk.js"
   },
   "cart": {
-    "js": "/assets/cart.8638a55c.chunk.js"
+    "js": "/assets/cart.28bb36e4.chunk.js"
   },
   "sanpham": {
     "js": "/assets/sanpham.9ccef94b.chunk.js"
@@ -30,6 +30,6 @@
     "js": "/assets/client.8289f5de.js"
   },
   "vendor": {
-    "js": "/assets/vendor.9beb78e3.js"
+    "js": "/assets/vendor.11fcbf3c.js"
   }
 }

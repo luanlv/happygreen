@@ -27,7 +27,6 @@ class CheckOut extends React.Component {
   }
 
   render() {
-
     let sum = 0
     this.state.cart.map(el => {
       sum += el.number * el.product.price
