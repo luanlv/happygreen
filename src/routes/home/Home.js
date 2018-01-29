@@ -32,6 +32,7 @@ class Home extends React.Component {
           {allHotdeals.length > 0 &&
           <section className="background-slide" >
             {allHotdeals.map((el, idx) => {
+              console.log(el)
               return (
                 <a href={`/sp/${el.slug}`} className="slide-item" key={idx}>
                   <img src="/assets/images/background-full/homepage-1.jpg" alt=""  className="img-responsive img-background" />
@@ -46,7 +47,8 @@ class Home extends React.Component {
                           <h1 className="title">{el.title}</h1>
                           <h2 className="subtitle">{el.price.toLocaleString()}<sup>đ</sup></h2>
                           <h3 style={{margin: '0 0 10px 0'}}>
-                            30% OFF
+                            {/*30% OFF*/}
+                            {Math.round((el.oldPrice - el.price)/el.oldPrice * 100)}% OFF
                           </h3>
                           <div className="btn btn-left btn-maincolor animated fadeInLeft">Mua ngay</div>
                           {/*<div className="group-btn">*/}

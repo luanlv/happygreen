@@ -44,7 +44,7 @@ class EditComponent extends React.Component {
 
   async init (slug) {
     let categories = 'getProductCategories{title, slug, created_at}'
-    let productBySlug = 'getOneProduct:getOneHotdeal(slug: "'+ slug +'"){ coverUrl, category, slug, title, body, price, donvi, view, hotdeal, created_at}'
+    let productBySlug = 'getOneProduct:getOneHotdeal(slug: "'+ slug +'"){ coverUrl, category, slug, title, body, oldPrice, price, donvi, view, hotdeal, created_at}'
     const resp = await fetch('/graphql', {
       method: 'post',
       headers: {
@@ -286,6 +286,32 @@ class EditComponent extends React.Component {
                     />
                   </div>
                   <div style={{ marginBottom: 16 }}>
+                    <label><b>Giá cũ :</b></label>
+                    <InputNumber
+                      min={0}
+                      formatter={value => `${value.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}
+                      parser={value => value.replace(/(,*)/g, '')}
+                      style={{width: '100%'}}
+                      placeholder="giá cũ"
+                      defaultValue={this.state.data.oldPrice}
+                      onChange={(value) => {
+                        if(parseInt(value).isNaN){
+                          value = 0;
+                        }
+                        this.setState(prev => {
+                          return {
+                            ...prev,
+                            data: {
+                              ...prev.data,
+                              oldPrice: value
+                            }
+                          }
+                        })
+                      }}
+                    />
+                  </div>
+
+                  <div style={{ marginBottom: 16 }}>
                     <label><b>Giá :</b></label>
                     <InputNumber
                       min={0}
@@ -309,7 +335,6 @@ class EditComponent extends React.Component {
                         })
                       }}
                     />
-
 
                   </div>
 

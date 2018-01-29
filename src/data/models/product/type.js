@@ -31,6 +31,9 @@ export default new GraphQLObjectType({
     slug: {
       type: new GraphQLNonNull(GraphQLString)
     },
+    oldPrice: {
+      type: new GraphQLNonNull(GraphQLInt)
+    },
     price: {
       type: new GraphQLNonNull(GraphQLInt)
     },

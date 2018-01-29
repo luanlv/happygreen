@@ -12,56 +12,68 @@ const Cart = mongoose.model('Cart')
 let bodyParser = require('body-parser')
 let Mailer = require('./services/mailgun');
 let axios = require('axios')
+const fs = require("fs");
+const login = require("facebook-chat-api");
+
+// Create simple echo bot
 
 // import {FB, FacebookApiException} from 'fb';
 //
 // FB.options({version: 'v2.9'});
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
 
-router.get('/test', async (req, res) => {
-  let setting = await Setting.findOne({})
-  let adminId = (setting || {}).adminId || 100004231235930
-  let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw'
-  // let thongbao = encodeURI("Có đơn hàng mới")
-  let thongbao = "abc"
-  // Mailer.sendNewOrderMail("luanlv2591@gmail.com", "Họ tên", "01666555336", "Địa chỉ")
-  // axios.post(`https://graph.facebook.com/${adminId}/notifications?access_token=${token}&href=admin&template=${thongbao}`)
-  //   .then(res => {
-  //     console.log(res.data)
-  //   })
-  //   .catch(err => {
-  //     console.log(err)
-  //   })
-  axios.post(`https://graph.facebook.com/v2.11/100004231235930/notifications?access_token=1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw&href=/admin&template=abc`)
-    .then(res => {
-      console.log(res.data)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-  res.send('ok')
-})
+
+login({appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8'))}, (err, api) => {
+  if(err) return console.error(err);
+  fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
+  router.get('/test', async (req, res) => {
+    let setting = await Setting.findOne({})
+    let adminId = (setting || {}).adminId || 100004231235930
+    let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw'
+    // let thongbao = encodeURI("Có đơn hàng mới")
+    let thongbao =
+      `Có đơn hàng mới trên Happy green market
+test
+abc
+`
+
+    api.sendMessage(thongbao, adminId)
+
+    res.send('ok')
+  })
 
 router.post('/cart/new', bodyParser.json() ,async (req, res) => {
   console.log('new cart')
   let setting = await Setting.findOne({})
   let adminId = (setting || {}).adminId || 100004231235930
-  let emailAdmin = (setting || {}).emailAdmin || "phuongnguyen@happygreenmarket.com.vn"
+  let emailAdmin = (setting || {}).emailAdmin || "luanlv2591@gmail.com"
   Cart.create(req.body, (err, resData) => {
     if(err) {
       res.sendStatus(400)
     } else {
       Mailer.sendNewOrderMail(emailAdmin, req.body.hoten, req.body.phone, req.body.diachi)
       // Mailer.sendNewOrderMail('luanlv2591@gmail.com', resData.name, resData.phone)
-      let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw'
-      let thongbao = encodeURI("Có đơn hàng mới")
-      axios.post(`https://graph.facebook.com/${adminId}/notifications?access_token=${token}&href=?admin&template=${thongbao}`)
-        .then(res => {
-          console.log(res.data)
-        })
-        .catch(err => {
-          console.log(err)
-        })
+      let thongbao =
+`Có đơn hàng mới trên Happy green market
+Tên: ${resData.hoten}
+SDT: ${resData.phone}
+Địa chỉ: ${resData.diachi}
+Email: ${resData.email}`
+
+      api.sendMessage(thongbao, adminId)
+
+      res.send(resData)
+    }
+  })
+})
+
+});
+
+router.get('/cart', async (req, res) => {
+  Cart.find({}, (err, resData) => {
+    if(err){
+      res.sendStatus(400)
+    } else {
       res.send(resData)
     }
   })

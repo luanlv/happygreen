@@ -10,20 +10,118 @@
 import React, { PropTypes } from 'react';
 import { Button, DatePicker, Table, Timeline, Icon, Row, Col} from 'antd';
 import moment from 'moment'
+import axios from 'axios'
+
+
+const { Column, ColumnGroup } = Table;
 
 class Admin extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      orders: this.props.orders || []
+      cart: []
     }
+    this.init()
+  }
+
+  init = async () => {
+    let that = this
+    axios.get('/api/cart')
+      .then(res => {
+        that.setState({cart: res.data})
+      })
+      .catch(err => {
+        alert('Có lỗi')
+      })
   }
 
   render() {
     return (
         <div>
           <Row className="padding-5">
-            {/*Dashboard !!*/}
+            <Table dataSource={this.state.cart} size="small"
+                   pagination={{pageSize: 100}}
+                   onRowDoubleClick={(record, index, event) => {
+                     // info(record, this.state.danhsachthauphuObj)
+                     console.log(record)
+                   }}
+                   // onChange={this.handleChange}
+                   bordered={true}
+            >
+
+
+              <Column
+                title="Họ tên"
+                dataIndex="hoten"
+                key="hoten"
+                render={(text, record) => (
+                  <span
+                  >
+                    {record.hoten}
+                  </span>
+                )}
+              />
+              <Column
+                title="Số điện thoại"
+                dataIndex="phone"
+                key="phone"
+                render={(text, record) => (
+                  <span
+                  >
+                    {record.phone}
+                  </span>
+                )}
+              />
+              <Column
+                title="Email"
+                dataIndex="email"
+                key="email"
+                render={(text, record) => (
+                  <span
+                  >
+                    {record.email}
+                  </span>
+                )}
+              />
+              <Column
+                title="Địa chỉ"
+                dataIndex="diachi"
+                key="diachi"
+                render={(text, record) => (
+                  <span
+                  >
+                    {record.diachi}
+                  </span>
+                )}
+              />
+              <Column
+                title="Đơn hàng"
+                dataIndex="cart"
+                key="cart"
+                render={(text, record) => (
+                  <span
+                  >
+                    {record.cart.map((el, idx) => {
+                      return (
+                        <div key={idx}>
+                          {el.number} x {el.product.title} = {(el.product.price * el.number).toLocaleString()} đ
+                        </div>
+                      )
+                    })}
+                    <div>
+                      <span>Total: </span>
+                      <span style={{color: 'red'}}>
+                        {record.cart.reduce((prev, next) => {
+                          return prev + (next.number * next.product.price)
+                          // console.log(prev)
+                          // console.log(next)
+                        }, 0).toLocaleString()} đ
+                      </span>
+                    </div>
+                  </span>
+                )}
+              />
+            </Table>
           </Row>
         </div>
     );

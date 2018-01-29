@@ -26,7 +26,7 @@ export default {
     let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
     // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
     let productCategories = 'productCategories:getProductCategories{title, slug, created_at}'
-    let allHotdeals = 'allHotdeals:getAllHotdeal{ coverUrl, category, slug, title, body, donvi, hotdeal, price, view, created_at}'
+    let allHotdeals = 'allHotdeals:getAllHotdeal{ coverUrl, category, slug, title, body, donvi, hotdeal,oldPrice, price, view, created_at}'
     let recentProduct = 'recentProduct:get5RecentProduct{ coverUrl, category, slug, title, body, price, donvi, view, created_at}'
     let seo = {}
     const resp = await fetch('/graphql', {

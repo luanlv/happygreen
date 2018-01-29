@@ -5,6 +5,7 @@ var schema = new mongoose.Schema({
   category: {type: [], default: [], required: true},
   slug: { type: String, required: true, unique: true, index: true},
   title: {type: String, default: '', required: true},
+  oldPrice: {type: Number, default: 0, required: true},
   price: {type: Number, default: 0, required: true},
   donvi: {type: String, default: 'KG', require: true},
   hotdeal: {type: Boolean, default: false, require: true},
