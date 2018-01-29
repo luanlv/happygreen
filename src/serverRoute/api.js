@@ -23,7 +23,7 @@ const login = require("facebook-chat-api");
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
 
 
-login({email: 'luan@colombus.vn', password: 'Ll114122'}, (err, api) => {
+login({email: 'mrvluan@gmail.com', password: 'Ll114122!'}, (err, api) => {
   if(err) return console.error(err);
   fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
   router.get('/test', async (req, res) => {
@@ -70,7 +70,7 @@ Email: ${resData.email}`
 });
 
 router.get('/cart', async (req, res) => {
-  Cart.find({}, (err, resData) => {
+  Cart.find({}).sort({created_at: -1}).exec((err, resData) => {
     if(err){
       res.sendStatus(400)
     } else {
