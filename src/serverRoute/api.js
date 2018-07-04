@@ -13,7 +13,6 @@ let bodyParser = require('body-parser')
 let Mailer = require('./services/mailgun');
 let axios = require('axios')
 const fs = require("fs");
-const login = require("facebook-chat-api");
 
 // Create simple echo bot
 
@@ -23,24 +22,6 @@ const login = require("facebook-chat-api");
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
 
 
-login({email: 'mrvluan@gmail.com', password: 'Ll114122!'}, (err, api) => {
-  if(err) return console.error(err);
-  fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
-  router.get('/test', async (req, res) => {
-    let setting = await Setting.findOne({})
-    let adminId = (setting || {}).adminId || 100004231235930
-    let token = '1503338743115103|_02iBBKBP7cZnhNJOm7DniCBNyw'
-    // let thongbao = encodeURI("Có đơn hàng mới")
-    let thongbao =
-      `Có đơn hàng mới trên Happy green market
-test
-abc
-`
-
-    api.sendMessage(thongbao, adminId)
-
-    res.send('ok')
-  })
 
 router.post('/cart/new', bodyParser.json() ,async (req, res) => {
   console.log('new cart')
@@ -53,21 +34,20 @@ router.post('/cart/new', bodyParser.json() ,async (req, res) => {
     } else {
       Mailer.sendNewOrderMail(emailAdmin, req.body.hoten, req.body.phone, req.body.diachi)
       // Mailer.sendNewOrderMail('luanlv2591@gmail.com', resData.name, resData.phone)
-      let thongbao =
-`Có đơn hàng mới trên Happy green market
-Tên: ${resData.hoten}
-SDT: ${resData.phone}
-Địa chỉ: ${resData.diachi}
-Email: ${resData.email}`
+//       let thongbao =
+// `Có đơn hàng mới trên Happy green market
+// Tên: ${resData.hoten}
+// SDT: ${resData.phone}
+// Địa chỉ: ${resData.diachi}
+// Email: ${resData.email}`
 
-      api.sendMessage(thongbao, adminId)
+//       api.sendMessage(thongbao, adminId)
 
       res.send(resData)
     }
   })
 })
 
-});
 
 router.get('/cart', async (req, res) => {
   Cart.find({}).sort({created_at: -1}).exec((err, resData) => {

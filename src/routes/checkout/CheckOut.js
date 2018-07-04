@@ -170,6 +170,14 @@ class CheckOut extends React.Component {
                         <div
                           className="btn btn-maincolor"
                           onClick={() => {
+                            if(this.state.hoten.length < 1){ alert('Tên không được để trống')
+                          } else if (this.state.phone.length < 1){ 
+                            alert('Số điện thoại không được để trống')
+                          } else if (this.state.email.length < 1){
+                            alert('Email không được để trống')
+                          } else if (this.state.diachi.length < 1){
+                            alert('Địa chỉ không được để trống')
+                          } else {
                             axios.post('/api/cart/new', this.state)
                               .then(res => {
                                 if (process.env.BROWSER) {
@@ -181,6 +189,7 @@ class CheckOut extends React.Component {
                               }).catch(err => {
                                 alert('có lỗi')
                             })
+                          }
                           }}
                           style={{float: 'right'}}
                         >Xác nhận</div>
