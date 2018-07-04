@@ -15,12 +15,34 @@ const NewOrderMail = function(email, name, phone, address) {
 }
 
 
+const NewMesMail = function(adminEmail, email, name, phone, chude, tinnhan) {
+  return {
+    from: from,
+    to: adminEmail,
+    subject: `Có tin nhắn từ ${name}, SĐT: ${phone}, Email: ${email}, Chủ đề: ${chude}`,
+    text: `Tin nhắn: ${tinnhan}`
+  }
+}
+
+
 let Mailer = {}
 
 Mailer.sendNewOrderMail = function (email, name, phone, address) {
   // console.log('send new email:', email)
   // console.log(NewOrderMail(email, name, phone))
   mailgun.messages().send(NewOrderMail(email, name, phone, address), function (error, body) {
+    if(error) console.log(error)
+    else {
+      console.log(body);
+    }
+  });
+}
+
+
+Mailer.sendNewMesMail = function (adminEmail, email, name, phone, chude, tinnhan) {
+  // console.log('send new email:', email)
+  // console.log(NewOrderMail(email, name, phone))
+  mailgun.messages().send(NewMesMail(email, name, phone, chude, tinnhan), function (error, body) {
     if(error) console.log(error)
     else {
       console.log(body);

@@ -147,10 +147,7 @@ class News extends React.Component {
                     <div className="content-widget">
                       <ul className="list-unstyled list-inline">
                         <li>
-                          <a href="javascript:void(0)" className="social-icon fa fa-facebook" />
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" className="social-icon fa fa-google" />
+                          <a target="_blank" href="https://fb.com/happygreenmarket" className="social-icon fa fa-facebook" />
                         </li>
                       </ul>
                     </div>

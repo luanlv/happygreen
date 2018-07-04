@@ -2702,11 +2702,9 @@ var _ref8 = _jsx('div', {
 }, void 0, _jsx('ul', {
   className: 'list-unstyled list-inline'
 }, void 0, _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
+  target: '_blank',
+  href: 'https://fb.com/happygreenmarket',
   className: 'social-icon fa fa-facebook'
-})), _jsx('li', {}, void 0, _jsx('a', {
-  href: 'javascript:void(0)',
-  className: 'social-icon fa fa-google'
 }))))));
 
 function News(props) {
@@ -12240,30 +12238,42 @@ var _ref7 = _jsx(Option, {
 }, void 0, 'KG');
 
 var _ref8 = _jsx(Option, {
+  value: 'mL'
+}, void 0, 'mL');
+
+var _ref9 = _jsx(Option, {
+  value: 'L'
+}, void 0, 'L');
+
+var _ref10 = _jsx(Option, {
+  value: 'Qu\u1EA3'
+}, void 0, 'Qu\u1EA3');
+
+var _ref11 = _jsx(Option, {
   value: '500g'
 }, void 0, '500g');
 
-var _ref9 = _jsx(Option, {
+var _ref12 = _jsx(Option, {
   value: '100g'
 }, void 0, '100g');
 
-var _ref10 = _jsx(Option, {
+var _ref13 = _jsx(Option, {
   value: 'H\u1ED9p'
 }, void 0, 'H\u1ED9p');
 
-var _ref11 = _jsx(Option, {
+var _ref14 = _jsx(Option, {
   value: 'Ch\u1EADu'
 }, void 0, 'Ch\u1EADu');
 
-var _ref12 = _jsx(Option, {
+var _ref15 = _jsx(Option, {
   value: 'Su\u1EA5t'
 }, void 0, 'Su\u1EA5t');
 
-var _ref13 = _jsx(Option, {
+var _ref16 = _jsx(Option, {
   value: 'Combo'
 }, void 0, 'Combo');
 
-var _ref14 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh \u0111\u1EA1i di\u1EC7n:'));
+var _ref17 = _jsx('label', {}, void 0, _jsx('b', {}, void 0, '\u1EA2nh \u0111\u1EA1i di\u1EC7n:'));
 
 class EditComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   constructor(props) {
@@ -12540,12 +12550,12 @@ class EditComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
           });
         });
       }
-    }, void 0, _ref7, _ref8, _ref9, _ref10, _ref11, _ref12, _ref13))), _jsx(__WEBPACK_IMPORTED_MODULE_3_antd__["Col"], {
+    }, void 0, _ref7, _ref8, _ref9, _ref10, _ref11, _ref12, _ref13, _ref14, _ref15, _ref16))), _jsx(__WEBPACK_IMPORTED_MODULE_3_antd__["Col"], {
       sm: 12,
       className: 'padding-5'
     }, void 0, _jsx('div', {
       style: { marginBottom: 16 }
-    }, void 0, _ref14, !this.state.data.coverUrl && _jsx(__WEBPACK_IMPORTED_MODULE_7__Components_ImageUpload__["a" /* default */], {
+    }, void 0, _ref17, !this.state.data.coverUrl && _jsx(__WEBPACK_IMPORTED_MODULE_7__Components_ImageUpload__["a" /* default */], {
       isMultiple: false,
       handleUpload: img => this.handleCoverUpload(img)
     }), this.state.data.coverUrl && _jsx(__WEBPACK_IMPORTED_MODULE_3_antd__["Card"], {
@@ -18135,7 +18145,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
 
 
 
@@ -18183,124 +18196,205 @@ var _ref5 = _jsx('p', {
   className: 'sub'
 }, void 0, 'Fanpage');
 
-var _ref6 = _jsx('form', {
-  id: 'contactForm',
-  noValidate: 'novalidate',
-  className: 'contact-form'
-}, void 0, _jsx('div', {
-  className: 'row'
-}, void 0, _jsx('div', {
-  className: 'col-sm-6'
-}, void 0, _jsx('div', {
-  className: 'form-group'
-}, void 0, _jsx('label', {
+var _ref6 = _jsx('label', {
   className: 'form-label'
-}, void 0, 'T\xEAn ', _jsx('span', {
+}, void 0, 'H\u1ECD T\xEAn ', _jsx('span', {
   className: 'highlight'
-}, void 0, '*')), _jsx('input', {
-  id: 'name',
-  type: 'text',
-  required: 'required',
-  'data-validation-required-message': 'Please enter your name.',
-  className: 'form-control'
-}), _jsx('p', {
+}, void 0, '*'));
+
+var _ref7 = _jsx('p', {
   className: 'help-block text-danger'
-}))), _jsx('div', {
-  className: 'col-sm-6'
-}, void 0, _jsx('div', {
-  className: 'form-group'
-}, void 0, _jsx('label', {
+});
+
+var _ref8 = _jsx('label', {
   className: 'form-label'
 }, void 0, 'Email ', _jsx('span', {
   className: 'highlight'
-}, void 0, '*')), _jsx('input', {
-  id: 'email',
-  type: 'email',
-  required: 'required',
-  'data-validation-required-message': 'Please enter your email address.',
-  className: 'form-control'
-}), _jsx('p', {
+}, void 0, '*'));
+
+var _ref9 = _jsx('p', {
   className: 'help-block text-danger'
-}))), _jsx('div', {
-  className: 'col-sm-6'
-}, void 0, _jsx('div', {
-  className: 'form-group'
-}, void 0, _jsx('label', {
+});
+
+var _ref10 = _jsx('label', {
   className: 'form-label'
-}, void 0, 'S\u1ED1 \u0111i\u1EC7n tho\u1EA1i'), _jsx('input', {
-  id: 'phone',
-  type: 'text',
-  required: 'required',
-  'data-validation-required-message': 'Please enter your phone number.',
-  className: 'form-control'
-}), _jsx('p', {
+}, void 0, 'S\u1ED1 \u0111i\u1EC7n tho\u1EA1i');
+
+var _ref11 = _jsx('p', {
   className: 'help-block text-danger'
-}))), _jsx('div', {
-  className: 'col-sm-6'
-}, void 0, _jsx('div', {
-  className: 'form-group'
-}, void 0, _jsx('label', {
+});
+
+var _ref12 = _jsx('label', {
   className: 'form-label'
-}, void 0, 'Ch\u1EE7 \u0111\u1EC1'), _jsx('input', {
-  id: 'subject',
-  type: 'text',
-  required: 'required',
-  'data-validation-required-message': 'Please enter your subject.',
-  className: 'form-control'
-}), _jsx('p', {
+}, void 0, 'Ch\u1EE7 \u0111\u1EC1');
+
+var _ref13 = _jsx('p', {
   className: 'help-block text-danger'
-})))), _jsx('div', {
-  className: 'row'
-}, void 0, _jsx('div', {
-  className: 'col-sm-12'
-}, void 0, _jsx('div', {
-  className: 'form-group'
-}, void 0, _jsx('label', {
+});
+
+var _ref14 = _jsx('label', {
   className: 'form-label'
-}, void 0, 'Tin nh\u1EAFn'), _jsx('textarea', {
-  id: 'message',
-  required: 'required',
-  'data-validation-required-message': 'Please enter a message.',
-  className: 'form-control form-textarea',
-  defaultValue: ""
-}), _jsx('p', {
+}, void 0, 'Tin nh\u1EAFn');
+
+var _ref15 = _jsx('p', {
   className: 'help-block text-danger'
-})))), _jsx('div', {
+});
+
+var _ref16 = _jsx('div', {
   id: 'success',
   className: 'margin-top-50'
-}), _jsx('button', {
-  type: 'submit',
-  className: 'btn btn-maincolor'
-}, void 0, 'Send Message '));
+});
 
-function Contact(props) {
+class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
-  const contact = props.data.information.value.contact;
+  constructor(props) {
+    super(props);
+    this.state = {
+      cart: [],
+      hoten: "",
+      phone: "",
+      email: "",
+      chude: "",
+      tinnhan: ""
+    };
+  }
 
-  return _jsx('div', {}, void 0, _jsx('div', {
-    className: 'main-contents'
-  }, void 0, _ref, _jsx('div', {
-    className: 'page-main padding-top-100 padding-bottom-100'
-  }, void 0, _jsx('div', {
-    className: 'container'
-  }, void 0, _jsx('div', {
-    className: 'row'
-  }, void 0, _jsx('div', {
-    className: 'col-xs-12'
-  }, void 0, _jsx('div', {
-    className: 'row contact-method padding-bottom-100'
-  }, void 0, _ref2, _ref3, _jsx('div', {
-    className: 'col-sm-4 col-xs-12'
-  }, void 0, _jsx('div', {
-    className: 'method-item'
-  }, void 0, _ref4, _ref5, _jsx('div', {
-    className: 'detail'
-  }, void 0, _jsx('a', {
-    style: { color: '#ddd' },
-    target: '_blank',
-    className: 'link',
-    href: 'https://fb.com/happygreenmarket'
-  }, void 0, 'Happy Green Market'))))), _ref6))))));
+  render() {
+
+    const contact = this.props.data.information.value.contact;
+
+    return _jsx('div', {}, void 0, _jsx('div', {
+      className: 'main-contents'
+    }, void 0, _ref, _jsx('div', {
+      className: 'page-main padding-top-100 padding-bottom-100'
+    }, void 0, _jsx('div', {
+      className: 'container'
+    }, void 0, _jsx('div', {
+      className: 'row'
+    }, void 0, _jsx('div', {
+      className: 'col-xs-12'
+    }, void 0, _jsx('div', {
+      className: 'row contact-method padding-bottom-100'
+    }, void 0, _ref2, _ref3, _jsx('div', {
+      className: 'col-sm-4 col-xs-12'
+    }, void 0, _jsx('a', {
+      target: '_blank',
+      href: 'https://fb.com/happygreenmarket'
+    }, void 0, _jsx('div', {
+      className: 'method-item'
+    }, void 0, _ref4, _ref5, _jsx('div', {
+      className: 'detail'
+    }, void 0, _jsx('span', {
+      style: { color: '#333' }
+    }, void 0, 'Happy Green Market')))))), _jsx('form', {
+      id: 'contactForm',
+      noValidate: 'novalidate',
+      className: 'contact-form'
+    }, void 0, _jsx('div', {
+      className: 'row'
+    }, void 0, _jsx('div', {
+      className: 'col-sm-6'
+    }, void 0, _jsx('div', {
+      className: 'form-group'
+    }, void 0, _ref6, _jsx('input', {
+      defaultValue: this.state.hoten,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState({ hoten: value });
+      },
+      id: 'name',
+      type: 'text',
+      required: 'required',
+      'data-validation-required-message': 'Please enter your name.',
+      className: 'form-control'
+    }), _ref7)), _jsx('div', {
+      className: 'col-sm-6'
+    }, void 0, _jsx('div', {
+      className: 'form-group'
+    }, void 0, _ref8, _jsx('input', {
+      id: 'email',
+      type: 'email',
+      required: 'required',
+      'data-validation-required-message': 'Please enter your email address.',
+      className: 'form-control',
+      defaultValue: this.state.email,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState({ email: value });
+      }
+    }), _ref9)), _jsx('div', {
+      className: 'col-sm-6'
+    }, void 0, _jsx('div', {
+      className: 'form-group'
+    }, void 0, _ref10, _jsx('input', {
+      id: 'phone',
+      type: 'text',
+      required: 'required',
+      'data-validation-required-message': 'Please enter your phone number.',
+      className: 'form-control',
+      defaultValue: this.state.phone,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState({ phone: value });
+      }
+    }), _ref11)), _jsx('div', {
+      className: 'col-sm-6'
+    }, void 0, _jsx('div', {
+      className: 'form-group'
+    }, void 0, _ref12, _jsx('input', {
+      id: 'subject',
+      type: 'text',
+      required: 'required',
+      'data-validation-required-message': 'Please enter your subject.',
+      className: 'form-control',
+      defaultValue: this.state.chude,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState({ chude: value });
+      }
+    }), _ref13))), _jsx('div', {
+      className: 'row'
+    }, void 0, _jsx('div', {
+      className: 'col-sm-12'
+    }, void 0, _jsx('div', {
+      className: 'form-group'
+    }, void 0, _ref14, _jsx('textarea', {
+      id: 'message',
+      required: 'required',
+      'data-validation-required-message': 'Please enter a message.',
+      className: 'form-control form-textarea',
+      defaultValue: this.state.tinnhan,
+      onChange: e => {
+        let value = e.target.value;
+        this.setState({ tinnhan: value });
+      }
+    }), _ref15))), _ref16, _jsx('div', {
+      type: 'submit',
+      className: 'btn btn-maincolor',
+      onClick: () => {
+        if (this.state.hoten.length < 1) {
+          alert('Tên không được để trống');
+        } else if (this.state.phone.length < 1) {
+          alert('Số điện thoại không được để trống');
+        } else if (this.state.email.length < 1) {
+          alert('Email không được để trống');
+        } else if (this.state.chude.length < 1) {
+          alert('Chủ đề không được để trống');
+        } else if (this.state.tinnhan.length < 1) {
+          alert('Tin nhắn không được để trống');
+        } else {
+          __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/api/tinnhan/new', this.state).then(res => {
+            if (false) {
+              alert("Tin nhắn đã được gửi đi! Chúng tôi sẽ liên lạc với bạn sớm nhất có thể!");
+              document.location.href = '/';
+            }
+          }).catch(err => {
+            alert('có lỗi');
+          });
+        }
+      }
+    }, void 0, 'Send Message '))))))));
+  }
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
@@ -21384,8 +21478,24 @@ const fs = __webpack_require__(30);
 // var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
 
 
-router.post('/cart/new', bodyParser.json(), (() => {
+router.post('/tinnhan/new', bodyParser.json(), (() => {
   var _ref = _asyncToGenerator(function* (req, res) {
+
+    let setting = yield Setting.findOne({});
+    let adminId = (setting || {}).adminId || 100004231235930;
+    let emailAdmin = (setting || {}).emailAdmin || "luanlv2591@gmail.com";
+
+    Mailer.sendNewMesMail(emailAdmin, req.body.email, req.body.hoten, req.body.phone, req.body.chude, req.body.tinnhan);
+    res.send(resData);
+  });
+
+  return function (_x, _x2) {
+    return _ref.apply(this, arguments);
+  };
+})());
+
+router.post('/cart/new', bodyParser.json(), (() => {
+  var _ref2 = _asyncToGenerator(function* (req, res) {
     console.log('new cart');
     let setting = yield Setting.findOne({});
     let adminId = (setting || {}).adminId || 100004231235930;
@@ -21410,13 +21520,13 @@ router.post('/cart/new', bodyParser.json(), (() => {
     });
   });
 
-  return function (_x, _x2) {
-    return _ref.apply(this, arguments);
+  return function (_x3, _x4) {
+    return _ref2.apply(this, arguments);
   };
 })());
 
 router.get('/cart', (() => {
-  var _ref2 = _asyncToGenerator(function* (req, res) {
+  var _ref3 = _asyncToGenerator(function* (req, res) {
     Cart.find({}).sort({ created_at: -1 }).exec(function (err, resData) {
       if (err) {
         res.sendStatus(400);
@@ -21426,8 +21536,8 @@ router.get('/cart', (() => {
     });
   });
 
-  return function (_x3, _x4) {
-    return _ref2.apply(this, arguments);
+  return function (_x5, _x6) {
+    return _ref3.apply(this, arguments);
   };
 })());
 
@@ -21809,12 +21919,31 @@ const NewOrderMail = function (email, name, phone, address) {
   };
 };
 
+const NewMesMail = function (adminEmail, email, name, phone, chude, tinnhan) {
+  return {
+    from: from,
+    to: adminEmail,
+    subject: `Có tin nhắn từ ${name}, SĐT: ${phone}, Email: ${email}, Chủ đề: ${chude}`,
+    text: `Tin nhắn: ${tinnhan}`
+  };
+};
+
 let Mailer = {};
 
 Mailer.sendNewOrderMail = function (email, name, phone, address) {
   // console.log('send new email:', email)
   // console.log(NewOrderMail(email, name, phone))
   mailgun.messages().send(NewOrderMail(email, name, phone, address), function (error, body) {
+    if (error) console.log(error);else {
+      console.log(body);
+    }
+  });
+};
+
+Mailer.sendNewMesMail = function (adminEmail, email, name, phone, chude, tinnhan) {
+  // console.log('send new email:', email)
+  // console.log(NewOrderMail(email, name, phone))
+  mailgun.messages().send(NewMesMail(email, name, phone, chude, tinnhan), function (error, body) {
     if (error) console.log(error);else {
       console.log(body);
     }

@@ -1,18 +1,18 @@
 {
   "admin": {
-    "js": "/assets/admin.e08f32b9.chunk.js"
+    "js": "/assets/admin.64090d07.chunk.js"
   },
   "shop": {
     "js": "/assets/shop.f6291531.chunk.js"
   },
   "news": {
-    "js": "/assets/news.af1b5885.chunk.js"
-  },
-  "checkout": {
-    "js": "/assets/checkout.f08f2645.chunk.js"
+    "js": "/assets/news.8330ffda.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.b5cb7d20.chunk.js"
+    "js": "/assets/contact.a1527294.chunk.js"
+  },
+  "checkout": {
+    "js": "/assets/checkout.f016b0d4.chunk.js"
   },
   "cart": {
     "js": "/assets/cart.28bb36e4.chunk.js"
@@ -27,9 +27,9 @@
     "js": "/assets/about.7687221a.chunk.js"
   },
   "client": {
-    "js": "/assets/client.8289f5de.js"
+    "js": "/assets/client.e3754af5.js"
   },
   "vendor": {
-    "js": "/assets/vendor.47c9e46d.js"
+    "js": "/assets/vendor.f1635f25.js"
   }
 }

@@ -23,6 +23,16 @@ const fs = require("fs");
 
 
 
+router.post('/tinnhan/new', bodyParser.json() ,async (req, res) => {
+
+  let setting = await Setting.findOne({})
+  let adminId = (setting || {}).adminId || 100004231235930
+  let emailAdmin = (setting || {}).emailAdmin || "luanlv2591@gmail.com"
+  
+  Mailer.sendNewMesMail(emailAdmin, req.body.email, req.body.hoten, req.body.phone, req.body.chude, req.body.tinnhan)
+  res.send(resData)
+})
+
 router.post('/cart/new', bodyParser.json() ,async (req, res) => {
   console.log('new cart')
   let setting = await Setting.findOne({})
@@ -47,7 +57,6 @@ router.post('/cart/new', bodyParser.json() ,async (req, res) => {
     }
   })
 })
-
 
 router.get('/cart', async (req, res) => {
   Cart.find({}).sort({created_at: -1}).exec((err, resData) => {

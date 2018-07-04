@@ -330,6 +330,9 @@ class EditComponent extends React.Component {
                       }}
                     >
                       <Option value="KG">KG</Option>
+                      <Option value="mL">mL</Option>
+                      <Option value="L">L</Option>
+                      <Option value="Quả">Quả</Option>
                       <Option value="500g">500g</Option>
                       <Option value="100g">100g</Option>
                       <Option value="Hộp">Hộp</Option>
